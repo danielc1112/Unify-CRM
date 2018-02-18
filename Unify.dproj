@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{7db27f8a-3c33-48c1-9a50-faa0e503fe8d}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>Unify.exe</DCC_DependencyCheckOutputName>
+    <MainSource>Unify.dpr</MainSource>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Define>DEBUG</DCC_Define>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">False</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">1</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">0</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">3081</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName"></VersionInfoKeys><VersionInfoKeys Name="FileDescription"></VersionInfoKeys><VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="InternalName"></VersionInfoKeys><VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys><VersionInfoKeys Name="ProductName"></VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="Comments"></VersionInfoKeys></VersionInfoKeys><Excluded_Packages>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <Excluded_Packages Name="$(BDS)\bin\dcloffice2k100.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+      <Excluded_Packages Name="$(BDS)\bin\dclofficexp100.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+    </Excluded_Packages><Source><Source Name="MainSource">Unify.dpr</Source></Source></Delphi.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="Unify.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="udAttachContact.pas">
+      <Form>dAttachContact</Form>
+    </DCCReference>
+    <DCCReference Include="udBackup.pas">
+      <Form>dBackup</Form>
+    </DCCReference>
+    <DCCReference Include="udBase.pas">
+      <Form>dBaseScreen</Form>
+    </DCCReference>
+    <DCCReference Include="udBaseEnquiry.pas">
+      <Form>dBaseEnquiry</Form>
+    </DCCReference>
+    <DCCReference Include="udBaseNew.pas">
+      <Form>dBaseNew</Form>
+    </DCCReference>
+    <DCCReference Include="udBaseProgram.pas">
+      <Form>dBaseProgram</Form>
+    </DCCReference>
+    <DCCReference Include="udBranches.pas">
+      <Form>dBranches</Form>
+    </DCCReference>
+    <DCCReference Include="udConfiguration.pas">
+      <Form>dConfiguration</Form>
+    </DCCReference>
+    <DCCReference Include="udContacts.pas">
+      <Form>dContacts</Form>
+    </DCCReference>
+    <DCCReference Include="udContactsByP.pas">
+      <Form>dContactsByP</Form>
+    </DCCReference>
+    <DCCReference Include="udDropdown.pas">
+      <Form>dDropdown</Form>
+    </DCCReference>
+    <DCCReference Include="udDuplicateContacts.pas">
+      <Form>dDuplicates</Form>
+    </DCCReference>
+    <DCCReference Include="udExport.pas">
+      <Form>dExport</Form>
+    </DCCReference>
+    <DCCReference Include="udFieldOption.pas">
+      <Form>dFieldOption</Form>
+    </DCCReference>
+    <DCCReference Include="udKeywords.pas">
+      <Form>dKeywords</Form>
+    </DCCReference>
+    <DCCReference Include="udLoadSearch.pas">
+      <Form>dLoadSearch</Form>
+    </DCCReference>
+    <DCCReference Include="udMainMenu.pas">
+      <Form>dMainMenu</Form>
+    </DCCReference>
+    <DCCReference Include="udNewBranch.pas">
+      <Form>dNewBranch</Form>
+    </DCCReference>
+    <DCCReference Include="udNewContact.pas">
+      <Form>dNewContact</Form>
+    </DCCReference>
+    <DCCReference Include="udNewUser.pas">
+      <Form>dNewUser</Form>
+    </DCCReference>
+    <DCCReference Include="udOrderBy.pas">
+      <Form>dOrderBy</Form>
+    </DCCReference>
+    <DCCReference Include="udReplace.pas">
+      <Form>dReplace</Form>
+    </DCCReference>
+    <DCCReference Include="udReportConditions.pas">
+      <Form>dReportConditions</Form>
+    </DCCReference>
+    <DCCReference Include="udReports.pas">
+      <Form>dReports</Form>
+    </DCCReference>
+    <DCCReference Include="udSaveSearch.pas">
+      <Form>dSaveSearch</Form>
+    </DCCReference>
+    <DCCReference Include="udShowColumns.pas">
+      <Form>dShowColumns</Form>
+    </DCCReference>
+    <DCCReference Include="udUserHistory.pas">
+      <Form>dUserHistory</Form>
+    </DCCReference>
+    <DCCReference Include="udUserLogon.pas">
+      <Form>dUserLogon</Form>
+    </DCCReference>
+    <DCCReference Include="udUsers.pas">
+      <Form>dUsers</Form>
+    </DCCReference>
+    <DCCReference Include="udValidate.pas">
+      <Form>dValidate</Form>
+    </DCCReference>
+    <DCCReference Include="uuCoreData.pas">
+      <Form>CoreData</Form>
+      <DesignClass>TDataModule</DesignClass>
+    </DCCReference>
+    <DCCReference Include="uuGlobals.pas" />
+    <DCCReference Include="uuPostalFind.pas" />
+    <DCCReference Include="uuSearchCriteria.pas" />
+  </ItemGroup>
+</Project>
