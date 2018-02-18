@@ -1,0 +1,821 @@
+---------------------------17/10/2015 11:57:50 AM---------------------------
+Exception 'EConvertError' in module WinBrow.exe at 00008179
+'ME000000000001' is not a valid date and time
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:00409179 [WinBrow.exe]
+:006618FF [WinBrow.exe]
+:006615DF [WinBrow.exe]
+:00662E2F [WinBrow.exe]
+:00625866 [WinBrow.exe]
+:00663165 [WinBrow.exe]
+:00637955 [WinBrow.exe]
+:00638D28 [WinBrow.exe]
+:0066B2BB [WinBrow.exe]
+:0045AA6B [WinBrow.exe]
+:004595F4 [WinBrow.exe]
+:0045AAB7 [WinBrow.exe]
+:005EA4EE [WinBrow.exe]
+:0045A7FB [WinBrow.exe]
+:72D6AA24 [comctl32.dll]
+:72D6A9E5 [comctl32.dll]
+:72D6A9ED [comctl32.dll]
+:7607717A [user32.dll]
+:0041FBD5 [WinBrow.exe]
+:00437009 [WinBrow.exe]
+:0045D4A3 [WinBrow.exe]
+:0045D4BA [WinBrow.exe]
+:0042924E [WinBrow.exe]
+:760762FA [user32.dll]
+:0045D68C [WinBrow.exe]
+:76076D51 [user32.dll]
+:0045D828 [WinBrow.exe]
+:0045D4A3 [WinBrow.exe]
+:0042924E [WinBrow.exe]
+:760762FA [user32.dll]
+:76076D3A [user32.dll]
+:76076CE9 [user32.dll]
+:77D4011A [ntdll.dll]
+:760777C4 [user32.dll]
+:760860DC [user32.dll]
+:76077BCA [user32.dll]
+:0047A2DC [WinBrow.exe]
+:0047A313 [WinBrow.exe]
+:0047A533 [WinBrow.exe]
+:0047A576 [WinBrow.exe]
+:006CF8D9 [WinBrow.exe]
+:777633CA [kernel32.dll]
+:77D69ED2 [ntdll.dll]
+:77D69EA5 [ntdll.dll]
+
+Registers:
+EAX = 0018F900  CS = 0023  EIP = 7636B727  Flags = 00000216
+EBX = 00408218  SS = 002B  ESP = 0018F900    EBP = 0018F950
+ECX = 00000007  DS = 002B  ESI = 0018F99C    FS  = 0053
+EDX = 00000000  ES = 002B  EDI = 00000000    GS  = 002B
+Code at CS:EIP
+C9 C2 10 00 CC CC CC CC CC 8B FF 55 8B EC 56 8B 
+Stack:
+0EEDFADE 00000001 00000000 7636B727 00000007 
+00000000 00000000 77D69EA5 00403A05 020CD384 
+0042E70B 02091A78 0018FFEC 00000000 020CD254 
+77D69EA5 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 
+
+---------------------------25/10/2015 7:14:09 PM---------------------------
+Exception 'EConvertError' in module WinBrow.exe at 00008179
+'ME000000000001' is not a valid date and time
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:00409179 [WinBrow.exe]
+:006618FF [WinBrow.exe]
+:006615DF [WinBrow.exe]
+:00662E2F [WinBrow.exe]
+:00625866 [WinBrow.exe]
+:00663165 [WinBrow.exe]
+:00637955 [WinBrow.exe]
+:00638D28 [WinBrow.exe]
+:0066B2BB [WinBrow.exe]
+:0045AA6B [WinBrow.exe]
+:004595F4 [WinBrow.exe]
+:0045AAB7 [WinBrow.exe]
+:005EA4EE [WinBrow.exe]
+:0045A7FB [WinBrow.exe]
+:7204AA24 [comctl32.dll]
+:7204A9E5 [comctl32.dll]
+:7204A9ED [comctl32.dll]
+:7581717A [user32.dll]
+:0041FBD5 [WinBrow.exe]
+:00437009 [WinBrow.exe]
+:0045D4A3 [WinBrow.exe]
+:0045D4BA [WinBrow.exe]
+:0042924E [WinBrow.exe]
+:758162FA [user32.dll]
+:0045D68C [WinBrow.exe]
+:75816D51 [user32.dll]
+:0045D828 [WinBrow.exe]
+:0045D4A3 [WinBrow.exe]
+:0042924E [WinBrow.exe]
+:758162FA [user32.dll]
+:75816D3A [user32.dll]
+:75816CE9 [user32.dll]
+:76F8011A [ntdll.dll]
+:758177C4 [user32.dll]
+:758260DC [user32.dll]
+:75817BCA [user32.dll]
+:0047A2DC [WinBrow.exe]
+:0047A313 [WinBrow.exe]
+:0047A533 [WinBrow.exe]
+:0047A576 [WinBrow.exe]
+:006CF8D9 [WinBrow.exe]
+:74E033CA [kernel32.dll]
+:76FA9ED2 [ntdll.dll]
+:76FA9EA5 [ntdll.dll]
+
+Registers:
+EAX = 0018F900  CS = 0023  EIP = 76A8B727  Flags = 00000216
+EBX = 00408218  SS = 002B  ESP = 0018F900    EBP = 0018F950
+ECX = 00000007  DS = 002B  ESI = 0018F99C    FS  = 0053
+EDX = 00000000  ES = 002B  EDI = 00000000    GS  = 002B
+Code at CS:EIP
+C9 C2 10 00 CC CC CC CC CC 8B FF 55 8B EC 56 8B 
+Stack:
+0EEDFADE 00000001 00000000 76A8B727 00000007 
+00000000 00000000 76FA9EA5 00403A05 01FEFF34 
+0042E70B 01FB1A78 0018FFEC 00000000 01FEFE04 
+76FA9EA5 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 
+
+---------------------------25/10/2015 7:14:12 PM---------------------------
+Exception 'EConvertError' in module WinBrow.exe at 00008179
+'ME000000000001' is not a valid date and time
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:00409179 [WinBrow.exe]
+:006618FF [WinBrow.exe]
+:006615DF [WinBrow.exe]
+:0065ABDE [WinBrow.exe]
+:0051BE54 [WinBrow.exe]
+:0051BFEE [WinBrow.exe]
+:0051C554 [WinBrow.exe]
+:0051C57A [WinBrow.exe]
+:0051C5B4 [WinBrow.exe]
+:005208B9 [WinBrow.exe]
+:005209C4 [WinBrow.exe]
+:00521943 [WinBrow.exe]
+:00552C5F [WinBrow.exe]
+:0069BA79 [WinBrow.exe]
+:0045ADEB [WinBrow.exe]
+:0045A7FB [WinBrow.exe]
+:75817276 [user32.dll]
+:7204A9ED [comctl32.dll]
+:7204A985 [comctl32.dll]
+:72061BD0 [comctl32.dll]
+:7204AA24 [comctl32.dll]
+:7204A9E5 [comctl32.dll]
+:0045D75A [WinBrow.exe]
+:0041FBD5 [WinBrow.exe]
+:00437009 [WinBrow.exe]
+Recursive call (2 times):
+:76F9E36C [ntdll.dll]
+:0069B767 [WinBrow.exe]
+:0045A5CB [WinBrow.exe]
+:0045D6BD [WinBrow.exe]
+:0045D7AB [WinBrow.exe]
+:75B039F5 [MSCTF.dll]
+:75B1E52B [MSCTF.dll]
+:0069B5DD [WinBrow.exe]
+:0045D4A3 [WinBrow.exe]
+:0042924E [WinBrow.exe]
+:758162FA [user32.dll]
+:75816D3A [user32.dll]
+:75816CE9 [user32.dll]
+:758177C4 [user32.dll]
+:758260DC [user32.dll]
+:75817BCA [user32.dll]
+:0047A2DC [WinBrow.exe]
+:0047A313 [WinBrow.exe]
+:0047A533 [WinBrow.exe]
+:0047A576 [WinBrow.exe]
+:006CF8D9 [WinBrow.exe]
+:74E033CA [kernel32.dll]
+:76FA9ED2 [ntdll.dll]
+:76FA9EA5 [ntdll.dll]
+
+Registers:
+EAX = 0018F8F8  CS = 0023  EIP = 76A8B727  Flags = 00000212
+EBX = 00408218  SS = 002B  ESP = 0018F8F8    EBP = 0018F948
+ECX = 00000007  DS = 002B  ESI = 0018F994    FS  = 0053
+EDX = 00000000  ES = 002B  EDI = 00000000    GS  = 002B
+Code at CS:EIP
+C9 C2 10 00 CC CC CC CC CC 8B FF 55 8B EC 56 8B 
+Stack:
+0EEDFADE 00000001 00000000 76A8B727 00000007 
+00000000 00000000 76FA9EA5 00403A05 01FFC68C 
+0042E70B 00000002 0018FF00 00000000 01FEFE04 
+76FA9EA5 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 
+
+---------------------------28/10/2015 10:45:00 PM---------------------------
+Exception 'EIBO_ISCError' in module WinBrow.exe at 0015754B
+ISC ERROR CODE:335544569
+
+ISC ERROR MESSAGE:
+Dynamic SQL Error
+SQL error code = -204
+Table unknown
+EMAILDOM
+At line 4, column 6
+
+STATEMENT:
+TIBOInternalDataset: "<TApplication>.WinBrowFrm.tblEditing.IBOqrtblEditing."
+
+
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:0055854B [WinBrow.exe]
+:004C35BE [WinBrow.exe]
+:004B6A87 [WinBrow.exe]
+:004D47F9 [WinBrow.exe]
+:004DF539 [WinBrow.exe]
+:004D42E5 [WinBrow.exe]
+:004DE727 [WinBrow.exe]
+:00557AB1 [WinBrow.exe]
+:004D339E [WinBrow.exe]
+:0055465B [WinBrow.exe]
+:005E1808 [WinBrow.exe]
+:0051F054 [WinBrow.exe]
+:0051EEBA [WinBrow.exe]
+:006CDBDF [WinBrow.exe]
+:77AF6AB9 [ntdll.dll]
+:77AF6A8B [ntdll.dll]
+:77AF6A2D [ntdll.dll]
+:77216D91 [user32.dll]
+:77216D51 [user32.dll]
+:77AC0143 [ntdll.dll]
+Recursive call (2 times):
+:75FDB727 [KERNELBASE.dll]
+:004021FC [WinBrow.exe]
+:00402388 [WinBrow.exe]
+:00520041 [WinBrow.exe]
+:00404352 [WinBrow.exe]
+:0040232A [WinBrow.exe]
+:004023AC [WinBrow.exe]
+:00404352 [WinBrow.exe]
+:0040232A [WinBrow.exe]
+:004023AC [WinBrow.exe]
+:75FDB715 [KERNELBASE.dll]
+Recursive call (2 times):
+:75FDB727 [KERNELBASE.dll]
+:00557B0D [WinBrow.exe]
+:004D4A4B [WinBrow.exe]
+:004D4468 [WinBrow.exe]
+:004DF539 [WinBrow.exe]
+:004D42E5 [WinBrow.exe]
+:004DE727 [WinBrow.exe]
+:00557AB1 [WinBrow.exe]
+:004D339E [WinBrow.exe]
+:0055465B [WinBrow.exe]
+:005E1808 [WinBrow.exe]
+:0051F054 [WinBrow.exe]
+:0051EEBA [WinBrow.exe]
+:006CDB92 [WinBrow.exe]
+:006CDF95 [WinBrow.exe]
+:0045E5D7 [WinBrow.exe]
+:0045F09A [WinBrow.exe]
+:0045A7FB [WinBrow.exe]
+:77216D51 [user32.dll]
+:7721965E [user32.dll]
+:772196C5 [user32.dll]
+:75CF1DB3 [IMM32.DLL]
+:75CF2348 [IMM32.DLL]
+:7721D9E7 [user32.dll]
+:7721D9EF [user32.dll]
+:7721ADF9 [user32.dll]
+:7721AE0C [user32.dll]
+:7723B199 [user32.dll]
+:7723866F [user32.dll]
+:0045D828 [WinBrow.exe]
+:75CF1D84 [IMM32.DLL]
+:00445D57 [WinBrow.exe]
+:00446E5E [WinBrow.exe]
+:0045D4A3 [WinBrow.exe]
+:0042924E [WinBrow.exe]
+:772162FA [user32.dll]
+:77216D3A [user32.dll]
+:77216CE9 [user32.dll]
+:7721965E [user32.dll]
+:7722617A [user32.dll]
+:00471161 [WinBrow.exe]
+:004755D4 [WinBrow.exe]
+:004756C0 [WinBrow.exe]
+:0045D735 [WinBrow.exe]
+:76153CA3 [MSCTF.dll]
+:004472B1 [WinBrow.exe]
+:0045D4A3 [WinBrow.exe]
+:0045D4BB [WinBrow.exe]
+:0042924E [WinBrow.exe]
+:772162FA [user32.dll]
+:77216D3A [user32.dll]
+:77216CE9 [user32.dll]
+:77216DE8 [user32.dll]
+:76154FF7 [MSCTF.dll]
+:77216E44 [user32.dll]
+:77AC011A [ntdll.dll]
+:7722218A [user32.dll]
+:0047570C [WinBrow.exe]
+:0045FB94 [WinBrow.exe]
+:004753B3 [WinBrow.exe]
+:004753D4 [WinBrow.exe]
+:0047543D [WinBrow.exe]
+:0045FBE9 [WinBrow.exe]
+:004601AF [WinBrow.exe]
+:006CDFC0 [WinBrow.exe]
+:0045EAD1 [WinBrow.exe]
+:0045EB28 [WinBrow.exe]
+:0045EB02 [WinBrow.exe]
+:00445AA4 [WinBrow.exe]
+
+Registers:
+EAX = 0018DCD8  CS = 0023  EIP = 75FDB727  Flags = 00000216
+EBX = 00981FC4  SS = 002B  ESP = 0018DCD8    EBP = 0018DD28
+ECX = 00000007  DS = 002B  ESI = FFFFFF34    FS  = 0053
+EDX = 00000000  ES = 002B  EDI = 0018EE7B    GS  = 002B
+Code at CS:EIP
+C9 C2 10 00 CC CC CC CC CC 8B FF 55 8B EC 56 8B 
+Stack:
+0EEDFADE 00000001 00000000 75FDB727 00000007 
+00000000 00000000 00445AA4 00403A05 009603CC 
+0042E70B 00000002 00000000 00000000 009420F0 
+00445AA4 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 
+
+---------------------------5/01/2016 8:38:49 PM---------------------------
+Exception 'EIBO_ISCError' in module WinBrow.exe at 0015754B
+ISC ERROR CODE:335544347
+
+ISC ERROR MESSAGE:
+validation error for column VISIBLE, value "*** null ***"
+
+STATEMENT:
+TIB_Statement: "<TApplication>.WinBrowFrm.tblEditing.IBOqrtblEditing.<TIB_UpdateSQL>.<TIB_Statement>."
+
+
+STATEMENT:
+TIBOInternalDa
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:0055854B [WinBrow.exe]
+:004F3F3B [WinBrow.exe]
+:004C4469 [WinBrow.exe]
+:004D139F [WinBrow.exe]
+:1000A629 [gds32.dll]
+:004021FC [WinBrow.exe]
+:00402388 [WinBrow.exe]
+:004023AC [WinBrow.exe]
+:00402803 [WinBrow.exe]
+:004C35BE [WinBrow.exe]
+:004B6A87 [WinBrow.exe]
+:004D6EF9 [WinBrow.exe]
+:004F2E60 [WinBrow.exe]
+:004E04AD [WinBrow.exe]
+:004EBF8B [WinBrow.exe]
+:004E296D [WinBrow.exe]
+:004EBC2F [WinBrow.exe]
+:004E18AC [WinBrow.exe]
+:004E2885 [WinBrow.exe]
+:004E15ED [WinBrow.exe]
+:00554933 [WinBrow.exe]
+:00521CD0 [WinBrow.exe]
+:005217EF [WinBrow.exe]
+:0051C378 [WinBrow.exe]
+:0051BE8B [WinBrow.exe]
+:006627F1 [WinBrow.exe]
+:00662904 [WinBrow.exe]
+:00624D91 [WinBrow.exe]
+:005F982B [WinBrow.exe]
+:005F9882 [WinBrow.exe]
+:005FC3F0 [WinBrow.exe]
+:005FD9C3 [WinBrow.exe]
+Recursive call (2 times):
+:0045ECB7 [WinBrow.exe]
+:0045ECDF [WinBrow.exe]
+:0045A7FB [WinBrow.exe]
+:77D33C74 [ntdll.dll]
+:77D33CA3 [ntdll.dll]
+:77D3389E [ntdll.dll]
+:77D3387A [ntdll.dll]
+:77D38133 [ntdll.dll]
+:754719D6 [MSCTF.dll]
+:75457502 [MSCTF.dll]
+:77D2E36C [ntdll.dll]
+:75470FFF [MSCTF.dll]
+:0045D828 [WinBrow.exe]
+:00437009 [WinBrow.exe]
+:005F963E [WinBrow.exe]
+:0045D4A3 [WinBrow.exe]
+:0042924E [WinBrow.exe]
+:760962FA [user32.dll]
+:76096D3A [user32.dll]
+:76096CE9 [user32.dll]
+:7609965E [user32.dll]
+:760977C4 [user32.dll]
+:76097BCA [user32.dll]
+:0047A2DC [WinBrow.exe]
+:0047A313 [WinBrow.exe]
+:0047A533 [WinBrow.exe]
+:0047A576 [WinBrow.exe]
+:006CF8D9 [WinBrow.exe]
+:773033CA [kernel32.dll]
+:77D39ED2 [ntdll.dll]
+:77D39EA5 [ntdll.dll]
+
+Registers:
+EAX = 0018E6AC  CS = 0023  EIP = 772AB727  Flags = 00000206
+EBX = 0207E010  SS = 002B  ESP = 0018E6AC    EBP = 0018E6FC
+ECX = 00000007  DS = 002B  ESI = FFFFFD8F    FS  = 0053
+EDX = 00000000  ES = 002B  EDI = 0018F9EF    GS  = 002B
+Code at CS:EIP
+C9 C2 10 00 CC CC CC CC CC 8B FF 55 8B EC 56 8B 
+Stack:
+0EEDFADE 00000001 00000000 772AB727 00000007 
+00000000 00000000 77D39EA5 00403A05 0207D7B8 
+0042E70B 00000002 00000000 00000000 02070950 
+77D39EA5 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 
+
+---------------------------5/01/2016 8:39:08 PM---------------------------
+Exception 'EIBO_ISCError' in module WinBrow.exe at 0015754B
+ISC ERROR CODE:335544347
+
+ISC ERROR MESSAGE:
+validation error for column VISIBLE, value "*** null ***"
+
+STATEMENT:
+TIB_Statement: "<TApplication>.WinBrowFrm.tblEditing.IBOqrtblEditing.<TIB_UpdateSQL>.<TIB_Statement>."
+
+
+STATEMENT:
+TIBOInternalDa
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:0055854B [WinBrow.exe]
+:004F3F3B [WinBrow.exe]
+:004C4469 [WinBrow.exe]
+:004D139F [WinBrow.exe]
+:1000A629 [gds32.dll]
+:75A85221 [USP10.dll]
+:004021FC [WinBrow.exe]
+:00402388 [WinBrow.exe]
+:004023AC [WinBrow.exe]
+:00402803 [WinBrow.exe]
+:004C35BE [WinBrow.exe]
+:004B6A87 [WinBrow.exe]
+:004D6EF9 [WinBrow.exe]
+:004F2E60 [WinBrow.exe]
+:004E04AD [WinBrow.exe]
+:004EBF8B [WinBrow.exe]
+:004E296D [WinBrow.exe]
+:004EBC2F [WinBrow.exe]
+:004E18AC [WinBrow.exe]
+:004E2885 [WinBrow.exe]
+:004E15ED [WinBrow.exe]
+:00554933 [WinBrow.exe]
+:00521CD0 [WinBrow.exe]
+:005217EF [WinBrow.exe]
+:0051C378 [WinBrow.exe]
+:0051BE8B [WinBrow.exe]
+:006627F1 [WinBrow.exe]
+:00662904 [WinBrow.exe]
+:00624D91 [WinBrow.exe]
+:005F982B [WinBrow.exe]
+:005F9882 [WinBrow.exe]
+:005FC3F0 [WinBrow.exe]
+:005FD9C3 [WinBrow.exe]
+Recursive call (2 times):
+:0045ECB7 [WinBrow.exe]
+:0045ECDF [WinBrow.exe]
+:0045A7FB [WinBrow.exe]
+:77D33C74 [ntdll.dll]
+:77D33CA3 [ntdll.dll]
+:77D3389E [ntdll.dll]
+:77D3387A [ntdll.dll]
+:77D38133 [ntdll.dll]
+:754719D6 [MSCTF.dll]
+:75457502 [MSCTF.dll]
+:77D2E36C [ntdll.dll]
+:75470FFF [MSCTF.dll]
+:0045D828 [WinBrow.exe]
+:00437009 [WinBrow.exe]
+:005F963E [WinBrow.exe]
+:0045D4A3 [WinBrow.exe]
+:0042924E [WinBrow.exe]
+:760962FA [user32.dll]
+:76096D3A [user32.dll]
+:76096CE9 [user32.dll]
+:7609965E [user32.dll]
+:760977C4 [user32.dll]
+:76097BCA [user32.dll]
+:0047A2DC [WinBrow.exe]
+:0047A313 [WinBrow.exe]
+:0047A533 [WinBrow.exe]
+:0047A576 [WinBrow.exe]
+:006CF8D9 [WinBrow.exe]
+:773033CA [kernel32.dll]
+:77D39ED2 [ntdll.dll]
+:77D39EA5 [ntdll.dll]
+
+Registers:
+EAX = 0018E6AC  CS = 0023  EIP = 772AB727  Flags = 00000206
+EBX = 01F7E6C4  SS = 002B  ESP = 0018E6AC    EBP = 0018E6FC
+ECX = 00000007  DS = 002B  ESI = FFFFFD8F    FS  = 0053
+EDX = 00000000  ES = 002B  EDI = 0018F9EF    GS  = 002B
+Code at CS:EIP
+C9 C2 10 00 CC CC CC CC CC 8B FF 55 8B EC 56 8B 
+Stack:
+0EEDFADE 00000001 00000000 772AB727 00000007 
+00000000 00000000 77D39EA5 00403A05 01F71480 
+0042E70B 00000002 00000000 00000000 01F7E87C 
+77D39EA5 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 
+
+---------------------------10/01/2016 10:03:56 PM---------------------------
+Exception 'EDatabaseError' in module WinBrow.exe at 00111AF4
+Field 'VISIBLE' must have a value
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:00512AF4 [WinBrow.exe]
+:00512B5E [WinBrow.exe]
+:00521DD3 [WinBrow.exe]
+:00521E39 [WinBrow.exe]
+:0055503E [WinBrow.exe]
+:00521CD0 [WinBrow.exe]
+:00521984 [WinBrow.exe]
+:00555034 [WinBrow.exe]
+:00552C5F [WinBrow.exe]
+:00522082 [WinBrow.exe]
+:00667449 [WinBrow.exe]
+:00662ED2 [WinBrow.exe]
+:00625895 [WinBrow.exe]
+:006258D2 [WinBrow.exe]
+:00663147 [WinBrow.exe]
+:00637955 [WinBrow.exe]
+:00638D28 [WinBrow.exe]
+:0066B2BB [WinBrow.exe]
+:0045AA6B [WinBrow.exe]
+:004595F4 [WinBrow.exe]
+:0045AAB7 [WinBrow.exe]
+:005EA4EE [WinBrow.exe]
+:0045A7FB [WinBrow.exe]
+:7157AA24 [comctl32.dll]
+:7157A9E5 [comctl32.dll]
+:7157A9ED [comctl32.dll]
+:7592717A [user32.dll]
+:0041FBD5 [WinBrow.exe]
+:00437009 [WinBrow.exe]
+:0045D4A3 [WinBrow.exe]
+:0045D4BA [WinBrow.exe]
+:0042924E [WinBrow.exe]
+:759262FA [user32.dll]
+:0045D68C [WinBrow.exe]
+:75926D51 [user32.dll]
+:0045D828 [WinBrow.exe]
+:0045D4A3 [WinBrow.exe]
+:0042924E [WinBrow.exe]
+:759262FA [user32.dll]
+:75926D3A [user32.dll]
+:75926CE9 [user32.dll]
+:7718011A [ntdll.dll]
+:759277C4 [user32.dll]
+:759360DC [user32.dll]
+:75927BCA [user32.dll]
+:0047A2DC [WinBrow.exe]
+:0047A313 [WinBrow.exe]
+:0047A533 [WinBrow.exe]
+:0047A576 [WinBrow.exe]
+:006CF8D9 [WinBrow.exe]
+:75A833CA [kernel32.dll]
+:771A9ED2 [ntdll.dll]
+:771A9EA5 [ntdll.dll]
+
+Registers:
+EAX = 0018F948  CS = 0023  EIP = 75B8B727  Flags = 00000216
+EBX = 00000000  SS = 002B  ESP = 0018F948    EBP = 0018F998
+ECX = 00000007  DS = 002B  ESI = 0079DED8    FS  = 0053
+EDX = 00000000  ES = 002B  EDI = 00000000    GS  = 002B
+Code at CS:EIP
+C9 C2 10 00 CC CC CC CC CC 8B FF 55 8B EC 56 8B 
+Stack:
+0EEDFADE 00000001 00000000 75B8B727 00000007 
+00000000 00000000 771A9EA5 00403A05 0078958C 
+0042E70B 00751A78 0018FFEC 00000000 0079EC10 
+771A9EA5 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 
+
+---------------------------10/01/2016 10:37:10 PM---------------------------
+Exception 'EIBO_ISCError' in module WinBrow.exe at 0015754B
+ISC ERROR CODE:335544569
+
+ISC ERROR MESSAGE:
+Dynamic SQL Error
+SQL error code = -204
+Table unknown
+CONTACTS
+At line 4, column 6
+
+STATEMENT:
+TIBOInternalDataset: "<TApplication>.WinBrowFrm.tblEditing.IBOqrtblEditing."
+
+
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:0055854B [WinBrow.exe]
+:004C35BE [WinBrow.exe]
+:004B6A87 [WinBrow.exe]
+:004D47F9 [WinBrow.exe]
+:004DF539 [WinBrow.exe]
+:004D42E5 [WinBrow.exe]
+:004DE727 [WinBrow.exe]
+:00557AB1 [WinBrow.exe]
+:004D339E [WinBrow.exe]
+:0055465B [WinBrow.exe]
+:005E1808 [WinBrow.exe]
+:0051F054 [WinBrow.exe]
+:0051EEBA [WinBrow.exe]
+:006CDBDF [WinBrow.exe]
+:771B6AB9 [ntdll.dll]
+:771B6A8B [ntdll.dll]
+:771B6A2D [ntdll.dll]
+:75926D91 [user32.dll]
+:75926D51 [user32.dll]
+:77180143 [ntdll.dll]
+Recursive call (2 times):
+:75B8B727 [KERNELBASE.dll]
+Recursive call (2 times):
+:004021E6 [WinBrow.exe]
+Recursive call (2 times):
+:00490046 [WinBrow.exe]
+:004048F9 [WinBrow.exe]
+:0049AF2F [WinBrow.exe]
+:00404352 [WinBrow.exe]
+:0040232A [WinBrow.exe]
+:004023AC [WinBrow.exe]
+:00404352 [WinBrow.exe]
+:0040232A [WinBrow.exe]
+:004023AC [WinBrow.exe]
+:75B8B715 [KERNELBASE.dll]
+Recursive call (2 times):
+:75B8B727 [KERNELBASE.dll]
+:00557B0D [WinBrow.exe]
+:004D4A4B [WinBrow.exe]
+:004D4468 [WinBrow.exe]
+:004DF539 [WinBrow.exe]
+:004D42E5 [WinBrow.exe]
+:004DE727 [WinBrow.exe]
+:00557AB1 [WinBrow.exe]
+:004D339E [WinBrow.exe]
+:0055465B [WinBrow.exe]
+:005E1808 [WinBrow.exe]
+:0051F054 [WinBrow.exe]
+:0051EEBA [WinBrow.exe]
+:006CDB92 [WinBrow.exe]
+:006CDF95 [WinBrow.exe]
+:0045E5D7 [WinBrow.exe]
+:0045F09A [WinBrow.exe]
+:0045A7FB [WinBrow.exe]
+:75926D51 [user32.dll]
+:7592965E [user32.dll]
+:759296C5 [user32.dll]
+:74D51DB3 [IMM32.DLL]
+:74D52348 [IMM32.DLL]
+:7592D9E7 [user32.dll]
+:7592D9EF [user32.dll]
+:7592ADF9 [user32.dll]
+:7592AE0C [user32.dll]
+:7594B199 [user32.dll]
+:7594866F [user32.dll]
+:0045D828 [WinBrow.exe]
+:74D51D84 [IMM32.DLL]
+:00445D57 [WinBrow.exe]
+:00446E5E [WinBrow.exe]
+:0045D4A3 [WinBrow.exe]
+:0042924E [WinBrow.exe]
+:759262FA [user32.dll]
+:75926D3A [user32.dll]
+:75926CE9 [user32.dll]
+:7592965E [user32.dll]
+:7593617A [user32.dll]
+:00471161 [WinBrow.exe]
+:004755D4 [WinBrow.exe]
+:004756C0 [WinBrow.exe]
+:0045D735 [WinBrow.exe]
+:75533CA3 [MSCTF.dll]
+:004472B1 [WinBrow.exe]
+:0045D4A3 [WinBrow.exe]
+:0045D4BB [WinBrow.exe]
+:0042924E [WinBrow.exe]
+:759262FA [user32.dll]
+:75926D3A [user32.dll]
+:75926CE9 [user32.dll]
+:75926DE8 [user32.dll]
+:75534FF7 [MSCTF.dll]
+:75926E44 [user32.dll]
+:7718011A [ntdll.dll]
+:7593218A [user32.dll]
+:0047570C [WinBrow.exe]
+:0045FB94 [WinBrow.exe]
+:004753B3 [WinBrow.exe]
+:004753D4 [WinBrow.exe]
+:0047543D [WinBrow.exe]
+:0045FBE9 [WinBrow.exe]
+:004601AF [WinBrow.exe]
+:006CDFC0 [WinBrow.exe]
+:0045EAD1 [WinBrow.exe]
+:0045EB28 [WinBrow.exe]
+:0045EB02 [WinBrow.exe]
+
+Registers:
+EAX = 0018DCD8  CS = 0023  EIP = 75B8B727  Flags = 00000216
+EBX = 007964D0  SS = 002B  ESP = 0018DCD8    EBP = 0018DD28
+ECX = 00000007  DS = 002B  ESI = FFFFFF34    FS  = 0053
+EDX = 00000000  ES = 002B  EDI = 0018EE7B    GS  = 002B
+Code at CS:EIP
+C9 C2 10 00 CC CC CC CC CC 8B FF 55 8B EC 56 8B 
+Stack:
+0EEDFADE 00000001 00000000 75B8B727 00000007 
+00000000 00000000 0045EB02 00403A05 0078F0D0 
+0042E70B 00000002 00000000 00000000 007520F0 
+0045EB02 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 
+
+---------------------------30/01/2016 6:16:11 PM---------------------------
+Exception 'EDatabaseError' in module WinBrow.exe at 00111AF4
+Field 'VISIBLE' must have a value
+
+Module: UNKNOWN, Source: UNKNOWN, Line UNKNOWN
+Procedure: UNKNOWN
+
+Call stack:
+:00512AF4 [WinBrow.exe]
+:00512B5E [WinBrow.exe]
+:00521DD3 [WinBrow.exe]
+:00521E39 [WinBrow.exe]
+:0055503E [WinBrow.exe]
+:00521CD0 [WinBrow.exe]
+:00521984 [WinBrow.exe]
+:00555034 [WinBrow.exe]
+:00552C5F [WinBrow.exe]
+:00522082 [WinBrow.exe]
+:00667449 [WinBrow.exe]
+:00662ED2 [WinBrow.exe]
+:00625895 [WinBrow.exe]
+:006258D2 [WinBrow.exe]
+:00663147 [WinBrow.exe]
+:00637955 [WinBrow.exe]
+:00638D28 [WinBrow.exe]
+:0066B2BB [WinBrow.exe]
+:0045AA6B [WinBrow.exe]
+:004595F4 [WinBrow.exe]
+:0045AAB7 [WinBrow.exe]
+:005EA4EE [WinBrow.exe]
+:0045A7FB [WinBrow.exe]
+:715CAA24 [comctl32.dll]
+:715CA9E5 [comctl32.dll]
+:715CA9ED [comctl32.dll]
+:75FB717A [user32.dll]
+:0041FBD5 [WinBrow.exe]
+:00437009 [WinBrow.exe]
+:0045D4A3 [WinBrow.exe]
+:0045D4BA [WinBrow.exe]
+:0042924E [WinBrow.exe]
+:75FB62FA [user32.dll]
+:0045D68C [WinBrow.exe]
+:75FB6D51 [user32.dll]
+:0045D828 [WinBrow.exe]
+:0045D4A3 [WinBrow.exe]
+:0042924E [WinBrow.exe]
+:75FB62FA [user32.dll]
+:75FB6D3A [user32.dll]
+:75FB6CE9 [user32.dll]
+:7724011A [ntdll.dll]
+:75FB77C4 [user32.dll]
+:75FC60DC [user32.dll]
+:75FB7BCA [user32.dll]
+:0047A2DC [WinBrow.exe]
+:0047A313 [WinBrow.exe]
+:0047A533 [WinBrow.exe]
+:0047A576 [WinBrow.exe]
+:006CF8D9 [WinBrow.exe]
+:75B233CA [kernel32.dll]
+:77269ED2 [ntdll.dll]
+:77269EA5 [ntdll.dll]
+
+Registers:
+EAX = 0018F948  CS = 0023  EIP = 74B5B727  Flags = 00000216
+EBX = 00000000  SS = 002B  ESP = 0018F948    EBP = 0018F998
+ECX = 00000007  DS = 002B  ESI = 00790958    FS  = 0053
+EDX = 00000000  ES = 002B  EDI = 00000000    GS  = 002B
+Code at CS:EIP
+C9 C2 10 00 CC CC CC CC CC 8B FF 55 8B EC 56 8B 
+Stack:
+0EEDFADE 00000001 00000000 74B5B727 00000007 
+00000000 00000000 77269EA5 00403A05 0075A2A8 
+0042E70B 00751A78 0018FFEC 00000000 0079F63C 
+77269EA5 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 
+

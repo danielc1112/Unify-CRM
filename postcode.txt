@@ -1,0 +1,194 @@
+
+  TPostCode = class(TObject)
+  private
+    fSuburb        : String;
+    fPostCode      : String;
+    fCurrentState  : String;
+    fPostCodeState : String;
+    procedure SetPostCode(aValue : String);
+    procedure SetSuburb(aValue : String);
+    function  FindPostCode(aSuburb : String) : String;
+    function  FindSuburb(aPostCode : String) : String;
+  public
+    property Suburb : string  read  fSuburb
+                              write SetSuburb;
+    property PostCode : String read  fPostCode
+                               write SetPostCode;
+    property State : String read fState
+                            write fState;
+    function PostCodeToState(const aPostCode : String; const aSuburb : String;
+       const aFastLookup : Boolean) : String;
+  end;
+
+procedure TPostCode.SetPostCode(aValue : String);
+begin
+  fPostCode := aValue;
+  fSuburb   := FindSuburb(fPostCode);
+end;
+
+procedure TPostCode.SetSuburb(aValue : String);
+begin
+  fSuburb   := aValue;
+  fPostCode := FindPostCode(fSuburb);
+end;
+
+function  TPostCode.FindPostCode(aSuburb : String) : String;
+begin
+  if aSuburb <> EMPTY_STRING then
+  begin
+    if MainData.tblPostCodes.Locate('suburb;state',VarArrayOf([UpperCase(aSuburb),fState]),[]) then
+      Result := SV(tblPostCodespostcode.Value)
+    else
+      Result := EMPTY_STRING;
+  end
+  else
+  begin
+    // If they put in no suburb string then nothing gets looked up
+    Result := EMPTY_STRING;
+  end;
+end;
+
+function  TPostCode.FindSuburb(aPostCode : String) : String;
+begin
+  if tblPostCodes.Locate('postcode',aPostCode,[]) then
+    Result := SV(tblPostCodessuburb.Value)
+  else
+    Result := EMPTY_STRING;
+end;
+
+function TPostCode.PostCodeToState(const aPostCode : String;
+  const aSuburb : String; const aFastLookup : Boolean) : String;
+var
+  lMatchFound : Boolean;
+begin
+  if (tblPostCodes.Active and (not aFastLookup)) then
+  begin
+    // Look it up in the table as a first option
+    lMatchFound := tblPostCodes.Locate('postcode;suburb',
+      VarArrayOf([aPostCode,UpperCase(aSuburb)]),[]);
+    Result := SV(tblPostCodesstate.Value);
+  end
+  else
+    lMatchFound := False;
+
+  if not MatchFound then
+  begin
+    // Some postcodes are in more than one state.  In that case we need to work
+    // out the state from the Suburb.
+    if aPostCode = '3500' then
+    begin
+      if Pos('PARINGI',UpperCase(aSuburb)) <> 0 then
+      begin
+        Result := 'NSW'
+      end
+      else
+        Result := 'VIC';
+    end
+    else if aPostCode = '2540' then
+    begin
+      if Pos('JERVIS BAY',UpperCase(aSuburb)) <> 0 then
+      begin
+        Result := 'ACT'
+      end
+      else
+        Result := 'NSW';
+    end
+    else if aPostCode = '2620' then
+    begin
+      if (Pos('HUME',UpperCase(aSuburb)) <> 0)
+      or (Pos('THARWA',UpperCase(aSuburb)) <> 0) then
+      begin
+        Result := 'ACT'
+      end
+      else
+        Result := 'NSW';
+    end
+    else if aPostCode = '2611' then
+    begin
+      if (Pos('BRINDABELLA',UpperCase(aSuburb)) <> 0) then
+      begin
+        Result := 'NSW'
+      end
+      else
+        Result := 'ACT';
+    end
+    else if aPostCode = '3644' then
+    begin
+      if (Pos('BAROOGA',UpperCase(aSuburb)) <> 0) then
+      begin
+        Result := 'NSW'
+      end
+      else
+        Result := 'VIC';
+    end
+    // We don't know if the NT post codes will have the leading zero or not
+    // so we will lookup both
+    else if (aPostCode = '872') or (aPostCode = '0872') then
+    begin
+      if (Pos('ERNABELLA',UpperCase(aSuburb)) <> 0)
+      or (Pos('FREGON',UpperCase(aSuburb)) <> 0) then
+      begin
+        Result := 'SA'
+      end
+      else
+        Result := 'NT';
+    end
+    else
+    begin
+      // These are the states for postcodes that are only in one state
+      // These ones are unique instances of post codes outside the states
+      // standard ranges
+      if aPostCode = '9726' then
+        Result := 'QLD' //GOLD COAST MC
+      else if aPostCode = '200' then
+        Result := 'ACT' //AUSTRALIAN NATIONAL UNIVERSITY
+      else if (aPostCode = '8001'{MELBOURNE CITY MC})
+           or (aPostCode = '8002'{EAST MELBOURNE RP})
+           or (aPostCode = '8003'{MELB COLLINS ST EAST RPC-RET})
+           or (aPostCode = '8004'{ST KILDA ROAD RP})
+           or (aPostCode = '8005'{WORLD TRADE CENTRE})
+           or (aPostCode = '8006'{MELBOURNE ABECKETT STREET})
+           or (aPostCode = '8007'{MELB COLLINS STREET WEST})
+           or (aPostCode = '8008'{ST KILDA ROAD CENTRAL RP})
+           or (aPostCode = '8009'{MELBOURNE FLINDERS LANE})
+           or (aPostCode = '8010'{MELBOURNE LAW COURTS RP}) then
+        Result := 'VIC' //GOLD COAST MC
+      // These are the standard ranges that we can safely use to work out the
+      // state except in the above cases
+      // 800  - 899 = NT
+      // 1000 - 2599 = NSW
+      // 2600 - 2618 = ACT
+      // 2619 - 2899 = NSW
+      // 2900 - 2999 = ACT
+      // 3000 - 3999 = VIC
+      // 4000 - 4999 = QLD
+      // 5000 - 5999 = SA
+      // 6000 - 6999 = WA
+      // 7000 - 7999 = TAS
+      // We don't know if the NT post codes will have the leading zero or not
+      // so we will lookup both
+      else if ('800' <= aPostCode) and (aPostCode <= '899') then
+         Result := 'NT'
+      else if ('0800' <= aPostCode) and (aPostCode <= '0899') then
+         Result := 'NT'
+      else if ('1000' <= aPostCode) and (aPostCode <= '2599') then
+         Result := 'NSW'
+      else if ('2600' <= aPostCode) and (aPostCode <= '2618') then
+         Result := 'ACT'
+      else if ('2619' <= aPostCode) and (aPostCode <= '2899') then
+         Result := 'NSW'
+      else if ('2900' <= aPostCode) and (aPostCode <= '2999') then
+         Result := 'ACT'
+      else if ('3000' <= aPostCode) and (aPostCode <= '3999') then
+         Result := 'VIC'
+      else if ('4000' <= aPostCode) and (aPostCode <= '4999') then
+         Result := 'QLD'
+      else if ('5000' <= aPostCode) and (aPostCode <= '5999') then
+         Result := 'SA'
+      else if ('6000' <= aPostCode) and (aPostCode <= '6999') then
+         Result := 'WA'
+      else if ('7000' <= aPostCode) and (aPostCode <= '7999') then
+         Result := 'TAS'
+    end;
+  end;
+end;
