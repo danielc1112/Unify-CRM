@@ -1,0 +1,101 @@
+SUB-PROGRAMS
+
+-Create/View/Edit/Search Branches
+-Create/View/Edit/Search Members
+-Create/View/Edit/Search Users
+-Create/View/Edit AccessLevel
+-Create/View/Edit/Search ProgramAccessLevel
+-Settings
+-Replication Monitor
+-Email/Print Members
+-Merge Members
+-Activity History
+-Login Dialog
+
+SERVICE
+-Data Replication - Send, Receive, Acknowledge
+-Ipad Interface - Send, Receive, Acknowledge
+
+USER GUIDE
+
+INI FILE
+Server=
+DataBase=
+UserName=
+Password=
+BranchID=
+IDPrefix=
+
+TCoreData = class(TDataModule)
+property BranchID : String read fBranchID write fBranchID;
+property UserID : String read fUserID write SetUserID;
+property AccessLevel : Integer read fAccessLevel write fAccessLevel;
+
+procedure TCoreData.DataModuleCreate(Sender: TObject);
+begin
+   LoadIni;
+   OpenDB;
+   LoadSettings(fBranchID);
+end;
+
+procedure OpenDB;
+begin
+  dbBizFlex.Connected  := False;
+  dbBizFlex.Path       := fDBPath;
+  dbBizFlex.Username   := fDBUserName;
+  dbBizFlex.Password   := fDBPassword;
+  dbBizFlex.Server     := fDBServer;
+  dbBizFlex.Protocol   := cpTCP_IP;
+  dbBizFlex.Open;
+end;
+
+procedure LoadSettings(const BranchID : String);
+begin
+   //Load memory table of Name/Values from SETTINGS table
+end;
+
+function GetSetting(const aName : String; aDefault : String) : String;
+begin
+   //Locate on memory table and get value
+
+   //If can't locate Result := aDefault;
+end;
+
+procedure SetUserID(const aUserID : String);
+begin
+   fUserID := aUserID;
+   //load access level from USER table
+   //fAccessLevel := 
+end;
+
+prodecure LoadIni;
+var
+lIni : IniFile;
+lIniPath : String;
+begin
+  lIniPath := GetProgramPath + '\bflxwin.ini';
+
+  if not FileExists(lIniPath) then
+  begin
+     //Can't find ini, show message
+  end
+  else
+  begin
+    lIni := GetProgramPath + '\Unify.ini';
+    try
+      fDBServer       := lIni.ReadString('data','Server','');
+      fDBPath         := lIni.ReadString('data','DataBase','');
+      fDBUserName     := DCDecrypt(lIni.ReadString('data','UserName',''),723);
+      fDBPassword     := DCDecrypt(lIni.ReadString('data','Password',''),723);
+      fBranchID       := lIni.ReadString('data','BranchID','');
+    finally
+      BflxIni.Free;
+    end;
+end;
+
+procedure TCoreData.DataModuleDestroy(Sender: TObject);
+begin
+  mtbSettings.Close;
+  unifyDB.Connected := False;
+  inherited;
+end;

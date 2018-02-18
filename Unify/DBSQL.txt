@@ -1,0 +1,345 @@
+delete from NEXTNUM;
+delete from CONTACT;
+delete from BRANCH;
+delete from USERS;
+delete from USERLEVEL;
+delete from KEYWORD;
+delete from PROGRAM;
+delete from ACTIVITYLOG;
+delete from SETTINGS;
+delete from EMAILLOG;
+delete from STALL;
+delete from ITEM;
+delete from ITEMSOLD;
+delete from POSTALFIND;
+delete from EMAILDOMAIN;
+delete from CONTACTFIELDS;
+delete from CONTACTDROPDOWNS;
+
+drop table NEXTNUM;
+drop table CONTACT;
+drop table BRANCH;
+drop table USERS;
+drop table USERLEVEL;
+drop table KEYWORD;
+drop table PROGRAM;
+drop table SETTINGS;
+drop table ACTIVITYLOG;
+drop table EMAILLOG;
+drop table STALL;
+drop table ITEM;
+drop table ITEMSOLD;
+drop table POSTALFIND;
+drop table EMAILDOMAIN;
+drop table CONTACTFIELDS;
+drop table CONTACTDROPDOWNS;
+
+create table NEXTNUM (
+  nextnum_id varchar(14),
+  table_name varchar(20) 
+);
+
+CREATE UNIQUE INDEX NEXTNUM1 ON NEXTNUM(table_name);
+
+insert into NEXTNUM(nextnum_id, table_name) VALUES ('ME000000000001', 'CONTACT');
+insert into NEXTNUM(nextnum_id, table_name) VALUES ('ME000000000001', 'BRANCH');
+insert into NEXTNUM(nextnum_id, table_name) VALUES ('ME000000000002', 'USERS');
+insert into NEXTNUM(nextnum_id, table_name) VALUES ('ME000000000002', 'USERLEVEL');
+insert into NEXTNUM(nextnum_id, table_name) VALUES ('ME000000000001', 'KEYWORD');
+insert into NEXTNUM(nextnum_id, table_name) VALUES ('ME000000000008', 'PROGRAM');
+insert into NEXTNUM(nextnum_id, table_name) VALUES ('ME000000000001', 'ACTIVITYLOG');
+insert into NEXTNUM(nextnum_id, table_name) VALUES ('ME000000000001', 'SETTINGS');
+insert into NEXTNUM(nextnum_id, table_name) VALUES ('ME000000000001', 'STALL');
+insert into NEXTNUM(nextnum_id, table_name) VALUES ('ME000000000001', 'ITEM');
+insert into NEXTNUM(nextnum_id, table_name) VALUES ('ME000000000001', 'ITEMSOLD');
+insert into NEXTNUM(nextnum_id, table_name) VALUES ('ME000000000001', 'POSTALFIND');
+insert into NEXTNUM(nextnum_id, table_name) VALUES ('ME000000000001', 'SAVEDSEARCH');
+
+create table CONTACTFIELDS(
+  field_name varchar(32) not null primary key,
+  display_name varchar(32) not null,
+  default_value varchar(32),
+  field_type varchar(1) not null,
+  char_case varchar(1) not null,
+  can_search varchar(1) not null,
+  required varchar(1) not null,
+  display_order integer not null,
+  visible varchar(1) not null,
+  fsize integer not null,
+
+  created timestamp default current_timestamp,
+  created_by varchar(14),
+  updated timestamp default current_timestamp,
+  updated_by varchar(14)
+);
+
+CREATE UNIQUE INDEX CONTACTFIELDS1 ON CONTACTFIELDS(field_name);
+CREATE UNIQUE INDEX CONTACTFIELDS1 ON CONTACTFIELDS(display_name);
+
+create table CONTACTDROPDOWNS(
+  field_name varchar(32) not null,
+  dropdown varchar(128) not null,
+  description varchar(150),
+  active_ind varchar(1) not null,
+
+  created timestamp default current_timestamp,
+  created_by varchar(14),
+  updated timestamp default current_timestamp,
+  updated_by varchar(14) 
+);
+
+CREATE UNIQUE INDEX CONTACTDROPDOWNS1 ON CONTACTDROPDOWNS(field_name, dropdown);
+
+create table SAVEDSEARCH(
+   saved_search_id varchar(14) not null,
+   description varchar(32),
+
+   created timestamp default current_timestamp,
+   created_by varchar(14)
+);
+
+create table SAVEDSEARCHDTL(
+   saved_search_id varchar(14) not null,
+   field_name varchar(32) not null,
+   field_type varchar(1),
+   ranged varchar(1),
+   field_value varchar(331),   
+   search_type varchar(1),
+   case_sensitive varchar(1),
+   from varchar(32),
+   to varchar(32),
+   from_date timestamp,
+   to_date timestamp
+);
+
+create table PROGRAM(
+  program_id varchar(14) not null primary key,
+  program_name varchar(32) not null,
+  description varchar(32) not null, 
+  view_user_level_id varchar(14),
+  create_user_level_id varchar(14),
+  delete_user_level_id varchar(14),
+  import_user_level_id varchar(14),
+  export_user_level_id varchar(14),
+  created timestamp default current_timestamp,
+  created_by varchar(14),
+  updated timestamp default current_timestamp,
+  updated_by varchar(14)
+);
+
+CREATE UNIQUE INDEX PROGRAM1 ON PROGRAM(program_id);
+
+create table ACTIVITYLOG(
+  activitylog_id varchar(14) not null primary key,
+  program_id varchar(14) not null,
+  activity_ind varchar(1) not null,
+
+  created timestamp default current_timestamp,
+  created_by varchar(14)
+);
+
+CREATE INDEX ACTIVITYLOG1 ON ACTIVITYLOG(created);
+
+insert into PROGRAM(program_id, program_name, description, view_user_level_id, create_user_level_id, delete_user_level_id, import_user_level_id, export_user_level_id) VALUES ('ME000000000004', 'dConfiguration', 'Configuration', 'ME000000000001', 'ME000000000001', 'ME000000000001', 'ME000000000001', 'ME000000000001');
+insert into PROGRAM(program_id, program_name, description, view_user_level_id, create_user_level_id, delete_user_level_id, import_user_level_id, export_user_level_id) VALUES ('ME000000000005', 'dReports', 'Reports', 'ME000000000001', 'ME000000000001', 'ME000000000001', 'ME000000000001', 'ME000000000001');
+insert into PROGRAM(program_id, program_name, description, view_user_level_id, create_user_level_id, delete_user_level_id, import_user_level_id, export_user_level_id) VALUES ('ME000000000003', 'dUsers', 'Users', 'ME000000000001', 'ME000000000001', 'ME000000000001', 'ME000000000001', 'ME000000000001');
+insert into PROGRAM(program_id, program_name, description, view_user_level_id, create_user_level_id, delete_user_level_id, import_user_level_id, export_user_level_id) VALUES ('ME000000000002', 'dBranches', 'Branches', 'ME000000000001', 'ME000000000001', 'ME000000000001', 'ME000000000001', 'ME000000000001');
+insert into PROGRAM(program_id, program_name, description, view_user_level_id, create_user_level_id, delete_user_level_id, import_user_level_id, export_user_level_id) VALUES ('ME000000000001', 'dContacts', 'Contacts', 'ME000000000001', 'ME000000000001', 'ME000000000001', 'ME000000000001', 'ME000000000001');
+insert into PROGRAM(program_id, program_name, description, view_user_level_id, create_user_level_id, delete_user_level_id, import_user_level_id, export_user_level_id) VALUES ('ME000000000006', 'dBackup', 'Backup', 'ME000000000001', 'ME000000000001', 'ME000000000001', 'ME000000000001', 'ME000000000001');
+
+create table CONTACT (
+  contact_id varchar(14) not null,
+  active_ind varchar(1) not null,
+  branch_id varchar(14), 
+  email_valid varchar(1),  
+  keywords varchar(10*32 + 11),
+
+  created timestamp default current_timestamp,
+  created_by varchar(14),
+  updated timestamp default current_timestamp,
+  updated_by varchar(14)
+);
+
+CREATE UNIQUE INDEX CONTACT1 ON CONTACT(contact_id);
+CREATE INDEX CONTACT2 ON CONTACT(active_ind);
+
+create table POSTALFIND(
+  postalfind_id varchar(14),
+  suburb varchar(32) not null,
+  postcode varchar(8) not null,
+  pstate varchar(4) not null,
+  area varchar(32),
+
+  created timestamp default current_timestamp,
+  created_by varchar(14),
+  updated timestamp default current_timestamp,
+  updated_by varchar(14) 
+);
+
+CREATE INDEX POSTALFIND1 ON POSTALFIND(postcode);
+CREATE INDEX POSTALFIND2 ON POSTALFIND(suburb, pstate);
+CREATE INDEX POSTALFIND3 ON POSTALFIND(postcode, pstate);
+
+create table KEYWORD(
+  keyword_id varchar(14) not null,
+  description varchar(32) not null primary key,
+  active_ind varchar(1) not null,
+
+  created timestamp default current_timestamp,
+  created_by varchar(14),
+  updated timestamp default current_timestamp,
+  updated_by varchar(14)
+);
+
+create table BRANCH(
+  branch_id varchar(14) not null,
+  branch_prefix varchar(2),
+  description varchar(32) not null,
+  active_ind varchar(1) not null, 
+  street1 varchar(32), 
+  street2 varchar(32), 
+  suburb varchar(32), 
+  postcode varchar(12), 
+  bstate varchar(12), 
+  country varchar(12),
+  email varchar(64), 
+  phone varchar(16), 
+  mobile varchar(16),
+
+  created timestamp default current_timestamp,
+  created_by varchar(14),
+  updated timestamp default current_timestamp,
+  updated_by varchar(14)
+);
+
+CREATE UNIQUE INDEX BRANCH1 ON BRANCH(branch_id);
+
+create table USERS(
+  user_id varchar(14) not null,
+  user_name varchar(12) not null, 
+  password varchar(12) not null,
+  display_name varchar(32) not null,
+  active_ind varchar(1) not null, 
+  user_level_id varchar(14) not null,  
+  contact_id varchar(14),
+
+  created timestamp default current_timestamp,
+  created_by varchar(14),
+  updated timestamp default current_timestamp,
+  updated_by varchar(14)
+);
+
+CREATE UNIQUE INDEX USERS1 ON USERS(user_id);
+
+create table USERLEVEL(
+  user_level_id varchar(14) not null primary key,
+  description varchar(32) not null, 
+  level int not null,
+
+  created timestamp default current_timestamp,
+  created_by varchar(14),
+  updated timestamp default current_timestamp,
+  updated_by varchar(14)
+);
+
+CREATE UNIQUE INDEX USERLEVEL1 ON USERLEVEL(user_level_id);
+
+insert into USERLEVEL(user_level_id, description, level, created_by, updated_by) VALUES ('000000000001', 'Dev', 0, '000000000001', '000000000001');
+insert into USERS(user_id, user_name, password, display_name, active_ind, user_level_id, created_by, updated_by) VALUES ('000000000001','1','1','Development', 'Y','000000000001','000000000001', '000000000001');
+
+create table SETTINGS(
+  setting_id varchar(14) not null primary key,
+  name varchar(32) not null, 
+  dvalue varchar(64) not null, 
+  branch_id varchar(14),
+  active_ind varchar(1) not null,
+
+  created timestamp default current_timestamp,
+  created_by varchar(14),
+  updated timestamp default current_timestamp,
+  updated_by varchar(14)
+);
+
+create table EMAILDOMAIN(
+  email_domain varchar(64) not null primary key
+);
+
+
+
+//////////////////MOBILE///////////////////
+
+create table STALL(
+  stall_id varchar(14) not null,
+  description varchar(32) not null,
+  datetime timestamp default current_timestamp,
+
+  created timestamp default current_timestamp,
+  created_by varchar(14)
+);
+
+create table ITEMS(
+  item_id varchar(14) not null primary key,
+  description varchar(32) not null,
+  active_ind varchar(1) not null,
+
+  created timestamp default current_timestamp,
+  created_by varchar(14)
+);
+
+create table ITEMSSOLD(
+  item_sold_id varchar(14) not null primary key,
+  stall_id varchar(14),
+  item_id varchar(14),
+  contact_id varchar(14),
+  datetime timestamp default current_timestamp,
+
+  created timestamp default current_timestamp,
+  created_by varchar(14)
+);
+
+///////////////////////REPLICATION////////////////////////
+
+
+create table REPNODES(
+    varchar(12) not null primary key,
+
+
+
+  created timestamp default current_timestamp,
+  created_by varchar(12),
+  updated timestamp default current_timestamp,
+  updated_by varchar(12)
+);
+
+create table REPINSERT(
+   varchar(12) not null primary key,
+
+
+
+  created timestamp default current_timestamp,
+  created_by varchar(12),
+  updated timestamp default current_timestamp,
+  updated_by varchar(12)
+);
+
+create table REPUPDATE(
+    varchar(12) not null primary key,
+
+
+
+  created timestamp default current_timestamp,
+  created_by varchar(12),
+  updated timestamp default current_timestamp,
+  updated_by varchar(12)
+);
+
+create table REPDELETE(
+    varchar(12) not null primary key,
+
+
+
+  created timestamp default current_timestamp,
+  created_by varchar(12),
+  updated timestamp default current_timestamp,
+  updated_by varchar(12)
+);

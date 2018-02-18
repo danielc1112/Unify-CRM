@@ -1,0 +1,3187 @@
+;  ************************************************************************
+;  by Lorenzo Mengoni - (Ancona, Italy)
+;  This file is part of IBOConsole look at www.mengoni.it
+;  for suggestion and contributions email to lorenzo@mengoni.com
+;  This software is distributed under the License is distributed on
+;  an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either
+;  express or implied. See the ORIGINAL Copyright in source files
+; 
+;  last update 30.December.2003, Lorenzo
+
+[frmServerLogin]
+Class=TfrmServerLogin
+Caption=Accesso al server
+Hint=
+[frmOptions]
+Class=TfrmOptions
+Caption=Opzioni
+Hint=
+[dlgWindowList]
+Class=TdlgWindowList
+Caption=Finestre Attive
+Hint=
+[frmDBConnections]
+Class=TdlgWindowList
+Caption=Utenti Connessi
+Hint=
+[frmEditorOptions]
+Class=TfrmEditorOptions
+Caption=Opzioni della sintassi SQL evidenziata
+Hint=
+[frmCommDiag]
+Class=TfrmCommDiag
+Caption=Diagnosi Connessione
+Hint=
+[frmDBBackup]
+Class=TfrmDBBackup
+Caption=Salvataggio Database
+Hint=
+[frmDBStatistics]
+Class=TfrmDBStatistics
+Caption=Statistiche Database
+Hint=
+[frmTextViewer]
+Class=TfrmTextViewer
+Caption=Ripristino Database
+Hint=
+[frmDBProperties]
+Class=TfrmDBProperties
+Caption=Caratteristiche Database
+Hint=
+[frmDBRegister]
+Class=TfrmDBRegister
+Caption=Configurazione della connessione al Database
+Hint=
+[frmDBShutdown]
+Class=TfrmDBShutdown
+Caption=Shutdown del Database
+Hint=
+[frmDBValidation]
+Class=TfrmDBValidation
+Caption=Controllo del Database
+Hint=
+[frmUserInfo]
+Class=TfrmUserInfo
+Caption=Dati degli utenti
+Hint=
+[frmServerProperties]
+Class=TfrmServerProperties
+Caption=Caratteristiche del server
+Hint=
+[frmMain.IB_TransactionBarDefault]
+Class=TIB_TransactionBar_Button
+Caption=
+Hint=Close Current Transaction
+[frmMain.IB_TransactionBarDDL]
+Class=TIB_TransactionBar_Button
+Caption=
+Hint=Close Current Transaction
+[frmMain.FrameGenerators1.DBGrid1]
+Class=TDBGrid
+Hint=
+Columns.Count=2
+Column0.Caption=Generatore
+Column1.Caption=Valore
+[frmMain.FrameGenerators1.NewGenerator1]
+Class=TMenuItem
+Caption=Nuovo Generatore
+Hint=
+[frmMain.FrameGenerators1.EditGenerator1]
+Class=TMenuItem
+Caption=Modifica Generatore
+Hint=
+[frmMain.FrameGenerators1.DropGenerator1]
+Class=TMenuItem
+Caption=Elimina Generatore
+Hint=
+[frmMain.lvObjects]
+Class=TListView
+Hint=
+Columns.Count=4
+Column0.Caption=Nome
+Column1.Caption=Descrizione
+Column2.Caption=Ultimo Accesso
+Column3.Caption=Connessioni
+[frmMain.Console1]
+Class=TMenuItem
+Caption=&Console
+Hint=
+[frmMain.View1]
+Class=TMenuItem
+Caption=&Visualizza
+Hint=
+[frmMain.Server1]
+Class=TMenuItem
+Caption=&Server
+Hint=
+[frmMain.Database1]
+Class=TMenuItem
+Caption=&Database
+Hint=
+[frmMain.Maintenance2]
+Class=TMenuItem
+Caption=&Manutenzione
+Hint=
+[frmMain.BackupRestore1]
+Class=TMenuItem
+Caption=Salvataggio/Ripristino
+Hint=
+[frmMain.ConnectAs3]
+Class=TMenuItem
+Caption=Nuova connessione...
+Hint=Connessione ad un database
+[frmMain.Help1]
+Class=TMenuItem
+Caption=&Aiuto
+Hint=
+[frmMain.Maintenance1]
+Class=TMenuItem
+Caption=&Manutenzione
+Hint=
+[frmMain.BackupRestore2]
+Class=TMenuItem
+Caption=Salvataggio/Ripristino
+Hint=Salvataggio e ripristino di un database
+[frmMain.ConsoleExit]
+Class=TAction
+Caption=&Esci
+Hint=Chiudi IBOConsole
+[frmMain.ViewList]
+Class=TAction
+Caption=&Lista
+Hint=
+[frmMain.ViewReport]
+Class=TAction
+Caption=&Dettagli
+Hint=
+[frmMain.ViewIcon]
+Class=TAction
+Caption=Icone
+Hint=
+[frmMain.ViewSmallIcon]
+Class=TAction
+Caption=Icone Piccole
+Hint=
+[frmMain.ViewProperties]
+Class=TAction
+Caption=&Proprietà ...
+Hint=Mostra le Proprietà dell'oggetto
+[frmMain.ViewSystem]
+Class=TAction
+Caption=Oggetti di sistema
+Hint=Visualizza le tabelle usate internamente del sistema per gestire i dati
+[frmMain.HelpContents]
+Class=THelpContents
+Caption=&Contentuti
+Hint=
+[frmMain.HelpOnHelp]
+Class=THelpOnHelp
+Caption=&Guida all'uso dell'aiuto
+Hint=
+[frmMain.HelpTopicSearch]
+Class=THelpTopicSearch
+Caption=&Cerca Argomento
+Hint=
+[frmMain.HelpAbout]
+Class=TAction
+Caption=&A Proposito ...
+Hint=
+[frmMain.EditCopy]
+Class=TEditCopy
+Caption=&Copia
+Hint=Copia
+[frmMain.EditCut]
+Class=TEditCut
+Caption=&Taglia
+Hint=Taglia
+[frmMain.EditPaste]
+Class=TEditPaste
+Caption=&Incolla
+Hint=Incolla
+[frmMain.EditSelectAll]
+Class=TEditSelectAll
+Caption=Seleziona t&utto
+Hint=
+[frmMain.EditUndo]
+Class=TEditUndo
+Caption=A&nnulla
+Hint=
+[frmMain.EditFont]
+Class=TAction
+Caption=&Carattere ...
+Hint=Cambia il carattere usato nel programma
+[frmMain.WindowList]
+Class=TAction
+Caption=&Finestre
+Hint=
+[frmMain.UserAdd]
+Class=TAction
+Caption=&Nuovo Utente ...
+Hint=Aggiunge un utente sul server
+[frmMain.UserModify]
+Class=TAction
+Caption=&Modifica Utente ...
+Hint=Modifica un utente sul server
+[frmMain.UserDelete]
+Class=TAction
+Caption=&Elimina Utente
+Hint=Elimina un utente sul server
+[frmMain.ServerLogout]
+Class=TAction
+Caption=&Disconnetti
+Hint=Disconnette dal server selezionato
+[frmMain.ServerSecurity]
+Class=TAction
+Caption=Ge&stione Utenti...
+Hint=Gestione degli utenti sul server
+[frmMain.ServerProperties]
+Class=TAction
+Caption=&Caratteristiche ...
+Hint=Visualizza le Caratteristiche del Server
+[frmMain.DatabaseDisconnect]
+Class=TAction
+Caption=&Disconnetti
+Hint=Chiude la connessione al database selezionato
+[frmMain.DatabaseProperties]
+Class=TAction
+Caption=&Caratteristiche ...
+Hint=Caratteristiche del database selezionato
+[frmMain.DatabaseStatistics]
+Class=TAction
+Caption=Statistiche del &Database...
+Hint=Visualizza le statistiche del database selezionato
+[frmMain.DatabaseShutdown]
+Class=TAction
+Caption=&Shutdown ...
+Hint=Impedisce agli utenti normali di accedere al database
+[frmMain.DatabaseSweep]
+Class=TAction
+Caption=&Sweep
+Hint=Effettua la pulizia del file del database
+[frmMain.DatabaseRecoverTrans]
+Class=TAction
+Caption=Recupero &Transazioni...
+Hint=Recupera le transazioni nel limbo
+[frmMain.DatabaseMetadata]
+Class=TAction
+Caption=Visualizza &Metadati...
+Hint=Estrae tutti i metadati del database
+[frmMain.DatabaseRestart]
+Class=TAction
+Caption=&Ripartenza
+Hint=Ripartenza database
+[frmMain.DatabaseDrop]
+Class=TAction
+Caption=Elimina Database
+Hint=Elimina il file del database dal server
+[frmMain.DBCBackup]
+Class=TAction
+Caption=Salvataggio Database
+Hint=esegue il backup del database
+[frmMain.DatabaseUsers]
+Class=TAction
+Caption=&Utenti Connessi...
+Hint=Mostra la lista degli utenti attualmente collegati al server
+[frmMain.DBCRestore]
+Class=TAction
+Caption=Ripristino Database
+Hint=Ricrea un database da un salvataggio
+[frmMain.ServerLogin]
+Class=TAction
+Caption=&Collegamento...
+Hint=Esegue l'accesso al server scelto
+[frmMain.ServerRegister]
+Class=TAction
+Caption=&Configura un Server...
+Hint=Configura un Server per un accesso rapido
+[frmMain.ServerUnregister]
+Class=TAction
+Caption=&Sconfigura Server
+Hint=Elimina i dati del Server dalla configurazione
+[frmMain.ServerConnection]
+Class=TAction
+Caption=&Diagnosi connessione ...
+Hint=Esecuzione di controlli sul collegamento al server selezionato
+[frmMain.ServerActionProps]
+Class=TAction
+Caption=&Caratteristiche ...
+Hint=Mostra le caratteristiche del server selezionato
+[frmMain.DatabaseRegister]
+Class=TAction
+Caption=&Configura...
+Hint=Configura i dati di un database per un accesso rapido
+[frmMain.DatabaseUnregister]
+Class=TAction
+Caption=&Sconfigura Database
+Hint=Elimina i dati del database dalla configurazione
+[frmMain.DatabaseConnect]
+Class=TAction
+Caption=&Connetti
+Hint=Attiva la connessione al database scelto
+[frmMain.DatabaseConnectAs]
+Class=TAction
+Caption=Connetti &Come ...
+Hint=Attiva la connessione al database scelto specificando l'utente da usare
+[frmMain.DatabaseCreate]
+Class=TAction
+Caption=C&rea un Database ...
+Hint=Crea un nuovo database
+[frmMain.DatabaseValidate]
+Class=TAction
+Caption=&Controllo Database ...
+Hint=Controllo della struttura del database
+[frmMain.DatabaseActionsProperties]
+Class=TAction
+Caption=Caratteristiche ...
+Hint=Mostra le caratteristiche del database
+[frmMain.ExtToolsLaunchISQL]
+Class=TAction
+Caption=S&QL Interattivo...
+Hint=Esecuzione di query in modo interattivo
+[frmMain.ExtToolsConfigure]
+Class=TAction
+Caption=&Configura Strumenti ...
+Hint=
+[frmMain.ExtToolDropDown]
+Class=TAction
+Caption=&Strumenti
+Hint=
+[frmMain.DatabaseBackup]
+Class=TAction
+Caption=&Salvataggio ...
+Hint=Esegue il Backup di un database
+[frmMain.DatabaseRestore]
+Class=TAction
+Caption=&Ripristino ...
+Hint=Ripristina un database
+[frmMain.BackupRestoreModifyAlias]
+Class=TAction
+Caption=&Modifica Salvataggio...
+Hint=Modifica la configurazione di un salvataggio
+[frmMain.BackupRestoreRemoveAlias]
+Class=TAction
+Caption=&Elimina Alias
+Hint=Sconfigura un Alias di un salvataggio
+[frmMain.ViewServerLog]
+Class=TAction
+Caption=&Visualizza il file di registro...
+Hint=Visualizza il file di registro degli eventi del server selezionato
+[frmMain.ObjectDescription]
+Class=TAction
+Caption=Modifica &Descrizione ...
+Hint=Cambia la descrizione dell'oggetto selezionato
+[frmMain.ObjectCreate]
+Class=TAction
+Caption=&Nuovo ...
+Hint=Crea un nuovo oggetto del tipo selezionato
+[frmMain.ObjectModify]
+Class=TAction
+Caption=&Modifica ...
+Hint=Modifica l'oggetto selezionato
+[frmMain.ObjectDelete]
+Class=TAction
+Caption=&Elimina...
+Hint=Elimina l'oggetto selezionato
+[frmMain.ObjectExtract]
+Class=TAction
+Caption=E&strai metadata...
+Hint=Visualizza i metadata dell'oggetto selezionato
+[frmMain.ObjectProperties]
+Class=TAction
+Caption=&Caratteristiche ...
+Hint=
+[frmMain.ObjectRefresh]
+Class=TAction
+Caption=&Aggiorna
+Hint=Aggiorna la lista visualizzata
+[frmMain.HighlightOptions]
+Class=TAction
+Caption=Configurazione Evidenziazione Sintassi
+Hint=
+[frmMain.DatabaseWindows]
+Class=TAction
+Caption=Finestre relative al &Database
+Hint=
+[frmMain.ActionOptions]
+Class=TAction
+Caption=Opzioni...
+Hint=
+[frmMain.actHighlightOptions]
+Class=TAction
+Caption=Opzioni Evidenziazione Sintassi...
+Hint=
+[frmServerLogin.lblServerName]
+Class=TLabel
+Caption=Server:
+Hint=
+[frmServerLogin.lblUsername]
+Class=TLabel
+Caption=&Nome Utente:
+Hint=
+[frmServerLogin.lblPassword]
+Class=TLabel
+Caption=&Password:
+Hint=
+[frmServerLogin.lblServer]
+Class=TLabel
+Caption=Server Locale
+Hint=
+[frmServerLogin.btnLogin]
+Class=TButton
+Caption=&Accesso
+Hint=
+[frmServerLogin.btnCancel]
+Class=TButton
+Caption=A&nnulla
+Hint=
+[frmDBStatistics.lblOptions]
+Class=TLabel
+Caption=O&pzioni:
+Hint=
+[frmDBStatistics.lblDatabaseName]
+Class=TLabel
+Caption=Database:
+Hint=
+[frmDBStatistics.btnOK]
+Class=TButton
+Caption=&OK
+Hint=
+[frmDBStatistics.btnCancel]
+Class=TButton
+Caption=A&nnulla
+Hint=
+[frmTextViewer.mnuFile]
+Class=TMenuItem
+Caption=&File
+Hint=
+[frmTextViewer.mnuFiSaveAs]
+Class=TMenuItem
+Caption=&Salva ...
+Hint=Salva su di un nuovo file
+[frmTextViewer.mnuFiPrint]
+Class=TMenuItem
+Caption=Stam&pa
+Hint=
+[frmTextViewer.mnuFiExit]
+Class=TMenuItem
+Caption=C&hiudi
+Hint=Chiude la finestra
+[frmTextViewer.mnuEdit]
+Class=TMenuItem
+Caption=&Modifica
+Hint=
+[frmTextViewer.mnuEdFind]
+Class=TMenuItem
+Caption=&Trova
+Hint=Cerca del testo
+[frmTextViewer.EditCopy1]
+Class=TEditCopy
+Caption=&Copia
+Hint=Copia negli appunti
+[frmTextViewer.EditCut1]
+Class=TEditCut
+Caption=&Taglia
+Hint=Taglia negli appunti
+[frmTextViewer.EditPaste1]
+Class=TEditPaste
+Caption=&Incolla
+Hint=Incolla dagli appunti
+[frmTextViewer.EditSelectAll1]
+Class=TEditSelectAll
+Caption=Seleziona T&utto
+Hint=
+[frmTextViewer.EditUndo1]
+Class=TEditUndo
+Caption=A&nnulla
+Hint=
+[frmTextViewer.EditFont]
+Class=TAction
+Caption=&Carattere ...
+Hint=Cambia il carattere usato
+[frmDBProperties.lblServerName]
+Class=TLabel
+Caption=Server:
+Hint=
+[frmDBProperties.lblServer]
+Class=TLabel
+Caption=Server Locale
+Hint=
+[frmDBProperties.pgcMain]
+Class=TPageControl
+Hint=
+PageCount=2
+[frmDBProperties.pgcMain.TabAlias]
+Class=TTabSheet
+Caption=Alias
+Hint=
+[frmDBProperties.pgcMain.TabGeneral]
+Class=TTabSheet
+Caption=Generali
+Hint=
+[frmDBProperties.TabAlias]
+Class=TTabSheet
+Caption=Alias
+Hint=
+[frmDBProperties.lblAliasName]
+Class=TLabel
+Caption=Nome A&lias:
+Hint=
+[frmDBProperties.lblFilename]
+Class=TLabel
+Caption=&File:
+Hint=
+[frmDBProperties.btnSelFilename]
+Class=TButton
+Caption=...
+Hint=Selziona il database
+[frmDBProperties.TabGeneral]
+Class=TTabSheet
+Caption=Generali
+Hint=
+[frmDBProperties.lblOptions]
+Class=TLabel
+Caption=O&pzioni:
+Hint=
+[frmDBProperties.gbSummaryInfo]
+Class=TGroupBox
+Caption= Sommario delle informazioni
+Hint=
+[frmDBProperties.lblDBOwner]
+Class=TLabel
+Caption=Proprietario:
+Hint=
+[frmDBProperties.lblDBPages]
+Class=TLabel
+Caption=Pagine di database Allocate:
+Hint=
+[frmDBProperties.lblPageSize]
+Class=TLabel
+Caption=Dimensione Pagina:
+Hint=
+[frmDBProperties.lblOwner]
+Class=TLabel
+Caption=SYSDBA
+Hint=
+[frmDBProperties.lblPages]
+Class=TLabel
+Caption=20750
+Hint=
+[frmDBProperties.lblPgSize]
+Class=TLabel
+Caption=4096
+Hint=
+[frmDBProperties.lvSecondaryFiles]
+Class=TListView
+Hint=
+Columns.Count=2
+Column0.Caption=File Secondari
+Column1.Caption=Pagina d'inizio
+[frmDBProperties.btnApply]
+Class=TButton
+Caption=A&pplica
+Hint=
+[frmDBProperties.btnCancel]
+Class=TButton
+Caption=&OK
+Hint=
+[frmDBProperties.Button1]
+Class=TButton
+Caption=A&nnulla
+Hint=
+[dlgWindowList.ListView1]
+Class=TListView
+Hint=
+Columns.Count=1
+Column0.Caption=Finestre
+[dlgWindowList.SwitchTo]
+Class=TAction
+Caption=&Passa A...
+Hint=
+[dlgWindowList.Closewindow]
+Class=TAction
+Caption=&Chiudi Finestra
+Hint=
+[dlgWindowList.ActionCloseAll]
+Class=TAction
+Caption=Chiudi &Tutte
+Hint=
+[frmDomains.pgObjectEditor]
+Class=TPageControl
+Hint=
+PageCount=5
+[frmDomains.pgObjectEditor.tsMain]
+Class=TTabSheet
+Caption=Dominio
+Hint=
+[frmDomains.pgObjectEditor.tsDefault]
+Class=TTabSheet
+Caption=Default
+Hint=
+[frmDomains.pgObjectEditor.tsConstraint]
+Class=TTabSheet
+Caption=Controllo
+Hint=
+[frmDomains.pgObjectEditor.tsDescription]
+Class=TTabSheet
+Caption=Descrizione
+Hint=
+[frmDomains.pgObjectEditor.tsDDL]
+Class=TTabSheet
+Caption=Metadati
+Hint=
+[frmDomains.tsMain]
+Class=TTabSheet
+Caption=Dominio
+Hint=
+[frmDomains.Label1]
+Class=TLabel
+Caption=&Dominio:
+Hint=
+[frmDomains.Label3]
+Class=TLabel
+Caption=&Tipo:
+Hint=
+[frmDomains.Label4]
+Class=TLabel
+Caption=&Lunghezza:
+Hint=
+[frmDomains.Label9]
+Class=TLabel
+Caption=Set di C&aratteri:
+Hint=
+[frmDomains.Label2]
+Class=TLabel
+Caption=Ordinamento:
+Hint=
+[frmDomains.Label14]
+Class=TLabel
+Caption=&Precisione:
+Hint=
+[frmDomains.Label15]
+Class=TLabel
+Caption=&Scala:
+Hint=
+[frmDomains.Label18]
+Class=TLabel
+Caption=&Sotto Tipo:
+Hint=
+[frmDomains.Label6]
+Class=TLabel
+Caption=Set di C&aratteri:
+Hint=
+[frmDomains.Label11]
+Class=TLabel
+Caption=Lungh.Segmento:
+Hint=
+[frmDomains.Label5]
+Class=TLabel
+Caption=Ordinamento:
+Hint=
+[frmDomains.chkColNotNull]
+Class=TCheckBox
+Caption=Non vuoto
+Hint=
+[frmDomains.Label10]
+Class=TLabel
+Caption=&Matrice:
+Hint=
+[frmDomains.lvArray]
+Class=TListView
+Hint=
+Columns.Count=2
+Column0.Caption=Limite Inferiore
+Column1.Caption=Limite Superiore
+[frmDomains.btnAddDimension]
+Class=TButton
+Caption=&Aggiungi Dimensione
+Hint=
+[frmDomains.btnDeleteDimension]
+Class=TButton
+Caption=&Elimina Dimensione
+Hint=
+[frmDomains.btnEditDimension]
+Class=TButton
+Caption=&Modifica Dimensione
+Hint=
+[frmDomains.tsDefault]
+Class=TTabSheet
+Caption=Default
+Hint=
+[frmDomains.tsConstraint]
+Class=TTabSheet
+Caption=Controllo
+Hint=
+[frmDomains.tsDescription]
+Class=TTabSheet
+Caption=Descrizione
+Hint=
+[frmDomains.tsDDL]
+Class=TTabSheet
+Caption=Metadata
+Hint=
+[frmDomains.ActionCompile]
+Class=TAction
+Caption=&Compila
+Hint=
+[frmEditorTable.pgcProperties]
+Class=TPageControl
+Hint=
+PageCount=6
+[frmEditorTable.pgcProperties.tabProperties]
+Class=TTabSheet
+Caption=Caratteristiche
+Hint=
+[frmEditorTable.pgcProperties.tabData]
+Class=TTabSheet
+Caption=Dati
+Hint=
+[frmEditorTable.pgcProperties.tabMetadata]
+Class=TTabSheet
+Caption=Metadati
+Hint=
+[frmEditorTable.pgcProperties.tabPermissions]
+Class=TTabSheet
+Caption=Autorizzazioni
+Hint=
+[frmEditorTable.pgcProperties.tabDependencies]
+Class=TTabSheet
+Caption=Dipendenze
+Hint=
+[frmEditorTable.pgcProperties.tabDescription]
+Class=TTabSheet
+Caption=Descrizione
+Hint=
+[frmEditorTable.tabProperties]
+Class=TTabSheet
+Caption=Caratteristiche
+Hint=
+[frmEditorTable.lvTableObjects]
+Class=TListView
+Hint=
+Columns.Count=6
+Column0.Caption=Nome
+Column1.Caption=Tipo
+Column2.Caption=Set Caratteri
+Column3.Caption=Ordinamento
+Column4.Caption=Valore di Default
+Column5.Caption=Nullo Consentito
+[frmEditorTable.tabData]
+Class=TTabSheet
+Caption=Dati
+Hint=
+[frmEditorTable.dbgData]
+Class=TDBGrid
+Hint=
+Columns.Count=1
+Column0.Caption=
+[frmEditorTable.DBNavigator1]
+Class=TNavButton
+Caption=
+Hint=Aggoirna dati
+[frmEditorTable.IB_TransactionBar1]
+Class=TIB_TransactionBar_Button
+Caption=
+Hint=Close Current Transaction
+[frmEditorTable.tabMetadata]
+Class=TTabSheet
+Caption=Metadati
+Hint=
+[frmEditorTable.cbExtractData]
+Class=TCheckBox
+Caption=Estrai anche i dati della tabella
+Hint=
+[frmEditorTable.tabPermissions]
+Class=TTabSheet
+Caption=Autorizzazioni
+Hint=
+[frmEditorTable.lvPermissions]
+Class=TListView
+Hint=
+Columns.Count=8
+Column0.Caption=Oggetto
+Column1.Caption=Selezione
+Column2.Caption=Eliminazione
+Column3.Caption=Inserimento
+Column4.Caption=Aggiornamento
+Column5.Caption=Riferimento
+Column6.Caption=Esecuzione
+Column7.Caption=Membro di
+[frmEditorTable.Label1]
+Class=TLabel
+Caption=Questa Autorizzazione include il GRANT OPTION (possibilità di autorizzare altri)
+Hint=
+[frmEditorTable.tabDependencies]
+Class=TTabSheet
+Caption=Dipendenze
+Hint=
+[frmEditorTable.tabDescription]
+Class=TTabSheet
+Caption=Descrizione
+Hint=
+[frmEditorTable.ShowColumns]
+Class=TAction
+Caption=Colonne
+Hint=Mostra le Colonne della tabella
+[frmEditorTable.ShowTriggers]
+Class=TAction
+Caption=Triggers
+Hint=Mostra i trigger della tabella
+[frmEditorTable.ShowCheckConstraints]
+Class=TAction
+Caption=Controlli di validità
+Hint=Mostra i controlli di validità della tabella
+[frmEditorTable.ShowIndexes]
+Class=TAction
+Caption=Indici
+Hint=Mostra gli indici della tabella
+[frmEditorTable.ShowUniqueConstraints]
+Class=TAction
+Caption=Chiave Primaria
+Hint=Mostra la chiave primaria
+[frmEditorTable.ShowReferentialConstraints]
+Class=TAction
+Caption=Integrità Referenziali
+Hint=Mostra le integrità referenziali della tabella
+[frmEditorTable.EditCopy1]
+Class=TEditCopy
+Caption=&Copia
+Hint=Copia negli appunti
+[frmEditorTable.EditCut1]
+Class=TEditCut
+Caption=&Taglia
+Hint=Taglia
+[frmEditorTable.EditPaste1]
+Class=TEditPaste
+Caption=&Incolla
+Hint=Incolla
+[frmEditorTable.EditSelectAll1]
+Class=TEditSelectAll
+Caption=Selezion&a Tutto
+Hint=
+[frmEditorTable.EditUndo1]
+Class=TEditUndo
+Caption=A&nnulla
+Hint=
+[frmEditorTable.ActionNewObject]
+Class=TAction
+Caption=Nuovo...
+Hint=
+[frmEditorTable.ActionEditObject]
+Class=TAction
+Caption=Modifica...
+Hint=
+[frmEditorTable.ActionDropObject]
+Class=TAction
+Caption=Elimina
+Hint=
+[frmEditorTable.ActionGrantSelect]
+Class=TAction
+Caption=Selezione
+Hint=
+[frmEditorTable.ActionGrantDelete]
+Class=TAction
+Caption=Eliminazione
+Hint=
+[frmEditorTable.ActionGrantInsert]
+Class=TAction
+Caption=Inserimento
+Hint=
+[frmEditorTable.ActionGrantUpdate]
+Class=TAction
+Caption=Aggiornamento
+Hint=
+[frmEditorTable.ActionGrantReference]
+Class=TAction
+Caption=Referimento
+Hint=
+[frmEditorTable.ActionGrantExecute]
+Class=TAction
+Caption=Esecuzione
+Hint=
+[frmEditorTable.ActionGrantAll]
+Class=TAction
+Caption=Concedi tutti i permessi
+Hint=
+[frmEditorTable.ActionRevokeAll]
+Class=TAction
+Caption=Revoca tutti i permessi
+Hint=
+[frmEditorTable.ActionOpenTable]
+Class=TAction
+Caption=Apri
+Hint=
+[frmEditorTable.ActionTableFilter]
+Class=TAction
+Caption=Filtro
+Hint=
+[frmEditorTable.ActionTableFormView]
+Class=TAction
+Caption=Vista campi
+Hint=
+[frmEditorTable.ActionEmptyTable]
+Class=TAction
+Caption=Svuota Tabella
+Hint=
+[frmEditorTable.ActionTableClearFilter]
+Class=TAction
+Caption=Azzera Filtro
+Hint=
+[frmEditorTable.ActionCopyRecord]
+Class=TAction
+Caption=Copia Record
+Hint=Duplica i dati del record in un nuovo inserimento
+[frmEditorTable.NewPrimaryKey1]
+Class=TMenuItem
+Caption=Nuova chiave Primaria
+Hint=Crea la chiave primaria della tabella
+[frmEditorTable.Savetofile1]
+Class=TMenuItem
+Caption=Salva su file...
+Hint=
+[frmEditorTable.Loadfromfile1]
+Class=TMenuItem
+Caption=Carica da un file...
+Hint=
+[frmEditorTable.Copy2]
+Class=TMenuItem
+Caption=Copia negli appunti
+Hint=
+[frmEditorTable.Paste2]
+Class=TMenuItem
+Caption=Incolla
+Hint=
+[frmEditorTable.Cut2]
+Class=TMenuItem
+Caption=Taglia
+Hint=
+[frmEditorTable.SavePictureDialog1.PreviewButton]
+Class=TSpeedButton
+Caption=
+Hint=Preview
+[frmEditorTable.OpenPictureDialog1.PreviewButton]
+Class=TSpeedButton
+Caption=
+Hint=Preview
+[frmExceptions.pgObjectEditor]
+Class=TPageControl
+Hint=
+PageCount=3
+[frmExceptions.pgObjectEditor.tsObject]
+Class=TTabSheet
+Caption=Eccezione
+Hint=
+[frmExceptions.pgObjectEditor.tsDocoView]
+Class=TTabSheet
+Caption=Descrizione
+Hint=
+[frmExceptions.pgObjectEditor.tsDDL]
+Class=TTabSheet
+Caption=Metadati
+Hint=
+[frmExceptions.tsObject]
+Class=TTabSheet
+Caption=Eccezione
+Hint=
+[frmExceptions.Label1]
+Class=TLabel
+Caption=&Eccezione:
+Hint=
+[frmExceptions.Label2]
+Class=TLabel
+Caption=&Messaggio:
+Hint=
+[frmExceptions.tsDocoView]
+Class=TTabSheet
+Caption=Descrizione
+Hint=
+[frmExceptions.tsDDL]
+Class=TTabSheet
+Caption=Metadati
+Hint=
+[frmExceptions.ActionCompile]
+Class=TAction
+Caption=Compile
+Hint=
+[frmEditorConstraint.btnOK]
+Class=TButton
+Caption=&OK
+Hint=
+[frmEditorConstraint.btnCancel]
+Class=TButton
+Caption=A&nnulla
+Hint=
+[frmEditorConstraint.btnHelp]
+Class=TButton
+Caption=Ai&uto
+Hint=
+[frmEditorConstraint.pgConstraint]
+Class=TPageControl
+Hint=
+PageCount=3
+[frmEditorConstraint.pgConstraint.tsFK]
+Class=TTabSheet
+Caption=Chiave Esterna
+Hint=
+[frmEditorConstraint.pgConstraint.tsCheck]
+Class=TTabSheet
+Caption=Controllo
+Hint=
+[frmEditorConstraint.pgConstraint.tsPK]
+Class=TTabSheet
+Caption=Chiave primaria
+Hint=
+[frmEditorConstraint.tsFK]
+Class=TTabSheet
+Caption=Chiave Esterna
+Hint=
+[frmEditorConstraint.Label9]
+Class=TLabel
+Caption=&Nome:
+Hint=
+[frmEditorConstraint.Label4]
+Class=TLabel
+Caption=&Tabella:
+Hint=
+[frmEditorConstraint.chkOnDelete]
+Class=TCheckBox
+Caption=All'Eliminazione
+Hint=
+[frmEditorConstraint.chkOnUpdate]
+Class=TCheckBox
+Caption=All'aggiornamento
+Hint=
+[frmEditorConstraint.tsCheck]
+Class=TTabSheet
+Caption=Controllo
+Hint=
+[frmEditorConstraint.Label5]
+Class=TLabel
+Caption=&Controllo di validità:
+Hint=
+[frmEditorConstraint.Label6]
+Class=TLabel
+Caption=&Nome:
+Hint=
+[frmEditorConstraint.tsPK]
+Class=TTabSheet
+Caption=Chiave primaria
+Hint=
+[frmEditorConstraint.Label7]
+Class=TLabel
+Caption=&Nome:
+Hint=
+[frmEditorIndex.Label6]
+Class=TLabel
+Caption=&Nome:
+Hint=
+[frmEditorIndex.Label2]
+Class=TLabel
+Caption=&Ordine:
+Hint=
+[frmEditorIndex.chkUnique]
+Class=TCheckBox
+Caption=&Univoco
+Hint=
+[frmEditorIndex.chkActive]
+Class=TCheckBox
+Caption=Indice Attivo
+Hint=
+[frmEditorIndex.btnCancel]
+Class=TButton
+Caption=Annulla
+Hint=
+[frmEditorIndex.ActionCompile]
+Class=TAction
+Caption=&Compila
+Hint=
+[frmEditorField.btnHelp]
+Class=TButton
+Caption=Aiuto
+Hint=
+[frmEditorField.Label5]
+Class=TLabel
+Caption=&Tabella:
+Hint=
+[frmEditorField.FrameFields.Label1]
+Class=TLabel
+Caption=Camp&o:
+Hint=
+[frmEditorField.FrameFields.chkPrimaryKey]
+Class=TCheckBox
+Caption=Chiave &Primaria
+Hint=
+[frmEditorField.FrameFields.chkNotNull]
+Class=TCheckBox
+Caption=&Non Nullo
+Hint=
+[frmEditorField.FrameFields.pgTypes]
+Class=TPageControl
+Hint=
+PageCount=4
+[frmEditorField.FrameFields.pgTypes.tsSubType]
+Class=TTabSheet
+Caption=Tipo Nativo
+Hint=
+[frmEditorField.FrameFields.pgTypes.tsSubDomain]
+Class=TTabSheet
+Caption=Dominio
+Hint=
+[frmEditorField.FrameFields.pgTypes.tsComputed]
+Class=TTabSheet
+Caption=Calcolato
+Hint=
+[frmEditorField.FrameFields.pgTypes.tsDefault]
+Class=TTabSheet
+Caption=Default
+Hint=
+[frmEditorField.FrameFields.tsSubType]
+Class=TTabSheet
+Caption=Tipo Nativo
+Hint=
+[frmEditorField.FrameFields.Label18]
+Class=TLabel
+Caption=&Sotto Tipo:
+Hint=
+[frmEditorField.FrameFields.Label10]
+Class=TLabel
+Caption=Set C&aratteri:
+Hint=
+[frmEditorField.FrameFields.Label12]
+Class=TLabel
+Caption=Lungh. Segmento:
+Hint=
+[frmEditorField.FrameFields.Label16]
+Class=TLabel
+Caption=Ordinamento:
+Hint=
+[frmEditorField.FrameFields.Label9]
+Class=TLabel
+Caption=Set C&aratteri:
+Hint=
+[frmEditorField.FrameFields.Label4]
+Class=TLabel
+Caption=&Lunghezza:
+Hint=
+[frmEditorField.FrameFields.Label8]
+Class=TLabel
+Caption=Ordinamento:
+Hint=
+[frmEditorField.FrameFields.Label15]
+Class=TLabel
+Caption=&Scala:
+Hint=
+[frmEditorField.FrameFields.Label14]
+Class=TLabel
+Caption=&Precisione:
+Hint=
+[frmEditorField.FrameFields.Label11]
+Class=TLabel
+Caption=Matrice:
+Hint=
+[frmEditorField.FrameFields.lvArray]
+Class=TListView
+Hint=
+Columns.Count=2
+Column0.Caption=Limite Inferiore
+Column1.Caption=Limite Superiore
+[frmEditorField.FrameFields.btnAddDimension]
+Class=TButton
+Caption=&Aggiungi Dimensione
+Hint=
+[frmEditorField.FrameFields.btnDeleteDimension]
+Class=TButton
+Caption=&Elimina Dimensione
+Hint=
+[frmEditorField.FrameFields.btnEditDimension]
+Class=TButton
+Caption=&Modifica Dimensione
+Hint=
+[frmEditorField.FrameFields.Label3]
+Class=TLabel
+Caption=Tipo:
+Hint=
+[frmEditorField.FrameFields.tsSubDomain]
+Class=TTabSheet
+Caption=Dominio
+Hint=
+[frmEditorField.FrameFields.Label2]
+Class=TLabel
+Caption=Dominio:
+Hint=
+[frmEditorField.FrameFields.tsComputed]
+Class=TTabSheet
+Caption=Calcolato
+Hint=
+[frmEditorField.FrameFields.Label6]
+Class=TLabel
+Caption=Espressione:
+Hint=
+[frmEditorField.FrameFields.tsDefault]
+Class=TTabSheet
+Caption=Default
+Hint=
+[frmEditorField.ActionHelp]
+Class=TAction
+Caption=Aiuto
+Hint=
+[frmEditorField.ActionOK]
+Class=TAction
+Caption=OK
+Hint=
+[frmEditorField.ActionCancel]
+Class=TAction
+Caption=A&nnulla
+Hint=
+[frmViewEditor.pgObjectEditor]
+PageCount=7
+Class=TPageControl
+Hint=
+[frmViewEditor.pgObjectEditor.tsSQL]
+Class=TTabSheet
+Caption=Vista
+Hint=
+[frmViewEditor.pgObjectEditor.tsTableView]
+Class=TTabSheet
+Caption=Struttura
+Hint=
+[frmViewEditor.pgObjectEditor.tsDependenciesView]
+Class=TTabSheet
+Caption=Dipendenze
+Hint=
+[frmViewEditor.pgObjectEditor.tsTriggerView]
+Class=TTabSheet
+Caption=Triggers
+Hint=
+[frmViewEditor.pgObjectEditor.tsData]
+Class=TTabSheet
+Caption=Dati
+Hint=
+[frmViewEditor.pgObjectEditor.tsDoco]
+Class=TTabSheet
+Caption=Descrizione
+Hint=
+[frmViewEditor.pgObjectEditor.tsGrants]
+Class=TTabSheet
+Caption=Autorizzazioni
+Hint=
+[frmViewEditor.tsSQL]
+Class=TTabSheet
+Caption=Vista
+Hint=
+[frmViewEditor.tsTableView]
+Class=TTabSheet
+Caption=Struttura
+Hint=
+[frmViewEditor.lvFieldList]
+Class=TListView
+Hint=
+Columns.Count=8
+Column0.Caption=Campo
+Column1.Caption=Tipo
+Column2.Caption=Sotto Tipo
+Column3.Caption=Dominio
+Column4.Caption=Non Nullo
+Column5.Caption=Descrizione
+Column6.Caption=Valore Default
+Column7.Caption=Calcolato
+[frmViewEditor.tsDependenciesView]
+Class=TTabSheet
+Caption=Dipendenze
+Hint=
+[frmViewEditor.tsTriggerView]
+Class=TTabSheet
+Caption=Triggers
+Hint=
+[frmViewEditor.Label1]
+Class=TLabel
+Caption=Visualizza:
+Hint=
+[frmViewEditor.tsData]
+Class=TTabSheet
+Caption=Dati
+Hint=
+[frmViewEditor.navDataView]
+Class=TNavButton
+Caption=
+Hint=Aggiorna Dati
+[frmViewEditor.IB_TransactionBar1]
+Class=TIB_TransactionBar_Button
+Caption=
+Hint=Chiude la transazione corrente
+[frmViewEditor.btnRefresh]
+Class=TSpeedButton
+Caption=Aggio&rna
+Hint=
+[frmViewEditor.grdDataView]
+Class=TDBGrid
+Hint=
+Columns.Count=1
+Column0.Caption=
+[frmViewEditor.tsDoco]
+Class=TTabSheet
+Caption=Descrizione
+Hint=
+[frmViewEditor.tsGrants]
+Class=TTabSheet
+Caption=Autorizzazioni
+Hint=
+[frmViewEditor.lvPermissions]
+Class=TListView
+Hint=
+Columns.Count=8
+Column0.Caption=Oggetto
+Column1.Caption=Selezione
+Column2.Caption=Eliminazione
+Column3.Caption=Inserimento
+Column4.Caption=Aggiornamento
+Column5.Caption=Riferimento
+Column6.Caption=Esecuzione
+Column7.Caption=Membro di
+[frmViewEditor.Label2]
+Class=TLabel
+Caption=Questa Autorizzazione include il GRANT OPTION (possibilità di autorizzare altri)
+Hint=
+[frmViewEditor.ActionCompile]
+Class=TAction
+Caption=Compila
+Hint=
+[frmStoredProcedure.pgObjectEditor]
+Class=TPageControl
+Hint=
+PageCount=7
+[frmStoredProcedure.pgObjectEditor.tsStoredProc]
+Class=TTabSheet
+Caption=Modifica
+Hint=
+[frmStoredProcedure.pgObjectEditor.tsExecution]
+Class=TTabSheet
+Caption=Esecuzione
+Hint=
+[frmStoredProcedure.pgObjectEditor.tsDocoView]
+Class=TTabSheet
+Caption=Descrizione
+Hint=
+[frmStoredProcedure.pgObjectEditor.tsDependencies]
+Class=TTabSheet
+Caption=Dipendenze
+Hint=
+[frmStoredProcedure.pgObjectEditor.tsGrants]
+Class=TTabSheet
+Caption=Autorizzazioni
+Hint=
+[frmStoredProcedure.pgObjectEditor.tsDebuggerOutput]
+Class=TTabSheet
+Caption=Debugger Output
+Hint=
+[frmStoredProcedure.pgObjectEditor.tsMetadata]
+Class=TTabSheet
+Caption=Metadata
+Hint=
+[frmStoredProcedure.tsStoredProc]
+Class=TTabSheet
+Caption=Modifica
+Hint=
+[frmStoredProcedure.Label2]
+Class=TLabel
+Caption=Nome:
+Hint=
+[frmStoredProcedure.dbgParameters]
+Class=TDBGrid
+Hint=
+Columns.Count=3
+Column0.Caption=Tipo
+Column1.Caption=Parametro
+Column2.Caption=Tipo Dati
+[frmStoredProcedure.tsExecution]
+Class=TTabSheet
+Caption=Esecuzione
+Hint=
+[frmStoredProcedure.grdResults]
+Class=TDBGrid
+Hint=
+Columns.Count=1
+Column0.Caption=
+[frmStoredProcedure.dbgValues]
+Class=TDBGrid
+Hint=
+Columns.Count=3
+Column0.Caption=Parametro
+Column1.Caption=Tipo
+Column2.Caption=Valore
+[frmStoredProcedure.tsDocoView]
+Class=TTabSheet
+Caption=Descrizione
+Hint=
+[frmStoredProcedure.tsDependencies]
+Class=TTabSheet
+Caption=Dipendenze
+Hint=
+[frmStoredProcedure.tsGrants]
+Class=TTabSheet
+Caption=Autorizzazioni
+Hint=
+[frmStoredProcedure.lvPermissions]
+Class=TListView
+Hint=
+Columns.Count=8
+Column0.Caption=Oggetto
+Column1.Caption=Selezione
+Column2.Caption=Eliminazione
+Column3.Caption=Inserimento
+Column4.Caption=Aggiornamento
+Column5.Caption=Riferimento
+Column6.Caption=Esecuzione
+Column7.Caption=Membro di
+[frmStoredProcedure.Label1]
+Class=TLabel
+Caption=Questa Autorizzazione include il GRANT OPTION (possibilità di autorizzare altri)
+Hint=
+[frmStoredProcedure.tsDebuggerOutput]
+Class=TTabSheet
+Caption=Debugger
+Hint=
+[frmStoredProcedure.tsMetadata]
+Class=TTabSheet
+Caption=Metadati
+Hint=
+[frmStoredProcedure.ActionExecute]
+Class=TAction
+Caption=Esegui
+Hint=
+[frmStoredProcedure.ActionCompile]
+Class=TAction
+Caption=Compila
+Hint=
+[frmStoredProcedure.ActionCheckParams]
+Class=TAction
+Caption=Controlla Parametri
+Hint=
+[frmStoredProcedure.ActionAddInputParam]
+Class=TAction
+Caption=Agg.Parametro Input
+Hint=
+[frmStoredProcedure.ActionEditParam]
+Class=TAction
+Caption=Modifica Parametro
+Hint=
+[frmStoredProcedure.ActionDeleteParam]
+Class=TAction
+Caption=Elimina Parametro
+Hint=
+[frmStoredProcedure.ActionMoveUp]
+Class=TAction
+Caption=Sposta Su
+Hint=
+[frmStoredProcedure.ActionMoveDown]
+Class=TAction
+Caption=Sposta Giu
+Hint=
+[frmStoredProcedure.ActionAddOutputParam]
+Class=TAction
+Caption=Agg.Parametro Output
+Hint=
+[frmUDFEditor.pgObjectEditor]
+Class=TPageControl
+Hint=
+PageCount=3
+[frmUDFEditor.pgObjectEditor.tsObject]
+Class=TTabSheet
+Caption=Caratteristiche
+Hint=
+[frmUDFEditor.pgObjectEditor.tsDocoView]
+Class=TTabSheet
+Caption=Descrizione
+Hint=
+[frmUDFEditor.pgObjectEditor.tsDDL]
+Class=TTabSheet
+Caption=Metadata
+Hint=
+[frmUDFEditor.tsObject]
+Class=TTabSheet
+Caption=Caratteristiche
+Hint=
+[frmUDFEditor.lvUDFParams]
+Class=TListView
+Hint=
+Columns.Count=2
+Column0.Caption=Parametro
+Column1.Caption=Meccanismo Chiamata 
+[frmUDFEditor.Label5]
+Class=TLabel
+Caption=&Per:
+Hint=
+[frmUDFEditor.Label4]
+Class=TLabel
+Caption=&Ritorna:
+Hint=
+[frmUDFEditor.Label3]
+Class=TLabel
+Caption=Nome &Libreria:
+Hint=
+[frmUDFEditor.Label2]
+Class=TLabel
+Caption=Punto d'ingr&esso:
+Hint=
+[frmUDFEditor.Label1]
+Class=TLabel
+Caption=&Nome:
+Hint=
+[frmUDFEditor.Label6]
+Class=TLabel
+Caption=&Parametri ingresso:
+Hint=
+[frmUDFEditor.tsDocoView]
+Class=TTabSheet
+Caption=Descrizione
+Hint=
+[frmUDFEditor.tsDDL]
+Class=TTabSheet
+Caption=Metadati
+Hint=
+[frmUDFEditor.ActionCompile]
+Class=TAction
+Caption=Compila
+Hint=
+[FrmEditorFilter.objControl]
+Class=TPageControl
+Hint=
+PageCount=3
+[FrmEditorFilter.objControl.tabFilters]
+Class=TTabSheet
+Caption=Caratteristiche
+Hint=
+[FrmEditorFilter.objControl.tsMetadata]
+Class=TTabSheet
+Caption=Metadati
+Hint=
+[FrmEditorFilter.objControl.tsDescription]
+Class=TTabSheet
+Caption=Descrizione
+Hint=
+[FrmEditorFilter.tabFilters]
+Class=TTabSheet
+Caption=Caratteristiche
+Hint=
+[FrmEditorFilter.Label11]
+Class=TLabel
+Caption=Nome &Modulo:
+Hint=
+[FrmEditorFilter.Label12]
+Class=TLabel
+Caption=Punto d'&Ingresso:
+Hint=
+[FrmEditorFilter.Label13]
+Class=TLabel
+Caption=Sotto tipo &Ingresso:
+Hint=
+[FrmEditorFilter.Label14]
+Class=TLabel
+Caption=Sotto tipo &Uscita:
+Hint=
+[FrmEditorFilter.tsMetadata]
+Class=TTabSheet
+Caption=Metadati
+Hint=
+[FrmEditorFilter.tsDescription]
+Class=TTabSheet
+Caption=Descrizione
+Hint=
+[FrmEditorFilter.actReset]
+Class=TAction
+Caption=Azze&ra Valore
+Hint=
+[FrmEditorFilter.ActionCompile]
+Class=TAction
+Caption=&Compila
+Hint=
+[frmRole.pgObjectEditor]
+Class=TPageControl
+Hint=
+PageCount=2
+[frmRole.pgObjectEditor.tsRole]
+Class=TTabSheet
+Caption=Ruolo
+Hint=
+[frmRole.pgObjectEditor.tsDDLView]
+Class=TTabSheet
+Caption=Metadati
+Hint=
+[frmRole.tsRole]
+Class=TTabSheet
+Caption=Ruolo
+Hint=
+[frmRole.Label1]
+Class=TLabel
+Caption=Nome &Rouolo:
+Hint=
+[frmRole.tsDDLView]
+Class=TTabSheet
+Caption=Metadati
+Hint=
+[frmRole.ActionCompile]
+Class=TAction
+Caption=&Compila
+Hint=
+[frmUserInfo.btnNew]
+Class=TButton
+Caption=&Nuovo
+Hint=
+[frmUserInfo.btnApply]
+Class=TButton
+Caption=A&pplica
+Hint=
+[frmUserInfo.btnDelete]
+Class=TButton
+Caption=&Elimina
+Hint=
+[frmUserInfo.btnClose]
+Class=TButton
+Caption=&Chiudi
+Hint=
+[frmUserInfo.btnCancel]
+Class=TButton
+Caption=A&nnulla
+Hint=
+[frmUserInfo.gbOptionalInfo]
+Class=TGroupBox
+Caption= Informazioni Opzionali 
+Hint=
+[frmUserInfo.lblFName]
+Class=TLabel
+Caption=&Nome:
+Hint=
+[frmUserInfo.lblMName]
+Class=TLabel
+Caption=&Secondo Nome:
+Hint=
+[frmUserInfo.lblLName]
+Class=TLabel
+Caption=&Cognome:
+Hint=
+[frmUserInfo.gbRequiredInfo]
+Class=TGroupBox
+Caption= Informazioni Richieste
+Hint=
+[frmUserInfo.lblPassword]
+Class=TLabel
+Caption=&Password:
+Hint=
+[frmUserInfo.lblConfirmPassword]
+Class=TLabel
+Caption=C&onferma Password:
+Hint=
+[frmUserInfo.lblUserName]
+Class=TLabel
+Caption=&Utente:
+Hint=
+[frmUserInfo.NewUser]
+Class=TAction
+Caption=Nuovo Utente
+Hint=
+[frmUserInfo.ModifyUser]
+Class=TAction
+Caption=Modifica Utente
+Hint=
+[frmUserInfo.DeleteUser]
+Class=TAction
+Caption=Elimina Utente
+Hint=
+[frmServerProperties.pgcMain]
+Class=TPageControl
+Hint=
+PageCount=2
+[frmServerProperties.pgcMain.TabAlias]
+Class=TTabSheet
+Caption=Alias
+Hint=
+[frmServerProperties.pgcMain.TabGeneral]
+Class=TTabSheet
+Caption=General
+Hint=
+[frmServerProperties.TabAlias]
+Class=TTabSheet
+Caption=Alias
+Hint=
+[frmServerProperties.lblAliasName]
+Class=TLabel
+Caption=Nome A&lias:
+Hint=
+[frmServerProperties.lblHostName]
+Class=TLabel
+Caption=&Host:
+Hint=
+[frmServerProperties.lblProtocol]
+Class=TLabel
+Caption=Protocollo di &Rete :
+Hint=
+[frmServerProperties.Label1]
+Class=TLabel
+Caption=&Descrizione:
+Hint=
+[frmServerProperties.TabGeneral]
+Class=TTabSheet
+Caption=Generali
+Hint=
+[frmServerProperties.lblVersionCaption]
+Class=TLabel
+Caption=Versione:
+Hint=
+[frmServerProperties.lblCapabilities]
+Class=TLabel
+Caption=Capacità:
+Hint=
+[frmServerProperties.lblAttachmentNoCaption]
+Class=TLabel
+Caption=Numero di collegamenti:
+Hint=
+[frmServerProperties.lblDatabaseNocaption]
+Class=TLabel
+Caption=Numero di database:
+Hint=
+[frmServerProperties.lblDatabaseNo]
+Class=TLabel
+Caption=1
+Hint=
+[frmServerProperties.lblAttachmentNo]
+Class=TLabel
+Caption=1
+Hint=
+[frmServerProperties.lblVersion]
+Class=TLabel
+Caption=WI-T1.5.0.3481 Firebird 1.5 Release Candidate 3
+Hint=
+[frmServerProperties.lvDatabases]
+Class=TListView
+Hint=
+Columns.Count=1
+Column0.Caption=Database Attivi
+[frmServerProperties.btnRefresh]
+Class=TButton
+Caption=Aggio&rna
+Hint=
+[frmServerProperties.btnApply]
+Class=TButton
+Caption=A&pplica
+Hint=
+[frmServerProperties.btnCancel]
+Class=TButton
+Caption=&OK
+Hint=
+[frmServerProperties.Button1]
+Class=TButton
+Caption=A&nnulla
+Hint=
+[frmDBBackup.lblOptions]
+Class=TLabel
+Caption=O&pzioni:
+Hint=
+[frmDBBackup.gbDatabaseFile]
+Class=TGroupBox
+Caption= Database
+Hint=
+[frmDBBackup.lblDatabaseServer]
+Class=TLabel
+Caption=Server:
+Hint=
+[frmDBBackup.lblDatabaseAlias]
+Class=TLabel
+Caption=&Alias:
+Hint=
+[frmDBBackup.lblDatabaseserverName]
+Class=TLabel
+Caption=Server Locale
+Hint=
+[frmDBBackup.gbBackupFiles]
+Class=TGroupBox
+Caption= File del salvataggio
+Hint=
+[frmDBBackup.lblBackupServer]
+Class=TLabel
+Caption=&Server:
+Hint=
+[frmDBBackup.lblBackupAlias]
+Class=TLabel
+Caption=A&lias:
+Hint=
+[frmDBBackup.btnOK]
+Class=TButton
+Caption=&OK
+Hint=
+[frmDBBackup.btnCancel]
+Class=TButton
+Caption=A&nnulla
+Hint=
+[frmMessage.lblDetailMsg]
+Class=TLabel
+Caption=Dettagli:
+Hint=
+[frmMessage.btnOK]
+Class=TButton
+Caption=&OK
+Hint=
+[frmDBConnections.lvConnections]
+Class=TListView
+Hint=
+Columns.Count=1
+Column0.Caption=Utenti
+[frmDBConnections.btnOK]
+Class=TButton
+Caption=&Ok
+Hint=Chiude la finestra
+[frmDBRestore]
+Class=TfrmDBRestore
+Caption=Ripristino Database
+Hint=
+[frmDBRestore.lblOptions]
+Class=TLabel
+Caption=O&pzioni:
+Hint=
+[frmDBRestore.gbDatabaseFiles]
+Class=TGroupBox
+Caption= Database
+Hint=
+[frmDBRestore.lblDestinationServer]
+Class=TLabel
+Caption=&Server:
+Hint=
+[frmDBRestore.lblDBAlias]
+Class=TLabel
+Caption=A&lias:
+Hint=
+[frmDBRestore.gbBackupFiles]
+Class=TGroupBox
+Caption= File per il salvataggio
+Hint=
+[frmDBRestore.lblBackupServer]
+Class=TLabel
+Caption=Server:
+Hint=
+[frmDBRestore.lblBackupAlias]
+Class=TLabel
+Caption=&Alias:
+Hint=
+[frmDBRestore.lblBackupServerName]
+Class=TLabel
+Caption=Server Locale 
+Hint=
+[frmDBRestore.btnOK]
+Class=TButton
+Caption=&OK
+Hint=
+[frmDBRestore.btnCancel]
+Class=TButton
+Caption=A&nnulla
+Hint=
+[error_messages]
+ERR_SYSTEM_INIT=Initializzazione fallita.
+ERR_USERNAME=Utente errato. Inserite un nome-utente valido.
+ERR_PASSWORD=Password Errata. Inserite una passwors valida.
+ERR_PASSWORD_MISSMATCH=Le password inserite non corrispondono.
+ERR_ADD_USER=Impossibile aggiungere un utente.
+ERR_MODIFY_USER=Impossibile modificare l'utente.
+ERR_DELETE_USER=Impossibile eliminare l'utente.
+ERR_GET_USERS=Impossibile leggere la lista degli utenti.
+ERR_GET_USER_INFO=Impossibile leggere i dati dell'utente.
+ERR_SOURCE_DB=Il nome del database è errato. Inserite un nome di database valido.
+ERR_DESTINATION_DB=Il nome del database sorgente è errato. Inserite un nome di database valido.
+ERR_SAME_SOURCE_DESTINATION=La sorgente e la destinazione devono essere differenti.
+ERR_DB_FILE=Il file del database non è valido o non esiste.
+ERR_SERVER_NAME=Nome del server errato. Inserite un nome del server valido.
+ERR_PROTOCOL=Protocollo di rete errato. Segliete un protocollo di rete dalla lista.
+ERR_BACKUP_DB=Salvataggio del database fallito.
+ERR_RESTORE_DB=ripristino del database fallito.
+ERR_GET_TABLES=Impossibile leggere la lista delle tabelle.
+ERR_GET_VIEWS=Impossibile leggere la lista delle viste.
+ERR_SERVICE=Servizio Errato. Segliete un servizio dalla lista.
+ERR_NUMERIC_VALUE=Numero errato. Inserite un valore numerico valido.
+ERR_GET_TABLE_DATA=Impossibile leggere i dati.
+ERR_DB_ALIAS=Alias del database errato. Inserite un alias valido.
+ERR_GET_ROLES=Impossibile leggere la lista dei ruoli.
+ERR_SERVER_LOGIN=Errore di accesso al server richesto.
+ERR_DB_CONNECT=Errore di connessione al database richiesto.
+ERR_DB_DISCONNECT=Errore di chiusura della connessione al database richiesto.
+ERR_GET_PROCEDURES=Impossibile leggere la lista delle procedure.
+ERR_GET_FUNCTIONS=Impossibile leggere la lista delle funzioni.
+ERR_GET_GENERATORS=Impossibile leggere la lista dei generatori.
+ERR_GET_EXCEPTIONS=Impossibile leggere la lista delle eccezioni.
+ERR_GET_BLOB_FILTERS=Impossibile leggere la lista dei filtri blob.
+ERR_GET_COLUMNS=Impossibile leggere la lista delle colonne.
+ERR_GET_INDICES=Impossibile leggere la lista degli indici.
+ERR_GET_REFERENTIAL_CONST=Impossibile leggere la lista delle integrità referenziali.
+ERR_GET_UNIQUE_CONST=Impossibile leggere la lista delle chiavi primarie.
+ERR_GET_CHECK_CONST=Impossibile leggere la lista dei controlli di validità.
+ERR_GET_TRIGGERS=Impossibile leggere la lista dei trigger.
+ERR_GET_DDL=Errore in lettura dei metadati.
+ERR_INVALID_PROPERTY_VALUE=Valore per la proprietà errato.
+ERR_GET_DEPENDENCIES=Errore in lettura di dependency information.
+ERR_GET_DB_PROPERTIES=Errore in lettura database properties.
+ERR_DB_SIZE=Errore nella dimensione del file del database.
+ERR_ISQL_ERROR=Errore SQL
+ERR_SERVER_SERVICE=Errore del Servizio
+ERR_EXTERNAL_EDITOR=Errore dell'editor esterno
+ERR_SERVER_ALIAS=Alias del serve errato. Indicate un  alias valido.
+ERR_BACKUP_ALIAS=Alias del salvataggio errato. Indicate un  alias valido.
+ERR_DB_SHUTDOWN=Errore nello shutdown del database.
+ERR_MODIFY_DB_PROPERTIES=Errore nella modifica delle proprietà del database.
+ERR_DROP_DATABASE=Errore nella eliminazione del database.
+ERR_FILE_OPEN=Errore in apertura del file.
+ERR_INV_EDITOR=L'editor scelto non è valido.
+ERR_EDITOR_MISSING=L'editor esterno non è stato configurato.
+ERR_BAD_FORMAT=Impossibile mostrare il blob.  Non è un formato grafico conosciuto.
+ERR_INV_DIALECT=Errore nel cambiare dialetto del client.
+ERR_FOPEN=Errore in apertura del file.
+ERR_TEXT_NOT_FOUND=La stringa cercata non è stata trovata.
+ERR_PRINT=Impossibile stamapare. Controllate che la stmapante sia funzionante.
+ERR_NO_PATH=Manca il percorso del file per il salvataggio.
+ERR_NO_FILES=Indicare il file per il salvataggio o ripristino.
+ERR_GET_DOMAINS=Impossibile leggere la lista dei domini.
+ERR_EXT_TOOL_ERROR=Errore nell'esecuzione dell programma esterno.
+ERR_PROPERTIES=Errore in lettura delle proprietà dell'oggetto
+ERR_ALIAS_EXISTS=Alias non valido. Esiste un alias con lo stesso nome.
+ERR_CANNOT_START_LOCALIB=Impossibile avviare il server locale.
+ERR_SERVER_REGISTER=Errore nella configurazione del server.
+ERR_SERVER_UNREGISTER=Errore nella sconfigurazione del server.
+ERR_DATABASE_REGISTER=Errore nella configurazione del database.
+ERR_DATABASE_UNREGISTER=Errore nella sconfigurazione del database.
+ERR_DDL_EXECUTION=Errore nella esecuzione di comandi SQL DDL.
+WAR_NO_PERMISSION=Autoprizzazione negata per questa operazione.
+WAR_SERVER_REGISTERED=Il server è gia registrato.
+WAR_DUPLICATE_DB_ALIAS=This database alias è gia configurato.
+WAR_BACKUP_FILE_REGISTERED=Il file del salvataggio è gia configurato.
+WAR_DIALECT_MISMATCH=Il dialetto del client non è compatibile con il dialetto del database.
+WAR_REMOTE_FILENAME=Il nome del file contiene il anche server. Qualche operazione protrebbe fallire.
+WAR_PERSISTENT_UPDATE=Impossibile aggiornare i dati di configurazione.
+INF_ADD_USER_SUCCESS=Il nuovo utente è stato configurato.
+INF_BACKUP_DB_SUCCESS=Salvataggio completato.
+INF_RESTORE_DB_SUCCESS=Ripristino completato.
+INF_NO_PENDING_TRANSACTIONS=Non sono state trovate transazioni pendenti.
+INF_RESTART_SERVER=Va riavviato il server perchè le modificha abbiano effetto.
+INF_DATABASE_SHUTDOWN=Shutdown del database completato.
+INF_DATABASE_RESTARTED=Ripartenza del database completata.
+INF_SQL_SCRIPT=Script SQL eseguito.
+INF_DATABASE_SWEEP=Sweep del database completata.
+isc_gbak_db_exists=Per sovrascrivere un database esistente, attivate l'opzione Overwrite
+isc_gfix_invalid_sw=Un'opzione errata è stata usata per l'operazione.
+isc_gfix_incmp_sw=I parametri per l'operazione sono in conflitto.
+isc_gfix_retry=L'operazione non è stata specificata.
+isc_gfix_retry_db=Il database per l'operazione non è stato specificato.
+isc_gbak_page_size_missing=La dimensione della pagina deve essere indicata.
+isc_gsec_cant_open_db=Impossibile avviare Il servizio per la sicurezza del database.
+isc_gsec_no_usr_name=Manca l'utente. Un Utente deve  essere indicato per tutte le operazioni.
+isc_gsec_err_add=Un errore non identificato si è verificato tentanto di aggiugere l'utente.
+isc_gsec_err_modify=Un errore non identificato si è verificato tentando di modificare l'utente.
+isc_gsec_err_find_mod=Un errore non identificato si è verificato tentando di trovare o modificare l'utente.
+isc_gsec_err_rec_not_found=Impossibile ottenere le informazioni relative all'utente.
+isc_gsec_err_delete=Un errore non identificato si è verificato tentando eliminare l'utente.
+isc_gsec_err_find_del=Un errore non identificato si è verificato tentando di trovare o eliminare l'utente.
+isc_gsec_err_find_disp=Un errore non identificato si è verificato tentando di trovare o visualizzare l'utente.
+isc_sys_request=Un errore non identificato si è verificato tentando di aprire un file sul server.
+;
+;
+;
+;
+[global]
+Action=Azione
+Name=Nome
+Active=Attivo
+Allow Nulls=Nulli Permessi
+Can Defer=Deferibile
+Character Set=Set Caratteri
+Collation=Ordinamento
+Connections=Connessioni
+Current Value=Valore Corrente
+Case Insensitive=Ignora Maiuscole/Minuscole
+Database=Database
+Default Value=Valore Predefinito
+Delete Rule=Regola Eliminazione
+Descending=Discendente
+Description=Descrizione
+Entry=Ingresso
+Error=Errore
+Fields=Campi
+Filter=Filtro
+Apply=Applica
+Index=Indice
+Initially Deferred=Deferimento Iniziale
+Input=Ingresso
+Input/Output=Ingresso/Uscita
+Last Accessed=Ultimo Accesso
+Match Option=Tipo Confronto
+Member=Membro
+Message=Messaggio
+Modified=Modificato
+Module=Modulo
+Metadata for=Metadati di
+New=Nuovo
+Output=Uscita
+Owner=Proprietario
+objects listed=oggetti
+Parameter=Parametro
+Position=Posizione
+Path=Percorso
+Reference Table=Tabella Riferimento
+Read-Only=Sola Lettura
+Type=Tipo
+Unique=Univoco
+Update Rule=Regola Aggiornamento
+Y=Si
+N=No
+Yes=Si
+No=No
+Open=Apri
+Form View=Campi
+Grid View=Griglia
+Server=Server
+User=Utente
+Warning=Avviso
+Information=Informazione
+Confirmation=Conferma
+Abort=Abortisci
+All=Tutti
+Cancel=Annulla
+Close=Chiudi
+Help=Aiuto
+OK=OK
+Ok=Ok
+Clear All=Azzera Tutto
+Operator=Operatore
+And=E
+Or=O
+Retry=Riprova
+Yes To All=Si a Tutti
+No To All=No a Tutti
+Active Windows on=Finestre attive per
+File=File
+Interactive SQL=SQL Interattivo
+Rows Affected=Record Coinvolti
+Not Available=Non Disponibile
+Execution Time=Tempo di esecuzione
+Prepare Time=Tempo di preparazione
+Starting Memory=Memoria iniziale
+Current Memory=Memoria finale
+Delta Memory=Delta Memoria
+Number of Buffers=Numero Buffer
+Reads=Letture
+Writes=Scritture
+Plan=Piano
+Statement=Comando
+is unknown=è sconosciuto
+Not Connected=Non connesso
+Client dialect=Dialetto Client
+Version=Versione
+All Options=Tutte Le Opzioni
+Data Pages=Pagine Dati
+Database Log=Log del database
+Header Page=Pagine delle intestazioni
+Index Pages=Pagine degli indici
+System Relations=Tabelle di sistema
+Show data for:=Mostra statistiche per:
+By Value=Per Valore
+By Reference=Per Indirizzo
+No Connection=Non connesso
+Transaction=Transazione
+Commit=Commit
+Rollback=Rollback
+Unknown=Sconosciuto
+In Limbo=Nel Limbo
+Multi-Database Transaction=Transazione multi database
+Fixed=Riparato
+Transportable=Trasportabile
+Non-Transportable=Non Trasportabile
+True=Vero
+False=Falso
+Process=Esegui
+Ignore=Ignora
+None=Nessuno
+To Screen=Su Schermo
+To File=Su File
+Select Verbose File=Produzione rapporto
+Select Database=Scegli database
+Enabled=Abilitato
+Disabled=Disabilitato
+Forced Writes=Scrittura Forzata
+Sweep Interval=Intervallo di sweep
+Database Dialect=Dialetto Database
+Read Only=Sola Lettura
+No input=Dati insufficenti
+Metadata Only=Solo Metadati
+Garbage Collection=Garbage Collection
+Checksums=Checksums
+Convert to Tables=Converti in tabelle
+Transactions in Limbo=Transazioni nel Limbo
+Verbose Output=Rapporto
+Filename(s)=Nome File
+Size(Bytes)=Dimensione(byte)
+Text File=File di testo
+All files=Tutti i file
+Format=Formato
+Value for=Valore per
+Replace NULL with=Riempi i NULLI con
+Validate Record Fragments=Controlla i frammenti di record
+Read Only Validation=Controllo in sola lettura
+Ignore Checksum Errors=Ignora gli errori di checksum
+Service started at=Inizio del servizio:
+Service ended at=Fine del servizio:
+Running=Attivo
+Restore=Ripristina
+Ignore=Ignora
+Database Restore=Ripristino Database
+Commit After Each Table=Commit ad ogni tabella
+Create Shadow Files=Crea lo Shadow Files
+Deactivate Indices=Disattiva Indici
+Validity Conditions=Condizioni di validità
+Use All Space=Usa tutto lo spazio
+Pages=Pagine
+Select All=Seleziona tutto
+Unselect All=Azzera selezioni
+Unlink=Scollega
+Link options=Opzioni collegamento
+Sort=Ordinamento
+Field=Campo
+Table=Tabella
+Function=Funzione
+Group=Gruppo
+Show=Visibile
+;
+;
+;
+[frmMain.FrameGenerators1.PopupMenu1]
+Class=TMenuItem
+Caption=
+Hint=
+[frmMain.MainMenu1]
+Class=TMenuItem
+Caption=
+Hint=
+[frmMain.pmDatabaseActions]
+Class=TMenuItem
+Caption=
+Hint=
+[frmMain.pmDatabaseConnectedActions]
+Class=TMenuItem
+Caption=
+Hint=
+[frmMain.pmServer]
+Class=TMenuItem
+Caption=
+Hint=
+[frmMain.pmBackupRestore]
+Class=TMenuItem
+Caption=
+Hint=
+[frmMain.pmDatabases]
+Class=TMenuItem
+Caption=
+Hint=
+[frmMain.pmUsers]
+Class=TMenuItem
+Caption=
+Hint=
+[frmMain.HelpInterBase]
+Class=TAction
+Caption=&Aiuto su InterBase/Firebird
+Hint=
+[frmMain.EditPopup]
+Class=TMenuItem
+Caption=
+Hint=
+[frmMain.pmDBObjects]
+Class=TMenuItem
+Caption=
+Hint=
+[frmMain.pmWindows]
+Class=TMenuItem
+Caption=
+Hint=
+[frmMain.pmTablesNode]
+Class=TMenuItem
+Caption=
+Hint=
+[frmDomains.edLength]
+Class=TTimerSpeedButton
+Caption=
+Hint=
+[frmDomains.edPrecision]
+Class=TTimerSpeedButton
+Caption=
+Hint=
+[frmDomains.edScale]
+Class=TTimerSpeedButton
+Caption=
+Hint=
+[frmDomains.edSegSize]
+Class=TTimerSpeedButton
+Caption=
+Hint=
+[frmEditorTable.pmRichEdit]
+Class=TMenuItem
+Caption=
+Hint=
+[frmEditorTable.pmObj]
+Class=TMenuItem
+Caption=
+Hint=
+[frmEditorTable.PopupPermissions]
+Class=TMenuItem
+Caption=
+Hint=
+[frmEditorTable.pmImages]
+Class=TMenuItem
+Caption=
+Hint=
+[frmEditorTable.SavePictureDialog1.PictureLabel]
+Class=TLabel
+Caption=
+Hint=
+[frmEditorTable.OpenPictureDialog1.PictureLabel]
+Class=TLabel
+Caption=
+Hint=
+[frmStoredProcedure.PopupParamList]
+Class=TMenuItem
+Caption=
+Hint=
+[frmDBRegister.lblServerName]
+Class=TLabel
+Caption=Server:
+Hint=
+[frmDBRegister.lblServer]
+Class=TLabel
+Caption=Server Locale
+Hint=
+[frmDBRegister.gbDatabase]
+Class=TGroupBox
+Caption=Database
+Hint=
+[frmDBRegister.lblDBAlias]
+Class=TLabel
+Caption=&Nome Alias:
+Hint=
+[frmDBRegister.lblDBFile]
+Class=TLabel
+Caption=&File:
+Hint=
+[frmDBRegister.btnSelDBFile]
+Class=TButton
+Caption=...
+Hint=Scegli il database
+[frmDBRegister.chkSaveAlias]
+Class=TCheckBox
+Caption=&Salva configurazione Alias
+Hint=
+[frmDBRegister.gbLoginInfo]
+Class=TGroupBox
+Caption=Dati Accesso
+Hint=
+[frmDBRegister.lblUsername]
+Class=TLabel
+Caption=&Utente:
+Hint=
+[frmDBRegister.lblPassword]
+Class=TLabel
+Caption=&Password:
+Hint=
+[frmDBRegister.lblRole]
+Class=TLabel
+Caption=&Role:
+Hint=
+[frmDBRegister.Label2]
+Class=TLabel
+Caption=Default Character  &Set
+Hint=
+[frmDBRegister.cbCaseSensitive]
+Class=TCheckBox
+Caption=&Case sensitive role Nome
+Hint=
+[frmDBRegister.btnOK]
+Class=TButton
+Caption=&OK
+Hint=
+[frmDBRegister.btnCancel]
+Class=TButton
+Caption=A&nnulla
+Hint=
+[frmOptions.btnApply]
+Class=TButton
+Caption=A&pplica
+Hint=
+[frmOptions.btnOK]
+Class=TButton
+Caption=&OK
+Hint=
+[frmOptions.pgControl]
+Class=TPageControl
+Hint=
+PageCount=1
+[frmOptions.pgControl.TabSheet2]
+Class=TTabSheet
+Caption=IBOConsole
+Hint=
+[frmOptions.TabSheet2]
+Class=TTabSheet
+Caption=IBOConsole
+Hint=
+[frmOptions.Label1]
+Class=TLabel
+Caption=Current Font Example.
+Hint=
+[frmOptions.Label2]
+Class=TLabel
+Caption=.........
+Hint=
+[frmOptions.LabelLanguage]
+Class=TLabel
+Caption=Lingua
+Hint=
+[frmOptions.DDLRadioGroup]
+Class=TRadioGroup
+Caption=Transazioni DDL
+Hint=
+Items.Count=2
+Item0=Commit &Automatico
+Item1=Commit &Manuale
+[frmOptions.CheckBox1]
+Class=TCheckBox
+Caption=Converti tutti gli identificatori in maiuscolo
+Hint=
+[frmOptions.ButtonChangeFont]
+Class=TButton
+Caption=Cambia Carattere
+Hint=
+[frmOptions.btnCancel]
+Class=TButton
+Caption=A&nnulla
+Hint=
+[frmEditorOptions.Label1]
+Class=TLabel
+Caption=Colore
+Hint=
+[frmEditorOptions.Label2]
+Class=TLabel
+Caption=Elemento
+Hint=
+[frmEditorOptions.GroupBox1]
+Class=TGroupBox
+Caption=Stile Testo
+Hint=
+[frmEditorOptions.chkBold]
+Class=TCheckBox
+Caption=&Grassetto
+Hint=
+[frmEditorOptions.chkItalic]
+Class=TCheckBox
+Caption=&Inclinato
+Hint=
+[frmEditorOptions.chkUnderline]
+Class=TCheckBox
+Caption=&Sottolineato
+Hint=
+[frmEditorOptions.Button1]
+Class=TButton
+Caption=&Ok
+Hint=
+[frmEditorOptions.Button2]
+Class=TButton
+Caption=A&nnulla
+Hint=
+[frmEditorOptions.GroupBox2]
+Class=TGroupBox
+Caption=Usa il predefinito per
+Hint=
+[frmEditorOptions.chkDefaultFG]
+Class=TCheckBox
+Caption=Colore
+Hint=
+[frmEditorOptions.chkDefaultBG]
+Class=TCheckBox
+Caption=Sfondo
+Hint=
+[frmEditorOptions.Label3]
+Class=TLabel
+Caption=Courier New
+Hint=
+[frmEditorOptions.ButtonChangeFont]
+Class=TButton
+Caption=Cambia Font
+Hint=
+[frmEditorIndex.IndexFrame.SpeedButtonAdd]
+Class=TSpeedButton
+Caption=
+Hint=
+[frmEditorIndex.IndexFrame.SpeedButtonRemove]
+Class=TSpeedButton
+Caption=
+Hint=
+[frmEditorConstraint.RefFrame.SpeedButtonAdd]
+Class=TSpeedButton
+Caption=
+Hint=
+[frmEditorConstraint.RefFrame.SpeedButtonRemove]
+Class=TSpeedButton
+Caption=
+Hint=
+[frmEditorConstraint.ForeignFrame.SpeedButtonAdd]
+Class=TSpeedButton
+Caption=
+Hint=
+[frmEditorConstraint.ForeignFrame.SpeedButtonRemove]
+Class=TSpeedButton
+Caption=
+Hint=
+[frmEditorConstraint.PkFrame.SpeedButtonAdd]
+Class=TSpeedButton
+Caption=
+Hint=
+[frmEditorConstraint.PkFrame.SpeedButtonRemove]
+Class=TSpeedButton
+Caption=
+Hint=
+[frmEditorTrigger.Label4]
+Class=TLabel
+Caption=Posizione:
+Hint=
+[frmEditorTrigger.Label1]
+Class=TLabel
+Caption=Nome:
+Hint=
+[frmEditorTrigger.Label2]
+Class=TLabel
+Caption=Stato:
+Hint=
+[frmEditorTrigger.Label3]
+Class=TLabel
+Caption=Tipo:
+Hint=
+[frmEditorTrigger.Label6]
+Class=TLabel
+Caption=Tabella:
+Hint=
+[frmEditorTrigger.Label7]
+Class=TLabel
+Caption=Descrizione:
+Hint=
+[frmEditorTrigger.Label5]
+Class=TLabel
+Caption=As
+Hint=
+[frmEditorTrigger.ActionCompile]
+Class=TAction
+Caption=&Compila
+Hint=
+[dlgWisql.lblFileName]
+Class=TLabel
+Caption=Nome File
+Hint=
+[dlgWisql.pgcOutput]
+Class=TPageControl
+Hint=
+PageCount=4
+[dlgWisql.pgcOutput.tsParameters]
+Class=TTabSheet
+Caption=Parametri
+Hint=
+[dlgWisql.pgcOutput.TabData]
+Class=TTabSheet
+Caption=Dati
+Hint=
+[dlgWisql.pgcOutput.TabResults]
+Class=TTabSheet
+Caption=Piano
+Hint=
+[dlgWisql.pgcOutput.TabStats]
+Class=TTabSheet
+Caption=Statistiche
+Hint=
+[dlgWisql.tsParameters]
+Class=TTabSheet
+Caption=Parametri
+Hint=
+[dlgWisql.TabData]
+Class=TTabSheet
+Caption=Dati
+Hint=
+[dlgWisql.dbgSQLResults]
+Class=TDBGrid
+Hint=
+Columns.Count=1
+Column0.Caption=
+[dlgWisql.TabResults]
+Class=TTabSheet
+Caption=Piano
+Hint=
+[dlgWisql.TabStats]
+Class=TTabSheet
+Caption=Statistiche
+Hint=
+[dlgWisql.lvStats]
+Class=TListView
+Hint=
+Columns.Count=2
+Column0.Caption=Statistica
+Column1.Caption=Valore
+[dlgWisql.IB_TransactionBarDefault]
+Class=TIB_TransactionBar_Button
+Caption=
+Hint=Close Current Transaction
+[dlgWisql.IB_TransactionBarDDL]
+Class=TIB_TransactionBar_Button
+Caption=
+Hint=Close Current Transaction
+[dlgWisql.File1]
+Class=TMenuItem
+Caption=&File
+Hint=
+[dlgWisql.mnuEdit1]
+Class=TMenuItem
+Caption=&Modifica
+Hint=
+[dlgWisql.Edit1]
+Class=TMenuItem
+Caption=&Query
+Hint=
+[dlgWisql.Database1]
+Class=TMenuItem
+Caption=&Database
+Hint=
+[dlgWisql.Help1]
+Class=TMenuItem
+Caption=&Aiuto
+Hint=
+[dlgWisql.SQLReference1]
+Class=TMenuItem
+Caption=Guida ad &SQL
+Hint=
+[dlgWisql.DialectAction1]
+Class=TAction
+Caption=Dialetto &1
+Hint=
+[dlgWisql.DialectAction2]
+Class=TAction
+Caption=Dialetto &2
+Hint=
+[dlgWisql.DialectAction3]
+Class=TAction
+Caption=Dialetto &3
+Hint=
+[dlgWisql.QueryPrevious]
+Class=TAction
+Caption=&Precedente
+Hint=Query Precedente
+[dlgWisql.QueryNext]
+Class=TAction
+Caption=&Successiva
+Hint=Query Successiva
+[dlgWisql.QueryExecute]
+Class=TAction
+Caption=&Esegui
+Hint=Esegui Query
+[dlgWisql.QueryLoadScript]
+Class=TAction
+Caption=&Carica Script
+Hint=Carica Script SQL da file
+[dlgWisql.QuerySaveScript]
+Class=TAction
+Caption=&Salva Script
+Hint=Salva Script SQL da file
+[dlgWisql.QueryOptions]
+Class=TAction
+Caption=O&pzioni ...
+Hint=Opzioni Query SQL
+[dlgWisql.QuerySaveOutput]
+Class=TAction
+Caption=Salva &Risultato
+Hint=Salva il risultato su file
+[dlgWisql.QueryPrepare]
+Class=TAction
+Caption=&Prepara
+Hint=Invia la quey al server per la preparazione prima di eseguirla
+[dlgWisql.EditOptions]
+Class=TAction
+Caption=&Opzioni ...
+Hint=Opzioni di SQL Interattivo
+[dlgWisql.FileClose]
+Class=TAction
+Caption=&Chiudi
+Hint=Chiude la finestra
+[dlgWisql.EditFind]
+Class=TAction
+Caption=&Trova ...
+Hint=
+[dlgWisql.EditFont]
+Class=TAction
+Caption=&Carattere ...
+Hint=
+[dlgWisql.EditCopy1]
+Class=TEditCopy
+Caption=&Copia
+Hint=Copia
+[dlgWisql.EditCut1]
+Class=TEditCut
+Caption=&Taglia
+Hint=Taglia
+[dlgWisql.EditPaste1]
+Class=TEditPaste
+Caption=&Incolla
+Hint=Incolla
+[dlgWisql.EditSelectAll1]
+Class=TEditSelectAll
+Caption=Seleziona &Tutto
+Hint=
+[dlgWisql.EditUndo1]
+Class=TEditUndo
+Caption=&Disfa
+Hint=
+[dlgWisql.DatabaseConnectAs]
+Class=TAction
+Caption=Connetti &Come...
+Hint=
+[dlgWisql.DatabaseDisconnect]
+Class=TAction
+Caption=&Disconnetti
+Hint=
+[dlgWisql.DatabaseCreate]
+Class=TAction
+Caption=&Crea Database ...
+Hint=
+[dlgWisql.DatabaseDrop]
+Class=TAction
+Caption=E&limina Database
+Hint=
+[dlgWisql.Print]
+Class=TAction
+Caption=&Print
+Hint=
+[dlgWisql.SaveSQLHistory]
+Class=TAction
+Caption=Salva le query
+Hint=Salva su di un file le query eseguite per rieseguirle in seguito
+[dlgWisql.LoadSQLHistory]
+Class=TAction
+Caption=Carica file di query
+Hint=Carica le query da un file
+[dlgWisql.QueryFetchAll]
+Class=TAction
+Caption=Precarica i dati
+Hint=Esegue un "Fetch All", caricamento anticipato dei dati
+[dlgWisql.NewConnection]
+Class=TAction
+Caption=Nuova Connessione...
+Hint=
+[dlgWisql.EditRedo]
+Class=TAction
+Caption=Rifai
+Hint=
+[dlgWisql.aAddTable]
+Class=TAction
+Caption=+ Tabella
+Hint=Aggiunge la tabella all'SQL
+[dlgWisql.aAddField]
+Class=TAction
+Caption=+ Campi
+Hint=Aggiunge i campi all'SQL
+[dlgWisql.CheckBoxUseAlias]
+Class=TCheckBox
+Caption=Usa alias
+Hint=Prepone sempre il nome della tabella al campo
+[frmServerRegister.gbServerInfo]
+Class=TGroupBox
+Caption=Dati del server
+Hint=
+[frmServerRegister.lblServerName]
+Class=TLabel
+Caption=Nome del S&erver:
+Hint=
+[frmServerRegister.lblProtocol]
+Class=TLabel
+Caption=&Protocollo di rete:
+Hint=
+[frmServerRegister.lblServerAlias]
+Class=TLabel
+Caption=&Nome Alias:
+Hint=
+[frmServerRegister.Label1]
+Class=TLabel
+Caption=&Description:
+Hint=
+[frmServerRegister.chkSaveAlias]
+Class=TCheckBox
+Caption=&Salva configurazione Alias
+Hint=
+[frmServerRegister.gbLoginInfo]
+Class=TGroupBox
+Caption=Dati Acceso
+Hint=
+[frmServerRegister.lblUsername]
+Class=TLabel
+Caption=&Utente:
+Hint=
+[frmServerRegister.lblPassword]
+Class=TLabel
+Caption=&Password:
+Hint=
+[frmServerRegister.btnOK]
+Class=TButton
+Caption=&OK
+Hint=
+[frmServerRegister.btnCancel]
+Class=TButton
+Caption=A&nnulla
+Hint=
+[frmCommDiag.pgcDiagnostics]
+Class=TPageControl
+Hint=
+PageCount=4
+[frmCommDiag.pgcDiagnostics.tabDBConnection]
+Class=TTabSheet
+Caption=DB Connection
+Hint=
+[frmCommDiag.pgcDiagnostics.tabTCPIP]
+Class=TTabSheet
+Caption=TCP/IP
+Hint=
+[frmCommDiag.pgcDiagnostics.tabNetBEUI]
+Class=TTabSheet
+Caption=NetBEUI
+Hint=
+[frmCommDiag.pgcDiagnostics.tabSPX]
+Class=TTabSheet
+Caption=SPX
+Hint=
+[frmCommDiag.tabDBConnection]
+Class=TTabSheet
+Caption=Connessione
+Hint=
+[frmCommDiag.lblDBResults]
+Class=TLabel
+Caption=&Risultati:
+Hint=
+[frmCommDiag.gbDatabaseInfo]
+Class=TGroupBox
+Caption=Informazioni
+Hint=
+[frmCommDiag.lblDatabase]
+Class=TLabel
+Caption=&Database:
+Hint=
+[frmCommDiag.lblUsername]
+Class=TLabel
+Caption=&Utente:
+Hint=
+[frmCommDiag.lblPassword]
+Class=TLabel
+Caption=&Password:
+Hint=
+[frmCommDiag.btnSelDB]
+Class=TButton
+Caption=...
+Hint=Scegli il database
+[frmCommDiag.gbDBServerInfo]
+Class=TGroupBox
+Caption=Dati del server
+Hint=
+[frmCommDiag.lblServerName]
+Class=TLabel
+Caption=&Nome del server:
+Hint=
+[frmCommDiag.lblProtocol]
+Class=TLabel
+Caption=&Protocollo di rete:
+Hint=
+[frmCommDiag.tabTCPIP]
+Class=TTabSheet
+Caption=TCP/IP
+Hint=
+[frmCommDiag.lblWinSockResults]
+Class=TLabel
+Caption=&Risultati:
+Hint=
+[frmCommDiag.gbTCPIPServerInfo]
+Class=TGroupBox
+Caption=Dati del server
+Hint=
+[frmCommDiag.lblWinsockServer]
+Class=TLabel
+Caption=&Host:
+Hint=
+[frmCommDiag.lblService]
+Class=TLabel
+Caption=&Servizio:
+Hint=
+[frmCommDiag.tabNetBEUI]
+Class=TTabSheet
+Caption=NetBEUI
+Hint=
+[frmCommDiag.lblNetBeuiResults]
+Class=TLabel
+Caption=&Risultati:
+Hint=
+[frmCommDiag.gbNetBEUIServerInfo]
+Class=TGroupBox
+Caption=Dati del server
+Hint=
+[frmCommDiag.lblNetBEUIServer]
+Class=TLabel
+Caption=&Nome del server:
+Hint=
+[frmCommDiag.tabSPX]
+Class=TTabSheet
+Caption=SPX (Novell)
+Hint=
+[frmCommDiag.lblSPXResults]
+Class=TLabel
+Caption=&Risultati:
+Hint=
+[frmCommDiag.gbNovellServerInfo]
+Class=TGroupBox
+Caption=Dati del server
+Hint=
+[frmCommDiag.lblSPXServer]
+Class=TLabel
+Caption=&Nome del server:
+Hint=
+[frmCommDiag.btnTest]
+Class=TButton
+Caption=&Test
+Hint=
+[frmCommDiag.btnCancel]
+Class=TButton
+Caption=A&nnulla
+Hint=
+[OQBForm]
+Class=TOQBForm
+Caption=
+[OQBForm.Button1]
+Class=TButton
+Caption=&Ok
+Hint=Assegna il codice SQL e chiude
+[OQBForm.Button2]
+Class=TButton
+Caption=&Annulla
+[OQBForm.Pages]
+Class=TPageControl
+Hint=
+PageCount=3
+[OQBForm.Pages.TabColumns]
+Class=TTabSheet
+Caption=Colonne
+[OQBForm.Pages.TabSQL]
+Class=TTabSheet
+Caption=SQL
+[OQBForm.Pages.TabResults]
+Class=TTabSheet
+Caption=Risultato
+[OQBForm.TabColumns]
+Class=TTabSheet
+Caption=Colonne
+[OQBForm.TabSQL]
+Class=TTabSheet
+Caption=SQL
+[OQBForm.TabResults]
+Class=TTabSheet
+Caption=Risultati
+[OQBForm.Nofunction1]
+Class=TMenuItem
+Caption=Nessuna
+[OQBForm.Average1]
+Class=TMenuItem
+Caption=Media
+[OQBForm.Count1]
+Class=TMenuItem
+Caption=Totale
+[OQBForm.Minimum1]
+Class=TMenuItem
+Caption=Massimo
+[OQBForm.Maximum1]
+Class=TMenuItem
+Caption=Minimo
+[OQBForm.Sum1]
+Class=TMenuItem
+Caption=Somma
+[OQBForm.Group1]
+Class=TMenuItem
+Caption=Group
+[OQBForm.Sort1]
+Class=TMenuItem
+Caption=Non Ordinata
+[OQBForm.Ascending1]
+Class=TMenuItem
+Caption=Ascendente
+[OQBForm.Descending1]
+Class=TMenuItem
+Caption=Descendente
+[OQBForm.Show1]
+Class=TMenuItem
+Caption=Visibile
+[OQBForm.ActionList1.ActionSelectDatabase]
+Class=TAction
+Caption=Seleziona Database
+Hint=Seleziona Database
+[OQBForm.ActionList1.ActionNewModel]
+Class=TAction
+Caption=Nuovo Modello
+Hint=Nuovo Modello
+[OQBForm.ActionList1.ActionShowPages]
+Class=TAction
+Caption=Mostra Pagine
+Hint=Mostra Pagine
+[OQBForm.ActionList1.ActionShowTables]
+Class=TAction
+Caption=Mostra Tabelle
+Hint=Mostra Tabelle
+[OQBForm.ActionList1.ActionGenerateSQL]
+Class=TAction
+Caption=Genera SQL
+Hint=Genera SQL
+[OQBForm.ActionList1.FileOpen1]
+Class=TAction
+Caption=&Apri Modello...
+Hint=Apri Modello|Apri un Modello salvato in precedenza
+[OQBForm.ActionList1.ActionSaveModel]
+Class=TAction
+Caption=Salva il modello
+Hint=Salva il modello|Salva il modello attivo su di un file
+[OQBForm.ActionList1.ActionRunSQL]
+Class=TAction
+Caption=Esegui SQL
+Hint=Esegui SQL
+[OQBForm.ActionList1.ActionSaveResults]
+Class=TAction
+Caption=Salva i Risultati
+Hint=Salva i Risultati
+[OQBForm.ActionList1.ActionAbout]
+Class=TAction
+Caption=Info
+Hint=Info
+[OQBForm.Remove1]
+Class=TMenuItem
+Caption=Elimina
+
+;
+;
+;
+[node_articles]
+Servers=I
+Server=Il
+Databases=I
+Database=Il
+Backup=Il
+Users=Gli
+User=L'
+Certificates=I
+Certificate=Il
+Domains=I
+Domain=Il
+Tables=Le
+Table=La
+Views=Le
+View=La
+Stored Procedures=Le
+Stored Procedure=La
+External Functions=Le
+External Function=La
+Generators=I
+Generator=Il
+Exceptions=Le
+Exception=La
+Blob Filters=I
+Blob Filter=Il
+Roles=I
+Role=Il
+Columns=La
+Column=La
+Indexes=Gli
+Index=L'
+Referential Constraints=Le
+Referential Constraint=La
+Unique Constraints=Le
+Unique Constraint=La
+Check Constraints=I
+Check Constraint=Il
+Triggers=I
+Trigger=Il
+Server Log=Il
+Unknown=Lo
+;
+;
+;
+[node_types]
+Servers=Servers
+Server=Server
+Databases=Databases
+Database=Database
+Backup=Backup
+Users=Utenti
+User=Utente
+Certificates=Certificati
+Certificate=Certificato
+Domains=Domini
+Domain=Dominio
+Tables=Tabelle
+Table=Tabella
+Views=Viste
+View=Vista
+Stored Procedures=Procedure
+Stored Procedure=Procedura
+External Functions=Funzioni Esterne
+External Function=Funzione Esterna
+Generators=Generatori
+Generator=Generatore
+Exceptions=Eccezioni
+Exception=Eccezione
+Blob Filters=Filtri Blob
+Blob Filter=Filtro Blob
+Roles=Ruoli
+Role=Ruolo
+Columns=Colonne
+Column=Colonna
+Indexes=Indici
+Index=Indice
+Referential Constraints=Integrità Referenziali
+Referential Constraint=Integrità Referenziale
+Unique Constraints=Chiavi Primarie
+Unique Constraint=Chiave Primaria
+Check Constraints=Controlli Validità
+Check Constraint=Controllo Validità
+Triggers=Triggers
+Trigger=Trigger
+Server Log=Server Log  
+Unknown=Sconosciuto
+
+[prompts]
+;
+;to insert a line break use ^M
+;be careful to leave the same number of %s and %d in text!! 
+;
+prompt0=Sovrascrivere il file %s ?
+prompt1=Impossibile aprire il file "%s".
+prompt2=Non disponibile in Kylix
+prompt3=Sicuro di voler eliminare il database selezionato?
+prompt4=La Transazioni sono attive.^MVolete eseguire il commit delle Transazioni?^M^MScegliendo NO sarà eseguiti il rollback delle Transazioni. 
+prompt5=I Dati sono stati salvati nel file: %s
+prompt6=Il formato non è stato indicato
+prompt7=Salva il risultato della Query
+prompt8=%s nuovo/a %s deve avere un nome.
+prompt9=%s nome di %s è quello predefinito.^MSiete sicuri di volerlo usare davvero?
+prompt10=%s %s %s è stato modificato.^MVolete salvare le modifiche?
+prompt11=Volete sconfigurare il database selezionato?
+prompt12=Volete chudere la connessione al database selezionato?
+prompt13=Lo Sweep di un grosso database impiega del tempo e durante la sua esecuzione limita le prestazioni del server.^MVolete eseguire lo sweep?
+prompt14=Volete eliminare il database selezionato?
+prompt15=Volete chudere la connessione al server selezionato?
+prompt16=Valore errato per l'opzione
+prompt17=Il recupero delle transazioni nel Limbo è stato completato.
+prompt18=Array Upper Bound must be greater than Array Lower Bound.
+prompt19=Primary Key Contraint must have a Name
+prompt20=Unique Key Contraint must have a Name
+prompt21=Please select field(s) to be used in Primary Key
+prompt22=Please select field(s) to be used in Unique Key
+prompt23=Foreign Key Contraint must have a Name
+prompt24=Please select field to be used in Foreign Key
+prompt25=Please select field to be referenced in Foreign Key
+prompt26=Il controllo di validità deve  avere un nome
+prompt27=Il controllo di validità deve contenere una espressione
+prompt28=Volete eliminare questa dimensione?
+prompt29=impossibile modificare la descrizione prima di salvare il nuovo oggetto.
+prompt30=Salvare le modifiche alla descrizione?
+prompt31=L'eccezione deve avere un messaggio.
+prompt32=La Tabella deve avere un nome.
+prompt33=Impostare "NOT NULL" richiede che tutti i record con il campo nulli esistenti vengano riempiti con un valoreo^Mi salvataggi (backup) successivi saranno errati^M^MVolete continuare e fornire un valore per riempire i campi nulli?
+prompt34=Togliere "NOT NULL" non è sicuro se il campo è usato in un indice univoco,^Mi salvataggi (backup) successivi saranno errati^M^MVolete continuare?
+prompt35=La Descrizione per %s %s è stata modificata. Volete salvare le modifiche?
+prompt36=Specificate le colonne da usare nell'indice.
+prompt37=Non potete vedere i metadati di un oggetto non ancora esistente.
+prompt38=Non potete usare le funzioni di modifica di un oggetto non ancora esistente.
+prompt39=C'è una transazione aperta dai risultati - Effettuate un Commit o un Rollback prima di cambiare vista.
+prompt40=La procedura è stata modificata. Volete ricompilarla?
+prompt41=Procedure in esecuzione...
+prompt42=Procedura %s in esecuzione
+prompt43=Volete davvero eliminare %s %s ?
+prompt44=Volete davvero eliminare tutti i record visibili dalla tabella %s ?
+prompt45=Il Trigger deve avere una posizione di esecuzione.
+prompt46=Il Trigger deve avere un nome.
+prompt47=La funzione deve avere un punto d'ingresso.
+prompt48=La funzione deve avere un nome di libreria.
+prompt49=La funzione deve avere un parametro in uscita.
+prompt50=Volete davvero eliminare questo Parametro?
+prompt51=Volete davvero eliminare questa dimensione?
+prompt52=Il campo deve avere un nome.
+prompt53=Il dominio deve avere un nome.
+prompt54=Il valore di un campo "calcolato" deve essere ottenuto con una espressione.
+prompt55=Serve un parametro.
+prompt56=Il piano non è disponibile
+prompt57=Non riesco ad analizzare lo script
+prompt58=La connessione non è attiva.
+prompt59=Si è verificato un errore analizzando il comando CONNECT.
+prompt60=Dovete eseguire un Commit o un Rollback della transazione in corso
+prompt61=Si è verificato un errore analizzando il comando CREATE.
+prompt62=Il dialetto del client è errato.
+prompt63=Impossibile aprire il file
+prompt64=Il dialetto del Database (%d) non corrisponde al dialetto del client (%d).
+prompt65=Si è verificato un errore impostando il dialetto del client a %d
+prompt66=Si è verificato un errore leggendo i dati della matrice
+prompt67=La stringa '%s' non è stata trovata
+prompt68=Si è verificato un errore analizzando lo script
+prompt69=Volete davvero sconfigurare %s?
+prompt70=Volete davvero eliminare "%s" dagli alias?
+prompt71=Volete davvero eliminare l'utente: %s?
+prompt72=Si è verificato un errore creando la cartella %s. Operazione annullata.
+prompt73=La cartella %s not esiste. Volete crearla?
+prompt74=Si è verificato un errore connettendosi a '%s'.^MQuesto server potrebbe essere di una versione precedente.^MCome conseguenza, delle funzioni potrebbero non essere disponibili o non funzionare.
+prompt75=Tentativo di connessione a %s usando NetBEUI.%s%s
+prompt76=Connessione a %s riuscita usando %s la named pipe: %s %s.%S%S Il test di connessione NetBEUI è riuscito!
+prompt77=Si è verificato un errore connettendosi a %s%s usando la named pipe:%s%s%s%sIl test di connessione NetBEUI è FALLITO!
+prompt78=Si è verificato un errore inizializzando la libreria Netware.%s%sIl test di connessione SPX è FALLITO!
+prompt79=Si è verificato un errore connettendosi a %susando SPX.%s%s
+prompt80=Si è verificato un errore connettendosi %s%susando il protocollo SPX .%s%sIl test di connessione SPX è FALLITO!
+prompt81=Connessione a  %s riuscita %s usando il protocollo SPX. Il test di connessione SPX è riuscito!
+prompt82=Si è verificato un errore connettendosi a %s%s usando il protocollo SPX.%s%sForse la libreria del client NetWare non installata.%s%sIl test di connessione SPX è FALLITO!
+prompt83=State tentendo di eliminare l'utente tramite il quale siete connesso al server.%s Volete davvero eliminare l'utente: %s?
+prompt84=Tentativo di connessione a: %s
+prompt85=Avvio ... Riuscito!
+prompt86=Arresto ... Riuscito!
+prompt87=An Server error has occurred while detaching.
+prompt88=An Server error has occurred while attaching.
+prompt89=Il test di connessione al server è riuscito!
+prompt90=Il test di connessione al server è FALLITO!
+prompt91=Tentativo di connessione a %s.
+prompt92=Socket per la connessione ottenuto.
+prompt93=Fallita la richiesta del socket per la connessione
+prompt94=La richiesta al socket remoto è FALLITA
+prompt95=Il socket remoto non risponde
+prompt96=Connessione fallita con '%s',
+prompt97=sulla porta %s. Errore Numero: 
+prompt98=Connessione stabilita con '%s',
+prompt99=sulla porta %s
+prompt100=Test di connessione TCP/IP Riuscito!
+prompt101=Test di connessione TCP/IP Fallito!
+prompt102=Ping di %s [%s] con %d bytes di dati:
+prompt103=%d bytes da %s: icmp_seq=%d TTL=%d tempo%s%d ms
+prompt104=Errore di connessione critico
+prompt105=Si è verificato un errore leggendo la versione del file %s
+prompt106=  Host: %s
+prompt107=è nel limbo
+prompt108=sono state chiuse (Commit)
+prompt109=sono state abortite (Rollback)
+prompt110=sono in uno stato indeterminato
+prompt111=  Transazioni %d %s.
+prompt112=  Sito Remoto: %s
+prompt113=  Database: %s
+prompt114=Azione Raccomandata: %s
+prompt115=Scegliere un elemento dell'elenco delle Transazioni.
+prompt116=Riparazione transazione %s
+prompt117=Scegliere una transazione da mostrare.
+prompt118=Il file secondario non è stato trovato.
+prompt119=Il proprietario del Database non è stato trovato.
+prompt120=L'intervallo di Sweep deve essere compreso tra %d e %d.^MIndicate un intervallo valido.
+prompt121=Le impostazioni del Database non possono essere modificate in quanto il database è in sola lettura.
+prompt122=Deve essere "NULL" o vuoto
+prompt123=NULL non è modificabile
+prompt124=Eliminando %s non sarà più possibile accedervi.^MVolete davvero eliminare?
+prompt125=Dovete indicare una opzione per il controllo di validità
+prompt126=I server anteriori ad InterBase 6.0 non possono essere gestiti
+prompt127=Il Parent deve essere un discendente di TScrollBox.
+prompt128=Questa Tabella è già presente.
+prompt129=Queste Tabelle sono già collegate.
+prompt130=Il File %s non è un file in formato QBuilder.
+prompt131=Non ci sono colonne selezionate.
+

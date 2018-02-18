@@ -1,0 +1,308 @@
+ChangeLog for IBOConsole.exe
+
+{************************************************************************}
+{ 
+  by Lorenzo Mengoni - (Ancona, Italy)
+  for suggestion and contributions email to lorenzo@mengoni.com
+
+  Software downloadable here is distributed on an "AS IS" basis,
+  WITHOUT WARRANTY OF ANY KIND, either express or implied.
+  If you live or are intended to use this software in countries
+  where this is not applicable ("AS IS" basis), DO NOT USE IT.
+  See the ORIGINAL Copyright in source files
+}
+
+
+23.August.2002, Lorenzo:
+zluSQL
+- Modified TIBOSqlObj.GetEvent for handling the name of the object involved
+
+08.08.2002, Kalwa:
+frmuMain
+- BUGFIX: lvObjectsDblClick() did not test for NIL-item in
+  lvObjects.Selected if NODE_TABLE was active.
+
+08.08.2002, Kalwa:
+wisql
+- CHG: Replaced TscExcelExport with TExcelExport. This component is created
+  on runtime.
+- NEW: Added TSaveDialog "dlgSaveXLS" to select a filename.
+
+08.08.2002, Kalwa:
+frmuMessage
+- all images are transparent now (Win2k, WinXP)
+- set btnOk.Cancel := True, the window now can be closed using the ESC key.
+- increased memDetailMsg size, most messages now fit into the memo without
+  scrolling.
+
+08.08.2002, Kalwa:
+frmuDisplayBlob
+- CHG: TPNGImage is now TPNGObject (http://pngdelphi.sourceforge.net)
+
+10.August.2002, Lorenzo:
+frmuEditorTable
+- Added Code for editing images in form view
+
+12.August.2002, Lorenzo:
+frmuDisplayBlob
+- Added Code for exporting image to clipboard and file
+
+13.August.2002, Lorenzo:
+frmuEditorTable
+- Added Code for copy record
+- Added edDescription and code for handling trigger description
+- Added code for handling of index description
+
+13.August.2002, Lorenzo:
+frmuEditorTrigger
+- updated Code for handling trigger description
+
+13.August.2002, Lorenzo:
+frmuMain
+- Adjusted display of description in FillObjectList
+
+13.August.2002, Lorenzo:
+dmuNode
+- updated Code for trigger metadata to get position and description
+
+15.August.2002, Lorenzo:
+frmuEditorView
+- Added Compile function and related logic
+
+15.August.2002, Lorenzo:
+dmuNode
+- Bugfix in extraction domain metadata with collation
+
+15.August.2002, Lorenzo:
+frmuEditorIndex
+- Bugfix in extraction of index definition data in existing indexes
+
+20.August.2002 Lorenzo
+IBOConsoleForm
+    Introduced new Ancestor TIBOConsoleEditor,
+    I tryed inteface, but it make to duplicate all common code, so I preferred inheritance.
+frmuEditorDomain
+    Fixed Alter Domain
+
+21.August.2002, Lorenzo:
+frmuMain
+- Modified ObjectRefreshList to handle a single Object refresh
+
+23.August.2002, Lorenzo:
+frmuMain
+- Modified Events for handling the name of the object involved hooked directly to mainform
+
+10.August.2002, Lorenzo:
+wisql
+- Merged Code from Akim for excel export whit a new routine for csv and
+  the original for txt in SaveOutput procedure
+- Suppressed the commit and rollback buttons, we have IB_TransactionBars
+
+23.August.2002, Lorenzo:
+wisql
+- Modified Events for handling the name of the object involved hooked directly to mainform
+
+9.Dicember.2002, Lorenzo:
+IBOCPersistentWinReg
+- Adjusted out of screen positioning of windows
+
+12.February.2003, Lorenzo:
+frmuIBOConsoleOptions
+- added new global options Force UpperCaseIdentifier
+
+8.june.2003, Lorenzo:
+dmuNode
+- fixed metadata generation of numeric(x,x) field types
+
+8.june.2003, Lorenzo:
+IBOCPersistentIniFile
+- Adjusted out of screen positioning of windows
+frmuMain
+- Changed persistent saving out of registry, now i'm using inifiles,
+when IBOCOnsole run whitout the ini file it try to copy from the registry
+before regenerating a new ini file
+
+11.June.2003, Lorenzo:
+IBOExtract
+- Fixed Metadata extraction of Numeric(x,x) sql type
+
+frmuMain & FrameGeneratorsU
+- Modified Generators Handling, now in a single view like IB_SQL
+
+LMIBOQueryStatement
+- Added the use of First Unique index for editing in table editor
+
+frmuIBOConsoleOptions
+- added Font Change dialog for setting the preferred FontName and Charset in IBOConsole
+- quite all forms are TIBOConsoleForm descendent in order to handle font global settings
+
+16.June.2003, Lorenzo:
+- globalized Syntax Highlight options, the menu entry is now in the console menu in main window
+- added Font and charset configuration for Syntax Controls for metadata
+
+18.June.2003, Lorenzo:
+IBOConsoleForm
+- bugfix and optimization for FontName assegnation routine
+WISQL
+- added parametric query handling. You can write down parameters in statements and the execution
+  of the query, will create controls to fill in parameters allowing to re-execute the query many times has you need
+
+20.June.2003, Lorenzo
+- Added runtime localization for GUI, an ini file can contain a language translation in a desired language, see
+  IBOConsole.lang.template for details
+- created Italian translation file, IBOConsole.lang.it
+- Added a new untit LMMessageDialog, is a localized replacement of MessageDlg.
+- replaced all calls to winhelp with the new IHelpInterface metods
+- moved WMNCLButtonDown to IBOConsoleForm
+- suppressed FormHelp Handler where present
+
+25.June.2003, Lorenzo
+IBOServices
+- forked spb (service parameter block constant to handle IB6/FB1 and FB15)
+- Added new type TSqlServerType to identify IB6/FB1 against FB15
+- introduced in TIBOCustomService a ServerType property
+- modified EIBOClientError
+- modified the strategy of attach procedure of TIBOCustomService
+  it now try to connect in IB6/FB1 and FB15 mode, if one is successful
+  ServerType is setted to the right one
+- modified the code of services class in order to handle the correct paramater generation by
+  ServerType property
+
+now it' possible to handle both IB6/FB1 and FB15
+for IB7 I'don't have it and I'don't have a machine to test it :-(
+
+26.June.2003, Lorenzo
+- Finished to write Italian file "IBOConsole.lang.it"
+- Some bug fix in new code
+frmuServerProperties
+- enabled general tab whe server is active
+
+02.July.2003, Lorenzo
+IBOCGlobal
+- added contributed code from Tsutomu Hayashi for set Font and charset in TControl derived objects
+- fixed a bug in items translation of radiogroup
+
+08.July.2003, Lorenzo
+frmuDBStatistics
+- fixed Cancel button modal result
+frmuIBOConsoleOptions
+- fixed sizing beavior with XP style
+frmEditorOptionsU
+- fixed sizing beavior with XP style
+wisql
+- fixed value writing for Largeint in "query->save output" for text format
+iboconsole.lang.it
+- fixed some errors
+
+07.July.2003, Hideo Tanaka 
+IBOServices 
+- bug fix in TIBORestoreService.SetServiceStartOptions
+
+09.August.2003, Lorenzo
+LMIBOQueryStatement
+- added use of first unique index if PK is not defined in table
+but it's only a tentative need to be fixed, may be in TableEditor Form
+
+15.October.2003, Lorenzo:
+IBOExtract
+- Fixed Metadata extraction for dialect 1 database
+- Fixed Metadata extraction for array fields
+FrameGeneratorsU
+- Fixed set new value to generator
+
+18.October.2003
+Mr. Tsutomu Hayashi & Mr. Hideo Tanaka from Japan send me the Japanese lang file.
+Lucas Franzen made the German Localization File
+
+24.November.2003
+- Fixed biHelp error on main form and table form
+wisql
+- Added new feature, tables and fields listing like in IBWSQL and IBObjects components.
+
+3.December.2003
+- Recompiled with IBObjects 4.3 Aa
+frmuEditorTable
+- added new tab SQL Statements with Sql used exposed
+
+4.December.2003
+wisql
+- Fixed Save Output Bug
+- modified xml file layout in Save output, all data are declared as CDATA.
+- added statistics and sql query to xml file output.
+
+6.December.2003
+frmuMain
+- disabled server access on gds32.dll not present
+IBOConsole.dpr
+- Added check if gds32.dll is present; if not, try to load fbclient.dll
+IBOCGlobal
+- Added CheckGDS32 a function hat check the presence of gds32.dll
+- patched GetLangText for return untranslated input in case of missing translation
+
+26.December.2003
+- Fixed SQL Union Bug: trapped exception generated by TIBOQuery.RecordCount that does not handle correctly
+
+24.November.2004
+wisql
+- Added new feature, QueryBuilder functions.
+- Added Memo for sql errors and removed the code of DisplayMsg function for SQL errors
+- Added OQBuilderDialog1
+- Added OQBEngineIBO1
+- Added pgcInput with TabQueryBuilder and TabSQLInput
+- Added TabColumns in pgcOutput
+- Added IOQBForm inheritance to TdlgWisql
+- modified QueryExecute and QueryPrepare Actions
+
+New behavior:
+when Querybuilder is active the run and prepare query actions let the OQBEngineIBO1
+produce the sql statement and put it in reSqlInput and then new sql is treated as usual
+when reSqlInput is active all is the same as in old wisql version
+To insert new table drop table name from teh list to the Query Builder area
+select field to list in sql and eventually make link from tables to do a join.
+In Colunms tab you can choose functions to add to result fields.
+
+30.November.2004
+frmuUser
+- simplified data assignment to connection to avoid a bug in protocol value
+Thanks a lot to Akim Kalwa for let know about.
+
+01.December.2004 by Lorenzo
+frmuUser
+- as suggested by Akim Kalwa I changed the buttons in delete confirmation to yes no cancel
+
+
+15.January.2005 , Lorenzo:
+wisql
+- Added properties
+   fCreateDatabaseParsed:boolean;
+   fOwnedDataModule:boolean;
+- Added function
+   ParseDBCreate
+- fixed create database behaviour
+   modified QueryExecuteUpdate to get enabled when createdatabase is present on script
+   when found a new datamodule is created and used to create the real database.
+   when form is destroied or Datamodule is reassigned the new created is destroied
+
+
+15.January.2005 , Lorenzo:
+zluSQL
+- fixed create database behaviour
+  putted database name and params in the right order in _create_database_schema
+
+15.February.2005, Lorenzo:
+frmuEditorView
+- bug fix in procedure TfrmViewEditor.LoadView;
+frmuMain
+- bug fix in procedure TfrmMain.lvObjectsDblClick(Sender: TObject);
+  signaled by Jürgen Cremer of sams-software(dot)de
+
+24.May.2005, Lorenzo:<br>
+dmuMain
+- Added TJvComputerInfoEx
+frmuAbout
+- changed version info and system info code
+Recompiled with IBO 4.5
+Thanks to Jason Wharton!
+
+
+

@@ -1,0 +1,3474 @@
+;{************************************************************************
+;  This File was written by Lorenzo Mengoni - (Ancona, Italy)
+;  and it'part of IBOConsole
+;  for suggestion and contributions email to lorenzo@mengoni.com
+;  This software is distributed under the License GPL and is distributed on
+;  an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either
+;  express or implied. if you live in a country where this is not applicable
+;  do not use it at all.
+;
+;  This file is a starting point for localization of IBOConsole
+;  This are predefined language constant for now:
+;
+;  Brazilian Portuguese=pt-br
+;  Catalan=ca
+;  Croatian=hr
+;  Czech=cz
+;  Danish=da
+;  Dutch=nl
+;  English=en
+;  Estonian=et
+;  French=fr
+;  German=de
+;  Greek-Modern=el
+;  Italiano=it
+;  Japanese=ja
+;  Korean=ko
+;  Luxembourgeois=ltz
+;  Norwegian=no
+;  Norwegian Nynorsk=nn
+;  Polish=pl
+;  Portugese=pt
+;  Russian=ru
+;  Spanish=es
+;  Swedish=sv
+   Simplified Chinese=cn-gb2312
+;
+;
+;  IBOConsole look in the same folder of exe for the file
+;  IBOConsole.lang.pt-br for Brazilian Portuguese,
+;  IBOConsole.lang.ca for Catalan and so on...
+;  I made the Italian file so, if You make a language file I'll give You
+;  the credit on my site and in the About Form of program.
+;  If the language is not in the list above, I'll add it on the program
+;  Thanks in advance to anyone will help me.
+;  Send the file at lorenzo@mengoni.com
+;
+;Warning:
+;localize only the right side
+;do not localize and leave case as is on the left side
+; example:
+;--obj-path----- --Italian--
+;Column0.Caption=Nome
+;Column1.Caption=Valore
+;
+;the section is the path of component in the form, so don't change od localize it
+;use ^M to insert a line break, useful in label caption
+;
+[frmMain.FrameGenerators1.DBGrid1]
+Class=TDBGrid
+Hint=
+Columns.Count=2
+;Column0.Caption=Name
+Column0.Caption=名称
+;Column1.Caption=Value
+Column1.Caption=值
+[frmMain.FrameGenerators1.NewGenerator1]
+Class=TMenuItem
+;Caption=New Generator
+Caption=创建新生成器
+Hint=
+[frmMain.FrameGenerators1.EditGenerator1]
+Class=TMenuItem
+;Caption=Edit Generator
+Caption=编辑生成器
+Hint=
+[frmMain.FrameGenerators1.DropGenerator1]
+Class=TMenuItem
+;Caption=Drop Generator
+Caption=删除生成器
+Hint=
+[frmMain.Console1]
+Class=TMenuItem
+;Caption=&Console
+Caption=控制台(&C)
+Hint=
+[frmMain.View1]
+Class=TMenuItem
+;Caption=&View
+Caption=视图(&V)
+Hint=
+[frmMain.Server1]
+Class=TMenuItem
+;Caption=&Server
+Caption=服务器(&S)
+Hint=
+[frmMain.Database1]
+Class=TMenuItem
+;Caption=&Database
+Caption=数据库(&D)
+Hint=
+[frmMain.Maintenance2]
+Class=TMenuItem
+;Caption=&Maintenance
+Caption=维护(&M)
+Hint=
+[frmMain.BackupRestore1]
+Class=TMenuItem
+;Caption=Backup / Restore
+Caption=备份 / 恢复
+Hint=
+[frmMain.ConnectAs3]
+Class=TMenuItem
+;Caption=New connection...
+Caption=建立新连接...
+;Hint=Interactive SQL
+Hint=交互式SQL
+[frmMain.Help1]
+Class=TMenuItem
+;Caption=&Help
+Caption=帮助(&H)
+Hint=
+[frmMain.Maintenance1]
+Class=TMenuItem
+;Caption=&Maintenance
+Caption=维护(&M)
+Hint=
+[frmMain.BackupRestore2]
+Class=TMenuItem
+;Caption=Backup / Restore
+Caption=备份 / 恢复
+Hint=
+[frmMain.ConsoleExit]
+Class=TAction
+;Caption=E&xit
+Caption=退出(&x)
+;Hint=Exit IBOConsole
+Hint=退出控制台
+[frmMain.ViewList]
+Class=TAction
+;Caption=&List
+Caption=列表(&L)
+Hint=
+[frmMain.ViewReport]
+Class=TAction
+;Caption=&Details
+Caption=详细资料(&D)
+Hint=
+[frmMain.ViewIcon]
+Class=TAction
+;Caption=Lar&ge
+Caption=大图标(&g)
+Hint=
+[frmMain.ViewSmallIcon]
+Class=TAction
+;Caption=S&mall
+Caption=小图标(&m)
+Hint=
+[frmMain.ViewProperties]
+Class=TAction
+;Caption=&Properties ...
+Caption=属性(&P) ...
+;Hint=View Object Properties
+Hint=查看事件属性
+[frmMain.ViewSystem]
+Class=TAction
+;Caption=S&ystem Data
+Caption=系统数据(&y)
+Hint=
+[frmMain.HelpContents]
+Class=THelpContents
+;Caption=&Contents
+Caption=帮助主题(&C)
+Hint=
+[frmMain.HelpOnHelp]
+Class=THelpOnHelp
+;Caption=&Help on Help
+Caption=如何使用帮助(&H)
+Hint=
+[frmMain.HelpTopicSearch]
+Class=THelpTopicSearch
+;Caption=&Topic Search
+Caption=主题搜索(&T)
+Hint=
+[frmMain.HelpAbout]
+Class=TAction
+;Caption=&About ...
+Caption=关于(&A) ...
+Hint=
+[frmMain.EditCopy]
+Class=TEditCopy
+;Caption=&Copy
+Caption=复制(&C)
+;Hint=Copy
+Hint=复制
+[frmMain.EditCut]
+Class=TEditCut
+;Caption=Cu&t
+Caption=剪切(&t)
+;Hint=Cut
+Hint=剪切
+[frmMain.EditPaste]
+Class=TEditPaste
+;Caption=&Paste
+Caption=粘贴(&P)
+;Hint=Paste
+Hint=粘贴
+[frmMain.EditSelectAll]
+Class=TEditSelectAll
+;Caption=Select &All
+Caption=全部选择(&A)
+Hint=
+[frmMain.EditUndo]
+Class=TEditUndo
+;Caption=&Undo
+Caption=撤消(&U)
+Hint=
+[frmMain.EditFont]
+Class=TAction
+;Caption=&Font ...
+Caption=字体(&F) ...
+;Hint=Change the font
+Hint=改变字体
+[frmMain.WindowList]
+Class=TAction
+;Caption=&Windows
+Caption=窗口(&W)
+Hint=
+[frmMain.UserAdd]
+Class=TAction
+;Caption=&Add User ...
+Caption=添加用户(&A) ...
+;Hint=Add a new user entry
+Hint=添添一个新用户
+[frmMain.UserModify]
+Class=TAction
+;Caption=&Modify User ...
+Caption=修改用户(&M) ...
+;Hint=Modify a user entry
+Hint=修改一个已存在的用户
+[frmMain.UserDelete]
+Class=TAction
+;Caption=&Delete User
+Caption=删除用户(&D)
+;Hint=Delete a user entry
+Hint=删除一个用户
+[frmMain.ServerLogout]
+Class=TAction
+;Caption=Log&out
+Caption=注销(&O)
+;Hint=Logout from the current server
+Hint=注销当前数据库服务器
+[frmMain.ServerSecurity]
+Class=TAction
+;Caption=User &Security ...
+Caption=用户安全(&S) ...
+;Hint=Manage Users
+Hint=用户管理
+[frmMain.ServerProperties]
+Class=TAction
+;Caption=&Properties ...
+Caption=属性(&P) ...
+;Hint=View Server properties
+Hint=查看服务属性
+[frmMain.DatabaseDisconnect]
+Class=TAction
+;Caption=&Disconnect
+Caption=取消连接(&D)
+;Hint=Disconnect from the current database
+Hint=中止当前数据库的连接
+[frmMain.DatabaseProperties]
+Class=TAction
+;Caption=&Properties ...
+Caption=属性(&P) ...
+;Hint=Show database properties
+Hint=显示数据库属性
+[frmMain.DatabaseStatistics]
+Class=TAction
+;Caption=&Database Statistics ...
+Caption=数据库统计(&D) ...
+;Hint=Display database statistics
+Hint=显示一个数据库的统计信息
+[frmMain.DatabaseShutdown]
+Class=TAction
+;Caption=&Shutdown ...
+Caption=关闭(&S) ...
+;Hint=Shutdown the database
+Hint=关闭数据库
+[frmMain.DatabaseSweep]
+Class=TAction
+;Caption=&Sweep
+Caption=清扫(&S)
+;Hint=Perform a database sweep
+Hint=清扫一个数据库
+[frmMain.DatabaseRecoverTrans]
+Class=TAction
+;Caption=&Transaction Recovery ...
+Caption=事务恢复(&T) ...
+;Hint=Recover limbo transactions
+Hint=恢复搁置的事务
+[frmMain.DatabaseMetadata]
+Class=TAction
+;Caption=View &Metadata ...
+Caption=查看数据元(&M) ...
+;Hint=View Database Metadata
+Hint=查看数据库的数据元
+[frmMain.DatabaseRestart]
+Class=TAction
+;Caption=Database &Restart
+Caption=数据库重启(&R)
+;Hint=Restart a database
+Hint=重新启动数据库
+[frmMain.DatabaseDrop]
+Class=TAction
+;Caption=Drop Database
+Caption=删除数据库
+;Hint=Drop the current database
+Hint=删除当前数据库
+[frmMain.DBCBackup]
+Class=TAction
+;Caption=Database Backup
+Caption=数据库备份
+;Hint=Backup a database
+Hint=备份一个数据库
+[frmMain.DatabaseUsers]
+Class=TAction
+;Caption=Connected &Users ...
+Caption=已连接的用户(&U) ...
+;Hint=View a list of users currently connected to the server
+Hint=查看当前连接服务器的用户
+[frmMain.DBCRestore]
+Class=TAction
+;Caption=Restore Database
+Caption=恢复数据库
+;Hint=Restore a database
+Hint=恢复一个数据库
+[frmMain.ServerLogin]
+Class=TAction
+;Caption=&Login ...
+Caption=登录(&L) ...
+;Hint=Login to the selected server
+Hint=登录选择的服务器
+[frmMain.ServerRegister]
+Class=TAction
+;Caption=&Register ...
+Caption=注册(&R) ...
+;Hint=Register a new Server
+Hint=注册一个新的数据库服务器
+[frmMain.ServerUnregister]
+Class=TAction
+;Caption=&Un-Register
+Caption=注销(&U)
+;Hint=Unregister an Server
+Hint=注销当前选中的服务器
+[frmMain.ServerConnection]
+Class=TAction
+;Caption=&Diagnose Connection ...
+Caption=诊断连接(&D) ...
+;Hint=Diagnose a connection to a server
+Hint=诊断与一个服务器的连接
+[frmMain.ServerActionProps]
+Class=TAction
+;Caption=&Properties ...
+Caption=属性(&P) ...
+;Hint=View Server properties
+Hint=查看数据库服务器属性
+[frmMain.DatabaseRegister]
+Class=TAction
+;Caption=&Register ...
+Caption=注册(&R) ...
+;Hint=Register a new database
+Hint=注册一个新数据库
+[frmMain.DatabaseUnregister]
+Class=TAction
+;Caption=&Unregister
+Caption=取消注册(&U)
+;Hint=Unregister the current database
+Hint=取消当前已注册的数据库
+[frmMain.DatabaseConnect]
+Class=TAction
+;Caption=&Connect
+Caption=连接(&C)
+;Hint=Connect to the selected database
+Hint=连接选择的数据库
+[frmMain.DatabaseConnectAs]
+Class=TAction
+;Caption=Connect &As ...
+Caption=连接到(&A) ...
+;Hint=Connect to the selected database specifying a user
+Hint=连接到选择的数据库用户
+[frmMain.DatabaseCreate]
+Class=TAction
+;Caption=C&reate Database ...
+Caption=新建数据库(&r) ...
+;Hint=Create a new database
+Hint=建立一个新的数据库
+[frmMain.DatabaseValidate]
+Class=TAction
+;Caption=&Validation ...
+Caption=校验(&V) ...
+;Hint=Validate the database structure
+Hint=校验数据库结构
+[frmMain.DatabaseActionsProperties]
+Class=TAction
+;Caption=Properties ...
+Caption=属性 ...
+;Hint=Show database properties
+Hint=显示数据库属性
+[frmMain.ExtToolsLaunchISQL]
+Class=TAction
+;Caption=Interactive S&QL ...
+Caption=交互式S&QL ...
+;Hint=Interactive SQL
+Hint=交互式SQL
+[frmMain.ExtToolsConfigure]
+Class=TAction
+;Caption=&Configure Tools ...
+Caption=配置工具(&C) ...
+Hint=
+[frmMain.ExtToolDropDown]
+Class=TAction
+;Caption=&Tools
+Caption=工具(&T)
+Hint=
+[frmMain.DatabaseBackup]
+Class=TAction
+;Caption=&Backup ...
+Caption=备份(&B) ...
+;Hint=Back up an database
+Hint=备份一个数据
+[frmMain.DatabaseRestore]
+Class=TAction
+;Caption=&Restore ...
+Caption=恢复(&R) ...
+;Hint=Restore an database
+Hint=恢复一个数据库
+[frmMain.BackupRestoreModifyAlias]
+Class=TAction
+;Caption=&Modify Backup Alias ...
+Caption=修改备份别名(&M) ...
+;Hint=Modify an existing backup alias
+Hint=修改一个已存在的备份别名
+[frmMain.BackupRestoreRemoveAlias]
+Class=TAction
+;Caption=&Delete Alias
+Caption=删除别名(&D)
+;Hint=Delete the current backup alias
+Hint=删除当前备份别名
+[frmMain.ViewServerLog]
+Class=TAction
+;Caption=&View Logfile ...
+Caption=查看登录文件(&V) ...
+;Hint=View the LOG file for the current server
+Hint=在前当数据库服务器中查看登录文件
+[frmMain.ObjectDescription]
+Class=TAction
+;Caption=Edit &Description ...
+Caption=编辑描述(&D) ...
+;Hint=Change the decription for an object
+Hint=修改当前对象的描述
+[frmMain.ObjectCreate]
+Class=TAction
+;Caption=&Create ...
+Caption=新建(&C) ...
+;Hint=Create a new object of the selected type
+Hint=在当前选择的类型上创建一个新对象
+[frmMain.ObjectModify]
+Class=TAction
+;Caption=&Modify ...
+Caption=修改(&M) ...
+;Hint=Modify the current object
+Hint=修改当前对象
+[frmMain.ObjectDelete]
+Class=TAction
+;Caption=&Drop ...
+Caption=删除(&D) ...
+;Hint=Delete the current object
+Hint=删除当前选中的对象
+[frmMain.ObjectExtract]
+Class=TAction
+;Caption=E&xtract ...
+Caption=提取(&x) ...
+;Hint=Extract metada for the current object
+Hint=在当前对象上提出数据元
+[frmMain.ObjectProperties]
+Class=TAction
+;Caption=&Properties ...
+Caption=属性(&P) ...
+Hint=
+[frmMain.ObjectRefresh]
+Class=TAction
+;Caption=&Refresh
+Caption=刷新(&R)
+Hint=
+[frmMain.HighlightOptions]
+Class=TAction
+;Caption=Highlight Options
+Caption=高亮选项
+Hint=
+[frmMain.DatabaseWindows]
+Class=TAction
+;Caption=Database &Windows
+Caption=数据库窗口(&W)
+Hint=
+[frmMain.ActionOptions]
+Class=TAction
+;Caption=Options...
+Caption=选项...
+Hint=
+[frmMain.actHighlightOptions]
+Class=TAction
+;Caption=Highlight Options...
+Caption=高亮选项...
+Hint=
+[frmMain.Test1]
+Class=TMenuItem
+;Caption=Test
+Caption=测试
+Hint=
+[frmOptions]
+Class=TfrmOptions
+;Caption=Options
+Caption=选项
+Hint=
+[frmOptions.btnApply]
+Class=TButton
+;Caption=&Apply
+Caption=应用(&A)
+Hint=
+[frmOptions.btnOK]
+Class=TButton
+;Caption=&OK
+Caption=确定(&O)
+Hint=
+[frmOptions.pgControl]
+Class=TPageControl
+Hint=
+PageCount=1
+[frmOptions.pgControl.TabSheet2]
+Class=TTabSheet
+;Caption=IBOConsole
+Caption=IBO控制台
+Hint=
+[frmOptions.TabSheet2]
+Class=TTabSheet
+;Caption=IBOConsole
+Caption=IBO制作台
+Hint=
+[frmOptions.Label2]
+Class=TLabel
+Caption=.........
+Hint=
+[frmOptions.LabelLanguage]
+Class=TLabel
+;Caption=Language
+Caption=语言
+Hint=
+[frmOptions.DDLRadioGroup]
+Class=TGroupButton
+;Caption=&Manual Commit
+Caption=手工确认(&M)
+Hint=
+Items.Count=2
+;Item0=&Auto Commit
+Item0=自动确认(&A)
+;Item1=&Manual Commit
+Item1=手工确认(&M)
+[frmOptions.CheckBox1]
+Class=TCheckBox
+;Caption=Force Uppercase Identifier
+Caption=强制大小转换
+Hint=
+[frmOptions.ButtonChangeFont]
+Class=TButton
+;Caption=Change Font
+Caption=改变字体
+Hint=
+[frmOptions.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+Hint=
+[frmEditorOptions]
+Class=TfrmEditorOptions
+;Caption=Syntax Editor Options
+Caption=语法编辑选项
+Hint=
+[frmEditorOptions.Label1]
+Class=TLabel
+;Caption=Color
+Caption=颜色
+Hint=
+[frmEditorOptions.Label2]
+Class=TLabel
+;Caption=Element
+Caption=元素
+Hint=
+[frmEditorOptions.GroupBox1]
+Class=TGroupBox
+;Caption=Text Style
+Caption=文字风格
+Hint=
+[frmEditorOptions.chkBold]
+Class=TCheckBox
+;Caption=&Bold
+Caption=粗体(&B)
+Hint=
+[frmEditorOptions.chkItalic]
+Class=TCheckBox
+;Caption=&Italic
+Caption=斜体(&I)
+Hint=
+[frmEditorOptions.chkUnderline]
+Class=TCheckBox
+;Caption=&Underline
+Caption=下划线(&U)
+Hint=
+[frmEditorOptions.Button1]
+Class=TButton
+;Caption=&Ok
+Caption=确定(&O)
+Hint=
+[frmEditorOptions.Button2]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+Hint=
+[frmEditorOptions.GroupBox2]
+Class=TGroupBox
+;Caption=Use Defaults For
+Caption=用户默认
+Hint=
+[frmEditorOptions.chkDefaultFG]
+Class=TCheckBox
+;Caption=Default Foreground
+Caption=默认前景
+Hint=
+[frmEditorOptions.chkDefaultBG]
+Class=TCheckBox
+;Caption=Default Background
+Caption=默认背景
+Hint=
+[frmEditorOptions.Label3]
+Class=TLabel
+Caption=Courier New
+Hint=
+[frmEditorOptions.ButtonChangeFont]
+Class=TButton
+;Caption=Change Font
+Caption=改变字体
+Hint=
+[frmServerLogin]
+Class=TfrmServerLogin
+;Caption=Server Login
+Caption=服务器登录
+Hint=
+[frmServerLogin.lblServerName]
+Class=TLabel
+;Caption=Server:
+Caption=服务器:
+Hint=
+[frmServerLogin.lblUsername]
+Class=TLabel
+;Caption=&User Name:
+Caption=用户名称(&U):
+Hint=
+[frmServerLogin.lblPassword]
+Class=TLabel
+;Caption=&Password:
+Caption=密码(&P):
+Hint=
+[frmServerLogin.lblServer]
+Class=TLabel
+;Caption=Local Server
+Caption=本地服务器
+Hint=
+[frmServerLogin.btnLogin]
+Class=TButton
+;Caption=&Login
+Caption=登录(&L)
+Hint=
+[frmServerLogin.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+Hint=
+[frmUserInfo]
+Class=TfrmUserInfo
+;Caption=User Information
+Caption=用户信息
+Hint=
+[frmUserInfo.btnNew]
+Class=TButton
+;Caption=&New
+Caption=新建(&N)
+Hint=
+[frmUserInfo.btnApply]
+Class=TButton
+;Caption=&Apply
+Caption=应用(&A)
+Hint=
+[frmUserInfo.btnDelete]
+Class=TButton
+;Caption=&Delete
+Caption=删除(&D)
+Hint=
+[frmUserInfo.btnClose]
+Class=TButton
+;Caption=&Close
+Caption=关闭(&C)
+Hint=
+[frmUserInfo.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+Hint=
+[frmUserInfo.gbOptionalInfo]
+Class=TGroupBox
+;Caption= Optional Information    
+Caption= 选项信息
+Hint=
+[frmUserInfo.lblFName]
+Class=TLabel
+;Caption=&First Name:
+Caption=名(&F):
+Hint=
+[frmUserInfo.lblMName]
+Class=TLabel
+;Caption=&Middle Name:
+Caption=中间名(&M):
+Hint=
+[frmUserInfo.lblLName]
+Class=TLabel
+;Caption=&Last Name:
+Caption=姓(&L):
+Hint=
+[frmUserInfo.gbRequiredInfo]
+Class=TGroupBox
+;Caption= Required Information    
+Caption= 必要信息
+Hint=
+[frmUserInfo.lblPassword]
+Class=TLabel
+;Caption=&Password:
+Caption=密码(&P):
+Hint=
+[frmUserInfo.lblConfirmPassword]
+Class=TLabel
+;Caption=C&onfirm Password:
+Caption=确认密码(&o):
+Hint=
+[frmUserInfo.lblUserName]
+Class=TLabel
+;Caption=&User Name:
+Caption=用户名(&U):
+Hint=
+[frmUserInfo.NewUser]
+Class=TAction
+;Caption=NewUser
+Caption=新用户
+Hint=
+[frmUserInfo.ModifyUser]
+Class=TAction
+;Caption=ModifyUser
+Caption=修改用户
+Hint=
+[frmUserInfo.DeleteUser]
+Class=TAction
+;Caption=DeleteUser
+Caption=删除用户
+Hint=
+[frmServerProperties]
+Class=TfrmServerProperties
+;Caption=Server Properties
+Caption=服务器属性
+Hint=
+[frmServerProperties.pgcMain]
+Class=TPageControl
+Hint=
+PageCount=2
+[frmServerProperties.pgcMain.TabAlias]
+Class=TTabSheet
+;Caption=Alias
+Caption=别名
+Hint=
+[frmServerProperties.pgcMain.TabGeneral]
+Class=TTabSheet
+;Caption=General
+Caption=常规
+Hint=
+[frmServerProperties.TabAlias]
+Class=TTabSheet
+;Caption=Alias
+Caption=别名
+Hint=
+[frmServerProperties.lblAliasName]
+Class=TLabel
+;Caption=A&lias Name:
+Caption=别名(&l):
+Hint=
+[frmServerProperties.lblHostName]
+Class=TLabel
+;Caption=&Host Name:
+Caption=主机名(&H):
+Hint=
+[frmServerProperties.lblProtocol]
+Class=TLabel
+;Caption=&Network Protocol:
+Caption=网络协议(&N):
+Hint=
+[frmServerProperties.Label1]
+Class=TLabel
+;Caption=&Description:
+Caption=描述(&D):
+Hint=
+[frmServerProperties.TabGeneral]
+Class=TTabSheet
+;Caption=General
+Caption=常规
+Hint=
+[frmServerProperties.lblVersionCaption]
+Class=TLabel
+;Caption=Version:
+Caption=版本:
+Hint=
+[frmServerProperties.lblCapabilities]
+Class=TLabel
+;Caption=Capabilities:
+Caption=性能:
+Hint=
+[frmServerProperties.lblAttachmentNoCaption]
+Class=TLabel
+;Caption=Number of attachments:
+Caption=附件数量:
+Hint=
+[frmServerProperties.lblDatabaseNocaption]
+Class=TLabel
+;Caption=Number of databases:
+Caption=数据库数量:
+Hint=
+[frmServerProperties.lblDatabaseNo]
+Class=TLabel
+Caption=?
+Hint=
+[frmServerProperties.lblAttachmentNo]
+Class=TLabel
+Caption=?
+Hint=
+[frmServerProperties.lblVersion]
+Class=TLabel
+;Caption=Unknown
+Caption=未知
+Hint=
+[frmServerProperties.lvDatabases]
+Class=TListView
+Hint=
+Columns.Count=1
+;Column0.Caption=Attached Databases
+Column0.Caption=附加数据库
+[frmServerProperties.btnRefresh]
+Class=TButton
+;Caption=&Refresh
+Caption=刷新(&R)
+Hint=
+[frmServerProperties.btnApply]
+Class=TButton
+;Caption=&Apply
+Caption=应用(&A)
+Hint=
+[frmServerProperties.btnCancel]
+Class=TButton
+Caption=&Ok
+Caption=确定(&O)
+Hint=
+[frmServerProperties.Button1]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+Hint=
+[frmDBProperties]
+Class=TfrmDBProperties
+;Caption=Database Properties
+Caption=数据库属性
+Hint=
+[frmDBProperties.lblServerName]
+Class=TLabel
+;Caption=Server:
+Caption=服务器:
+Hint=
+[frmDBProperties.lblServer]
+Class=TLabel
+;Caption=Local Server
+Caption=本地
+Hint=
+[frmDBProperties.pgcMain]
+Class=TPageControl
+Hint=
+PageCount=2
+[frmDBProperties.pgcMain.TabAlias]
+Class=TTabSheet
+;Caption=Alias
+Caption=别名
+Hint=
+[frmDBProperties.pgcMain.TabGeneral]
+Class=TTabSheet
+;Caption=General
+Caption=常规
+Hint=
+[frmDBProperties.TabAlias]
+Class=TTabSheet
+;Caption=Alias
+Caption=别名
+Hint=
+[frmDBProperties.lblAliasName]
+Class=TLabel
+;Caption=A&lias Name:
+Caption=别名(&l):
+Hint=
+[frmDBProperties.lblFilename]
+Class=TLabel
+;Caption=&File:
+Caption=文件(&F):
+Hint=
+[frmDBProperties.btnSelFilename]
+Class=TButton
+Caption=...
+;Hint=Select database
+Hint=选择数据库
+[frmDBProperties.TabGeneral]
+Class=TTabSheet
+;Caption=General
+Caption=常规
+Hint=
+[frmDBProperties.lblOptions]
+Class=TLabel
+;Caption=O&ptions:
+Caption=选项(&p):
+Hint=
+[frmDBProperties.gbSummaryInfo]
+Class=TGroupBox
+;Caption= Summary Information         
+Caption= 信息摘要
+Hint=
+[frmDBProperties.lblDBOwner]
+Class=TLabel
+;Caption=Owner:
+Caption=拥有者:
+Hint=
+[frmDBProperties.lblDBPages]
+Class=TLabel
+;Caption=Allocated DB Pages:
+Caption=分配数据页面:
+Hint=
+[frmDBProperties.lblPageSize]
+Class=TLabel
+;Caption=Page Size:
+Caption=页面大小:
+Hint=
+[frmDBProperties.lblOwner]
+Class=TLabel
+Caption=SYSDBA
+Hint=
+[frmDBProperties.lblPages]
+Class=TLabel
+Caption=20750
+Hint=
+[frmDBProperties.lblPgSize]
+Class=TLabel
+Caption=4096
+Hint=
+[frmDBProperties.lvSecondaryFiles]
+Class=TListView
+Hint=
+Columns.Count=2
+;Column0.Caption=Secondary Files
+Column0.Caption=第二文件
+;Column1.Caption=Start Page
+Column1.Caption=起始页
+[frmDBProperties.btnApply]
+Class=TButton
+;Caption=&Apply
+Caption=应用(&A)
+Hint=
+[frmDBProperties.btnCancel]
+Class=TButton
+;Caption=&Ok
+Caption=确定(&O)
+Hint=
+[frmDBProperties.Button1]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+Hint=
+[frmDBStatistics]
+Class=TfrmDBStatistics
+;Caption=Database Statistics
+Caption=数据库统计
+Hint=
+[frmDBStatistics.lblOptions]
+Class=TLabel
+;Caption=O&ption:
+Caption=选项(&p):
+Hint=
+[frmDBStatistics.lblDatabaseName]
+Class=TLabel
+;Caption=Database:
+Caption=数据库:
+Hint=
+[frmDBStatistics.lblDatabase]
+Class=TLabel
+Caption=AEKOOLMS002.FDB
+Hint=AEKOOLMS002.FDB
+[frmDBStatistics.btnOK]
+Class=TButton
+;Caption=&Ok
+Caption=确定(&O)
+Hint=
+[frmDBStatistics.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+Hint=
+[frmTextViewer]
+Class=TfrmTextViewer
+;Caption=Database Metadata
+Caption=数据库数据元
+Hint=
+[frmTextViewer.mnuFile]
+Class=TMenuItem
+;Caption=&File
+Caption=文件(&F)
+Hint=
+[frmTextViewer.mnuFiSaveAs]
+Class=TMenuItem
+;Caption=&Save ...
+Caption=保存(&S) ...
+;Hint=Save current file under a new name
+Hint=另保存为当前文件
+[frmTextViewer.mnuFiPrint]
+Class=TMenuItem
+;Caption=&Print
+Caption=打印(&P)
+Hint=
+[frmTextViewer.mnuFiExit]
+Class=TMenuItem
+;Caption=E&xit
+Caption=退出(&x)
+;Hint=Exit this application
+Hint=退出本应用程序
+[frmTextViewer.mnuEdit]
+Class=TMenuItem
+;Caption=&Edit
+Caption=退出(&E)
+Hint=
+[frmTextViewer.mnuEdFind]
+Class=TMenuItem
+;Caption=&Find
+Caption=查找(&F)
+;Hint=Search for a string
+Hint=查找字串
+[frmTextViewer.EditCopy1]
+Class=TEditCopy
+;Caption=&Copy
+Caption=复制(&C)
+Hint=Copy
+[frmTextViewer.EditCut1]
+Class=TEditCut
+;Caption=Cu&t
+Caption=剪切(&t)
+;Hint=Cut
+Hint=剪切
+[frmTextViewer.EditPaste1]
+Class=TEditPaste
+;Caption=&Paste
+Caption=粘贴(&P)
+;Hint=Paste
+Hint=粘贴
+[frmTextViewer.EditSelectAll1]
+Class=TEditSelectAll
+;Caption=Select &All
+Caption=全部选择(&A)
+Hint=
+[frmTextViewer.EditUndo1]
+Class=TEditUndo
+;Caption=&Undo
+Caption=撤销(&U)
+Hint=
+[frmTextViewer.EditFont]
+Class=TAction
+;Caption=&Font ...
+Caption=字体(&F) ...
+Hint=Change the font
+[frmDBShutdown]
+Class=TfrmDBShutdown
+;Caption=Database Shutdown
+Caption=关闭数据库
+Hint=
+[frmDBShutdown.lblDatabaseName]
+Class=TLabel
+;Caption=Database:
+Caption=数据库:
+Hint=
+[frmDBShutdown.lblOptions]
+Class=TLabel
+;Caption=O&ptions:
+Caption=选项(&p):
+Hint=
+[frmDBShutdown.stxDatabaseName]
+Class=TLabel
+Caption=AEKOOLMS002.FDB
+Hint=AEKOOLMS002.FDB
+[frmDBShutdown.btnOK]
+Class=TButton
+;Caption=&Ok
+Caption=确定(&O)
+Hint=
+[frmDBShutdown.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+Hint=
+[frmMessage]
+Class=TfrmMessage
+;Caption=Information
+Caption=信息
+Hint=
+[frmMessage.lblDetailMsg]
+Class=TLabel
+;Caption=Detail Message:
+Caption=详细消息
+Hint=
+[frmMessage.lblSummaryMsg]
+Class=TLabel
+;Caption=No pending transactions were found.
+Caption=未找到未决事务.
+Hint=
+[frmMessage.btnOK]
+Class=TButton
+;Caption=&Ok
+Caption=确定(&O)
+Hint=
+[frmDBBackup]
+Class=TfrmDBBackup
+;Caption=Database Backup
+Caption=数据库备份
+Hint=
+[frmDBBackup.lblOptions]
+Class=TLabel
+;Caption=O&ptions:
+Caption=选项(&p):
+Hint=
+[frmDBBackup.gbDatabaseFile]
+Class=TGroupBox
+;Caption= Database        
+Caption= 数据库        
+Hint=
+[frmDBBackup.lblDatabaseServer]
+Class=TLabel
+;Caption=Server:
+Caption=服务器:
+Hint=
+[frmDBBackup.lblDatabaseAlias]
+Class=TLabel
+;Caption=&Alias:
+Caption=别名(&A):
+Hint=
+[frmDBBackup.lblDatabaseserverName]
+Class=TLabel
+;Caption=Local Server
+Caption=本地
+Hint=
+[frmDBBackup.gbBackupFiles]
+Class=TGroupBox
+;Caption= Backup File(s)        
+Caption= 备份文件        
+Hint=
+[frmDBBackup.lblBackupServer]
+Class=TLabel
+;Caption=&Server:
+Caption=服务器(&S):
+Hint=
+[frmDBBackup.lblBackupAlias]
+Class=TLabel
+;Caption=A&lias:
+Caption=别名(&l):
+Hint=
+[frmDBBackup.btnOK]
+Class=TButton
+;Caption=&Ok
+Caption=确定(&O)
+Hint=
+[frmDBBackup.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+Hint=
+[frmMain.actDatabaseBackup]
+Class=TAction
+;Caption=Database Backup
+Caption=数据库备份
+;Hint=Backup a database
+Hint=备份一个数据库
+[frmDBRestore]
+Class=TfrmDBRestore
+;Caption=Database Restore
+Caption=数据库恢复
+Hint=
+[frmDBRestore.lblOptions]
+Class=TLabel
+;Caption=O&ptions:
+Caption=选项(&p):
+Hint=
+[frmDBRestore.gbDatabaseFiles]
+Class=TGroupBox
+;Caption= Database
+Caption= 数据库
+Hint=
+[frmDBRestore.lblDestinationServer]
+Class=TLabel
+;Caption=&Server:
+Caption=服务器(&S):
+Hint=
+[frmDBRestore.lblDBAlias]
+Class=TLabel
+;Caption=A&lias:
+Caption=别名(&l):
+Hint=
+[frmDBRestore.gbBackupFiles]
+Class=TGroupBox
+;Caption= Backup File(s)
+Caption= 备份文件
+Hint=
+[frmDBRestore.lblBackupServer]
+Class=TLabel
+;Caption=Server:
+Caption=服务器:
+Hint=
+[frmDBRestore.lblBackupAlias]
+Class=TLabel
+;Caption=&Alias:
+Caption=别名(&A):
+Hint=
+[frmDBRestore.lblBackupServerName]
+Class=TLabel
+;Caption=Local Server
+Caption=本地
+Hint=
+[frmDBRestore.btnOK]
+Class=TButton
+Caption=确定(&O)
+Hint=
+[frmDBRestore.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+Hint=
+[frmDomains]
+Class=TfrmDomains
+;Caption=Domain - BLOB_TEXT
+Caption=域 - BLOB_(文本)
+[frmDomains.pgObjectEditor]
+Class=TPageControl
+Hint=
+PageCount=5
+[frmDomains.pgObjectEditor.tsMain]
+Class=TTabSheet
+;Caption=Domain
+Caption=域
+[frmDomains.pgObjectEditor.tsDefault]
+Class=TTabSheet
+;Caption=Default
+Caption=默认
+[frmDomains.pgObjectEditor.tsConstraint]
+Class=TTabSheet
+;Caption=Constraint
+Caption=约束
+[frmDomains.pgObjectEditor.tsDescription]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[frmDomains.pgObjectEditor.tsDDL]
+Class=TTabSheet
+;Caption=Metadata
+Caption=数据元
+[frmDomains.tsMain]
+Class=TTabSheet
+;Caption=Domain
+Caption=域
+[frmDomains.Label1]
+Class=TLabel
+;Caption=&Domain:
+Caption=域(&D):
+[frmDomains.Label3]
+Class=TLabel
+;Caption=&Type:
+Caption=类型(&T):
+[frmDomains.Label4]
+Class=TLabel
+;Caption=&Length:
+Caption=长度(&L):
+[frmDomains.Label9]
+Class=TLabel
+;Caption=C&har Set:
+Caption=字符(&h):
+[frmDomains.Label2]
+Class=TLabel
+;Caption=Co&llate:
+Caption=校对(&l):
+[frmDomains.Label14]
+Class=TLabel
+;Caption=&Precision:
+Caption=精度(&P):
+[frmDomains.Label15]
+Class=TLabel
+;Caption=&Scale:
+Caption=数值范围(&S):
+[frmDomains.Label18]
+Class=TLabel
+;Caption=&Sub Type:
+Caption=子类(&S):
+[frmDomains.Label6]
+Class=TLabel
+;Caption=C&har Set:
+Caption=字符(&h):
+[frmDomains.Label11]
+Class=TLabel
+;Caption=Segment Si&ze:
+Caption=段长度(&z):
+[frmDomains.Label5]
+Class=TLabel
+;Caption=Co&llate:
+Caption=校对(&l):
+[frmDomains.chkColNotNull]
+Class=TCheckBox
+;Caption=Not &Null
+Caption=不为空(&N)
+[frmDomains.Label10]
+Class=TLabel
+;Caption=&Array:
+Caption=数组(&A):
+[frmDomains.lvArray]
+Class=TListView
+Hint=
+Columns.Count=2
+Column0.Caption=范围(L)
+Column1.Caption=范围(U)
+[frmDomains.btnAddDimension]
+Class=TButton
+;Caption=&Add Dimension
+Caption=添加尺寸(&A)
+[frmDomains.btnDeleteDimension]
+Class=TButton
+;Caption=&Delete Dimension
+Caption=删除尺寸(&D)
+[frmDomains.btnEditDimension]
+Class=TButton
+;Caption=&Edit Dimension
+Caption=编辑尺寸(&E)
+[frmDomains.tsDefault]
+Class=TTabSheet
+;Caption=Default
+Caption=默认
+[frmDomains.tsConstraint]
+Class=TTabSheet
+;Caption=Constraint
+Caption=约束
+[frmDomains.tsDescription]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[frmDomains.tsDDL]
+Class=TTabSheet
+;Caption=Metadata
+Caption=数据元
+[frmServerRegister]
+Class=TfrmServerRegister
+;Caption=Register Server and Connect
+Caption=注册服务器并连接
+[frmServerRegister.gbServerInfo]
+Class=TGroupBox
+;Caption= Server Information 
+Caption= 服务器属性
+[frmServerRegister.lblServerName]
+Class=TLabel
+;Caption=S&erver Name:
+Caption=服务器名称(&e):
+[frmServerRegister.lblProtocol]
+Class=TLabel
+;Caption=&Network Protocol:
+Caption=网络协议(&N):
+[frmServerRegister.lblServerAlias]
+Class=TLabel
+;Caption=&Alias Name:
+Caption=别名(&A):
+[frmServerRegister.Label1]
+Class=TLabel
+;Caption=&Description:
+Caption=描述(&D):
+[frmServerRegister.rbLocalServer]
+Class=TRadioButton
+;Caption=&Local Server
+Caption=本地(&L)
+[frmServerRegister.rbRemoteServer]
+Class=TRadioButton
+;Caption=&Remote Server
+Caption=远程服务器(&R)
+[frmServerRegister.chkSaveAlias]
+Class=TCheckBox
+;Caption=&Save Alias Information
+Caption=保存别名信息(&S)
+[frmServerRegister.gbLoginInfo]
+Class=TGroupBox
+;Caption= Login Information 
+Caption= 登录信息
+[frmServerRegister.lblUsername]
+Class=TLabel
+;Caption=&User Name:
+Caption=用户名称(&U):
+[frmServerRegister.lblPassword]
+Class=TLabel
+;Caption=&Password:
+Caption=密码(&P):
+[frmServerRegister.btnOK]
+Class=TButton
+Caption=确定(&O)
+[frmServerRegister.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+[frmCommDiag]
+Class=TfrmCommDiag
+;Caption=Communication Diagnostics
+Caption=通信诊断
+[frmCommDiag.pgcDiagnostics]
+Class=TPageControl
+Hint=
+PageCount=4
+[frmCommDiag.pgcDiagnostics.tabDBConnection]
+Class=TTabSheet
+;Caption=DB Connection
+Caption=数据库连接
+[frmCommDiag.pgcDiagnostics.tabTCPIP]
+Class=TTabSheet
+Caption=TCP/IP
+[frmCommDiag.pgcDiagnostics.tabNetBEUI]
+Class=TTabSheet
+Caption=NetBEUI
+[frmCommDiag.pgcDiagnostics.tabSPX]
+Class=TTabSheet
+Caption=SPX
+[frmCommDiag.tabDBConnection]
+Class=TTabSheet
+;Caption=DB Connection
+Caption=数据库连接
+[frmCommDiag.lblDBResults]
+Class=TLabel
+;Caption=&Results:
+Caption=结果(&R):
+[frmCommDiag.gbDatabaseInfo]
+Class=TGroupBox
+;Caption= Database Information
+Caption= 数据库信息
+[frmCommDiag.lblDatabase]
+Class=TLabel
+;Caption=&Database:
+Caption=数据库(&D):
+[frmCommDiag.lblUsername]
+Class=TLabel
+;Caption=&User Name:
+Caption=用户名称(&U):
+[frmCommDiag.lblPassword]
+Class=TLabel
+;Caption=&Password:
+Caption=密码(&P):
+[frmCommDiag.btnSelDB]
+Class=TButton
+Caption=...
+;Hint=Select database
+Hint=选择数据库
+[frmCommDiag.gbDBServerInfo]
+Class=TGroupBox
+;Caption= Server Information
+Caption= 服务器信息
+[frmCommDiag.lblServerName]
+Class=TLabel
+;Caption=&Server Name:
+Caption=服务器名称(&S):
+[frmCommDiag.lblProtocol]
+Class=TLabel
+;Caption=&Network Protocol:
+Caption=网络协议(&N):
+[frmCommDiag.rbLocalServer]
+Class=TRadioButton
+;Caption=&Local Server
+Caption=本地(&L)
+[frmCommDiag.rbRemoteServer]
+Class=TRadioButton
+;Caption=R&emote Server
+Caption=远程服务器(&e)
+[frmCommDiag.tabTCPIP]
+Class=TTabSheet
+Caption=TCP/IP
+[frmCommDiag.lblWinSockResults]
+Class=TLabel
+;Caption=&Results:
+Caption=结果(&R):
+[frmCommDiag.gbTCPIPServerInfo]
+Class=TGroupBox
+;Caption= Server Information
+Caption= 服务器信息
+[frmCommDiag.lblWinsockServer]
+Class=TLabel
+;Caption=&Host:
+Caption=主机(&H):
+[frmCommDiag.lblService]
+Class=TLabel
+;Caption=&Service:
+Caption=服务(&S):
+[frmCommDiag.tabNetBEUI]
+Class=TTabSheet
+Caption=NetBEUI
+[frmCommDiag.lblNetBeuiResults]
+Class=TLabel
+;Caption=&Results:
+Caption=结果(&R):
+[frmCommDiag.gbNetBEUIServerInfo]
+Class=TGroupBox
+;Caption= Server Information
+Caption= 服务器信息
+[frmCommDiag.lblNetBEUIServer]
+Class=TLabel
+;Caption=&Server Name:
+Caption=服务器名称(&S):
+[frmCommDiag.tabSPX]
+Class=TTabSheet
+Caption=SPX
+[frmCommDiag.lblSPXResults]
+Class=TLabel
+;Caption=&Results:
+Caption=结果(&R):
+[frmCommDiag.gbNovellServerInfo]
+Class=TGroupBox
+;Caption= Server Information
+Caption= 服务器信息
+[frmCommDiag.lblSPXServer]
+Class=TLabel
+;Caption=&Server Name:
+Caption=服务器名称(&S):
+[frmCommDiag.btnTest]
+Class=TButton
+;Caption=&Test
+Caption=测试(&T)
+[frmCommDiag.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+[frmBackupAliasProperties]
+Class=TfrmBackupAliasProperties
+;Caption=Backup Alias Properties
+Caption=备份别名属性
+[frmBackupAliasProperties.lblServerName]
+Class=TLabel
+;Caption=Server:
+Caption=服务器:
+[frmBackupAliasProperties.lblAliasName]
+Class=TLabel
+;Caption=&Alias Name:
+Caption=别名(&A):
+[frmBackupAliasProperties.lblDBServer]
+Class=TLabel
+;Caption=Target Database &Server:
+Caption=目标数据库服务器(&S):
+[frmBackupAliasProperties.lblDBAlias]
+Class=TLabel
+;Caption=Target &Database Alias:
+Caption=目标数据库别名(&D):
+[frmBackupAliasProperties.lblServer]
+Class=TLabel
+;Caption=Local Server
+Caption=本地
+[frmBackupAliasProperties.btnApply]
+Class=TButton
+;Caption=&Apply
+Caption=应用(&A)
+[frmBackupAliasProperties.btnOK]
+Class=TButton
+Caption=确定(&O)
+[frmBackupAliasProperties.Button1]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+[frmDBConnections]
+Class=TfrmDBConnections
+;Caption=Database Connections
+Caption=数据库连接
+[frmDBConnections.lvConnections]
+Class=TListView
+Hint=
+Columns.Count=1
+;Column0.Caption=User Name
+Column0.Caption=新用户
+[frmDBConnections.btnOK]
+Class=TButton
+Caption=确定(&O)
+[dlgWindowList]
+Class=TdlgWindowList
+;Caption=Active Windows
+Caption=活动窗口
+[dlgWindowList.ListView1]
+Class=TListView
+Hint=
+Columns.Count=1
+;Column0.Caption=Windows
+Column0.Caption=窗口
+[dlgWindowList.SwitchTo]
+Class=TAction
+;Caption=&Switch To...
+Caption=转向(&S)...
+[dlgWindowList.Closewindow]
+Class=TAction
+;Caption=&Close Window
+Caption=关闭窗口(&C)
+[dlgWindowList.ActionCloseAll]
+Class=TAction
+;Caption=Close &All
+Caption=关闭所有窗口(&A)
+[frmDomains.ActionCompile]
+Class=TAction
+;Caption=&Compile
+Caption=编译(&C)
+[frmEditorTable]
+Class=TfrmEditorTable
+;Caption=Table - CATEGORIE
+Caption=数据表 - CATEGORIE
+[frmEditorTable.pgcProperties]
+Class=TPageControl
+Hint=
+PageCount=6
+[frmEditorTable.pgcProperties.tabProperties]
+Class=TTabSheet
+;Caption=Properties
+Caption=属性
+[frmEditorTable.pgcProperties.tabData]
+Class=TTabSheet
+;Caption=Data
+Caption=数据
+[frmEditorTable.pgcProperties.tabMetadata]
+Class=TTabSheet
+;Caption=Metadata
+Caption=数据元
+[frmEditorTable.pgcProperties.tabPermissions]
+Class=TTabSheet
+;Caption=Permissions
+Caption=许可
+[frmEditorTable.pgcProperties.tabDependencies]
+Class=TTabSheet
+;Caption=Dependencies
+Caption=依赖
+[frmEditorTable.pgcProperties.tabDescription]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[frmEditorTable.tabProperties]
+Class=TTabSheet
+;Caption=Properties
+Caption=属性
+[frmEditorTable.lvTableObjects]
+Class=TListView
+Hint=
+Columns.Count=6
+;Column0.Caption=Name
+Column0.Caption=名称
+;Column1.Caption=Type
+Column1.Caption=类型
+;Column2.Caption=Character Set
+Column2.Caption=字符
+;Column3.Caption=Collation
+Column3.Caption=较对
+;Column4.Caption=Default Value
+Column4.Caption=默认值
+;Column5.Caption=Allow Nulls
+Column5.Caption=允许值
+[frmEditorTable.tabData]
+Class=TTabSheet
+;Caption=Data
+Caption=数据
+[frmEditorTable.dbgData]
+Class=TDBGrid
+Hint=
+Columns.Count=1
+Column0.Caption=
+[frmEditorTable.DBNavigator1]
+Class=TNavButton
+;Hint=Refresh data
+Hint=刷新数据
+[frmEditorTable.IB_TransactionBar1]
+Class=TIB_TransactionBar_Button
+;Hint=Close Current Transaction
+Hint=关闭当前事务
+[frmEditorTable.tabMetadata]
+Class=TTabSheet
+;Caption=Metadata
+Caption=数据元
+[frmEditorTable.cbExtractData]
+Class=TCheckBox
+;Caption=Extract table data
+Caption=执行表数据
+[frmEditorTable.tabPermissions]
+Class=TTabSheet
+;Caption=Permissions
+Caption=许可
+[frmEditorTable.lvPermissions]
+Class=TListView
+Hint=
+Columns.Count=8
+;Column0.Caption=Object
+Column0.Caption=对象
+;Column1.Caption=Select
+Column1.Caption=选择
+;Column2.Caption=Delete
+Column2.Caption=删除
+;Column3.Caption=Insert
+Column3.Caption=插入
+;Column4.Caption=Update
+Column4.Caption=修改
+;Column5.Caption=Reference
+Column5.Caption=引用
+;Column6.Caption=Execute
+Column6.Caption=执行
+;Column7.Caption=Member Of
+Column7.Caption=成员
+[frmEditorTable.Label1]
+Class=TLabel
+;Caption=This permission includes GRANT OPTION
+Caption=本许可包含 GRANT 选项
+[frmEditorTable.tabDependencies]
+Class=TTabSheet
+;Caption=Dependencies
+Caption=依赖
+[frmEditorTable.rbDependent]
+Class=TRadioButton
+;Caption=Show &Dependent Objects
+Caption=显示附属对象(&D)
+;Hint=Displays objects which depend on the currently selected object
+Hint=显示依赖在当前您选择对象上对象
+[frmEditorTable.rbDependedOn]
+Class=TRadioButton
+Caption=Show Depended &On Objects
+Caption=显示依赖对象(&O)
+;Hint=Shows the objects the current object depends on
+Hint=显示当前对象所依附的对象
+[frmEditorTable.tabDescription]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[frmEditorTable.ShowColumns]
+Class=TAction
+;Caption=Columns
+Caption=列
+;Hint=Show Columns for the table
+Hint=显示数据表中的数据列
+[frmEditorTable.ShowTriggers]
+Class=TAction
+;Caption=Triggers
+Caption=触发器
+;Hint=Show triggers for the table
+Hint=显示数据表中的触发器
+[frmEditorTable.ShowCheckConstraints]
+Class=TAction
+;Caption=Check Constraints
+Caption=约束检查
+;Hint=Show Check Constraints
+Hint=显示约束检查
+[frmEditorTable.ShowIndexes]
+Class=TAction
+;Caption=Indexes
+Caption=索引
+;Hint=Show indexes
+Hint=显示索引
+[frmEditorTable.ShowUniqueConstraints]
+Class=TAction
+;Caption=Unique Constraints
+Caption=唯一性约束
+Hint=显示数据表中的唯一性约束
+[frmEditorTable.ShowReferentialConstraints]
+Class=TAction
+Caption=参考性约束
+Hint=显示数据表中的参考性约束
+[frmEditorTable.EditCopy1]
+Class=TEditCopy
+;Caption=&Copy
+Caption=复制(&C)
+;Hint=Copy
+Hint=复制
+[frmEditorTable.EditCut1]
+Class=TEditCut
+;Caption=Cu&t
+Caption=剪切(&t)
+Hint=剪切
+[frmEditorTable.EditPaste1]
+Class=TEditPaste
+;Caption=&Paste
+Caption=粘贴(&P)
+;Hint=Paste
+Hint=粘贴
+[frmEditorTable.EditSelectAll1]
+Class=TEditSelectAll
+;Caption=Select &All
+Caption=全部选择(&A)
+[frmEditorTable.EditUndo1]
+Class=TEditUndo
+;Caption=&Undo
+Caption=撤消(&U)
+[frmEditorTable.ActionNewObject]
+Class=TAction
+;Caption=New...
+Caption=新建...
+[frmEditorTable.ActionEditObject]
+Class=TAction
+;Caption=Edit...
+Caption=编辑...
+[frmEditorTable.ActionDropObject]
+Class=TAction
+;Caption=Drop
+Caption=删除
+[frmEditorTable.ActionGrantSelect]
+Class=TAction
+;Caption=Select
+Caption=选择
+[frmEditorTable.ActionGrantDelete]
+Class=TAction
+;Caption=Delete
+Caption=删除
+[frmEditorTable.ActionGrantInsert]
+Class=TAction
+;Caption=Insert
+Caption=插入
+[frmEditorTable.ActionGrantUpdate]
+Class=TAction
+;Caption=Update
+Caption=更新
+[frmEditorTable.ActionGrantReference]
+Class=TAction
+;Caption=Reference
+Caption=引用
+[frmEditorTable.ActionGrantExecute]
+Class=TAction
+;Caption=Execute
+Caption=执行
+[frmEditorTable.ActionGrantAll]
+Class=TAction
+;Caption=Grant All
+Caption=全部授权
+[frmEditorTable.ActionRevokeAll]
+Class=TAction
+;Caption=Revoke All
+Caption=全部撤消
+[frmEditorTable.ActionOpenTable]
+Class=TAction
+;Caption=Open
+Caption=打开
+[frmEditorTable.ActionTableFilter]
+Class=TAction
+;Caption=Filter
+Caption=过滤
+[frmEditorTable.ActionTableFormView]
+Class=TAction
+;Caption=Form View
+Caption=视图表单
+[frmEditorTable.ActionEmptyTable]
+Class=TAction
+;Caption=Empty Table
+Caption=清空数据表
+[frmEditorTable.ActionTableClearFilter]
+Class=TAction
+;Caption=Clear Filter
+Caption=清除过滤器
+[frmEditorTable.ActionCopyRecord]
+Class=TAction
+;Caption=Copy Record
+Caption=复制记录
+[frmEditorTable.NewPrimaryKey1]
+Class=TMenuItem
+;Caption=New Primary Key
+Caption=新建主键
+[frmEditorTable.Savetofile1]
+Class=TMenuItem
+;Caption=Save to file...
+Caption=保存到文件...
+[frmEditorTable.Loadfromfile1]
+Class=TMenuItem
+;Caption=Load from file...
+Caption=从文件引入...
+[frmEditorTable.Copy2]
+Class=TMenuItem
+;Caption=Copy
+Caption=复制
+[frmEditorTable.Paste2]
+Class=TMenuItem
+;Caption=Paste
+Caption=粘贴
+[frmEditorTable.Cut2]
+Class=TMenuItem
+;Caption=Cut
+Caption=剪切
+[frmEditorTable.SavePictureDialog1.PreviewButton]
+Class=TSpeedButton
+;Hint=Preview
+Hint=预览
+[frmEditorTable.OpenPictureDialog1.PreviewButton]
+Class=TSpeedButton
+;Hint=Preview
+Hint=预览
+[frmViewEditor]
+Class=TfrmViewEditor
+;Caption=View - NEW_VIEW
+Caption=视图 - 新视图
+[frmViewEditor.pgObjectEditor]
+Class=TPageControl
+Hint=
+PageCount=7
+[frmViewEditor.pgObjectEditor.tsSQL]
+Class=TTabSheet
+;Caption=View
+Caption=视图
+[frmViewEditor.pgObjectEditor.tsTableView]
+Class=TTabSheet
+;Caption=Structure
+Caption=结构
+[frmViewEditor.pgObjectEditor.tsDependenciesView]
+Class=TTabSheet
+;Caption=Dependencies
+Caption=依赖
+[frmViewEditor.pgObjectEditor.tsTriggerView]
+Class=TTabSheet
+;Caption=Triggers
+Caption=触发器
+[frmViewEditor.pgObjectEditor.tsData]
+Class=TTabSheet
+;Caption=Data
+Caption=数据
+[frmViewEditor.pgObjectEditor.tsDoco]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[frmViewEditor.pgObjectEditor.tsGrants]
+Class=TTabSheet
+;Caption=Grants
+Caption=授权
+[frmViewEditor.tsSQL]
+Class=TTabSheet
+;Caption=View
+Caption=视图
+[frmViewEditor.tsTableView]
+Class=TTabSheet
+;Caption=Structure
+Caption=结构
+[frmViewEditor.lvFieldList]
+Class=TListView
+Hint=
+Columns.Count=8
+;Column0.Caption=Field Name
+Column0.Caption=字段名
+;Column1.Caption=Field Type
+Column1.Caption=字段类型
+;Column2.Caption=Sub Type
+Column2.Caption=子类
+;Column3.Caption=Domain
+Column3.Caption=域
+;Column4.Caption=Not Null
+Column4.Caption=非空
+;Column5.Caption=Description
+Column5.Caption=描述
+;Column6.Caption=Default Source
+Column6.Caption=默认数据源
+;Column7.Caption=Computed Source
+Column7.Caption=计算源
+[frmViewEditor.tsDependenciesView]
+Class=TTabSheet
+;Caption=Dependencies
+Caption=依赖
+[frmViewEditor.rbDependent]
+Class=TRadioButton
+;Caption=Show &Dependent Objects
+Caption=显示依赖对象(&D)
+;Hint=Displays objects which depend on the currently selected object
+Hint=显示当前选择对象的依赖对象
+[frmViewEditor.rbDependedOn]
+Class=TRadioButton
+;Caption=Show Depended &On Objects
+Caption=显示依赖对象(&O)
+;Hint=Shows the objects the current object depends on
+Hint=显示当前对象上的依赖对象
+[frmViewEditor.tsTriggerView]
+Class=TTabSheet
+;Caption=Triggers
+Caption=触发器
+[frmViewEditor.Label1]
+Class=TLabel
+;Caption=Display:
+Caption=显示:
+[frmViewEditor.tsData]
+Class=TTabSheet
+;Caption=Data
+Caption=数据
+[frmViewEditor.navDataView]
+Class=TNavButton
+;Hint=Refresh data
+Hint=刷新数据
+[frmViewEditor.IB_TransactionBar1]
+Class=TIB_TransactionBar_Button
+;Hint=Close Current Transaction
+Hint=关闭当前事务
+[frmViewEditor.btnRefresh]
+Class=TSpeedButton
+;Caption=&Refresh
+Caption=刷新(&R)
+[frmViewEditor.grdDataView]
+Class=TDBGrid
+Hint=
+Columns.Count=1
+Column0.Caption=
+[frmViewEditor.tsDoco]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[frmViewEditor.tsGrants]
+Class=TTabSheet
+;Caption=Grants
+Caption=授权
+[frmViewEditor.lvPermissions]
+Class=TListView
+Hint=
+Columns.Count=8
+;Column0.Caption=Object
+Column0.Caption=对象
+;Column1.Caption=Select
+Column1.Caption=选择
+;Column2.Caption=Delete
+Column2.Caption=删除
+;Column3.Caption=Insert
+Column3.Caption=插入
+;Column4.Caption=Update
+Column4.Caption=更新
+;Column5.Caption=Reference
+Column5.Caption=引用
+;Column6.Caption=Execute
+Column6.Caption=执行
+;Column7.Caption=Member Of
+Column7.Caption=成员
+[frmViewEditor.Label2]
+Class=TLabel
+;Caption=This permission includes GRANT OPTION
+Caption=当前许可包含 GRANT 选项
+[frmViewEditor.ActionCompile]
+Class=TAction
+;Caption=Compile
+Caption=编译
+[frmStoredProcedure]
+Class=TfrmStoredProcedure
+;Caption=Stored Procedure
+Caption=存储过程
+[frmStoredProcedure.pgObjectEditor]
+Class=TPageControl
+Hint=
+PageCount=7
+[frmStoredProcedure.pgObjectEditor.tsStoredProc]
+Class=TTabSheet
+;Caption=Edit
+Caption=编辑
+[frmStoredProcedure.pgObjectEditor.tsExecution]
+Class=TTabSheet
+;Caption=Execution
+Caption=执行
+[frmStoredProcedure.pgObjectEditor.tsDocoView]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[frmStoredProcedure.pgObjectEditor.tsDependencies]
+Class=TTabSheet
+;Caption=Dependencies
+Caption=依赖
+[frmStoredProcedure.pgObjectEditor.tsGrants]
+Class=TTabSheet
+;Caption=Grants
+Caption=授权
+[frmStoredProcedure.pgObjectEditor.tsDebuggerOutput]
+Class=TTabSheet
+;Caption=Debugger Output
+Caption=程序调试输出
+[frmStoredProcedure.pgObjectEditor.tsMetadata]
+Class=TTabSheet
+;Caption=Metadata
+Caption=数据元
+[frmStoredProcedure.tsStoredProc]
+Class=TTabSheet
+;Caption=Edit
+Caption=编辑
+[frmStoredProcedure.Label2]
+Class=TLabel
+;Caption=Name:
+Caption=名称:
+[frmStoredProcedure.dbgParameters]
+Class=TDBGrid
+Hint=
+Columns.Count=3
+;Column0.Caption=Type
+Column0.Caption=类型
+;Column1.Caption=Parameter
+Column1.Caption=参数
+;Column2.Caption=Data Type
+Column2.Caption=数据类型
+[frmStoredProcedure.tsExecution]
+Class=TTabSheet
+;Caption=Execution
+Caption=执行
+[frmStoredProcedure.grdResults]
+Class=TDBGrid
+Hint=
+Columns.Count=1
+Column0.Caption=
+[frmStoredProcedure.dbgValues]
+Class=TDBGrid
+Hint=
+Columns.Count=3
+;Column0.Caption=Parameter
+Column0.Caption=参数
+;Column1.Caption=Type
+Column1.Caption=类型
+;Column2.Caption=Value
+Column2.Caption=值
+[frmStoredProcedure.tsDocoView]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[frmStoredProcedure.tsDependencies]
+Class=TTabSheet
+;Caption=Dependencies
+Caption=依赖
+[frmStoredProcedure.rbDependent]
+Class=TRadioButton
+;Caption=Show &Dependent Objects
+Caption=显示依赖对象(&D)
+;Hint=Displays objects which depend on the currently selected object
+Hint=显示当前选择对象上的依赖对象
+[frmStoredProcedure.rbDependedOn]
+Class=TRadioButton
+;Caption=Show Depended &On Objects
+Caption=显示依赖对象(&O)
+;Hint=Shows the objects the current object depends on
+Hint=显示当前对象上的依赖对象
+[frmStoredProcedure.tsGrants]
+Class=TTabSheet
+;Caption=Grants
+Caption=授权
+[frmStoredProcedure.lvPermissions]
+Class=TListView
+Hint=
+Columns.Count=8
+;Column0.Caption=Object
+Column0.Caption=对象
+;Column1.Caption=Select
+Column1.Caption=选择
+;Column2.Caption=Delete
+Column2.Caption=删除
+;Column3.Caption=Insert
+Column3.Caption=插入
+;Column4.Caption=Update
+Column4.Caption=更新
+;Column5.Caption=Reference
+Column5.Caption=引用
+;Column6.Caption=Execute
+Column6.Caption=执行
+;Column7.Caption=Member Of
+Column7.Caption=成员
+[frmStoredProcedure.Label1]
+Class=TLabel
+;Caption=This permission includes GRANT OPTION
+Caption=当前许可包含 GRANT 选项
+[frmStoredProcedure.tsDebuggerOutput]
+Class=TTabSheet
+;Caption=Debugger Output
+Caption=程序调试输出
+[frmStoredProcedure.tsMetadata]
+Class=TTabSheet
+;Caption=Metadata
+Caption=数据元
+[frmStoredProcedure.ActionExecute]
+Class=TAction
+;Caption=Execute
+Caption=执行
+[frmStoredProcedure.ActionCompile]
+Class=TAction
+;Caption=Compile
+Caption=编译
+[frmStoredProcedure.ActionCheckParams]
+Class=TAction
+;Caption=Check Params
+Caption=检查参数
+[frmStoredProcedure.ActionAddInputParam]
+Class=TAction
+;Caption=Add Input Param
+Caption=添加输入参数
+[frmStoredProcedure.ActionEditParam]
+Class=TAction
+;Caption=Edit Param
+Caption=编辑参数
+[frmStoredProcedure.ActionDeleteParam]
+Class=TAction
+;Caption=Delete Param
+Caption=删除参数
+[frmStoredProcedure.ActionMoveUp]
+Class=TAction
+;Caption=Move Up
+Caption=上移
+[frmStoredProcedure.ActionMoveDown]
+Class=TAction
+;Caption=Move Down
+Caption=下移
+[frmStoredProcedure.ActionAddOutputParam]
+Class=TAction
+;Caption=Add Output Param
+Caption=添加输出参数
+[frmUDFEditor]
+Class=TfrmUDFEditor
+;Caption=External Function - new_udf
+Caption=外部函数 - 新UDF
+[frmUDFEditor.pgObjectEditor]
+Class=TPageControl
+Hint=
+PageCount=3
+[frmUDFEditor.pgObjectEditor.tsObject]
+Class=TTabSheet
+;Caption=Properties
+Caption=属性
+[frmUDFEditor.pgObjectEditor.tsDocoView]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[frmUDFEditor.pgObjectEditor.tsDDL]
+Class=TTabSheet
+;Caption=Metadata
+Caption=数据元
+[frmUDFEditor.tsObject]
+Class=TTabSheet
+;Caption=Properties
+Caption=属性
+[frmUDFEditor.lvUDFParams]
+Class=TListView
+Hint=
+Columns.Count=2
+;Column0.Caption=Parameter
+Column0.Caption=参数
+;Column1.Caption=Calling Mechanism
+Column1.Caption=呼叫方式
+[frmUDFEditor.Label5]
+Class=TLabel
+Caption=&By:
+[frmUDFEditor.Label4]
+Class=TLabel
+Caption=&Returns:
+Caption=返回(&R):
+[frmUDFEditor.Label3]
+Class=TLabel
+;Caption=&Library Name:
+Caption=连接库名(&L):
+[frmUDFEditor.Label2]
+Class=TLabel
+;Caption=&Entry Point:
+Caption=入口点(&E):
+[frmUDFEditor.Label1]
+Class=TLabel
+;Caption=&Name:
+Caption=名称(&N):
+[frmUDFEditor.Label6]
+Class=TLabel
+;Caption=Input &Parameters:
+Caption=输出参数(&P):
+[frmUDFEditor.tsDocoView]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[frmUDFEditor.tsDDL]
+Class=TTabSheet
+;Caption=Metadata
+Caption=数据元
+[frmUDFEditor.ActionCompile]
+Class=TAction
+;Caption=Compile
+Caption=编译
+[frmExceptions]
+Class=TfrmExceptions
+;Caption=Exception - USERNAME_DUPLICATE
+Caption=异常 - USERNAME_DUPLICATE
+[frmExceptions.pgObjectEditor]
+Class=TPageControl
+Hint=
+PageCount=3
+[frmExceptions.pgObjectEditor.tsObject]
+Class=TTabSheet
+;Caption=Exception
+Caption=异常
+[frmExceptions.pgObjectEditor.tsDocoView]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[frmExceptions.pgObjectEditor.tsDDL]
+Class=TTabSheet
+;Caption=Metadata
+Caption=数据元
+[frmExceptions.tsObject]
+Class=TTabSheet
+;Caption=Exception
+Caption=异常
+[frmExceptions.Label1]
+Class=TLabel
+;Caption=&Exception Name:
+Caption=异常名称(&E):
+[frmExceptions.Label2]
+Class=TLabel
+;Caption=Exception &Text:
+Caption=异常内容(&T):
+[frmExceptions.tsDocoView]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[frmExceptions.tsDDL]
+Class=TTabSheet
+;Caption=Metadata
+Caption=数据元
+[frmExceptions.ActionCompile]
+Class=TAction
+;Caption=Compile
+Caption=编译
+[FrmEditorFilter]
+Class=TFrmEditorFilter
+;Caption=Blob Filter - new_filter
+Caption=Blob 过滤 - 新过滤器
+[FrmEditorFilter.objControl]
+Class=TPageControl
+Hint=
+PageCount=3
+[FrmEditorFilter.objControl.tabFilters]
+Class=TTabSheet
+;Caption=Properties
+Caption=属性
+[FrmEditorFilter.objControl.tsMetadata]
+Class=TTabSheet
+;Caption=Metadata
+Caption=数据元
+[FrmEditorFilter.objControl.tsDescription]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[FrmEditorFilter.tabFilters]
+Class=TTabSheet
+;Caption=Properties
+Caption=属性
+[FrmEditorFilter.Label11]
+Class=TLabel
+;Caption=&Module Name:
+Caption=模版名称(&M):
+[FrmEditorFilter.Label12]
+Class=TLabel
+;Caption=&Entrypoint:
+Caption=进入点(&E):
+[FrmEditorFilter.Label13]
+Class=TLabel
+;Caption=&Input SubType:
+Caption=输入子类(&I):
+[FrmEditorFilter.Label14]
+Class=TLabel
+;Caption=&Output SubType:
+Caption=输出子类(&O):
+[FrmEditorFilter.tsMetadata]
+Class=TTabSheet
+;Caption=Metadata
+Caption=数据元
+[FrmEditorFilter.tsDescription]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[FrmEditorFilter.actReset]
+Class=TAction
+;Caption=&Reset Value
+Caption=重置(&R)
+[FrmEditorFilter.ActionCompile]
+Class=TAction
+;Caption=&Compile
+Caption=编译(&C)
+[frmRole]
+Class=TfrmRole
+;Caption=Role - NEW_ROLE
+Caption=角色 - 新角色
+[frmRole.pgObjectEditor]
+Class=TPageControl
+Hint=
+PageCount=2
+[frmRole.pgObjectEditor.tsRole]
+Class=TTabSheet
+;Caption=Role
+Caption=角色
+[frmRole.pgObjectEditor.tsDDLView]
+Class=TTabSheet
+;Caption=Metadata
+Caption=数据元
+[frmRole.tsRole]
+Class=TTabSheet
+;Caption=Role
+Caption=角色
+[frmRole.Label1]
+Class=TLabel
+;Caption=&Role Name:
+Caption=角色名称(&R):
+[frmRole.tsDDLView]
+Class=TTabSheet
+;Caption=Metadata
+Caption=数据元
+[frmRole.ActionCompile]
+Class=TAction
+;Caption=&Compile
+Caption=编译(&C)
+[dlgWisql]
+Class=TdlgWisql
+;Caption=Interactive SQL
+Caption=交互式SQL
+[dlgWisql.lblFileName]
+Class=TLabel
+[dlgWisql.pgcOutput]
+Class=TPageControl
+Hint=
+PageCount=4
+[dlgWisql.pgcOutput.tsParameters]
+Class=TTabSheet
+;Caption=Parameters
+Caption=参数
+[dlgWisql.pgcOutput.TabData]
+Class=TTabSheet
+;Caption=Data
+Caption=数据
+[dlgWisql.pgcOutput.TabResults]
+Class=TTabSheet
+;Caption=Plan
+Caption=计划
+[dlgWisql.pgcOutput.TabStats]
+Class=TTabSheet
+;Caption=Statistics
+Caption=统计
+[dlgWisql.tsParameters]
+Class=TTabSheet
+;Caption=Parameters
+Caption=参数
+[dlgWisql.TabData]
+Class=TTabSheet
+;Caption=Data
+Caption=数据
+[dlgWisql.dbgSQLResults]
+Class=TDBGrid
+Hint=
+Columns.Count=1
+Column0.Caption=
+[dlgWisql.TabResults]
+Class=TTabSheet
+;Caption=Plan
+Caption=计划
+[dlgWisql.TabStats]
+Class=TTabSheet
+;Caption=Statistics
+Caption=统计
+[dlgWisql.lvStats]
+Class=TListView
+Hint=
+Columns.Count=2
+;Column0.Caption=Statistic
+Column0.Caption=统计
+;Column1.Caption=Value
+Column1.Caption=值
+[dlgWisql.IB_TransactionBarDefault]
+Class=TIB_TransactionBar_Button
+;Hint=Close Current Transaction
+Hint=关闭当前事务
+[dlgWisql.IB_TransactionBarDDL]
+Class=TIB_TransactionBar_Button
+;Hint=Close Current Transaction
+Hint=关闭当前事务
+[dlgWisql.File1]
+Class=TMenuItem
+;Caption=&File
+Caption=文件(&F)
+[dlgWisql.mnuEdit1]
+Class=TMenuItem
+;Caption=&Edit
+Caption=编辑(&E)
+[dlgWisql.Edit1]
+Class=TMenuItem
+;Caption=&Query
+Caption=查询(&Q)
+[dlgWisql.Database1]
+Class=TMenuItem
+;Caption=&Database
+Caption=数据库(&D)
+[dlgWisql.Help1]
+Class=TMenuItem
+;Caption=&Help
+Caption=帮助(&H)
+[dlgWisql.SQLReference1]
+Class=TMenuItem
+;Caption=&SQL Reference
+Caption=&SQL语法帮助
+[dlgWisql.DialectAction1]
+Class=TAction
+;Caption=Dialect &1
+Caption=方言 &1
+[dlgWisql.DialectAction2]
+Class=TAction
+;Caption=Dialect &2
+Caption=方言 &2
+[dlgWisql.DialectAction3]
+Class=TAction
+;Caption=Dialect &3
+Caption=方言 &3
+[dlgWisql.QueryPrevious]
+Class=TAction
+;Caption=&Previous
+Caption=预览(&P)
+;Hint=Previous Query
+Hint=预览查询
+[dlgWisql.QueryNext]
+Class=TAction
+;Caption=&Next
+Caption=下一个(&N)
+;Hint=Next Query
+Hint=下一个查询
+[dlgWisql.QueryExecute]
+Class=TAction
+;Caption=&Execute
+Caption=执行(&E)
+;Hint=Execute Query
+Hint=执行查询
+[dlgWisql.QueryLoadScript]
+Class=TAction
+;Caption=&Load Script
+Caption=导入脚本(&L)
+;Hint=Load SQL Script
+Hint=装载SQL脚本
+[dlgWisql.QuerySaveScript]
+Class=TAction
+;Caption=&Save Script
+Caption=保存脚本(&S)
+;Hint=Save Script
+Hint=保存SQL脚本
+[dlgWisql.QueryOptions]
+Class=TAction
+;Caption=O&ptions ...
+Caption=选项(&p) ...
+;Hint=Query Options
+Hint=查询选项
+[dlgWisql.QuerySaveOutput]
+Class=TAction
+;Caption=Save &Output
+Caption=保存输出(&O)
+;Hint=Save the query ouput
+Hint=保存查询输出
+[dlgWisql.QueryPrepare]
+Class=TAction
+;Caption=&Prepare
+Caption=准备(&P)
+;Hint=Prepare the current query before execution
+Hint=执行当前查询前准备
+[dlgWisql.EditOptions]
+Class=TAction
+;Caption=&Options ...
+Caption=选项(&O) ...
+;Hint=Show ISQL Options
+Hint=显示 ISQL 选项
+[dlgWisql.FileClose]
+Class=TAction
+;Caption=&Close
+Caption=关闭(&C)
+;Hint=Close the ISQL window
+Hint=关闭 ISQL 窗口
+[dlgWisql.EditFind]
+Class=TAction
+;Caption=&Find ...
+Caption=查找(&F) ...
+[dlgWisql.EditFont]
+Class=TAction
+;Caption=&Font ...
+Caption=字体(&F) ...
+[dlgWisql.EditCopy1]
+Class=TEditCopy
+;Caption=&Copy
+Caption=复制(&C)
+;Hint=Copy
+Hint=复制
+[dlgWisql.EditCut1]
+Class=TEditCut
+;Caption=Cu&t
+Caption=剪切(&t)
+;Hint=Cut
+Hint=剪切
+[dlgWisql.EditPaste1]
+Class=TEditPaste
+;Caption=&Paste
+Caption=粘贴(&P)
+;Hint=Paste
+Hint=粘贴
+[dlgWisql.EditSelectAll1]
+Class=TEditSelectAll
+;Caption=Select &All
+Caption=全部选择(&A)
+[dlgWisql.EditUndo1]
+Class=TEditUndo
+;Caption=&Undo
+Caption=撤消(&U)
+[dlgWisql.DatabaseConnectAs]
+Class=TAction
+;Caption=Connect &As ...
+Caption=连接到(&A) ...
+[dlgWisql.DatabaseDisconnect]
+Class=TAction
+;Caption=&Disconnect
+Caption=取消连接(&D)
+[dlgWisql.DatabaseCreate]
+Class=TAction
+;Caption=&Create Database ...
+Caption=建立数据库(&C) ...
+[dlgWisql.DatabaseDrop]
+Class=TAction
+;Caption=D&rop Database
+Caption=删除数据库(&r)
+[dlgWisql.Print]
+Class=TAction
+;Caption=&Print
+Caption=打印(&P)
+[dlgWisql.SaveSQLHistory]
+Class=TAction
+;Caption=Save SQL History
+Caption=保存 SQL 历史
+;Hint=Save SQL History
+Hint=保存 SQL 历史
+[dlgWisql.LoadSQLHistory]
+Class=TAction
+;Caption=Load SQL History
+Caption=装载 SQL 历史
+;Hint=Load SQL History
+Hint=装载 SQL 历史
+[dlgWisql.QueryFetchAll]
+Class=TAction
+;Caption=QueryFetchAll
+Caption=获取所有查询
+;Hint=Fetch All
+Hint=获取所有
+[dlgWisql.NewConnection]
+Class=TAction
+;Caption=New Connection...
+Caption=新建连接...
+[dlgWisql.EditRedo]
+Class=TAction
+;Caption=Redo
+Caption=撤销
+[frmDBConnect]
+Class=TfrmDBConnect
+;Caption=Database Connect
+Caption=数据库连接
+[frmDBConnect.lblDatabaseName]
+Class=TLabel
+;Caption=Database:
+Caption=数据库:
+[frmDBConnect.lblUsername]
+Class=TLabel
+;Caption=&User Name:
+Caption=新用户(&U):
+[frmDBConnect.lblPassword]
+Class=TLabel
+;Caption=&Password:
+Caption=密码(&P):
+[frmDBConnect.lblRole]
+Class=TLabel
+;Caption=&Role:
+Caption=角色(&R):
+[frmDBConnect.Label1]
+Class=TLabel
+;Caption=Client &Dialect:
+Caption=客户方言(&D):
+[frmDBConnect.Label2]
+Class=TLabel
+;Caption=Character  &Set
+Caption=字符(&S)
+[frmDBConnect.lblDatabase]
+Class=TLabel
+Caption=AEKOOLMS002.FDB
+[frmDBConnect.btnConnect]
+Class=TButton
+;Caption=C&onnect
+Caption=连接(&o)
+[frmDBConnect.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+[frmDBConnect.cbCaseSensitive]
+Class=TCheckBox
+;Caption=C&ase sensitive role name
+Caption=设置敏感角色名(&a)
+[frmMain]
+Class=TfrmMain
+;Caption=IBOConsole
+Caption=IBO控制台
+[frmOptions.Label1]
+Class=TLabel
+;Caption=Current Font Example.^MThe quick brown fox jumped over the lazy dog back.
+Caption=当前字体试例.^MThe quick brown fox jumped over the lazy dog back.
+[frmSQLOptions]
+Class=TfrmSQLOptions
+;Caption=SQL Options
+Caption=SQL 选项
+[frmSQLOptions.btnApply]
+Class=TButton
+;Caption=&Apply
+Caption=应用(&A)
+[frmSQLOptions.btnOK]
+Class=TButton
+Caption=确定(&O)
+[frmSQLOptions.pgControl]
+Class=TPageControl
+Hint=
+PageCount=2
+[frmSQLOptions.pgControl.TabSheet1]
+Class=TTabSheet
+;Caption=Options
+Caption=选项
+[frmSQLOptions.pgControl.TabSheet2]
+Class=TTabSheet
+;Caption=Advanced
+Caption=高级
+[frmSQLOptions.TabSheet1]
+Class=TTabSheet
+;Caption=Options
+Caption=选项
+[frmSQLOptions.cbClearInput]
+Class=TCheckBox
+;Caption=&Clear input window on success
+Caption=成功清除输入窗口(&C)
+[frmSQLOptions.TabSheet2]
+Class=TTabSheet
+;Caption=Advanced
+Caption=高级
+[frmSQLOptions.GroupBox1]
+Class=TGroupBox
+;Caption=SQL Events
+Caption=SQL 事件
+[frmSQLOptions.Label1]
+Class=TLabel
+;Caption=NOTE:
+Caption=注意:
+[frmSQLOptions.cbUpdateConnect]
+Class=TCheckBox
+;Caption=Update IBOConsole on C&onnect
+Caption=连接时更新IBO控制台(&o)
+[frmSQLOptions.cbUpdateCreate]
+Class=TCheckBox
+;Caption=Update IBOConsole on C&reate
+Caption=建立时更新IBO控制台(&r)
+[frmSQLOptions.rgTransactions]
+Class=TGroupButton
+;Caption=Ro&llback on exit
+Caption=退出时回滚与提交(&l)
+Items.Count=2
+;Item0=&Commit on exit
+Item0=退出时提交(&C)
+;Item1=Ro&llback on exit
+Item1=退出时回滚(&l)
+[frmSQLOptions.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+;
+;
+;
+;
+[prompts]
+;
+;to insert a line break use ^M
+;be careful to leave the same number of %s and %d in text!!
+;
+; Prompt used in confirm and warning dialog box defined in unit LMMessageDialog.pas
+; and called in substitution of MessageDlg
+;
+prompt0=确定复写 %s
+prompt1=不能打开文件 "%s".
+prompt2=未在Kylix内
+prompt3=您确定要删除您选择的数据库吗?
+prompt4=事务处理活动状态.^M您要提交事吗?^M^M选择 取消 将回滚活动的事务.
+prompt5=数据将保存到文件: %s
+prompt6=未指定格式
+prompt7=存储查询输出
+prompt8=%s 新的 %s 必需有一个名称.
+prompt9=%s %s 名称仍是一个默认名称. 您确定要使用这个默认名称吗?
+prompt10=%s %s %s 已被更改. 您需要保存改变吗?
+prompt11=您确定要取消注册当前选择的数据库吗?
+prompt12=您确定要关闭当前所连接的数据库吗?
+prompt13=清扫一个大的数据库文件将对服务器产生影响，并并可能需要较时间，您确定要清扫吗?
+prompt14=您确定要删除选择的数据库吗?
+prompt15=您确定要关闭连接服务器的数据库吗?
+prompt16=错误的选项值
+prompt17=拯救搁置事务完成.
+prompt18=Array Upper Bound must be greater than Array Lower Bound.
+prompt19=主键必需要有一个名称
+prompt20=唯一键必需要有一外名称
+prompt21=请选择字段给主键使用
+prompt22=请选择字段给唯一字段用
+prompt23=外键必需要有一个名字
+prompt24=请选择字段给外键使用
+prompt25=请选择字段给外键引用
+prompt26=约束检查必需有一个名称
+prompt27=约束检查必需包含一个表达式
+prompt28=您确定要删除这个尺寸?
+prompt29=对象编译未完成，您不能更改描述.
+prompt30=保存改变的描述?
+prompt31=异常必需要有一个消息内容.
+prompt32=新表必需要有一个名称.
+prompt33=设置非空必需要填入一个有效的值，并发备份将是无效的^M^M是否继续填入一个有效值?
+prompt34=如果该字段已建立了唯性索引，那么重新设置非空将不是安全的，并发备份将是无效的^M^M是否继续?
+prompt35=%s %s描述已改变. 是否要保存您所做的改变?
+prompt36=请选择数据列
+prompt37=对象未编译完成，您不能查看数据元.
+prompt38=对象未编译完成，您不能改变视图.
+prompt39=结果中有一个活动的事务 - 在改变视图前提交或回滚.
+prompt40=存储过程的代码已改变. 是否重新编译?
+prompt41=正在执行存储过程...
+prompt42=存储过程执行进度 - %s
+prompt43=您确定要删除 %s %s ?
+prompt44=您要删除表 %s 中所有的记录吗?
+prompt45=必需分配一个状态给触发器.
+prompt46=触发器必需要有一个名称.
+prompt47=用户自定义函数必需要有一个入口点.
+prompt48=用户自定义函数必需要有一个动态库名称.
+prompt49=用户自定义函数必需要有返回参数.
+prompt50=您确定要删除此参数吗?
+prompt51=您确定要删除这个尺寸吗?
+prompt52=栏位不能为空.
+prompt53=域名为空.
+prompt54=无计算表达式.
+prompt55=必需输入一个参数.
+prompt56=计划不能被修复
+prompt57=无法解析脚本
+prompt58=无活动连接
+prompt59=解析 CONNECT 语句时出错.
+prompt60=提交或回滚当前事务
+prompt61=解析 CREATE 语句出错.
+prompt62=客户方言无效
+prompt63=无法打开文件
+prompt64=数据库方言 (%d) 和客户端方言 (%d) 不符.
+prompt65=无法设置客户端方言为 %d
+prompt66=无法显示数组信息
+prompt67=未找到 '%s' 字串
+prompt68=无法解析脚本
+prompt69=您确定要注销 %s 吗?
+prompt70=您确定要从别名清单中删除 "%s" 吗?
+prompt71=用确定要删除用户 %s 吗?
+prompt72=创建路径 %s 出错. 操作被终止.
+prompt73=路径 %s 不存在. 是否要创建?
+prompt74=试图连接 '%s' 出错. 服务器版可能是一个较早的版本. 可能会导致很多功能无无法使用.
+prompt75=试图用 NetBEUI.%s%s 附加 %s
+prompt76= 连接%s %s成功 %s: %s %s.%S%S NetBEUI 连接测试通过!
+prompt77=尝试连接 %s%s 失败:%s%s%s%sNetBEUI 测试失败!
+prompt78=不能初始网络库.%s%sSPX 连接失败!
+prompt79=尝试使用SPX.%s%s 附加给 %s
+prompt80=尝试使用SPX协议连接 %s%s.%s%sSPX 连接失败!
+prompt81=尝试使用SPX协议成功连接 %s%s  .SPX 连接成功!
+prompt82=尝试使用SPX连接 %s%s   出错.%s%s可能 NetWare 客户端未安装完全.%s%sSPX 连接失败!
+prompt83=您要删除的用户正是您登录的用户%s 您确定要删除用户: %s?
+prompt84=尝试连接到:
+prompt85=附加    ... 通过!
+prompt86=分离    ... 通过!
+prompt87=分离时引起一个服务错误.
+prompt88=附加时引起一个服务错误.
+prompt89=服务器连接测试通过!
+prompt90=服务器连接测试失败!
+prompt91=附加连接到 %s.
+prompt92=获取 Socket 连接.
+prompt93=Socket 请求失败
+prompt94=远程 Socket 请求失败
+prompt95=远程 Socket 没有回应
+prompt96=连接主机 '%s' 失败
+prompt97=在端口 %s. 的错误号码: 
+prompt98=连接到主机 '%s'
+prompt99=在端口 %s
+prompt100=TCP/IP 连接测试通过!
+prompt101=TCP/IP 连接测试失败!
+prompt102=Pinging %s [%s] with %d bytes of data:
+prompt103=%d bytes from %s: icmp_seq=%d ttl=%d time%s%d ms
+prompt104=评结失败
+prompt105=不能获取 %s 的版本信息
+prompt106=  主机位置: %s
+prompt107=正在搁置中
+prompt108=已被提交
+prompt109=已被回滚
+prompt110=未知状态
+prompt111=  事务 %d %s.
+prompt112=  远程位置: %s
+prompt113=  数据库路径: %s
+prompt114=推荐动作: %s
+prompt115=请从事务标签中选择一个选项.
+prompt116=修复事务 %s
+prompt117=从事信息事务中选择一个事务.
+prompt118=第二文件无效.
+prompt119=数据拥有者无效.
+prompt120=清扫的时间间隔必需在 %d 与 %d 之间.  请输入一个有效值.
+prompt121=不能改变只读的数据库属性.
+prompt122=空值必需为 "NULL" 或空
+prompt123=不能编辑空值
+prompt124=一但删除 %s ，就不能再恢复.^M是否继续?
+prompt125=必需指定一个确认选项
+prompt126=不能用来管理每个 InterBase 6.0 服务器
+;
+;
+[error_messages]
+; Heading un message box used to show errors, unit frmuMessage.pas
+;
+;Warning:
+;localize only the right side
+;do not localize and leave case as is on the left side
+;
+;
+ERR_SYSTEM_INIT=初始化失败.
+ERR_USERNAME=用户名无效. 请输入一个有效的用户名.
+ERR_PASSWORD=密码无效. 请输入一个有效的密码.
+ERR_PASSWORD_MISSMATCH=密码与确认密码不符.
+ERR_ADD_USER=不能添加用户.
+ERR_MODIFY_USER=不能修改用户帐号.
+ERR_DELETE_USER=不能删除用户.
+ERR_GET_USERS=不能检索用户列表.
+ERR_GET_USER_INFO=不能检索用户信息.
+ERR_SOURCE_DB=无效的源数据库名. 请输入一个有效的数据名称.
+ERR_DESTINATION_DB=无效的目标数据库名. 请输入一个有效的数据库名称.
+ERR_SAME_SOURCE_DESTINATION=源数据库名称与目标数据库名称不能相同.
+ERR_DB_FILE=无效的数据库文件名或数据库名称不存在.
+ERR_SERVER_NAME=无效的服务器名称. 请输入一个有效的数据名称.
+ERR_PROTOCOL=无效的网络协议. 请从下拉列表中选择一个有效的的网络协议.
+ERR_BACKUP_DB=数据库备份失败.
+ERR_RESTORE_DB=数据库恢复失败.
+ERR_GET_TABLES=不能检索数据表列表.
+ERR_GET_VIEWS=不能检索视图列表.
+ERR_SERVICE=无效服务. 请从下拉列表选择一种服务.
+ERR_NUMERIC_VALUE=数值无效. 请输入一个有效值.
+ERR_GET_TABLE_DATA=不能检索数据.
+ERR_DB_ALIAS=数据库别名无效. 请输入一个有效的数据库别名.
+ERR_GET_ROLES=不能检索角色列表.
+ERR_SERVER_LOGIN=登录服务器出错.
+ERR_DB_CONNECT=连接数据库出错.
+ERR_DB_DISCONNECT=断开数据库连接出错.
+ERR_GET_PROCEDURES=不能检索存储过程列表.
+ERR_GET_FUNCTIONS=不能检索函数列表.
+ERR_GET_GENERATORS=不能检索生成器列表.
+ERR_GET_EXCEPTIONS=不能检索异常列表.
+ERR_GET_BLOB_FILTERS=不能检索 blob 过滤列表.
+ERR_GET_COLUMNS=不能检索字段列表.
+ERR_GET_INDICES=不能检索索引列表.
+ERR_GET_REFERENTIAL_CONST=不能检索引用约束列表.
+ERR_GET_UNIQUE_CONST=不能检索唯一性约束列表.
+ERR_GET_CHECK_CONST=不能检索核查约束列表.
+ERR_GET_TRIGGERS=不能检索触发器列表.
+ERR_GET_DDL=提取数据无信息时出错.
+ERR_INVALID_PROPERTY_VALUE=无效属性值.
+ERR_GET_DEPENDENCIES=提取依赖信息时出错.
+ERR_GET_DB_PROPERTIES=检索数据库属性出错.
+ERR_DB_SIZE=数据库文件大小无效.
+ERR_ISQL_ERROR=SQL 语法出错
+ERR_SERVER_SERVICE=服务错误
+ERR_EXTERNAL_EDITOR=外部编辑错误
+ERR_SERVER_ALIAS=无效的服务器别名. 请输入一个有效的服务器别名.
+ERR_BACKUP_ALIAS=备份别名无效. 请输入一个有效的备份别名.
+ERR_DB_SHUTDOWN=数据库关闭成功.
+ERR_MODIFY_DB_PROPERTIES=不能修改数据库属性.
+ERR_DROP_DATABASE=尝试删除数据库时出错.
+ERR_FILE_OPEN=尝试打开文件出错.
+ERR_INV_EDITOR=编辑无效.
+ERR_EDITOR_MISSING=未指定外部编辑.
+ERR_BAD_FORMAT=不能显示 blob.  这是一个非图像格式字段.
+ERR_INV_DIALECT=不能改变客户端方言.
+ERR_FOPEN=打开文件出错.
+ERR_TEXT_NOT_FOUND=未找到字串.
+ERR_PRINT=不能打印.  请确认您的打印机是否正确安装并处于工作状态.
+ERR_NO_PATH=未对备份文件或数据库指定路径.
+ERR_NO_FILES=备份或恢复文件未指定.
+ERR_GET_DOMAINS=不能检索域列表.
+ERR_EXT_TOOL_ERROR=不能启动外部工具
+ERR_PROPERTIES=不能检索对象属性
+ERR_ALIAS_EXISTS=别名无效.  此别名已经存在.
+ERR_CANNOT_START_LOCALIB=不能启动本地 InterBase.
+ERR_SERVER_REGISTER=注册服务器出错.
+ERR_SERVER_UNREGISTER=注销一个服务器时出错.
+ERR_DATABASE_UNREGISTER=An error enounter while trying to unregister a database.
+ERR_DDL_EXECUTION=执行DLL语句时出错.
+;****** Warnings ******
+WAR_NO_PERMISSION=没有足够的权限来完成此次操作.
+WAR_SERVER_REGISTERED=服务器已经注册.
+WAR_DUPLICATE_DB_ALIAS=数据库别名已经成在.
+WAR_BACKUP_FILE_REGISTERED=备份文件已经注册.
+WAR_DIALECT_MISMATCH=客户端方言与服务器端方言不符.
+WAR_REMOTE_FILENAME=文件名与服务器相同.'+#13#10+'一些操作不能正确完成.
+WAR_PERSISTENT_UPDATE=不能连续更新信息.
+;****** Information ******}
+;INF_ADD_USER_SUCCESS=The user was added successfully.
+INF_ADD_USER_SUCCESS=用户添加成功.
+;INF_BACKUP_DB_SUCCESS=Database backup completed.
+INF_BACKUP_DB_SUCCESS=数据库备份完成.
+;INF_RESTORE_DB_SUCCESS=Database restore completed.
+INF_RESTORE_DB_SUCCESS=数据库恢复完成.
+;INF_NO_PENDING_TRANSACTIONS=No pending transactions were found.
+INF_NO_PENDING_TRANSACTIONS=未找到未决事务.
+;INF_RESTART_SERVER=You must restart the server in order for the changes to go into effect.
+INF_RESTART_SERVER=为了使用改变生效, 请重新启动服务器.
+;INF_DATABASE_SHUTDOWN=Database shutdown completed successfully.
+INF_DATABASE_SHUTDOWN=数据库关闭成功.
+;INF_DATABASE_RESTARTED=Database restart completed successfully.
+INF_DATABASE_RESTARTED=数据库重启成功.
+;INF_SQL_SCRIPT=SQL script done.
+INF_SQL_SCRIPT=SQL 脚本完成.
+;INF_DATABASE_SWEEP=Database sweep completed.
+INF_DATABASE_SWEEP=数据库清扫完成.
+;****** InterBase Errors ******}
+isc_gbak_db_exists=要覆盖一个已存在的数据库文件, 必需将覆盖选项设置为“真”
+;isc_gfix_invalid_sw=An invalid option was specified for the operation.
+isc_gfix_invalid_sw=指定了一个无效的操作.
+;isc_gfix_incmp_sw=The parameters for this operation are conflicting.
+isc_gfix_incmp_sw=操作参数无效.
+;isc_gfix_retry=An operation was not specified.
+isc_gfix_retry=参数未指定.
+;isc_gfix_retry_db=A database was not specified for the operation
+isc_gfix_retry_db=未给此操作指定一个数据库
+;isc_gbak_page_size_missing=The page size must be specified.
+isc_gbak_page_size_missing=必需指定页面大小.
+;isc_gsec_cant_open_db=The security database could not be opened.
+isc_gsec_cant_open_db=不能打开受保护的数据.
+;isc_gsec_no_usr_name=User name missing.  A user name must be specified for all operations.
+isc_gsec_no_usr_name=无用户名.  必需为所有的操作指定一个用户.
+;isc_gsec_err_add=An unknown error was encountered while attempting to add the user record.
+isc_gsec_err_add=添加用户记录时出错.
+;isc_gsec_err_modify=An unknown error was encountered while attempting to modify the user record.
+isc_gsec_err_modify=修改用户记录时出错.
+;isc_gsec_err_find_mod=An unknown error was encountered while attempting to find/modify the user record.
+isc_gsec_err_find_mod=在查找/修改用户记录时出错.
+;isc_gsec_err_rec_not_found=The information for the user was not found.
+isc_gsec_err_rec_not_found=未找到用户信息.
+;isc_gsec_err_delete=An unknown error was encountered while attempting to delete the user record.
+isc_gsec_err_delete=删除用户记录时出错.
+;isc_gsec_err_find_del=An unknown error was encountered while attempting to find/delete the user record.
+isc_gsec_err_find_del=查找/删除用户录录时出错.
+;isc_gsec_err_find_disp=An unknown error was encountered while attempting to find/display the user record.
+isc_gsec_err_find_disp=查找/显示用户录录时出错.
+;isc_sys_request=An unknown error attempting to open a file on the server.
+isc_sys_request=找开服务器上的文件出错.
+;
+;Warning:
+;localize only the right side
+;do not localize and leave case as is on the left side
+;
+;
+[global]
+;
+; this are short expressions that are used in gui controls, if not supplied,
+; they will display in English
+;
+;Action=
+Action=动作
+;Name=
+Name=名称
+;Active=
+Active=活动
+;Allow Nulls=
+Allow Nulls=允许为空
+;Can Defer=
+Can Defer=使延期
+;Character Set=
+Character Set=字符
+;Collation=
+Collation=连接
+;Connections=
+Connections=连接
+;Current Value=
+Current Value=当前值
+;Case Insensitive=
+Case Insensitive=
+;Database=
+Database=数据库
+;Default Value=
+Default Value=默认值
+;Delete Rule=
+Delete Rule=删除规则
+;Descending=
+Descending=递减
+;Description=
+Description=描述
+;Entry=
+Entry=入口
+;Error=
+Error=错误
+;Fields=
+Fields=字段
+Index=Indice
+;Initially Deferred=
+Initially Deferred=最初延迟
+;Input=
+Input=输入
+;Input/Output=
+Input/Output=输入/输出
+;Last Accessed=
+Last Accessed=最后访问
+;Match Option=
+Match Option=大小写选项
+;Member=
+Member=成员
+;Message=
+Message=消息
+;Modified=
+Modified=修改
+;Module=
+Module=模板
+;Metadata for=
+Metadata for=数据元
+;New=
+New=新建
+;Output=
+Output=输出
+;Owner=
+Owner=拥有者
+;objects listed=
+objects listed=对象清单
+;Parameter=
+Parameter=参数
+;Position=
+Position=状态
+;Path=
+Path=路径
+;Reference Table=
+Reference Table=引用表
+;Read-Only=
+Read-Only=只读
+;Type=
+Type=类型
+;Unique=
+Unique=唯一
+;Update Rule=
+Update Rule=更新规则
+;Y=
+Y=Y
+;N=
+N=N
+;Yes=
+Yes=允许
+;No=
+No=不允许
+;Open=
+Open=打开
+;Form View=
+Form View=表单视图
+;Grid View=
+Grid View=表格视图
+;Server=
+Server=服务器
+;User=
+User=用户
+;Warning=
+Warning=警告
+;Information=
+Information=信息
+;Confirmation=
+Confirmation=确认
+;Abort=
+Abort=关于
+;All=
+All=所有
+;Cancel=
+Cancel=取消
+;Close=
+Close=关闭
+;Help=
+Help=帮助
+;OK=
+OK=确定
+;Retry=重试
+;Yes To All=
+Yes To All=确定所有
+;No To All=
+No To All=全部取消
+;Active Windows on=
+Active Windows on=活动窗口在
+;File=
+File=文件
+;Interactive SQL=
+Interactive SQL=交互式SQL
+;Rows Affected=
+Rows Affected=
+;Not Available=
+Not Available=无效的
+;Execution Time=
+Execution Time=执行时间
+;Prepare Time=
+Prepare Time=准备时间
+;Starting Memory=
+Starting Memory=开始内存
+;Current Memory=
+Current Memory=当前内存
+Delta Memory=
+;Number of Buffers=
+Number of Buffers=缓冲数
+;Reads=
+Reads=读取
+;Writes=
+Writes=写
+;Plan=
+Plan=计划
+;Statement=
+Statement=语句
+;is unknown=
+is unknown=未知
+;Not Connected=
+Not Connected=未连接
+;Client dialect=
+Client dialect=客户端方言
+;Version=
+Version=版本
+;All Options=
+All Options=所有选项
+;Data Pages=
+Data Pages=数据页
+;Database Log=
+Database Log=数据库日志
+;Header Page=
+Header Page=头页
+;Index Pages=
+Index Pages=索引页
+;System Relations=
+System Relations=系统关系
+;Show data for:=
+Show data for:=显示数据
+;By Value=
+By Value=取值
+;By Reference=
+By Reference=被引用
+;No Connection=
+No Connection=没有连接
+;Transaction=
+Transaction=事务
+;Commit=
+Commit=提交
+;Rollback=
+Rollback=回滚
+;Unknown=
+Unknown=未知
+;In Limbo=
+In Limbo=处于暂时搁置
+;Multi-Database Transaction=
+Multi-Database Transaction=多数据库文件事务
+;Fixed=
+Fixed=准备
+;Transportable=
+Transportable=传送
+;Non-Transportable=
+Non-Transportable=不传送
+;True=
+True=真
+;False=
+False=假
+;Process=
+Process=执行
+;Ignore=
+Ignore=忽略
+;None=
+None=无
+;To Screen=
+To Screen=到屏幕
+;To File=
+To File=文件
+;Select Verbose File=
+Select Verbose File=选择冗长文件
+;Select Database=
+Select Database=选择数据库
+;Enabled=
+Enabled=激活的
+;Disabled=
+Disabled=未激活的
+;Forced Writes=
+Forced Writes=强制写
+;Sweep Interval=
+Sweep Interval=清扫间隔
+;Database Dialect=
+Database Dialect=数据库方言
+;Read Only=
+Read Only=只读
+;No input=
+No input=没有输入
+;Metadata Only=
+Metadata Only=只含数据元
+;Garbage Collection=
+Garbage Collection=垃圾回收
+;Checksums=
+Checksums=校验
+Convert to Tables=外部文件转换为内部表
+;Transactions in Limbo=
+Transactions in Limbo=暂时搁置未确认的事务
+Verbose Output=回显备份进程信息
+Filename(s)=文件名
+Size(Bytes)=大小
+Text File=文体文件
+All files=所有文件
+Format=格式
+Value for=取值
+Replace NULL with=空值替代
+Validate Record Fragments=检查记录碎片
+Read Only Validation=只读确认
+Ignore Checksum Errors=忽略校验错误
+Service started at=开始于
+Service ended at=终止于
+Running=正在运行
+Restore=恢复
+Ignore=忽略
+Database Restore=数据库恢复
+Commit After Each Table=恢复数据元后立即导入数据
+Create Shadow Files=建立影子文件
+Deactivate Indices=使索引无效
+Validity Conditions=校验约束
+Use All Space=使用所有页面空间
+Pages=页面
+;
+;
+;
+[node_articles]
+; As Italians knows (like I am), there are some language that don't have
+; undefined gender, in Italian everything is male or female, whe don't have "it".
+; In English can be said "the server" and "the servers", in Italian whe say
+; "Il Server" and "I Servers" italian articles also have gender,
+; so in Italian whe can have four forms of the same article
+; single male, plural male, single female and plural female
+; but the articles are more than one "il" "lo"
+;
+Servers=The
+Server=The
+Databases=The
+Database=The
+Backup=The
+Users=The
+User=The
+Certificates=The
+Certificate=The
+Domains=The
+Domain=The
+Tables=The
+Table=The
+Views=The
+View=The
+Stored Procedures=The
+Stored Procedure=The
+External Functions=The
+External Function=The
+Generators=The
+Generator=The
+Exceptions=The
+Exception=The
+Blob Filters=The
+Blob Filter=The
+Roles=The
+Role=The
+Columns=The
+Column=The
+Indexes=The
+Index=The
+Referential Constraints=The
+Referential Constraint=The
+Unique Constraints=The
+Unique Constraint=The
+Check Constraints=The
+Check Constraint=The
+Triggers=The
+Trigger=The
+Server Log=The
+Unknown=The
+;
+;
+;
+[node_types]
+;
+; Localize here the name of the object in main form left treeview and editor forms
+; example:
+;---English-- --Italian--
+;Certificates=Certificati
+;Certificate=Certificato
+;
+;
+;Servers=
+Servers=服务器组
+;Server=
+Server=服务器
+;Databases=
+Databases=数据库
+;Database=
+Database=数据库
+;Backup=
+Backup=备份
+;Users=
+Users=用户
+;User=
+User=用户
+;Certificates=
+Certificates=许可证
+;Certificate=
+Certificate=许可证
+;Domains=
+Domains=域
+;Domain=
+Domain=域
+;Tables=
+Tables=表
+;Table=
+Table=表
+;Views=
+Views=视图
+;View=
+View=视图
+;Stored Procedures=
+Stored Procedures=存储过程
+;Stored Procedure=
+Stored Procedure=存储过程
+;External Functions=
+External Functions=外部函数
+;External Function=
+External Function=外部函数
+;Generators=
+Generators=生成器
+;Generator=
+Generator=生成器
+;Exceptions=
+Exceptions=异常
+;Exception=
+Exception=异常
+;Blob Filters=
+Blob Filters=BLOB 过滤
+;Blob Filter=
+Blob Filter=BLOB 过滤
+;Roles=
+Roles=角色
+;Role=
+Role=角色
+;Columns=
+Columns=列
+;Column=
+Column=列
+;Indexes=
+Indexes=索引
+;Index=
+Index=索引
+;Referential Constraints=
+Referential Constraints=指示约束
+;Referential Constraint=
+Referential Constraint=指示约束
+;Unique Constraints=
+Unique Constraints=唯一约束
+;Unique Constraint=
+Unique Constraint=唯一约束
+;Check Constraints=
+Check Constraints=核查约束
+;Check Constraint=
+Check Constraint=核查约束
+;Triggers=
+Triggers=触发器
+;Trigger=
+Trigger=触发器
+;Server Log=
+Server Log=日志
+;Unknown=
+Unknown=未知
+
+

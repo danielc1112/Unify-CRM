@@ -1,0 +1,3815 @@
+;{************************************************************************
+;  This File was written by Lorenzo Mengoni - (Ancona, Italy)
+;  and it'part of IBOConsole
+;  for suggestion and contributions email to lorenzo@mengoni.com
+;  This software is distributed under the License GPL and is distributed on
+;  an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either
+;  express or implied. if you live in a country where this is not applicable
+;  do not use it at all.
+;
+;  This file is a starting point for localization of IBOConsole
+;  This are predefined language constant for now:
+;
+;  Brazilian Portuguese=pt-br
+;  Catalan=ca
+;  Croatian=hr
+;  Czech=cz
+;  Danish=da
+;  Dutch=nl
+;  English=en
+;  Estonian=et
+;  French=fr
+;  German=de
+;  Greek-Modern=el
+;  Italiano=it
+;  Japanese=ja
+;  Korean=ko
+;  Luxembourgeois=ltz
+;  Norwegian=no
+;  Norwegian Nynorsk=nn
+;  Polish=pl
+;  Portugese=pt
+;  Russian=ru
+;  Spanish=es
+;  Swedish=sv
+;
+;
+;  IBOConsole look in the same folder of exe for the file
+;  IBOConsole.lang.pt-br for Brazilian Portuguese,
+;  IBOConsole.lang.ca for Catalan and so on...
+;  I made the Italian file so, if You make a language file I'll give You
+;  the credit on my site and in the About Form of program.
+;  If the language is not in the list above, I'll add it on the program
+;  Thanks in advance to anyone will help me.
+;  Send the file at lorenzo@mengoni.com
+;
+;Warning:
+;localize only the right side
+;do not localize and leave case as is on the left side
+; example:
+;--obj-path----- --Italian--
+;Column0.Caption=Nome
+;Column1.Caption=Valore
+;
+;the section is the path of component in the form, so don't change od localize it
+;use ^M to insert a line break, useful in label caption
+;
+[frmMain.FrameGenerators1.DBGrid1]
+Class=TDBGrid
+Hint=
+Columns.Count=2
+;Column0.Caption=Name
+Column0.Caption=ｼﾞｪﾈﾚｰﾀ名
+;Column1.Caption=Value
+Column1.Caption=値
+[frmMain.FrameGenerators1.NewGenerator1]
+Class=TMenuItem
+;Caption=New Generator
+Caption=ｼﾞｪﾈﾚｰﾀ作成
+Hint=
+[frmMain.FrameGenerators1.EditGenerator1]
+Class=TMenuItem
+;Caption=Edit Generator
+Caption=ｼﾞｪﾈﾚｰﾀ編集
+Hint=
+[frmMain.FrameGenerators1.DropGenerator1]
+Class=TMenuItem
+;Caption=Drop Generator
+Caption=ｼﾞｪﾈﾚｰﾀ削除
+Hint=
+[frmMain.Console1]
+Class=TMenuItem
+;Caption=&Console
+Caption=ｺﾝｿｰﾙ(&C)
+Hint=
+[frmMain.View1]
+Class=TMenuItem
+;Caption=&View
+Caption=表示(&V)
+Hint=
+[frmMain.Server1]
+Class=TMenuItem
+;Caption=&Server
+Caption=ｻｰﾊﾞｰ(&S)
+Hint=
+[frmMain.Database1]
+Class=TMenuItem
+;Caption=&Database
+Caption=ﾃﾞｰﾀﾍﾞｰｽ(&D)
+Hint=
+[frmMain.Maintenance2]
+Class=TMenuItem
+;Caption=&Maintenance
+Caption=ﾒﾝﾃﾅﾝｽ(&M)
+Hint=
+[frmMain.BackupRestore1]
+Class=TMenuItem
+;Caption=Backup / Restore
+Caption=ﾊﾞｯｸｱｯﾌﾟ/ﾘｽﾄｱ
+Hint=
+[frmMain.ConnectAs3]
+Class=TMenuItem
+;Caption=New connection...
+Caption=新規接続
+Hint=Interactive SQL
+[frmMain.Help1]
+Class=TMenuItem
+;Caption=&Help
+Caption=ﾍﾙﾌﾟ(&H)
+Hint=
+[frmMain.Maintenance1]
+Class=TMenuItem
+;Caption=&Maintenance
+Caption=ﾒﾝﾃﾅﾝｽ(&M)
+Hint=
+[frmMain.BackupRestore2]
+Class=TMenuItem
+;Caption=Backup / Restore
+Caption=ﾊﾞｯｸｱｯﾌﾟ/ﾘｽﾄｱ
+Hint=
+[frmMain.ConsoleExit]
+Class=TAction
+;Caption=E&xit
+Caption=終了(&x)
+Hint=Exit IBOConsole
+[frmMain.ViewList]
+Class=TAction
+;Caption=&List
+Caption=ﾘｽﾄ(&L)
+Hint=
+[frmMain.ViewReport]
+Class=TAction
+;Caption=&Details
+Caption=詳細(&D)
+Hint=
+[frmMain.ViewIcon]
+Class=TAction
+;Caption=Lar&ge
+Caption=大いｱｲｺﾝ(&g)
+Hint=
+[frmMain.ViewSmallIcon]
+Class=TAction
+;Caption=S&mall
+Caption=小いｱｲｺﾝ(&m)
+Hint=
+[frmMain.ViewProperties]
+Class=TAction
+;Caption=&Properties ...
+Caption=ﾌﾟﾛﾊﾟﾃｨ(&P)...
+;Hint=View Object Properties
+Hint=ｵﾌﾞｼﾞｪｸﾄﾌﾟﾛﾊﾟﾃｨの表示
+[frmMain.ViewSystem]
+Class=TAction
+;Caption=S&ystem Data
+Caption=ｼｽﾃﾑﾃﾞｰﾀ(&y)
+Hint=
+[frmMain.HelpContents]
+Class=THelpContents
+;Caption=&Contents
+Caption=IBOConsoleﾍﾙﾌﾟ(&C)
+Hint=
+[frmMain.HelpOnHelp]
+Class=THelpOnHelp
+;Caption=&Help on Help
+Caption=ﾍﾙﾌﾟの使い方(&H)
+Hint=
+[frmMain.HelpTopicSearch]
+Class=THelpTopicSearch
+;Caption=&Topic Search
+Caption=ｷｰﾜｰﾄﾞ検索(&T)
+Hint=
+[frmMain.HelpAbout]
+Class=TAction
+;Caption=&About ...
+Caption=ﾊﾞｰｼﾞｮﾝ情報(&A)
+Hint=
+[frmMain.EditCopy]
+Class=TEditCopy
+;Caption=&Copy
+Caption=ｺﾋﾟｰ(&C)
+;Hint=Copy
+Hint=ｺﾋﾟｰ
+[frmMain.EditCut]
+Class=TEditCut
+;Caption=Cu&t
+Caption=切り取り(&T)
+;Hint=Cut
+Hint=切り取り
+[frmMain.EditPaste]
+Class=TEditPaste
+;Caption=&Paste
+Caption=貼付(&P)
+;Hint=Paste
+Hint=貼付
+[frmMain.EditSelectAll]
+Class=TEditSelectAll
+;Caption=Select &All
+Caption=全てを選択(&A)
+Hint=
+[frmMain.EditUndo]
+Class=TEditUndo
+;Caption=&Undo
+Caption=やり直し(&U)
+Hint=
+[frmMain.EditFont]
+Class=TAction
+;Caption=&Font ...
+Caption=ﾌｫﾝﾄ(&F)
+;Hint=Change the font
+Hint=ﾌｫﾝﾄの変更
+[frmMain.WindowList]
+Class=TAction
+;Caption=&Windows
+Caption=ｳｨﾝﾄﾞｳ(&W)
+Hint=
+[frmMain.UserAdd]
+Class=TAction
+;Caption=&Add User ...
+Caption=ﾕｰｻﾞｰ追加(&A)
+;Hint=Add a new user entry
+Hint=新規ﾕｰｻﾞｰの追加
+[frmMain.UserModify]
+Class=TAction
+;Caption=&Modify User ...
+Caption=ﾕｰｻﾞｰ編集(&M)
+;Hint=Modify a user entry
+Hint=ﾕｰｻﾞｰの編集
+[frmMain.UserDelete]
+Class=TAction
+;Caption=&Delete User
+Caption=ﾕｰｻﾞｰ削除(&D)
+;Hint=Delete a user entry
+Hint=ﾕｰｻﾞｰの削除
+[frmMain.ServerLogout]
+Class=TAction
+;Caption=Log&out
+Caption=ﾛｸﾞｱｳﾄ(&o)
+;Hint=Logout from the current server
+Hint=現在接続しているｻｰﾊﾞｰよりﾛｸﾞｱｳﾄ
+[frmMain.ServerSecurity]
+Class=TAction
+;Caption=User &Security ...
+Caption=ﾕｰｻﾞｰｾｷｭﾘﾃｨ(&S)
+;Hint=Manage Users
+Hint=ﾕｰｻﾞｰｾｷｭﾘﾃｨの保守
+[frmMain.ServerProperties]
+Class=TAction
+;Caption=&Properties ...
+Caption=ﾌﾟﾛﾊﾟﾃｨｰ(&P)
+;Hint=View Server properties
+Hint=ｻｰﾊﾞｰﾌﾟﾛﾊﾟﾃｨの表示
+[frmMain.DatabaseDisconnect]
+Class=TAction
+;Caption=&Disconnect
+Caption=ｻｰﾊﾞｰから切断(&D)
+;Hint=Disconnect from the current database
+Hint=現在のｻｰﾊﾞｰから切断する
+[frmMain.DatabaseProperties]
+Class=TAction
+;Caption=&Properties ...
+Caption=ﾌﾟﾛﾊﾟﾃｨｰ(&P)
+;Hint=Show database properties
+Hint=ﾃﾞｰﾀﾍﾞｰｽﾌﾟﾛﾊﾟﾃｨを表示する
+[frmMain.DatabaseStatistics]
+Class=TAction
+;Caption=&Database Statistics ...
+Caption=ﾃﾞｰﾀﾍﾞｰｽの統計情報(&D)
+;Hint=Display database statistics
+Hint=ﾃﾞｰﾀﾍﾞｰｽの統計情報を表示します
+[frmMain.DatabaseShutdown]
+Class=TAction
+;Caption=&Shutdown ...
+Caption=ｼｬｯﾄﾀﾞｳﾝ(&S)
+;Hint=Shutdown the database
+Hint=ﾃﾞｰﾀﾍﾞｰｽをｼｬｯﾄﾀﾞｳﾝします
+[frmMain.DatabaseSweep]
+Class=TAction
+;Caption=&Sweep
+Caption=ｽｳｨｰﾌﾟ(&S)
+;Hint=Perform a database sweep
+Hint=ﾃﾞｰﾀﾍﾞｰｽのｽｳｨｰﾌﾟを実行します
+[frmMain.DatabaseRecoverTrans]
+Class=TAction
+;Caption=&Transaction Recovery ...
+Caption=ﾄﾗﾝｻﾞｸｼｮﾝ ﾘｶﾊﾞﾘｰ(&T)
+;Hint=Recover limbo transactions
+Hint=limboﾄﾗﾝｻﾞｸｼｮﾝをﾘｶﾊﾞﾘｰします
+[frmMain.DatabaseMetadata]
+Class=TAction
+;Caption=View &Metadata ...
+Caption=ﾒﾀﾃﾞｰﾀの表示(&M)
+;Hint=View Database Metadata
+Hint=ﾒﾀﾃﾞｰﾀの表示
+[frmMain.DatabaseRestart]
+Class=TAction
+;Caption=Database &Restart
+Caption=ﾃﾞｰﾀﾍﾞｰｽのﾘｽﾀｰﾄ(&R)
+;Hint=Restart a database
+Hint=ﾃﾞｰﾀﾍﾞｰｽをﾘｽﾀｰﾄします
+[frmMain.DatabaseDrop]
+Class=TAction
+;Caption=Drop Database
+Caption=ﾃﾞｰﾀﾍﾞｰｽの削除
+;Hint=Drop the current database
+Hint=現在のﾃﾞｰﾀﾍﾞｰｽを削除します
+[frmMain.DBCBackup]
+Class=TAction
+;Caption=Database Backup
+Caption=ﾊﾞｯｸｱｯﾌﾟ
+;Hint=Backup a database
+Hint=ﾃﾞｰﾀﾍﾞｰｽをﾊﾞｯｸｱｯﾌﾟします
+[frmMain.DatabaseUsers]
+Class=TAction
+;Caption=Connected &Users ...
+Caption=接続中ﾕｰｻﾞｰ(&U)
+;Hint=View a list of users currently connected to the server
+Hint=現在のﾃﾞｰﾀﾍﾞｰｽに接続中のﾕｰｻﾞｰのﾘｽﾄを表示します
+[frmMain.DBCRestore]
+Class=TAction
+;Caption=Restore Database
+Caption=ﾘｽﾄｱ
+;Hint=Restore a database
+Hint=ﾃﾞｰﾀﾍﾞｰｽをﾘｽﾄｱします
+[frmMain.ServerLogin]
+Class=TAction
+;Caption=&Login ...
+Caption=ﾛｸﾞｲﾝ(&L)
+;Hint=Login to the selected server
+Hint=指定したｻｰﾊﾞｰにﾛｸﾞｲﾝします
+[frmMain.ServerRegister]
+Class=TAction
+;Caption=&Register ...
+Caption=ｻｰﾊﾞｰの登録(&R)
+;Hint=Register a new Server
+Hint=ｻｰﾊﾞｰを登録します
+[frmMain.ServerUnregister]
+Class=TAction
+;Caption=&Un-Register
+Caption=ｻｰﾊﾞｰの登録解除(&U)
+;Hint=Unregister an Server
+Hint=ｻｰﾊﾞｰの登録を解除します
+[frmMain.ServerConnection]
+Class=TAction
+;Caption=&Diagnose Connection ...
+Caption=接続設定ﾃｽﾄ(&D)
+;Hint=Diagnose a connection to a server
+Hint=ｻｰﾊﾞｰへの接続設定をﾃｽﾄします
+[frmMain.ServerActionProps]
+Class=TAction
+;Caption=&Properties ...
+Caption=ﾌﾟﾛﾊﾟﾃｨｰ(&P)
+;Hint=View Server properties
+Hint=ｻｰﾊﾞｰ･ﾌﾟﾛﾊﾟﾃｨの表示
+[frmMain.DatabaseRegister]
+Class=TAction
+;Caption=&Register ...
+Caption=ﾃﾞｰﾀﾍﾞｰｽの登録(&R)
+;Hint=Register a new database
+Hint=ﾃﾞｰﾀﾍﾞｰｽを登録します
+[frmMain.DatabaseUnregister]
+Class=TAction
+;Caption=&Unregister
+Caption=登録の解除(&U)
+;Hint=Unregister the current database
+Hint=ﾃﾞｰﾀﾍﾞｰｽの登録を解除します
+[frmMain.DatabaseConnect]
+Class=TAction
+;Caption=&Connect
+Caption=ﾃﾞｰﾀﾍﾞｰｽに接続(&C)
+;Hint=Connect to the selected database
+Hint=現在のﾃﾞｰﾀﾍﾞｰｽへ接続します
+[frmMain.DatabaseConnectAs]
+Class=TAction
+;Caption=Connect &As ...
+Caption=ﾕｰｻﾞｰを指定して接続(&A)
+;Hint=Connect to the selected database specifying a user
+Hint=ﾕｰｻﾞｰを指定して現在のﾃﾞｰﾀﾍﾞｰｽに接続します
+[frmMain.DatabaseCreate]
+Class=TAction
+;Caption=C&reate Database ...
+Caption=ﾃﾞｰﾀﾍﾞｰｽの作成(&r)
+;Hint=Create a new database
+Hint=新しいﾃﾞｰﾀﾍﾞｰｽを作成します
+[frmMain.DatabaseValidate]
+Class=TAction
+;Caption=&Validation ...
+Caption=ﾃﾞｰﾀﾍﾞｰｽの検証(&V)
+;Hint=Validate the database structure
+Hint=ﾃﾞｰﾀﾍﾞｰｽの構造を検証します
+[frmMain.DatabaseActionsProperties]
+Class=TAction
+;Caption=Properties ...
+Caption=ﾌﾟﾛﾊﾟﾃｨｰ
+;Hint=Show database properties
+Hint=ﾃﾞｰﾀﾍﾞｰｽのﾌﾟﾛﾊﾟﾃｨを表示します
+[frmMain.ExtToolsLaunchISQL]
+Class=TAction
+Caption=Interactive S&QL ...
+;Hint=Interactive SQL
+Hint=Interactive SQLの起動
+[frmMain.ExtToolsConfigure]
+Class=TAction
+;Caption=&Configure Tools ...
+Caption=ﾂｰﾙの設定(&C)
+Hint=
+[frmMain.ExtToolDropDown]
+Class=TAction
+;Caption=&Tools
+Caption=ﾂｰﾙ(&T)
+Hint=
+[frmMain.DatabaseBackup]
+Class=TAction
+;Caption=&Backup ...
+Caption=ﾊﾞｯｸｱｯﾌﾟ(&B)
+;Hint=Back up an database
+Hint=ﾃﾞｰﾀﾍﾞｰｽをﾊﾞｯｸｱｯﾌﾟします
+[frmMain.DatabaseRestore]
+Class=TAction
+;Caption=&Restore ...
+Caption=ﾘｽﾄｱ(&R)
+;Hint=Restore an database
+Hint=ﾃﾞｰﾀﾍﾞｰｽをﾘｽﾄｱします
+[frmMain.BackupRestoreModifyAlias]
+Class=TAction
+;Caption=&Modify Backup Alias ...
+Caption=ﾊﾞｯｸｱｯﾌﾟ･ｴｲﾘｱｽの変更(&M)
+;Hint=Modify an existing backup alias
+Hint=既存のﾊﾞｯｸｱｯﾌﾟ･ｴｲﾘｱｽの内容を変更します
+[frmMain.BackupRestoreRemoveAlias]
+Class=TAction
+;Caption=&Delete Alias
+Caption=ﾊﾞｯｸｱｯﾌﾟｴｲﾘｱｽ削除(&D)
+;Hint=Delete the current backup alias
+Hint=現在のﾊﾞｯｸｱｯﾌﾟ･ｴｲﾘｱｽを削除します
+[frmMain.ViewServerLog]
+Class=TAction
+;Caption=&View Logfile ...
+Caption=ﾛｸﾞﾌｧｲﾙの表示(&V)
+;Hint=View the LOG file for the current server
+Hint=現在のｻｰﾊﾞｰのﾛｸﾞﾌｧｲﾙを表示します
+[frmMain.ObjectDescription]
+Class=TAction
+;Caption=Edit &Description ...
+Caption=概要の編集(&D)
+;Hint=Change the decription for an object
+Hint=ｵﾌﾞｼﾞｪｸﾄの概要を変更します
+[frmMain.ObjectCreate]
+Class=TAction
+;Caption=&Create ...
+Caption=新規作成(&C)
+;Hint=Create a new object of the selected type
+Hint=選択されたｵﾌﾞｼﾞｪｸﾄを新規に作成します
+[frmMain.ObjectModify]
+Class=TAction
+;Caption=&Modify ...
+Caption=変更(&M)
+;Hint=Modify the current object
+Hint=現在のｵﾌﾞｼﾞｪｸﾄの内容を変更します
+[frmMain.ObjectDelete]
+Class=TAction
+;Caption=&Drop ...
+Caption=削除(&D)
+;Hint=Delete the current object
+Hint=現在のｵﾌﾞｼﾞｪｸﾄを削除します
+[frmMain.ObjectExtract]
+Class=TAction
+;Caption=E&xtract ...
+Caption=ﾒﾀﾃﾞｰﾀ(&E)
+;Hint=Extract metada for the current object
+Hint=現在のｵﾌﾞｼﾞｪｸﾄのﾒﾀﾃﾞｰﾀを展開します
+[frmMain.ObjectProperties]
+Class=TAction
+;Caption=&Properties ...
+Caption=ﾌﾟﾛﾊﾟﾃｨｰ(&P)
+Hint=
+[frmMain.ObjectRefresh]
+Class=TAction
+;Caption=&Refresh
+Caption=ﾘﾌﾚｯｼｭ(&R)
+Hint=
+[frmMain.HighlightOptions]
+Class=TAction
+;Caption=Highlight Options
+Caption=ﾊｲﾗｲﾄ･ｵﾌﾟｼｮﾝ
+Hint=
+[frmMain.DatabaseWindows]
+Class=TAction
+;Caption=Database &Windows
+Caption=ﾃﾞｰﾀﾍﾞｰｽ･ｳｨﾝﾄﾞｳ(&W)
+Hint=
+[frmMain.ActionOptions]
+Class=TAction
+;Caption=Options...
+Caption=ｵﾌﾟｼｮﾝ
+Hint=
+[frmMain.actHighlightOptions]
+Class=TAction
+;Caption=Highlight Options...
+Caption=ﾊｲﾗｲﾄ･ｵﾌﾟｼｮﾝ
+Hint=
+[frmMain.Test1]
+Class=TMenuItem
+;Caption=Test
+Caption=ﾃｽﾄ
+Hint=
+[frmOptions]
+Class=TfrmOptions
+;Caption=Options
+Caption=ｵﾌﾟｼｮﾝ
+Hint=
+[frmOptions.btnApply]
+Class=TButton
+;Caption=&Apply
+Caption=適用(&A)
+Hint=
+[frmOptions.btnOK]
+Class=TButton
+Caption=&OK
+Hint=
+[frmOptions.pgControl]
+Class=TPageControl
+Hint=
+PageCount=1
+[frmOptions.pgControl.TabSheet2]
+Class=TTabSheet
+Caption=IBOConsole
+Hint=
+[frmOptions.TabSheet2]
+Class=TTabSheet
+Caption=IBOConsole
+Hint=
+[frmOptions.Label2]
+Class=TLabel
+Caption=.........
+Hint=
+[frmOptions.LabelLanguage]
+Class=TLabel
+;Caption=Language
+Caption=言語
+Hint=
+[frmOptions.DDLRadioGroup]
+Class=TGroupButton
+;Caption=&Manual Commit
+Caption=ｺﾐｯﾄ方法
+Hint=
+Items.Count=2
+;Item0=&Auto Commit
+Item0=自動ｺﾐｯﾄ(&A)
+;Item1=&Manual Commit
+Item1=手動ｺﾐｯﾄ(&M)
+[frmOptions.CheckBox1]
+Class=TCheckBox
+;Caption=Force Uppercase Identifier
+Caption=識別子を大文字にする
+Hint=
+[frmOptions.ButtonChangeFont]
+Class=TButton
+;Caption=Change Font
+Caption=ﾌｫﾝﾄの変更
+Hint=
+[frmOptions.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=ｷｬﾝｾﾙ(&C)
+Hint=
+;==============================================================================
+;
+;--- 2003/08/04  hideo add start ----------------------------------------------
+;
+;==============================================================================
+[frmEditorField.Label5]
+Class=TLabel
+Caption=ﾃｰﾌﾞﾙ:
+[frmEditorField.FrameFields.Label1]
+Class=TLabel
+Caption=ｶﾗﾑ:
+[frmEditorField.FrameFields.Label2]
+Class=TLabel
+Caption=ﾄﾞﾒｲﾝ:
+[frmEditorField.FrameFields.Label3]
+Class=TLabel
+Caption=ﾀｲﾌﾟ:
+[frmEditorField.FrameFields.Label4]
+Class=TLabel
+Caption=桁数:
+[frmEditorField.FrameFields.Label6]
+Class=TLabel
+Caption=By:
+[frmEditorField.FrameFields.Label8]
+Class=TLabel
+Caption=ｺﾚｰﾄ:
+[frmEditorField.FrameFields.Label9]
+Class=TLabel
+Caption=ｷｬﾗｸﾀ ｾｯﾄ:
+[frmEditorField.FrameFields.Label10]
+Class=TLabel
+Caption=ｷｬﾗｸﾀ ｾｯﾄ:
+[frmEditorField.FrameFields.Label11]
+Class=TLabel
+Caption=配列:
+[frmEditorField.FrameFields.Label12]
+Class=TLabel
+Caption=ｾｸﾞﾒﾝﾄ長:
+[frmEditorField.FrameFields.Label14]
+Class=TLabel
+Caption=Precision:
+[frmEditorField.FrameFields.Label15]
+Class=TLabel
+Caption=Scale:
+[frmEditorField.FrameFields.Label16]
+Class=TLabel
+Caption=ｺﾚｰﾄ:
+[frmEditorField.FrameFields.Label18]
+Class=TLabel
+Caption=ｻﾌﾞﾀｲﾌﾟ:
+[frmEditorField.FrameFields.btnAddDimension]
+Class=TButton
+Caption=配列の追加
+[frmEditorField.FrameFields.btnDeleteDimension]
+Class=TButton
+Caption=配列の削除
+[frmEditorField.FrameFields.btnEditDimension]
+Class=TButton
+Caption=配列の修正
+[FrameFields.chkNotNull]
+Class=TCheckBox
+Caption=&Not Null
+[FrameFields.chkPrymaryKey]
+Class=TCheckBox
+Caption=ﾌﾟﾗｲﾏﾘｰｷｰ
+[FrameFields.pgTypes.tsSubType]
+Caption=Raw ﾃﾞｰﾀ ﾀｲﾌﾟ
+[FrameFields.pgTypes.tsSubDomain]
+Caption=ﾄﾞﾒｲﾝ
+[FrameFields.pgTypes.tsComputed]
+Caption=計算
+[FrameFields.pgTypes.tsDefault]
+Caption=ﾃﾞﾌｫﾙﾄ
+[frmEditorField.ActionOK]
+Class=TCustomAction
+Caption=OK
+[frmEditorField.ActionCancel]
+Class=TCustomAction
+Caption=ｷｬﾝｾﾙ
+[frmEditorField.btnHelp]
+Class=TButton
+Caption=ﾍﾙﾌﾟ
+[frmEditorIndex]
+Class=TfrmEditorIndex
+Caption=ｲﾝﾃﾞｯｸｽ
+[frmEditorIndex.Label2]
+Class=TLabel
+Caption=ｵｰﾀﾞｰ
+[frmEditorIndex.Label6]
+Class=TLabel
+Caption=名称
+[frmEditorIndex.chkUnique]
+Class=TCheckBox
+Caption=ﾕﾆｰｸ
+[frmEditorIndex.chkActive]
+Class=TCheckBox
+Caption=ｱｸﾃｨﾌﾞ
+[frmEditorIndex.ActionCompile]
+Class=TCustomAction
+Caption=ｺﾝﾊﾟｲﾙ
+[frmEditorIndex.btnCancel]
+Class=TButton
+Caption=ｷｬﾝｾﾙ
+[frmEditorConstraint]
+Class=TfrmEditorConstraint
+Caption=強制
+[frmEditorConstraint.btnOK]
+Class=TButton
+Caption=OK
+[frmEditorConstraint.btnCancel]
+Class=TButton
+Caption=ｷｬﾝｾﾙ
+[frmEditorConstraint.pgConstraint.tsFK]
+Class=TTabSheet
+Caption=参照制約
+[frmEditorConstraint.pgConstraint.tsCheck]
+Class=TTabSheet
+Caption=ﾁｪｯｸ
+[frmEditorConstraint.pgConstraint.tsPK]
+Class=TTabSheet
+Caption=ﾌﾟﾗｲﾏﾘｰｷｰ
+[frmEditorConstraint.Label9]
+Class=TLabel
+Caption=名称:
+[frmEditorConstraint.Label4]
+Class=TLabel
+Caption=ﾃｰﾌﾞﾙ:
+[frmEditorConstraint.chkOnUpdate]
+Class=TCheckBox
+Caption=更新時:
+[frmEditorConstraint.chkOnDelete]
+Class=TCheckBox
+Caption=削除時:
+[frmEditorConstraint.Label6]
+Class=TLabel
+Caption=名称:
+[frmEditorConstraint.Label5]
+Class=TLabel
+Caption=強制ﾃｷｽﾄを調べてください:
+[frmEditorConstraint.Label7]
+Class=TLabel
+Caption=名称:
+;==============================================================================
+;
+;--- 2003/08/04  hideo add end   ----------------------------------------------
+;
+;==============================================================================
+[frmEditorOptions]
+Class=TfrmEditorOptions
+;Caption=Syntax Editor Options
+Caption=ｼﾝﾀｯｸｽ ｴﾃﾞｨﾀｰ･ｵﾌﾟｼｮﾝ
+Hint=
+[frmEditorOptions.Label1]
+Class=TLabel
+;Caption=Color
+Caption=色
+Hint=
+[frmEditorOptions.Label2]
+Class=TLabel
+;Caption=Element
+Caption=要素
+Hint=
+[frmEditorOptions.GroupBox1]
+Class=TGroupBox
+;Caption=Text Style
+Caption=ﾃｷｽﾄ･ｽﾀｲﾙ
+Hint=
+[frmEditorOptions.chkBold]
+Class=TCheckBox
+;Caption=&Bold
+Caption=太字(&B)
+Hint=
+[frmEditorOptions.chkItalic]
+Class=TCheckBox
+;Caption=&Italic
+Caption=斜体(&I)
+Hint=
+[frmEditorOptions.chkUnderline]
+Class=TCheckBox
+;Caption=&Underline
+Caption=下線(&U)
+Hint=
+[frmEditorOptions.Button1]
+Class=TButton
+Caption=&Ok
+Hint=
+[frmEditorOptions.Button2]
+Class=TButton
+;Caption=&Cancel
+Caption=ｷｬﾝｾﾙ(&C)
+Hint=
+[frmEditorOptions.GroupBox2]
+Class=TGroupBox
+;Caption=Use Defaults For
+Caption=ﾃﾞﾌｫﾙﾄの設定を使用
+Hint=
+[frmEditorOptions.chkDefaultFG]
+Class=TCheckBox
+;Caption=Default Foreground
+Caption=ﾃﾞﾌｫﾙﾄの前景
+Hint=
+[frmEditorOptions.chkDefaultBG]
+Class=TCheckBox
+;Caption=Default Background
+Caption=ﾃﾞﾌｫﾙﾄの背景
+Hint=
+[frmEditorOptions.Label3]
+Class=TLabel
+Caption=Courier New
+Hint=
+[frmEditorOptions.ButtonChangeFont]
+Class=TButton
+;Caption=Change Font
+Caption=ﾌｫﾝﾄの変更
+Hint=
+[frmServerLogin]
+Class=TfrmServerLogin
+;Caption=Server Login
+Caption=ｻｰﾊﾞｰ･ﾛｸﾞｲﾝ
+Hint=
+[frmServerLogin.lblServerName]
+Class=TLabel
+;Caption=Server:
+Caption=ｻｰﾊﾞｰ名:
+Hint=
+[frmServerLogin.lblUsername]
+Class=TLabel
+;Caption=&User Name:
+Caption=ﾕｰｻﾞｰ名(&U):
+Hint=
+[frmServerLogin.lblPassword]
+Class=TLabel
+;Caption=&Password:
+Caption=ﾊﾟｽﾜｰﾄﾞ(&P):
+Hint=
+[frmServerLogin.lblServer]
+Class=TLabel
+;Caption=Local Server
+Caption=ﾛｰｶﾙ･ｻｰﾊﾞｰ
+Hint=
+[frmServerLogin.btnLogin]
+Class=TButton
+;Caption=&Login
+Caption=ﾛｸﾞｲﾝ(&L)
+Hint=
+[frmServerLogin.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=ｷｬﾝｾﾙ(&C)
+Hint=
+[frmUserInfo]
+Class=TfrmUserInfo
+;Caption=User Information
+Caption=ﾕｰｻﾞｰの情報
+Hint=
+[frmUserInfo.btnNew]
+Class=TButton
+;Caption=&New
+Caption=新規作成(&N)
+Hint=
+[frmUserInfo.btnApply]
+Class=TButton
+;Caption=&Apply
+Caption=適用(&A)
+Hint=
+[frmUserInfo.btnDelete]
+Class=TButton
+;Caption=&Delete
+Caption=削除(&D)
+Hint=
+[frmUserInfo.btnClose]
+Class=TButton
+;Caption=&Close
+Caption=閉じる(&C)
+Hint=
+[frmUserInfo.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=ｷｬﾝｾﾙ(&C)
+Hint=
+[frmUserInfo.gbOptionalInfo]
+Class=TGroupBox
+;Caption=Optional Information
+Caption= ｵﾌﾟｼｮﾝ情報
+Hint=
+[frmUserInfo.lblFName]
+Class=TLabel
+Caption=&First Name:
+Hint=
+[frmUserInfo.lblMName]
+Class=TLabel
+Caption=&Middle Name:
+Hint=
+[frmUserInfo.lblLName]
+Class=TLabel
+Caption=&Last Name:
+Hint=
+[frmUserInfo.gbRequiredInfo]
+Class=TGroupBox
+;Caption=Required Information
+Caption=必須情報
+Hint=
+[frmUserInfo.lblPassword]
+Class=TLabel
+;Caption=&Password:
+Caption=ﾊﾟｽﾜｰﾄﾞ(&P)
+Hint=
+[frmUserInfo.lblConfirmPassword]
+Class=TLabel
+;Caption=C&onfirm Password:
+Caption=確認ﾊﾟｽﾜｰﾄﾞ(&C):
+Hint=
+[frmUserInfo.lblUserName]
+Class=TLabel
+;Caption=&User Name:
+Caption=ﾕｰｻﾞｰ名(&U):
+Hint=
+[frmUserInfo.NewUser]
+Class=TAction
+;Caption=NewUser
+Caption=作成
+Hint=
+[frmUserInfo.ModifyUser]
+Class=TAction
+;Caption=ModifyUser
+Caption=変更
+Hint=
+[frmUserInfo.DeleteUser]
+Class=TAction
+;Caption=DeleteUser
+Caption=削除
+Hint=
+[frmServerProperties]
+Class=TfrmServerProperties
+;Caption=Server Properties
+Caption=ｻｰﾊﾞｰ･ﾌﾟﾛﾊﾟﾃｨ
+Hint=
+[frmServerProperties.pgcMain]
+Class=TPageControl
+Hint=
+PageCount=2
+[frmServerProperties.pgcMain.TabAlias]
+Class=TTabSheet
+;Caption=Alias
+Caption=ｴｲﾘｱｽ
+Hint=
+[frmServerProperties.pgcMain.TabGeneral]
+Class=TTabSheet
+;Caption=General
+Caption=一般
+Hint=
+[frmServerProperties.TabAlias]
+Class=TTabSheet
+;Caption=Alias
+Caption=ｴｲﾘｱｽ
+Hint=
+[frmServerProperties.lblAliasName]
+Class=TLabel
+;Caption=A&lias Name:
+Caption=ｴｲﾘｱｽ名(&A):
+Hint=
+[frmServerProperties.lblHostName]
+Class=TLabel
+;Caption=&Host Name:
+Caption=ﾎｽﾄ名(&H):
+Hint=
+[frmServerProperties.lblProtocol]
+Class=TLabel
+;Caption=&Network Protocol:
+Caption=ﾈｯﾄﾜｰｸ･ﾌﾟﾛﾄｺﾙ(&N):
+Hint=
+[frmServerProperties.Label1]
+Class=TLabel
+;Caption=&Description:
+Caption=詳細(&D):
+Hint=
+[frmServerProperties.TabGeneral]
+Class=TTabSheet
+;Caption=General
+Caption=一般
+Hint=
+[frmServerProperties.lblVersionCaption]
+Class=TLabel
+;Caption=Version:
+Caption=ﾊﾞｰｼﾞｮﾝ:
+Hint=
+[frmServerProperties.lblCapabilities]
+Class=TLabel
+;Caption=Capabilities:
+Caption=能力:
+Hint=
+[frmServerProperties.lblAttachmentNoCaption]
+Class=TLabel
+;Caption=Number of attachments:
+Caption=接続№:
+Hint=
+[frmServerProperties.lblDatabaseNocaption]
+Class=TLabel
+;Caption=Number of databases:
+Caption=ﾃﾞｰﾀﾍﾞｰｽ№:
+Hint=
+[frmServerProperties.lblDatabaseNo]
+Class=TLabel
+Caption=?
+Hint=
+[frmServerProperties.lblAttachmentNo]
+Class=TLabel
+Caption=?
+Hint=
+[frmServerProperties.lblVersion]
+Class=TLabel
+;Caption=Unknown
+Caption=不明
+Hint=
+[frmServerProperties.lvDatabases]
+Class=TListView
+Hint=
+Columns.Count=1
+Column0.Caption=Attached Databases
+[frmServerProperties.btnRefresh]
+Class=TButton
+;Caption=&Refresh
+Caption=ﾘﾌﾚｯｼｭ(&R)
+Hint=
+[frmServerProperties.btnApply]
+Class=TButton
+;Caption=&Apply
+Caption=適用(&A)
+Hint=
+[frmServerProperties.btnCancel]
+Class=TButton
+Caption=&OK
+Hint=
+[frmServerProperties.Button1]
+Class=TButton
+;Caption=&Cancel
+Caption=ｷｬﾝｾﾙ(&C)
+Hint=
+[frmDBProperties]
+Class=TfrmDBProperties
+;Caption=Database Properties
+Caption=ﾃﾞｰﾀﾍﾞｰｽ･ﾌﾟﾛﾊﾟﾃｨ
+Hint=
+[frmDBProperties.lblServerName]
+Class=TLabel
+;Caption=Server:
+Caption=ｻｰﾊﾞｰ:
+Hint=
+[frmDBProperties.lblServer]
+Class=TLabel
+;Caption=Local Server
+Caption=ﾛｰｶﾙ･ｻｰﾊﾞｰ
+Hint=
+[frmDBProperties.pgcMain]
+Class=TPageControl
+Hint=
+PageCount=2
+[frmDBProperties.pgcMain.TabAlias]
+Class=TTabSheet
+;Caption=Alias
+Caption=ｴｲﾘｱｽ
+Hint=
+[frmDBProperties.pgcMain.TabGeneral]
+Class=TTabSheet
+;Caption=General
+Caption=一般
+Hint=
+[frmDBProperties.TabAlias]
+Class=TTabSheet
+;Caption=Alias
+Caption=ｴｲﾘｱｽ
+Hint=
+[frmDBProperties.lblAliasName]
+Class=TLabel
+;Caption=A&lias Name:
+Caption=ｴｲﾘｱｽ名(&l):
+Hint=
+[frmDBProperties.lblFilename]
+Class=TLabel
+;Caption=&File:
+Caption=ﾌｧｲﾙ(&F):
+Hint=
+[frmDBProperties.btnSelFilename]
+Class=TButton
+Caption=...
+;Hint=Select database
+Hint=ﾃﾞｰﾀﾍﾞｰｽの選択
+[frmDBProperties.TabGeneral]
+Class=TTabSheet
+;Caption=General
+Caption=一般
+Hint=
+[frmDBProperties.lblOptions]
+Class=TLabel
+;Caption=O&ptions:
+Caption=ｵﾌﾟｼｮﾝ(&O):
+Hint=
+[frmDBProperties.gbSummaryInfo]
+Class=TGroupBox
+;Caption=Summary Information
+Caption=要約情報
+Hint=
+[frmDBProperties.lblDBOwner]
+Class=TLabel
+;Caption=Owner:
+Caption=ｵｰﾅｰ:
+Hint=
+[frmDBProperties.lblDBPages]
+Class=TLabel
+;Caption=Allocated DB Pages:
+Caption=DB ﾍﾟｰｼﾞ割当量:
+Hint=
+[frmDBProperties.lblPageSize]
+Class=TLabel
+;Caption=Page Size:
+Caption=ﾍﾟｰｼﾞ ｻﾞｲｽ:
+Hint=
+[frmDBProperties.lblOwner]
+Class=TLabel
+Caption=SYSDBA
+Hint=
+[frmDBProperties.lblPages]
+Class=TLabel
+Caption=20750
+Hint=
+[frmDBProperties.lblPgSize]
+Class=TLabel
+Caption=4096
+Hint=
+[frmDBProperties.lvSecondaryFiles]
+Class=TListView
+Hint=
+Columns.Count=2
+;Column0.Caption=Secondary Files
+Column0.Caption=ｾｶﾝﾀﾞﾘｰ ﾌｧｲﾙ
+;Column1.Caption=Start Page
+Column1.Caption=ｽﾀｰﾄ ﾍﾟｰｼﾞ
+[frmDBProperties.btnApply]
+Class=TButton
+;Caption=&Apply
+Caption=適用(&A)
+Hint=
+[frmDBProperties.btnCancel]
+Class=TButton
+Caption=&OK
+Hint=
+[frmDBProperties.Button1]
+Class=TButton
+;Caption=&Cancel
+Caption=ｷｬﾝｾﾙ(&C)
+Hint=
+[frmDBStatistics]
+Class=TfrmDBStatistics
+;Caption=Database Statistics
+Caption=ﾃﾞｰﾀﾍﾞｰｽの統計情報
+;Hint=
+Hint=ﾃﾞｰﾀﾍﾞｰｽの統計情報を表示します
+[frmDBStatistics.lblOptions]
+Class=TLabel
+;Caption=O&ption:
+Caption=ｵﾌﾟｼｮﾝ(&O):
+Hint=
+[frmDBStatistics.lblDatabaseName]
+Class=TLabel
+;Caption=Database:
+Caption=ﾃﾞｰﾀﾍﾞｰｽ:
+Hint=
+[frmDBStatistics.lblDatabase]
+Class=TLabel
+Caption=AEKOOLMS002.FDB
+Hint=AEKOOLMS002.FDB
+[frmDBStatistics.btnOK]
+Class=TButton
+Caption=&OK
+Hint=
+[frmDBStatistics.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=ｷｬﾝｾﾙ(&C)
+Hint=
+[frmTextViewer]
+Class=TfrmTextViewer
+;Caption=Database Metadata
+Caption=ﾃﾞｰﾀﾍﾞｰｽのﾒﾀﾃﾞｰﾀ
+Hint=
+[frmTextViewer.mnuFile]
+Class=TMenuItem
+;Caption=&File
+Caption=ﾌｧｲﾙ(&F)
+Hint=
+[frmTextViewer.mnuFiSaveAs]
+Class=TMenuItem
+;Caption=&Save ...
+Caption=ｾｰﾌﾞ(&S)...
+Hint=Save current file under a new name
+[frmTextViewer.mnuFiPrint]
+Class=TMenuItem
+;Caption=&Print
+Caption=印刷(&P)
+Hint=
+[frmTextViewer.mnuFiExit]
+Class=TMenuItem
+;Caption=E&xit
+Caption=終了(&x)
+Hint=Exit this application
+[frmTextViewer.mnuEdit]
+Class=TMenuItem
+;Caption=&Edit
+Caption=編集(&E)
+Hint=
+[frmTextViewer.mnuEdFind]
+Class=TMenuItem
+;Caption=&Find
+Caption=検索(&F)
+Hint=Search for a string
+[frmTextViewer.EditCopy1]
+Class=TEditCopy
+;Caption=&Copy
+Caption=ｺﾋﾟｰ(&C)
+;Hint=Copy
+Hint=ｺﾋﾟｰ
+[frmTextViewer.EditCut1]
+Class=TEditCut
+;Caption=Cu&t
+Caption=切り取り(&t)
+;Hint=Cut
+Hint=切り取り
+[frmTextViewer.EditPaste1]
+Class=TEditPaste
+;Caption=&Paste
+Caption=貼付(&P)
+;Hint=Paste
+Hint=貼付
+[frmTextViewer.EditSelectAll1]
+Class=TEditSelectAll
+;Caption=Select &All
+Caption=全てを選択(&A)
+Hint=
+[frmTextViewer.EditUndo1]
+Class=TEditUndo
+;Caption=&Undo
+Caption=やり直し(&U)
+Hint=
+[frmTextViewer.EditFont]
+Class=TAction
+;Caption=&Font ...
+Caption=ﾌｫﾝﾄ(&F)
+;Hint=Change the font
+Hint=ﾌｫﾝﾄの変更
+[frmDBShutdown]
+Class=TfrmDBShutdown
+;Caption=Database Shutdown
+Caption=ﾃﾞｰﾀﾍﾞｰｽ･ｼｬｯﾄﾀﾞｳﾝ
+Hint=
+[frmDBShutdown.lblDatabaseName]
+Class=TLabel
+;Caption=Database:
+Caption=ﾃﾞｰﾀﾍﾞｰｽ:
+Hint=
+[frmDBShutdown.lblOptions]
+Class=TLabel
+;Caption=O&ptions:
+Caption=ｵﾌﾟｼｮﾝ(&p):
+Hint=
+[frmDBShutdown.stxDatabaseName]
+Class=TLabel
+Caption=AEKOOLMS002.FDB
+Hint=AEKOOLMS002.FDB
+[frmDBShutdown.btnOK]
+Class=TButton
+Caption=&OK
+Hint=
+[frmDBShutdown.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=ｷｬﾝｾﾙ(&C)
+Hint=
+[frmMessage]
+Class=TfrmMessage
+;Caption=Information
+Caption=ｲﾝﾌｫﾒｰｼｮﾝ
+Hint=
+[frmMessage.lblDetailMsg]
+Class=TLabel
+;Caption=Detail Message:
+Caption=詳細ﾒｯｾｰｼﾞ:
+Hint=
+[frmMessage.lblSummaryMsg]
+Class=TLabel
+;Caption=No pending transactions were found.
+Caption=未解決ﾄﾗﾝｻﾞｸｼｮﾝはありません
+Hint=
+[frmMessage.btnOK]
+Class=TButton
+Caption=&OK
+Hint=
+[frmDBBackup]
+Class=TfrmDBBackup
+;Caption=Database Backup
+Caption=ﾃﾞｰﾀﾍﾞｰｽのﾊﾞｯｸｱｯﾌﾟ
+Hint=
+[frmDBBackup.lblOptions]
+Class=TLabel
+;Caption=O&ptions:
+Caption=ｵﾌﾟｼｮﾝ(&p):
+Hint=
+[frmDBBackup.gbDatabaseFile]
+Class=TGroupBox
+;Caption=Database
+Caption= ﾃﾞｰﾀﾍﾞｰｽ
+Hint=
+[frmDBBackup.lblDatabaseServer]
+Class=TLabel
+;Caption=Server:
+Caption=ｻｰﾊﾞｰ:
+Hint=
+[frmDBBackup.lblDatabaseAlias]
+Class=TLabel
+;Caption=&Alias:
+Caption=ｴｲﾘｱｽ(&A):
+Hint=
+[frmDBBackup.lblDatabaseserverName]
+Class=TLabel
+;Caption=Local Server
+Caption=ﾛｰｶﾙ ｻｰﾊﾞｰ
+Hint=
+[frmDBBackup.gbBackupFiles]
+Class=TGroupBox
+;Caption=Backup File(s)
+Caption=ﾊﾞｯｸｱｯﾌﾟ ﾌｧｲﾙ
+Hint=
+[frmDBBackup.lblBackupServer]
+Class=TLabel
+;Caption=&Server:
+Caption=ｻｰﾊﾞｰ(&S):
+Hint=
+[frmDBBackup.lblBackupAlias]
+Class=TLabel
+;Caption=A&lias:
+Caption=ｴｲﾘｱｽ(&A):
+Hint=
+[frmDBBackup.btnOK]
+Class=TButton
+Caption=&OK
+Hint=
+[frmDBBackup.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=ｷｬﾝｾﾙ(&C)
+Hint=
+[frmMain.actDatabaseBackup]
+Class=TAction
+;Caption=Database Backup
+Caption=ﾃﾞｰﾀﾍﾞｰｽのﾊﾞｯｸｱｯﾌﾟ
+;Hint=Backup a database
+Hint=ﾃﾞｰﾀﾍﾞｰｽのﾊﾞｯｸｱｯﾌﾟを行います
+[frmDBRestore]
+Class=TfrmDBRestore
+;Caption=Database Restore
+Caption=ﾃﾞｰﾀﾍﾞｰｽのﾘｽﾄｱ
+Hint=
+[frmDBRestore.lblOptions]
+Class=TLabel
+;Caption=O&ptions:
+Caption=ｵﾌﾟｼｮﾝ(&p):
+Hint=
+[frmDBRestore.gbDatabaseFiles]
+Class=TGroupBox
+;Caption=Database
+Caption= ﾃﾞｰﾀﾍﾞｰｽ
+Hint=
+[frmDBRestore.lblDestinationServer]
+Class=TLabel
+;Caption=&Server:
+Caption=ｻｰﾊﾞｰ:
+Hint=
+[frmDBRestore.lblDBAlias]
+Class=TLabel
+;Caption=A&lias:
+Caption=ｴｲﾘｱｽ:
+Hint=
+[frmDBRestore.gbBackupFiles]
+Class=TGroupBox
+;Caption=Backup File(s)
+Caption=ﾊﾞｯｸｱｯﾌﾟ･ﾌｧｲﾙ
+Hint=
+[frmDBRestore.lblBackupServer]
+Class=TLabel
+;Caption=Server:
+Caption=ｻｰﾊﾞｰ:
+Hint=
+[frmDBRestore.lblBackupAlias]
+Class=TLabel
+;Caption=&Alias:
+Caption=ｴｲﾘｱｽ(&A):
+Hint=
+[frmDBRestore.lblBackupServerName]
+Class=TLabel
+;Caption=Local Server
+Caption=ﾛｰｶﾙ ｻｰﾊﾞｰ
+Hint=
+[frmDBRestore.btnOK]
+Class=TButton
+Caption=&OK
+Hint=
+[frmDBRestore.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=ｷｬﾝｾﾙ(&C)
+Hint=
+[frmDomains]
+Class=TfrmDomains
+;Caption=Domain - BLOB_TEXT
+Caption=ﾄﾞﾒｲﾝ - BLOB_TEXT
+[frmDomains.pgObjectEditor]
+Class=TPageControl
+Hint=
+PageCount=5
+[frmDomains.pgObjectEditor.tsMain]
+Class=TTabSheet
+;Caption=Domain
+Caption=ﾄﾞﾒｲﾝ
+[frmDomains.pgObjectEditor.tsDefault]
+Class=TTabSheet
+;Caption=Default
+Caption=ﾃﾞﾌｫﾙﾄ
+[frmDomains.pgObjectEditor.tsConstraint]
+Class=TTabSheet
+;Caption=Constraint
+Caption=制約
+[frmDomains.pgObjectEditor.tsDescription]
+Class=TTabSheet
+;Caption=Description
+Caption=詳細
+[frmDomains.pgObjectEditor.tsDDL]
+Class=TTabSheet
+;Caption=Metadata
+Caption=ﾒﾀﾃﾞｰﾀ
+[frmDomains.tsMain]
+Class=TTabSheet
+;Caption=Domain
+Caption=ﾄﾞﾒｲﾝ
+[frmDomains.Label1]
+Class=TLabel
+;Caption=&Domain:
+Caption=ﾄﾞﾒｲﾝ(&D):
+[frmDomains.Label3]
+Class=TLabel
+;Caption=&Type:
+Caption=ﾀｲﾌﾟ(&T):
+[frmDomains.Label4]
+Class=TLabel
+;Caption=&Length:
+Caption=長さ(&L):
+[frmDomains.Label9]
+Class=TLabel
+;Caption=C&har Set:
+Caption=ｷｬﾗｸﾀ ｾｯﾄ(&h):
+[frmDomains.Label2]
+Class=TLabel
+;Caption=Co&llate:
+Caption=照合(&l):
+[frmDomains.Label14]
+Class=TLabel
+;Caption=&Precision:
+Caption=ﾌﾟﾚｼｼﾞｮﾝ(&P):
+[frmDomains.Label15]
+Class=TLabel
+;Caption=&Scale:
+Caption=ｽｹｰﾙ(&S):
+[frmDomains.Label18]
+Class=TLabel
+;Caption=&Sub Type:
+Caption=ｻﾌﾞﾀｲﾌﾟ(&S):
+[frmDomains.Label6]
+Class=TLabel
+;Caption=C&har Set:
+Caption=ｷｬﾗｸﾀ ｾｯﾄ(&h):
+[frmDomains.Label11]
+Class=TLabel
+;Caption=Segment Si&ze:
+Caption=ｾｸﾞﾒﾝﾄ ｻﾞｲｽ(&z):
+[frmDomains.Label5]
+Class=TLabel
+;Caption=Co&llate:
+Caption=照合(&l):
+[frmDomains.chkColNotNull]
+Class=TCheckBox
+Caption=Not &Null
+[frmDomains.Label10]
+Class=TLabel
+;Caption=&Array:
+Caption=配列(&A):
+[frmDomains.lvArray]
+Class=TListView
+Hint=
+Columns.Count=2
+;Column0.Caption=LBound
+Column0.Caption=下限
+;Column1.Caption=UBound
+Column1.Caption=上限
+[frmDomains.btnAddDimension]
+Class=TButton
+;Caption=&Add Dimension
+Caption=配列追加(&A)
+[frmDomains.btnDeleteDimension]
+Class=TButton
+;Caption=&Delete Dimension
+Caption=配列削除(&D)
+[frmDomains.btnEditDimension]
+Class=TButton
+;Caption=&Edit Dimension
+Caption=配列編集(&E)
+[frmDomains.tsDefault]
+Class=TTabSheet
+;Caption=Default
+Caption=ﾃﾞﾌｫﾙﾄ
+[frmDomains.tsConstraint]
+Class=TTabSheet
+;Caption=Constraint
+Caption=制約
+[frmDomains.tsDescription]
+Class=TTabSheet
+;Caption=Description
+Caption=詳細
+[frmDomains.tsDDL]
+Class=TTabSheet
+;Caption=Metadata
+Caption=ﾒﾀﾃﾞｰﾀ
+[frmServerRegister]
+Class=TfrmServerRegister
+;Caption=Register Server and Connect
+Caption=ｻｰﾊﾞｰの登録と接続
+[frmServerRegister.gbServerInfo]
+Class=TGroupBox
+;Caption=Server Information
+Caption=ｻｰﾊﾞｰ情報
+[frmServerRegister.lblServerName]
+Class=TLabel
+;Caption=S&erver Name:
+Caption=ｻｰﾊﾞｰ名(&S):
+[frmServerRegister.lblProtocol]
+Class=TLabel
+;Caption=&Network Protocol:
+Caption=ﾈｯﾄﾜｰｸ･ﾌﾟﾛﾄｺﾙ(&N):
+[frmServerRegister.lblServerAlias]
+Class=TLabel
+;Caption=&Alias Name:
+Caption=ｴｲﾘｱｽ名(&A):
+[frmServerRegister.Label1]
+Class=TLabel
+;Caption=&Description:
+Caption=詳細(&D):
+[frmServerRegister.rbLocalServer]
+Class=TRadioButton
+;Caption=&Local Server
+Caption=ﾛｰｶﾙ ｻｰﾊﾞｰ(&L)
+[frmServerRegister.rbRemoteServer]
+Class=TRadioButton
+;Caption=&Remote Server
+Caption=ﾘﾓｰﾄ ｻｰﾊﾞｰ(&R)
+[frmServerRegister.chkSaveAlias]
+Class=TCheckBox
+;Caption=&Save Alias Information
+Caption=ｴｲﾘｱｽの保存(&S)
+[frmServerRegister.gbLoginInfo]
+Class=TGroupBox
+;Caption=Login Information
+Caption=ﾛｸﾞｲﾝ情報
+[frmServerRegister.lblUsername]
+Class=TLabel
+;Caption=&User Name:
+Caption=ﾕｰｻﾞｰ名(&U):
+[frmServerRegister.lblPassword]
+Class=TLabel
+;Caption=&Password:
+Caption=ﾊﾟｽﾜｰﾄﾞ(&P):
+[frmServerRegister.btnOK]
+Class=TButton
+Caption=&OK
+[frmServerRegister.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=ｷｬﾝｾﾙ(&C)
+[frmCommDiag]
+Class=TfrmCommDiag
+;Caption=Communication Diagnostics
+Caption=通信診断
+[frmCommDiag.pgcDiagnostics]
+Class=TPageControl
+Hint=
+PageCount=4
+[frmCommDiag.pgcDiagnostics.tabDBConnection]
+Class=TTabSheet
+;Caption=DB Connection
+Caption=DB 接続
+[frmCommDiag.pgcDiagnostics.tabTCPIP]
+Class=TTabSheet
+Caption=TCP/IP
+[frmCommDiag.pgcDiagnostics.tabNetBEUI]
+Class=TTabSheet
+Caption=NetBEUI
+[frmCommDiag.pgcDiagnostics.tabSPX]
+Class=TTabSheet
+Caption=SPX
+[frmCommDiag.tabDBConnection]
+Class=TTabSheet
+;Caption=DB Connection
+Caption=DB 接続
+[frmCommDiag.lblDBResults]
+Class=TLabel
+;Caption=&Results:
+Caption=結果(&R):
+[frmCommDiag.gbDatabaseInfo]
+Class=TGroupBox
+;Caption=Database Information
+Caption=ﾃﾞｰﾀﾍﾞｰｽ情報
+[frmCommDiag.lblDatabase]
+Class=TLabel
+;Caption=&Database:
+Caption=ﾃﾞｰﾀﾍﾞｰｽ(&D):
+[frmCommDiag.lblUsername]
+Class=TLabel
+;Caption=&User Name:
+Caption=ﾕｰｻﾞｰ名(&U):
+[frmCommDiag.lblPassword]
+Class=TLabel
+;Caption=&Password:
+Caption=ﾊﾟｽﾜｰﾄﾞ(&P):
+[frmCommDiag.btnSelDB]
+Class=TButton
+Caption=...
+;Hint=Select database
+Hint=ﾃﾞｰﾀﾍﾞｰｽの選択
+[frmCommDiag.gbDBServerInfo]
+Class=TGroupBox
+;Caption=Server Information
+Caption=ｻｰﾊﾞｰ情報
+[frmCommDiag.lblServerName]
+Class=TLabel
+;Caption=&Server Name:
+Caption=ｻｰﾊﾞｰ名(&S):
+[frmCommDiag.lblProtocol]
+Class=TLabel
+;Caption=&Network Protocol:
+Caption=ﾈｯﾄﾜｰｸ･ﾌﾟﾛﾄｺﾙ(&N):
+[frmCommDiag.rbLocalServer]
+Class=TRadioButton
+;Caption=&Local Server
+Caption=ﾛｰｶﾙ ｻｰﾊﾞｰ(&L)
+[frmCommDiag.rbRemoteServer]
+Class=TRadioButton
+;Caption=R&emote Server
+Caption= ｻｰﾊﾞｰ(&e)
+[frmCommDiag.tabTCPIP]
+Class=TTabSheet
+Caption=TCP/IP
+[frmCommDiag.lblWinSockResults]
+Class=TLabel
+;Caption=&Results:
+Caption=結果(&R):
+[frmCommDiag.gbTCPIPServerInfo]
+Class=TGroupBox
+;Caption=Server Information
+Caption=ｻｰﾊﾞｰ情報
+[frmCommDiag.lblWinsockServer]
+Class=TLabel
+;Caption=&Host:
+Caption=ﾎｽﾄ(&H):
+[frmCommDiag.lblService]
+Class=TLabel
+;Caption=&Service:
+Caption=ｻｰﾋﾞｽ(&S):
+[frmCommDiag.tabNetBEUI]
+Class=TTabSheet
+Caption=NetBEUI
+[frmCommDiag.lblNetBeuiResults]
+Class=TLabel
+;Caption=&Results:
+Caption=結果(&R):
+[frmCommDiag.gbNetBEUIServerInfo]
+Class=TGroupBox
+;Caption=Server Information
+Caption=ｻｰﾊﾞｰ情報
+[frmCommDiag.lblNetBEUIServer]
+Class=TLabel
+;Caption=&Server Name:
+Caption=ｻｰﾊﾞｰ名(&S):
+[frmCommDiag.tabSPX]
+Class=TTabSheet
+Caption=SPX
+[frmCommDiag.lblSPXResults]
+Class=TLabel
+;Caption=&Results:
+Caption=結果(&R):
+[frmCommDiag.gbNovellServerInfo]
+Class=TGroupBox
+;Caption=Server Information
+Caption=ｻｰﾊﾞｰ情報
+[frmCommDiag.lblSPXServer]
+Class=TLabel
+;Caption=&Server Name:
+Caption=ｻｰﾊﾞｰ名(&S):
+[frmCommDiag.btnTest]
+Class=TButton
+;Caption=&Test
+Caption=ﾃｽﾄ(&T)
+[frmCommDiag.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=ｷｬﾝｾﾙ(&C)
+[frmBackupAliasProperties]
+Class=TfrmBackupAliasProperties
+;Caption=Backup Alias Properties
+Caption=ﾊﾞｯｸｱｯﾌﾟ･ｴｲﾘｱｽのﾌﾟﾛﾊﾟﾃｨ
+[frmBackupAliasProperties.lblServerName]
+Class=TLabel
+;Caption=Server:
+Caption=ｻｰﾊﾞｰ:
+[frmBackupAliasProperties.lblAliasName]
+Class=TLabel
+;Caption=&Alias Name:
+Caption=ｴｲﾘｱｽ名(&A):
+[frmBackupAliasProperties.lblDBServer]
+Class=TLabel
+;Caption=Target Database &Server:
+Caption=ﾀｰｹﾞｯﾄ ﾃﾞｰﾀﾍﾞｰｽ ｻｰﾊﾞｰ(&S):
+[frmBackupAliasProperties.lblDBAlias]
+Class=TLabel
+;Caption=Target &Database Alias:
+Caption=ﾀｰｹﾞｯﾄ ﾃﾞｰﾀﾍﾞｰｽ ｴｲﾘｱｽ(&D):
+[frmBackupAliasProperties.lblServer]
+Class=TLabel
+;Caption=Local Server
+Caption=ﾛｰｶﾙ ｻｰﾊﾞｰ
+[frmBackupAliasProperties.btnApply]
+Class=TButton
+;Caption=&Apply
+Caption=適用(&A)
+[frmBackupAliasProperties.btnOK]
+Class=TButton
+Caption=&OK
+[frmBackupAliasProperties.Button1]
+Class=TButton
+;Caption=&Cancel
+Caption=ｷｬﾝｾﾙ(&C)
+[frmDBConnections]
+Class=TfrmDBConnections
+;Caption=Database Connections
+Caption=ﾃﾞｰﾀﾍﾞｰｽ接続
+[frmDBConnections.lvConnections]
+Class=TListView
+Hint=
+Columns.Count=1
+;Column0.Caption=User Name
+Column0.Caption=ﾕｰｻﾞｰ名
+[frmDBConnections.btnOK]
+Class=TButton
+;Caption=&OK
+Caption=OK
+[dlgWindowList]
+Class=TdlgWindowList
+;Caption=Active Windows
+Caption=ｱｸﾃｨﾌﾞ ｳｨﾝﾄﾞｳ
+[dlgWindowList.ListView1]
+Class=TListView
+Hint=
+Columns.Count=1
+;Column0.Caption=Windows
+Column0.Caption=ｳｨﾝﾄﾞｳ
+[dlgWindowList.SwitchTo]
+Class=TAction
+;Caption=&Switch To...
+Caption=切替(&S)
+[dlgWindowList.Closewindow]
+Class=TAction
+;Caption=&Close Window
+Caption=ｳｨﾝﾄﾞｳを閉じる
+[dlgWindowList.ActionCloseAll]
+Class=TAction
+;Caption=Close &All
+Caption=全て閉じる(&C)
+[frmDomains.ActionCompile]
+Class=TAction
+;Caption=&Compile
+Caption=ｺﾝﾊﾟｲﾙ(&C)
+[frmEditorTable]
+Class=TfrmEditorTable
+;Caption=Table - CATEGORIE
+Caption=ﾃｰﾌﾞﾙ 分類
+[frmEditorTable.pgcProperties]
+Class=TPageControl
+Hint=
+PageCount=6
+[frmEditorTable.pgcProperties.tabProperties]
+Class=TTabSheet
+;Caption=Properties
+Caption=ﾌﾟﾛﾊﾟﾃｨ
+[frmEditorTable.pgcProperties.tabData]
+Class=TTabSheet
+;Caption=Data
+Caption=ﾃﾞｰﾀ
+[frmEditorTable.pgcProperties.tabMetadata]
+Class=TTabSheet
+;Caption=Metadata
+Caption=ﾒﾀﾃﾞｰﾀ
+[frmEditorTable.pgcProperties.tabPermissions]
+Class=TTabSheet
+;Caption=Permissions
+Caption=ﾊﾟｰﾐｯｼｮﾝ
+[frmEditorTable.pgcProperties.tabDependencies]
+Class=TTabSheet
+;Caption=Dependencies
+Caption=依存関係
+[frmEditorTable.pgcProperties.tabDescription]
+Class=TTabSheet
+;Caption=Description
+Caption=詳細
+[frmEditorTable.tabProperties]
+Class=TTabSheet
+;Caption=Properties
+Caption=ﾌﾟﾛﾊﾟﾃｨ
+[frmEditorTable.lvTableObjects]
+Class=TListView
+Hint=
+Columns.Count=6
+;Column0.Caption=Name
+Column0.Caption=名称
+;Column1.Caption=Type
+Column1.Caption=ﾀｲﾌﾟ
+;Column2.Caption=Character Set
+Column2.Caption=ｷｬﾗｸﾀ ｾｯﾄ
+;Column3.Caption=Collation
+Column3.Caption=照合
+;Column4.Caption=Default Value
+Column4.Caption=ﾃﾞﾌｫﾙﾄ値
+;Column5.Caption=Allow Nulls
+Column5.Caption=Null許可
+[frmEditorTable.tabData]
+Class=TTabSheet
+;Caption=Data
+Caption=ﾃﾞｰﾀ
+[frmEditorTable.dbgData]
+Class=TDBGrid
+Hint=
+Columns.Count=1
+Column0.Caption=
+[frmEditorTable.DBNavigator1]
+Class=TNavButton
+;Hint=Refresh data
+Hint=ﾃﾞｰﾀのﾘﾌﾚｯｼｭ
+[frmEditorTable.IB_TransactionBar1]
+Class=TIB_TransactionBar_Button
+;Hint=Close Current Transaction
+Hint=現在のﾄﾗﾝｻﾞｸｼｮﾝを閉じます
+[frmEditorTable.tabMetadata]
+Class=TTabSheet
+;Caption=Metadata
+Caption=ﾒﾀﾃﾞｰﾀ
+[frmEditorTable.cbExtractData]
+Class=TCheckBox
+;Caption=Extract table data
+Caption=ﾃﾞｰﾀ書き出し
+[frmEditorTable.tabPermissions]
+Class=TTabSheet
+;Caption=Permissions
+Caption=ﾊﾟｰﾐｯｼｮﾝ
+[frmEditorTable.lvPermissions]
+Class=TListView
+Hint=
+Columns.Count=8
+Column0.Caption=Object
+Column1.Caption=Select
+Column2.Caption=Delete
+Column3.Caption=Insert
+Column4.Caption=Update
+Column5.Caption=Reference
+Column6.Caption=Execute
+Column7.Caption=Member Of
+[frmEditorTable.Label1]
+Class=TLabel
+Caption=This permission includes GRANT OPTION
+[frmEditorTable.tabDependencies]
+Class=TTabSheet
+;Caption=Dependencies
+Caption=依存関係
+[frmEditorTable.rbDependent]
+Class=TRadioButton
+;Caption=Show &Dependent Objects
+Caption=依存先の表示
+Hint=Displays objects which depend on the currently selected object
+[frmEditorTable.rbDependedOn]
+Class=TRadioButton
+;Caption=Show Depended &On Objects
+Caption=依存元の表示
+Hint=Shows the objects the current object depends on
+[frmEditorTable.tabDescription]
+Class=TTabSheet
+;Caption=Description
+Caption=詳細
+[frmEditorTable.ShowColumns]
+Class=TAction
+;Caption=Columns
+Caption=ｶﾗﾑ
+Hint=Show Columns for the table
+[frmEditorTable.ShowTriggers]
+Class=TAction
+;Caption=Triggers
+Caption=ﾄﾘｶﾞｰ
+Hint=Show triggers for the table
+[frmEditorTable.ShowCheckConstraints]
+Class=TAction
+;Caption=Check Constraints
+Caption=ﾁｪｯｸ制約
+Hint=Show Check Constraints
+[frmEditorTable.ShowIndexes]
+Class=TAction
+;Caption=Indexes
+Caption=ｲﾝﾃﾞｯｸｽ
+Hint=Show indexes
+[frmEditorTable.ShowUniqueConstraints]
+Class=TAction
+;Caption=Unique Constraints
+Caption=ﾕﾆｰｸ制約
+Hint=Show unique constraints for the table
+[frmEditorTable.ShowReferentialConstraints]
+Class=TAction
+;Caption=Referential Constraints
+Caption=参照制約
+Hint=Show referential constraints
+[frmEditorTable.EditCopy1]
+Class=TEditCopy
+;Caption=&Copy
+Caption=ｺﾋﾟｰ(&C)
+;Hint=Copy
+Hint=ｺﾋﾟｰ
+[frmEditorTable.EditCut1]
+Class=TEditCut
+;Caption=Cu&t
+Caption=切り取り(&t)
+;Hint=Cut
+Hint=切り取り
+[frmEditorTable.EditPaste1]
+Class=TEditPaste
+;Caption=&Paste
+Caption=貼付(&P)
+;Hint=Paste
+Hint=貼付
+[frmEditorTable.EditSelectAll1]
+Class=TEditSelectAll
+;Caption=Select &All
+Caption=全てを選択(&A)
+[frmEditorTable.EditUndo1]
+Class=TEditUndo
+;Caption=&Undo
+Caption=やり直し(&U)
+[frmEditorTable.ActionNewObject]
+Class=TAction
+;Caption=New...
+Caption=作成
+[frmEditorTable.ActionEditObject]
+Class=TAction
+;Caption=Edit...
+Caption=編集
+[frmEditorTable.ActionDropObject]
+Class=TAction
+;Caption=Drop
+Caption=削除
+[frmEditorTable.ActionGrantSelect]
+Class=TAction
+;Caption=Select
+Caption=選択
+[frmEditorTable.ActionGrantDelete]
+Class=TAction
+;Caption=Delete
+Caption=削除
+[frmEditorTable.ActionGrantInsert]
+Class=TAction
+;Caption=Insert
+Caption=挿入
+[frmEditorTable.ActionGrantUpdate]
+Class=TAction
+;Caption=Update
+Caption=変更
+[frmEditorTable.ActionGrantReference]
+Class=TAction
+;Caption=Reference
+Caption=参照
+[frmEditorTable.ActionGrantExecute]
+Class=TAction
+;Caption=Execute
+Caption=実行
+[frmEditorTable.ActionGrantAll]
+Class=TAction
+Caption=Grant All
+[frmEditorTable.ActionRevokeAll]
+Class=TAction
+Caption=Revoke All
+[frmEditorTable.ActionOpenTable]
+Class=TAction
+;Caption=Open
+Caption=ｵｰﾌﾟﾝ
+[frmEditorTable.ActionTableFilter]
+Class=TAction
+;Caption=Filter
+Caption=ﾌｨﾙﾀｰ
+[frmEditorTable.ActionTableFormView]
+Class=TAction
+;Caption=Form View
+Caption=ﾌｫｰﾑ表示
+[frmEditorTable.ActionEmptyTable]
+Class=TAction
+;Caption=Empty Table
+Caption=ﾃｰﾌﾞﾙを空に
+[frmEditorTable.ActionTableClearFilter]
+Class=TAction
+;Caption=Clear Filter
+Caption=ｸﾘｱ ﾌｨﾙﾀｰ
+[frmEditorTable.ActionCopyRecord]
+Class=TAction
+;Caption=Copy Record
+Caption=ﾚｺｰﾄﾞ ｺﾋﾟｰ
+[frmEditorTable.NewPrimaryKey1]
+Class=TMenuItem
+;Caption=New Primary Key
+Caption=新ﾌﾟﾗｲﾏﾘｷｰ
+[frmEditorTable.Savetofile1]
+Class=TMenuItem
+;Caption=Save to file...
+Caption=ﾌｧｲﾙに保存...
+[frmEditorTable.Loadfromfile1]
+Class=TMenuItem
+;Caption=Load from file...
+Caption=ﾌｧｲﾙより読込...
+[frmEditorTable.Copy2]
+Class=TMenuItem
+;Caption=Copy
+Caption=ｺﾋﾟｰ
+[frmEditorTable.Paste2]
+Class=TMenuItem
+;Caption=Paste
+Caption=貼付
+[frmEditorTable.Cut2]
+Class=TMenuItem
+;Caption=Cut
+Caption=切り取り
+[frmEditorTable.SavePictureDialog1.PreviewButton]
+Class=TSpeedButton
+;Hint=Preview
+Hint=ﾌﾟﾚﾋﾞｭｰ
+[frmEditorTable.OpenPictureDialog1.PreviewButton]
+Class=TSpeedButton
+;Hint=Preview
+Hint=ﾌﾟﾚﾋﾞｭｰ
+[frmViewEditor]
+Class=TfrmViewEditor
+;Caption=View - NEW_VIEW
+Caption=表示-新ﾋﾞｭｰ
+[frmViewEditor.pgObjectEditor]
+Class=TPageControl
+Hint=
+PageCount=7
+[frmViewEditor.pgObjectEditor.tsSQL]
+Class=TTabSheet
+;Caption=View
+Caption=ﾋﾞｭｰ
+[frmViewEditor.pgObjectEditor.tsTableView]
+Class=TTabSheet
+;Caption=Structure
+Caption=構造
+[frmViewEditor.pgObjectEditor.tsDependenciesView]
+Class=TTabSheet
+;Caption=Dependencies
+Caption=属性
+[frmViewEditor.pgObjectEditor.tsTriggerView]
+Class=TTabSheet
+;Caption=Triggers
+Caption=ﾄﾘｶﾞｰ
+[frmViewEditor.pgObjectEditor.tsData]
+Class=TTabSheet
+;Caption=Data
+Caption=ﾃﾞｰﾀ
+[frmViewEditor.pgObjectEditor.tsDoco]
+Class=TTabSheet
+;Caption=Description
+Caption=詳細
+[frmViewEditor.pgObjectEditor.tsGrants]
+Class=TTabSheet
+;Caption=Grants
+Caption=権限
+[frmViewEditor.tsSQL]
+Class=TTabSheet
+;Caption=View
+Caption=ﾋﾞｭｰ
+[frmViewEditor.tsTableView]
+Class=TTabSheet
+;Caption=Structure
+Caption=構造
+[frmViewEditor.lvFieldList]
+Class=TListView
+Hint=
+Columns.Count=8
+;Column0.Caption=Field Name
+Column0.Caption=ﾌｨｰﾙﾄﾞ名称
+;Column1.Caption=Field Type
+Column1.Caption=ﾌｨｰﾙﾄﾞﾀｲﾌﾟ
+;Column2.Caption=Sub Type
+Column2.Caption=ｻﾌﾞﾀｲﾌﾟ
+;Column3.Caption=Domain
+Column3.Caption=ﾄﾞﾒｲﾝ
+Column4.Caption=Not Null
+;Column5.Caption=Description
+Column5.Caption=詳細
+;Column6.Caption=Default Source
+Column6.Caption=ﾃﾞﾌｫﾙﾄ ｿｰｽ
+;Column7.Caption=Computed Source
+Column7.Caption=計算元
+[frmViewEditor.tsDependenciesView]
+Class=TTabSheet
+;Caption=Dependencies
+Caption=属性
+[frmViewEditor.rbDependent]
+Class=TRadioButton
+;Caption=Show &Dependent Objects
+Caption=依存先の表示(&D)
+Hint=Displays objects which depend on the currently selected object
+[frmViewEditor.rbDependedOn]
+Class=TRadioButton
+;Caption=Show Depended &On Objects
+Caption=依存元の表示(&O)
+Hint=Shows the objects the current object depends on
+[frmViewEditor.tsTriggerView]
+Class=TTabSheet
+;Caption=Triggers
+Caption=ﾄﾘｶﾞｰ
+[frmViewEditor.Label1]
+Class=TLabel
+;Caption=Display:
+Caption=表示:
+[frmViewEditor.tsData]
+Class=TTabSheet
+;Caption=Data
+Caption=ﾃﾞｰﾀ
+[frmViewEditor.navDataView]
+Class=TNavButton
+;Hint=Refresh data
+Hint=ﾘﾌﾚｯｼｭﾃﾞｰﾀ
+[frmViewEditor.IB_TransactionBar1]
+Class=TIB_TransactionBar_Button
+Hint=Close Current Transaction
+[frmViewEditor.btnRefresh]
+Class=TSpeedButton
+;Caption=&Refresh
+Caption=ﾘﾌﾚｯｼｭ(&R)
+[frmViewEditor.grdDataView]
+Class=TDBGrid
+Hint=
+Columns.Count=1
+Column0.Caption=
+[frmViewEditor.tsDoco]
+Class=TTabSheet
+;Caption=Description
+Caption=詳細
+[frmViewEditor.tsGrants]
+Class=TTabSheet
+;Caption=Grants
+Caption=権限
+[frmViewEditor.lvPermissions]
+Class=TListView
+Hint=
+Columns.Count=8
+Column0.Caption=Object
+Column1.Caption=Select
+Column2.Caption=Delete
+Column3.Caption=Insert
+Column4.Caption=Update
+Column5.Caption=Reference
+Column6.Caption=Execute
+Column7.Caption=Member Of
+[frmViewEditor.Label2]
+Class=TLabel
+Caption=This permission includes GRANT OPTION
+[frmViewEditor.ActionCompile]
+Class=TAction
+;Caption=Compile
+Caption=ｺﾝﾊﾟｲﾙ
+[frmStoredProcedure]
+Class=TfrmStoredProcedure
+;Caption=Stored Procedure
+Caption=ｽﾄｱﾄﾞ･ﾌﾟﾛｼｰｼﾞｬ
+[frmStoredProcedure.pgObjectEditor]
+Class=TPageControl
+Hint=
+PageCount=7
+[frmStoredProcedure.pgObjectEditor.tsStoredProc]
+Class=TTabSheet
+;Caption=Edit
+Caption=編集
+[frmStoredProcedure.pgObjectEditor.tsExecution]
+Class=TTabSheet
+;Caption=Execution
+Caption=実行
+[frmStoredProcedure.pgObjectEditor.tsDocoView]
+Class=TTabSheet
+;Caption=Description
+Caption=詳細
+[frmStoredProcedure.pgObjectEditor.tsDependencies]
+Class=TTabSheet
+;Caption=Dependencies
+Caption=依存関係
+[frmStoredProcedure.pgObjectEditor.tsGrants]
+Class=TTabSheet
+;Caption=Grants
+Caption=権限
+[frmStoredProcedure.pgObjectEditor.tsDebuggerOutput]
+Class=TTabSheet
+;Caption=Debugger Output
+Caption=ﾃﾞﾊﾞｯｶｰ出力
+[frmStoredProcedure.pgObjectEditor.tsMetadata]
+Class=TTabSheet
+;Caption=Metadata
+Caption=ﾒﾀﾃﾞｰﾀ
+[frmStoredProcedure.tsStoredProc]
+Class=TTabSheet
+;Caption=Edit
+Caption=編集
+[frmStoredProcedure.Label2]
+Class=TLabel
+;Caption=Name:
+Caption=名称:
+[frmStoredProcedure.dbgParameters]
+Class=TDBGrid
+Hint=
+Columns.Count=3
+;Column0.Caption=Type
+Column0.Caption=ﾀｲﾌﾟ
+;Column1.Caption=Parameter
+Column1.Caption=ﾊﾟﾗﾒﾀ
+;Column2.Caption=Data Type
+Column2.Caption=ﾃﾞｰﾀ ﾀｲﾌﾟ
+[frmStoredProcedure.tsExecution]
+Class=TTabSheet
+;Caption=Execution
+Caption=実行
+[frmStoredProcedure.grdResults]
+Class=TDBGrid
+Hint=
+Columns.Count=1
+Column0.Caption=
+[frmStoredProcedure.dbgValues]
+Class=TDBGrid
+Hint=
+Columns.Count=3
+;Column0.Caption=Parameter
+Column0.Caption=ﾊﾟﾗﾒﾀ
+;Column1.Caption=Type
+Column1.Caption=ﾀｲﾌﾟ
+;Column2.Caption=Value
+Column2.Caption=値
+[frmStoredProcedure.tsDocoView]
+Class=TTabSheet
+;Caption=Description
+Caption=詳細
+[frmStoredProcedure.tsDependencies]
+Class=TTabSheet
+;Caption=Dependencies
+Caption=依存関係
+[frmStoredProcedure.rbDependent]
+Class=TRadioButton
+;Caption=Show &Dependent Objects
+Caption=依存先の表示(&D)
+Hint=Displays objects which depend on the currently selected object
+[frmStoredProcedure.rbDependedOn]
+Class=TRadioButton
+;Caption=Show Depended &On Objects
+Caption=依存元の表示(&O)
+Hint=Shows the objects the current object depends on
+[frmStoredProcedure.tsGrants]
+Class=TTabSheet
+;Caption=Grants
+Caption=権限
+[frmStoredProcedure.lvPermissions]
+Class=TListView
+Hint=
+Columns.Count=8
+Column0.Caption=Object
+Column1.Caption=Select
+Column2.Caption=Delete
+Column3.Caption=Insert
+Column4.Caption=Update
+Column5.Caption=Reference
+Column6.Caption=Execute
+Column7.Caption=Member Of
+[frmStoredProcedure.Label1]
+Class=TLabel
+Caption=This permission includes GRANT OPTION
+[frmStoredProcedure.tsDebuggerOutput]
+Class=TTabSheet
+;Caption=Debugger Output
+Caption=ﾃﾞﾊﾞｯｶｰ出力
+[frmStoredProcedure.tsMetadata]
+Class=TTabSheet
+;Caption=Metadata
+Caption=ﾒﾀﾃﾞｰﾀ
+[frmStoredProcedure.ActionExecute]
+Class=TAction
+;Caption=Execute
+Caption=実行
+[frmStoredProcedure.ActionCompile]
+Class=TAction
+;Caption=Compile
+Caption=ｺﾝﾊﾟｲﾙ
+[frmStoredProcedure.ActionCheckParams]
+Class=TAction
+;Caption=Check Params
+Caption=ﾊﾟﾗﾒﾀﾁｪｯｸ
+[frmStoredProcedure.ActionAddInputParam]
+Class=TAction
+;Caption=Add Input Param
+Caption=入力ﾊﾟﾗﾒﾀ追加
+[frmStoredProcedure.ActionEditParam]
+Class=TAction
+;Caption=Edit Param
+Caption=ﾊﾟﾗﾒﾀ編集
+[frmStoredProcedure.ActionDeleteParam]
+Class=TAction
+;Caption=Delete Param
+Caption=ﾊﾟﾗﾒﾀ削除
+[frmStoredProcedure.ActionMoveUp]
+Class=TAction
+;Caption=Move Up
+Caption=上へ移動
+[frmStoredProcedure.ActionMoveDown]
+Class=TAction
+;Caption=Move Down
+Caption=下へ移動
+[frmStoredProcedure.ActionAddOutputParam]
+Class=TAction
+;Caption=Add Output Param
+Caption=出力ﾊﾟﾗﾒﾀの追加
+[frmUDFEditor]
+Class=TfrmUDFEditor
+Caption=External Function - new_udf
+[frmUDFEditor.pgObjectEditor]
+Class=TPageControl
+Hint=
+PageCount=3
+[frmUDFEditor.pgObjectEditor.tsObject]
+Class=TTabSheet
+;Caption=Properties
+Caption=ﾌﾟﾛﾊﾟﾃｨ
+[frmUDFEditor.pgObjectEditor.tsDocoView]
+Class=TTabSheet
+;Caption=Description
+Caption=詳細
+[frmUDFEditor.pgObjectEditor.tsDDL]
+Class=TTabSheet
+;Caption=Metadata
+Caption=ﾒﾀﾃﾞｰﾀ
+[frmUDFEditor.tsObject]
+Class=TTabSheet
+;Caption=Properties
+Caption=ﾌﾟﾛﾊﾟﾃｨ
+[frmUDFEditor.lvUDFParams]
+Class=TListView
+Hint=
+Columns.Count=2
+;Column0.Caption=Parameter
+Column0.Caption=ﾊﾟﾗﾒﾀ
+;Column1.Caption=Calling Mechanism
+Column1.Caption=呼出方法
+[frmUDFEditor.Label5]
+Class=TLabel
+Caption=&By:
+[frmUDFEditor.Label4]
+Class=TLabel
+;Caption=&Returns:
+Caption=戻り値(&R):
+[frmUDFEditor.Label3]
+Class=TLabel
+;Caption=&Library Name:
+Caption=ﾗｲﾌﾞﾗﾘｰ名(&L):
+[frmUDFEditor.Label2]
+Class=TLabel
+;Caption=&Entry Point:
+Caption=ｴﾝﾄﾘｰﾎﾟｲﾝﾄ(&E):
+[frmUDFEditor.Label1]
+Class=TLabel
+;Caption=&Name:
+Caption=UDF名(&N):
+[frmUDFEditor.Label6]
+Class=TLabel
+;Caption=Input &Parameters:
+Caption=入力ﾊﾟﾗﾒﾀ(&P):
+[frmUDFEditor.tsDocoView]
+Class=TTabSheet
+;Caption=Description
+Caption=詳細
+[frmUDFEditor.tsDDL]
+Class=TTabSheet
+;Caption=Metadata
+Caption=ﾒﾀﾃﾞｰﾀ
+[frmUDFEditor.ActionCompile]
+Class=TAction
+;Caption=Compile
+Caption=ｺﾝﾊﾟｲﾙ
+[frmExceptions]
+Class=TfrmExceptions
+Caption=Exception - USERNAME_DUPLICATE
+[frmExceptions.pgObjectEditor]
+Class=TPageControl
+Hint=
+PageCount=3
+[frmExceptions.pgObjectEditor.tsObject]
+Class=TTabSheet
+;Caption=Exception
+Caption=例外
+[frmExceptions.pgObjectEditor.tsDocoView]
+Class=TTabSheet
+;Caption=Description
+Caption=詳細
+[frmExceptions.pgObjectEditor.tsDDL]
+Class=TTabSheet
+;Caption=Metadata
+Caption=ﾒﾀﾃﾞｰﾀ
+[frmExceptions.tsObject]
+Class=TTabSheet
+;Caption=Exception
+Caption=例外
+[frmExceptions.Label1]
+Class=TLabel
+;Caption=&Exception Name:
+Caption=例外名(&E):
+[frmExceptions.Label2]
+Class=TLabel
+;Caption=Exception &Text:
+Caption=例外 ﾃｷｽﾄ(&T):
+[frmExceptions.tsDocoView]
+Class=TTabSheet
+;Caption=Description
+Caption=詳細
+[frmExceptions.tsDDL]
+Class=TTabSheet
+;Caption=Metadata
+Caption=ﾒﾀﾃﾞｰﾀ
+[frmExceptions.ActionCompile]
+Class=TAction
+;Caption=Compile
+Caption=ｺﾝﾊﾟｲﾙ
+[FrmEditorFilter]
+Class=TFrmEditorFilter
+;Caption=Blob Filter - new_filter
+Caption=Blob ﾌｨﾙﾀｰ - 新ﾌｨﾙﾀｰ
+[FrmEditorFilter.objControl]
+Class=TPageControl
+Hint=
+PageCount=3
+[FrmEditorFilter.objControl.tabFilters]
+Class=TTabSheet
+;Caption=Properties
+Caption=ﾌﾟﾛﾊﾟﾃｨ
+[FrmEditorFilter.objControl.tsMetadata]
+Class=TTabSheet
+;Caption=Metadata
+Caption=ﾒﾀﾃﾞｰﾀ
+[FrmEditorFilter.objControl.tsDescription]
+Class=TTabSheet
+;Caption=Description
+Caption=詳細
+[FrmEditorFilter.tabFilters]
+Class=TTabSheet
+;Caption=Properties
+Caption=ﾌﾟﾛﾊﾟﾃｨ
+[FrmEditorFilter.Label11]
+Class=TLabel
+;Caption=&Module Name:
+Caption=ﾓｼﾞｭｰﾙ名(&M):
+[FrmEditorFilter.Label12]
+Class=TLabel
+;Caption=&Entrypoint:
+Caption=ｴﾝﾄﾘｰﾎﾟｲﾝﾄ(&E):
+[FrmEditorFilter.Label13]
+Class=TLabel
+;Caption=&Input SubType:
+Caption=入力ｻﾌﾞﾀｲﾌﾟ(&I):
+[FrmEditorFilter.Label14]
+Class=TLabel
+;Caption=&Output SubType:
+Caption=出力ｻﾌﾞﾀｲﾌﾟ(&O):
+[FrmEditorFilter.tsMetadata]
+Class=TTabSheet
+;Caption=Metadata
+Caption=ﾒﾀﾃﾞｰﾀ
+[FrmEditorFilter.tsDescription]
+Class=TTabSheet
+;Caption=Description
+Caption=詳細
+[FrmEditorFilter.actReset]
+Class=TAction
+;Caption=&Reset Value
+Caption=値ﾘｾｯﾄ(&R)
+[FrmEditorFilter.ActionCompile]
+Class=TAction
+;Caption=&Compile
+Caption=ｺﾝﾊﾟｲﾙ(&C)
+[frmRole]
+Class=TfrmRole
+;Caption=Role - NEW_ROLE
+Caption=ﾛｰﾙ-新ﾛｰﾙ
+[frmRole.pgObjectEditor]
+Class=TPageControl
+Hint=
+PageCount=2
+[frmRole.pgObjectEditor.tsRole]
+Class=TTabSheet
+;Caption=Role
+Caption=ﾛｰﾙ
+[frmRole.pgObjectEditor.tsDDLView]
+Class=TTabSheet
+;Caption=Metadata
+Caption=ﾒﾀﾃﾞｰﾀ
+[frmRole.tsRole]
+Class=TTabSheet
+;Caption=Role
+Caption=ﾛｰﾙ
+[frmRole.Label1]
+Class=TLabel
+;Caption=&Role Name:
+Caption=ﾛｰﾙ名(&R):
+[frmRole.tsDDLView]
+Class=TTabSheet
+;Caption=Metadata
+Caption=ﾒﾀﾃﾞｰﾀ
+[frmRole.ActionCompile]
+Class=TAction
+;Caption=&Compile
+Caption=ｺﾝﾊﾟｲﾙ(&C)
+[dlgWisql]
+Class=TdlgWisql
+;Caption=Interactive SQL
+Caption=ISQL
+[dlgWisql.lblFileName]
+Class=TLabel
+[dlgWisql.pgcOutput]
+Class=TPageControl
+Hint=
+PageCount=4
+[dlgWisql.pgcOutput.tsParameters]
+Class=TTabSheet
+;Caption=Parameters
+Caption=ﾊﾟﾗﾒﾀ
+[dlgWisql.pgcOutput.TabData]
+Class=TTabSheet
+;Caption=Data
+Caption=ﾃﾞｰﾀ
+[dlgWisql.pgcOutput.TabResults]
+Class=TTabSheet
+;Caption=Plan
+Caption=ﾌﾟﾗﾝ
+[dlgWisql.pgcOutput.TabStats]
+Class=TTabSheet
+;Caption=Statistics
+Caption=統計
+[dlgWisql.tsParameters]
+Class=TTabSheet
+;Caption=Parameters
+Caption=ﾊﾟﾗﾒﾀ
+[dlgWisql.TabData]
+Class=TTabSheet
+;Caption=Data
+Caption=ﾃﾞｰﾀ
+[dlgWisql.dbgSQLResults]
+Class=TDBGrid
+Hint=
+Columns.Count=1
+Column0.Caption=
+[dlgWisql.TabResults]
+Class=TTabSheet
+;Caption=Plan
+Caption=ﾌﾟﾗﾝ
+[dlgWisql.TabStats]
+Class=TTabSheet
+;Caption=Statistics
+Caption=統計
+[dlgWisql.lvStats]
+Class=TListView
+Hint=
+Columns.Count=2
+;Column0.Caption=Statistic
+Column0.Caption=統計
+;Column1.Caption=Value
+Column1.Caption=値
+[dlgWisql.IB_TransactionBarDefault]
+Class=TIB_TransactionBar_Button
+Hint=Close Current Transaction
+[dlgWisql.IB_TransactionBarDDL]
+Class=TIB_TransactionBar_Button
+Hint=Close Current Transaction
+[dlgWisql.File1]
+Class=TMenuItem
+;Caption=&File
+Caption=ﾌｧｲﾙ(&F)
+[dlgWisql.mnuEdit1]
+Class=TMenuItem
+;Caption=&Edit
+Caption=編集(&E)
+[dlgWisql.Edit1]
+Class=TMenuItem
+;Caption=&Query
+Caption=ｸｴﾘ(&Q)
+[dlgWisql.Database1]
+Class=TMenuItem
+;Caption=&Database
+Caption=ﾃﾞｰﾀﾍﾞｰｽ(&D)
+[dlgWisql.Help1]
+Class=TMenuItem
+Caption=&Help
+[dlgWisql.SQLReference1]
+Class=TMenuItem
+;Caption=&SQL Reference
+Caption=&SQL参照
+[dlgWisql.DialectAction1]
+Class=TAction
+;Caption=Dialect &1
+Caption=ﾀﾞｲｱﾚｸﾄ &1
+[dlgWisql.DialectAction2]
+Class=TAction
+;Caption=Dialect &2
+Caption=ﾀﾞｲｱﾚｸﾄ &2
+[dlgWisql.DialectAction3]
+Class=TAction
+;Caption=Dialect &3
+Caption=ﾀﾞｲｱﾚｸﾄ &3
+[dlgWisql.QueryPrevious]
+Class=TAction
+;Caption=&Previous
+Caption=前(&P)
+Hint=Previous Query
+[dlgWisql.QueryNext]
+Class=TAction
+;Caption=&Next
+Caption=次(&N)
+Hint=Next Query
+[dlgWisql.QueryExecute]
+Class=TAction
+;Caption=&Execute
+Caption=実行(&E)
+Hint=Execute Query
+[dlgWisql.QueryLoadScript]
+Class=TAction
+;Caption=&Load Script
+Caption=ｽｸﾘﾌﾟﾄ読込(&L)
+Hint=Load SQL Script
+[dlgWisql.QuerySaveScript]
+Class=TAction
+;Caption=&Save Script
+Caption=ｽｸﾘﾌﾟﾄｾｰﾌﾞ(&S)
+Hint=Save Script
+[dlgWisql.QueryOptions]
+Class=TAction
+;Caption=O&ptions ...
+Caption=ｵﾌﾟｼｮﾝ(&p)
+Hint=Query Options
+[dlgWisql.QuerySaveOutput]
+Class=TAction
+;Caption=Save &Output
+Caption=出力を保存(&O)
+Hint=Save the query ouput
+[dlgWisql.QueryPrepare]
+Class=TAction
+;Caption=&Prepare
+Caption=ﾌﾟﾘﾍﾟｱ(&P)
+Hint=Prepare the current query before execution
+[dlgWisql.EditOptions]
+Class=TAction
+;Caption=&Options ...
+Caption=ｵﾌﾟｼｮﾝ(&O)
+Hint=Show ISQL Options
+[dlgWisql.FileClose]
+Class=TAction
+;Caption=&Close
+Caption=閉じる(&C)
+Hint=Close the ISQL window
+[dlgWisql.EditFind]
+Class=TAction
+;Caption=&Find ...
+Caption=検索(&F)
+[dlgWisql.EditFont]
+Class=TAction
+;Caption=&Font ...
+Caption=ﾌｫﾝﾄ(&F)
+[dlgWisql.EditCopy1]
+Class=TEditCopy
+;Caption=&Copy
+Caption=ｺﾋﾟｰ(&C)
+;Hint=Copy
+Hint=ｺﾋﾟｰ
+[dlgWisql.EditCut1]
+Class=TEditCut
+;Caption=Cu&t
+Caption=切り取り(&t)
+;Hint=Cut
+Hint=切り取り
+[dlgWisql.EditPaste1]
+Class=TEditPaste
+;Caption=&Paste
+Caption=貼付(&P)
+;Hint=Paste
+Hint=貼付
+[dlgWisql.EditSelectAll1]
+Class=TEditSelectAll
+;Caption=Select &All
+Caption=全てを選択(&A)
+[dlgWisql.EditUndo1]
+Class=TEditUndo
+;Caption=&Undo
+Caption=やり直し
+[dlgWisql.DatabaseConnectAs]
+Class=TAction
+;Caption=Connect &As ...
+Caption=接続(&A)
+[dlgWisql.DatabaseDisconnect]
+Class=TAction
+;Caption=&Disconnect
+Caption=切断(&D)
+[dlgWisql.DatabaseCreate]
+Class=TAction
+;Caption=&Create Database ...
+Caption=ﾃﾞｰﾀﾍﾞｰｽ作成(&C)
+[dlgWisql.DatabaseDrop]
+Class=TAction
+;Caption=D&rop Database
+Caption=ﾃﾞｰﾀﾍﾞｰｽ削除(&r)
+[dlgWisql.Print]
+Class=TAction
+;Caption=&Print
+Caption=印刷(&P)
+[dlgWisql.SaveSQLHistory]
+Class=TAction
+;Caption=Save SQL History
+Caption=SQL履歴の保存
+Hint=Save SQL History
+[dlgWisql.LoadSQLHistory]
+Class=TAction
+;Caption=Load SQL History
+Caption=SQL履歴の読込
+Hint=Load SQL History
+[dlgWisql.QueryFetchAll]
+Class=TAction
+;Caption=QueryFetchAll
+Caption=ﾌｪｯﾁAll
+Hint=Fetch All
+[dlgWisql.NewConnection]
+Class=TAction
+;Caption=New Connection...
+Caption=新たな接続...
+[dlgWisql.EditRedo]
+Class=TAction
+;Caption=Redo
+Caption=やり直し
+[frmDBConnect]
+Class=TfrmDBConnect
+;Caption=Database Connect
+Caption=ﾃﾞｰﾀﾍﾞｰｽ接続
+[frmDBConnect.lblDatabaseName]
+Class=TLabel
+;Caption=Database:
+Caption=ﾃﾞｰﾀﾍﾞｰｽ:
+[frmDBConnect.lblUsername]
+Class=TLabel
+;Caption=&User Name:
+Caption=ﾕｰｻﾞｰ名(&D):
+[frmDBConnect.lblPassword]
+Class=TLabel
+;Caption=&Password:
+Caption=ﾊﾟｽﾜｰﾄﾞ(&P):
+[frmDBConnect.lblRole]
+Class=TLabel
+;Caption=&Role:
+Caption=ﾛｰﾙ(&R):
+[frmDBConnect.Label1]
+Class=TLabel
+;Caption=Client &Dialect:
+Caption=ｸﾗｲｱﾝﾄ ﾀﾞｲｱﾚｸﾄ(&D):
+[frmDBConnect.Label2]
+Class=TLabel
+;Caption=Character  &Set
+Caption=ｷｬﾗｸﾀｰ ｾｯﾄ(&S)
+[frmDBConnect.lblDatabase]
+Class=TLabel
+Caption=AEKOOLMS002.FDB
+[frmDBConnect.btnConnect]
+Class=TButton
+;Caption=C&onnect
+Caption=接続
+[frmDBConnect.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=ｷｬﾝｾﾙ
+[frmDBConnect.cbCaseSensitive]
+Class=TCheckBox
+Caption=C&ase sensitive role name
+[frmMain]
+Class=TfrmMain
+Caption=IBOConsole
+[frmOptions.Label1]
+Class=TLabel
+;Caption=Current Font Example.^MThe quick brown fox jumped over the lazy dog back.
+Caption=現在のﾌｫﾝﾄ例.^MThe quick brown fox jumped over the lazy dog back.
+[frmSQLOptions]
+Class=TfrmSQLOptions
+;Caption=SQL Options
+Caption=SQLｵﾌﾟｼｮﾝ
+[frmSQLOptions.btnApply]
+Class=TButton
+;Caption=&Apply
+Caption=適用(&A)
+[frmSQLOptions.btnOK]
+Class=TButton
+Caption=&OK
+[frmSQLOptions.pgControl]
+Class=TPageControl
+Hint=
+PageCount=2
+[frmSQLOptions.pgControl.TabSheet1]
+Class=TTabSheet
+;Caption=Options
+Caption=ｵﾌﾟｼｮﾝ
+[frmSQLOptions.pgControl.TabSheet2]
+Class=TTabSheet
+;Caption=Advanced
+Caption=上級
+[frmSQLOptions.TabSheet1]
+Class=TTabSheet
+;Caption=Options
+Caption=ｵﾌﾟｼｮﾝ
+[frmSQLOptions.cbClearInput]
+Class=TCheckBox
+Caption=&Clear input window on success
+[frmSQLOptions.TabSheet2]
+Class=TTabSheet
+;Caption=Advanced
+Caption=上級
+[frmSQLOptions.GroupBox1]
+Class=TGroupBox
+;Caption=SQL Events
+Caption=SQLｲﾍﾞﾝﾄ
+[frmSQLOptions.Label1]
+Class=TLabel
+Caption=NOTE:
+[frmSQLOptions.cbUpdateConnect]
+Class=TCheckBox
+;Caption=Update IBOConsole on C&onnect
+Caption=IBOConsole接続の変更
+[frmSQLOptions.cbUpdateCreate]
+Class=TCheckBox
+;Caption=Update IBOConsole on C&reate
+Caption=IBOConsole作成の変更
+[frmSQLOptions.rgTransactions]
+Class=TGroupButton
+;Caption=Ro&llback on exit
+Caption=ﾛｰﾙﾊﾞｯｸして終了(&l)
+Items.Count=2
+;Item0=&Commit on exit
+Item0=ｺﾐｯﾄして終了(&C)
+;Item1=Ro&llback on exit
+Item1=ﾛｰﾙﾊﾞｯｸして終了(&l)
+[frmSQLOptions.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=ｷｬﾝｾﾙ(&C)
+;
+;
+;
+;
+[prompts]
+;
+;to insert a line break use ^M
+;be careful to leave the same number of %s and %d in text!!
+;
+; Prompt used in confirm and warning dialog box defined in unit LMMessageDialog.pas
+; and called in substitution of MessageDlg
+;
+;prompt0=OK to overwrite %s
+prompt0=OKで､%s が上書きされます
+;prompt1=Could not open file "%s".
+prompt1=ﾌｧｲﾙ "%s" を開くことが出来ません
+;prompt2=Not yet in Kylix
+prompt2=Kylixではまだ使用できません
+;prompt3=Are you sure that you want to drop the selected database?
+prompt3=選択されたﾃﾞｰﾀﾍﾞｰｽを本当に削除してもよろしいですか?
+;prompt4=Transactions are active.^MWould you like to commit the transactions?^M^MChoosing NO will rollback the active transactions.
+prompt4=ﾄﾗﾝｻﾞｸｼｮﾝがｱｸﾃｨﾌﾞです^Mﾄﾗﾝｻﾞｸｼｮﾝをｺﾐｯﾄしますか?^M^MNOを選択するとｱｸﾃｨﾌﾞなﾄﾗﾝｻﾞｸｼｮﾝをﾛｰﾙﾊﾞｯｸします
+;prompt5=Data saved to file: %s
+prompt5=ﾃﾞｰﾀはﾌｧｲﾙ %s に保存されます
+;prompt6=format not specified
+prompt6=ﾌｫｰﾏｯﾄが指定されていません
+;prompt7=Save Query Output
+prompt7=ｸｴﾘｰｾｰﾌﾞ出力
+;prompt8=%s new %s must have a name.
+prompt8=%s 新しい %s には名前が必要です。
+;prompt9=%s %s name is still the default. Are you sure you wish to use the default name?
+prompt9=%s %s の名称はﾃﾞﾌｫﾙﾄのままです。ﾃﾞﾌｫﾙﾄの名称を使用しますか?
+;prompt10=%s %s %s has changed. Do you wish to save changes?
+prompt10=%s %s %s は変更されています 変更を保存しますか?
+;prompt11=Are you sure that you want to un-register the selected database?
+prompt11=選択ﾃﾞｰﾀﾍﾞｰｽを登録解除して良いですか?
+;prompt12=Are you sure that you want to close the connection to the selected database?
+prompt12=選択ﾃﾞｰﾀﾍﾞｰｽを切断して良いですか?
+;prompt13=Sweeping a large database may take a while and can impact server performance during that time. Do you wish to perform a sweep?
+prompt13=大きなﾃﾞｰﾀﾍﾞｰｽをｽｳｨｰﾌﾟするには時間がかかります｡その間ﾊﾟﾌｫｰﾏﾝｽに影響出ますがｽｳｨｰﾌﾟを行いますか?
+;prompt14=Are you sure that you want to drop the selected database?
+prompt14=選択ﾃﾞｰﾀﾍﾞｰｽを削除しますか?
+;prompt15=Are you sure that you want to close the connection to the selected server?
+prompt15=選択ﾃﾞｰﾀﾍﾞｰｽを接続解除して良いですか?
+;prompt16=Invalid option value
+prompt16=ｵﾌﾟｼｮﾝ値ｴﾗｰ
+;prompt17=Limbo transaction recovery completed.
+prompt17=Limboﾄﾗﾝｻﾞｸｼｮﾝ ﾘｶﾊﾞﾘｰ成功
+;prompt18=Array Upper Bound must be greater than Array Lower Bound.
+prompt18=Upper BoundはLower Boundより大きくなくてはならない.
+;prompt19=Primary Key Contraint must have a Name
+prompt19=ﾌﾟﾗｲﾏﾘｷｰは名前が必要です
+;prompt20=Unique Key Contraint must have a Name
+prompt20=ﾕﾆｰｸｷｰは名前が必要です
+;prompt21=Please select field(s) to be used in Primary Key
+prompt21=ﾌﾟﾗｲﾏﾘｷｰの項目を選択してください
+;prompt22=Please select field(s) to be used in Unique Key
+prompt22=ﾕﾆｰｸｷｰの項目を選択してください
+;prompt23=Foreign Key Contraint must have a Name
+prompt23=外部ｷｰは名前が必要です
+;prompt24=Please select field to be used in Foreign Key
+prompt24=外部ｷｰの項目を選択してください
+;prompt25=Please select field to be referenced in Foreign Key
+prompt25=外部ｷｰの参照項目を選択してください
+;prompt26=Check constraint must have a name
+prompt26=ﾁｪｯｸ制約は名前が必要です
+;prompt27=Check constraint must contain an expression
+prompt27=ﾁｪｯｸ制約は表現が必要です
+;prompt28=Are you sure you wish to delete this dimension?
+prompt28=このﾃﾞｨﾒﾝｼﾞｮﾝを本当に削除しますか?
+;prompt29=You cannot change the description until the object has been compiled.
+prompt29=詳細を変更することは出来ません｡ｵﾌﾞｼﾞｪｸﾄが変更されています
+;prompt30=Save changes to description?
+prompt30=詳細の変更をｾｰﾌﾞしますか?
+;prompt31=Exception must have a message.
+prompt31=例外はﾒｯｾｰｼﾞが必要です
+;prompt32=The new table must have a name.
+prompt32=新しいﾃｰﾌﾞﾙは名前が必要です
+;prompt33=Setting Not Null require to set a value into existing null data or subsequent backup will be invalid^M^MDo you want to continue and specify a value to fill Nulls?
+prompt33=Not Nullを設定するためにはすでに存在するNull値に値を設定しないと次のﾊﾞｯｸｱｯﾌﾟで無効となります。^M^MNullを特定の値で置き換えて続行しますか?
+;prompt34=Resetting Not Null is not safe if the field is used in a unique index, subsequent backup will be invalid^M^MDo you want to continue?
+prompt34=ﾕﾆｰｸｲﾝﾃﾞｯｸｽで使用されているﾌｨｰﾙﾄﾞのNot Nullを安全に取り除くことは出来ません。その後のﾊﾞｯｸｱｯﾌﾟが無効になるかもしれません。^M^M処理を続行しますか?
+;prompt35=The Description for %s %s has changed. Do you wish to save changes?
+prompt35=%s %s の概要(Description)が変更されました。変更を保存しますか?
+;prompt36=Please select columns(s) to be used in the Index
+prompt36=ｲﾝﾃﾞｯｸｽで使用するｶﾗﾑを選択して下さい
+;prompt37=You cannot view the Metadata until the object has been compiled.
+prompt37=ｵﾌﾞｼﾞｪｸﾄがｺﾝﾊﾟｲﾙされるまでﾒﾀﾃﾞｰﾀを参照することは出来ません
+;prompt38=You cannot change from Edit View until the object has been compiled.
+prompt38=ｵﾌﾞｼﾞｪｸﾄがｺﾝﾊﾟｲﾙされるまでﾋﾞｭｰ編集画面で変更を行うことは出来ません
+;prompt39=There is an open transaction for the results - Commit or Rollback before changing View.
+prompt39=結果ｾｯﾄで開かれているﾄﾗﾝｻﾞｸｼｮﾝが存在します。ﾋﾞｭｰを変更する前にｺﾐｯﾄ又はﾛｰﾙﾊﾞｯｸを実行して下さい
+;prompt40=Stored Procedure source has changed. Recompile?
+prompt40=ｽﾄｱﾄﾞ･ﾌﾟﾛｼｰｼﾞｬ ｿｰｽは変更されました. 再編集しますか?
+;prompt41=Executing Stored Procedure...
+prompt41=ｽﾄｱﾄﾞ･ﾌﾟﾛｼｰｼﾞｬ実行中
+;prompt42=Stored Procedure - %s - Running
+prompt42=ｽﾄｱﾄﾞ･ﾌﾟﾛｼｰｼﾞｬ - %s -は実行中です
+;prompt43=Are you shure to drop %s %s ?
+prompt43=削除しますか %s %s ?
+;prompt44=Do You want to delete all visible records from table %s ?
+prompt44=%Sの全ﾚｺｰﾄﾞを削除しても良いですか?
+;prompt45=Trigger must be assigned a position.
+prompt45=ﾄﾘｶﾞｰにﾎﾟｼｼｮﾝを割当手下さい
+;prompt46=Trigger must have a name.
+prompt46=ﾄﾘｶﾞｰは名前が必要です
+;prompt47=The UDF must have an Entry Point.
+prompt47=UDFはｴﾝﾄﾘｰﾎﾟｲﾝﾄが必要です
+;prompt48=The UDF must have a Library Name.
+prompt48=UDFはﾗｲﾌﾞﾗﾘｰ名が必要です
+;prompt49=The UDF must have a Return Parameter.
+prompt49=UDFは戻りﾊﾟﾗﾒﾀが必要です
+;prompt50=Are you sure you want to delete this Parameter?
+prompt50=ﾊﾟﾗﾒﾀを削除しても良いですか?
+;prompt51=Are you sure you wish to delete this dimension?
+prompt51=配列を削除しても良いですか??
+;prompt52=The column must have a name.
+prompt52=ｶﾗﾑには名前が必要です
+;prompt53=The domain name is empty.
+prompt53=ﾄﾞﾒｲﾝ名が空です
+;prompt54=There is no computed by expression.
+prompt54=計算式ではありません
+;prompt55=You must enter a Parameter.
+prompt55=ﾊﾟﾗﾒﾀを入力してください
+;prompt56=Plan could not be retrieved
+prompt56=ﾌﾟﾗﾝが検索出来ませんでした
+;prompt57=Unable to parse script
+prompt57=ｽｸﾘﾌﾟﾄを解析出来ませんでした
+;prompt58=No active connection
+prompt58=未接続です
+;prompt59=An error occured parsing CONNECT statement.
+prompt59=接続ｽﾃｰﾄﾒﾝﾄでｴﾗｰが起きました
+;prompt60=Commit or Rollback the current transaction
+prompt60=現在のﾄﾗﾝｻﾞｸｼｮﾝ(Commit or Rollback)
+;prompt61=An error occured parsing CREATE statement.
+prompt61=ｸﾘｴｰﾄｽﾃｰﾄﾒﾝﾄでｴﾗｰが起きました
+;prompt62=Invalid client dialect
+prompt62=無効なｸﾗｲｱﾝﾄﾀﾞｲｱﾚｸﾄ
+;prompt63=Unable to open file
+prompt63=ﾌｧｲﾙを開けません
+;prompt64=Database dialect (%d) does not match client dialect (%d).
+prompt64=ﾃﾞｰﾀﾍﾞｰｽ ﾀﾞｲｱﾚｸﾄ (%d) とｸﾗｲｱﾝﾄ ﾀﾞｲｱﾚｸﾄ (%d) が一致しません
+;prompt65=Unable to set the client dialect to %d
+prompt65=ｸﾗｲｱﾝﾄ ﾀﾞｲｱﾚｸﾄ %d を設定出来ません
+;prompt66=Unable to display Array Information
+prompt66=配列情報を表示出来ません
+;prompt67=Search string '%s' not found
+prompt67=検索文字'%s'は見つかりません
+;prompt68=Unable to parse script
+prompt68=ｽｸﾘﾌﾟﾄ解析が出来ません
+;prompt69=Are you sure that you want to un-register %s?
+prompt69=登録解除しても用ですか(%s)?
+;prompt70=Are you sure that you want to remove "%s" from the alias list?
+prompt70=ｴｲﾘｱｽﾘｽﾄより"%s"を削除しても良いですか?
+;prompt71=Are you sure that you want to delete user: %s?
+prompt71=ﾕｰｻﾞｰ(%s)を削除しても良いですか?
+;prompt72=An error occurred while attemting to create directory %s. Operation cancelled.
+prompt72=ﾃﾞｨﾚｸﾄﾘｰ(%s)作成時にｴﾗｰが発生しました｡この操作はｷｬﾝｾﾙされました
+;prompt73=The directory %s does not exist. Do you wish to create it?
+prompt73=ﾃﾞｨﾚｸﾄﾘｰ %s は存在しません｡ ﾃﾞｨﾚｸﾄﾘｰを作りますか?
+;prompt74=An error occured while trying to connect to '%s'. This server may be an earlier version. As a result many features will be not work properly.
+prompt74=ｻｰﾊﾞｰ(%s)接続時にｴﾗｰが発生しました このｻｰﾊﾞｰは､より以前のﾊﾞｰｼﾞｮﾝかもしれませn
+;prompt75=Attempting to attach to %s using NetBEUI.%s%s
+prompt75= %sへのｱﾀｯﾁを試す(NetBEUI.%s%s)
+;prompt76=Attached successfully to %s using %s the following named pipe: %s %s.%S%S NetBEUI Communication Test Passed!
+prompt76=%sの%sを接続成功(以下を使用 named pipe: %s %s.%S%S) NetBEUI接続テストに成功しました! 
+;prompt77=An error occurred attempting to connect to %s%susing the following named pipe:%s%s%s%sNetBEUI Communication Test Failed!
+prompt77= %sの%sに接続中にｴﾗｰが発生しました。(以下を使用 named pipe:%s %s.%S%S)NetBEUI接続ﾃｽﾄに失敗しました!
+;prompt78=Could not initialize Netware client library.%s%sSPX Communication Test Failed!
+prompt78= Netwareｸﾗｲｱﾝﾄ･ﾗｲﾌﾞﾗﾘを初期化できません。%s%sSPX接続ﾃｽﾄに失敗しました!
+;prompt79=Attempting to attach to %s using SPX.%s%s
+prompt79=%sへSPX.%s%sを使用して接続しようとしました。
+;prompt80=An error occurred attempting to connect to %s%susing the SPX protocol.%s%sSPX Communication Test Failed!
+prompt80= %sの%sに接続中にｴﾗｰが発生しました(以下を使用 SPXプロトコル.%s%s)SPX接続ﾃｽﾄに失敗しました
+;prompt81=Attached successfully to %s%s   using the SPX protocol.SPX Communication Test Passed!
+prompt81= SPXﾌﾟﾛﾄｺﾙによって、%s %s への接続に成功しました。SPX接続ﾃｽﾄ完了
+;prompt82=An error occurred attempting to connect to %s%s   using the SPX protocol.%s%sYou do not seem to have the proper NetWare client installed.%s%sSPX Communication Test Failed!
+prompt82= SPXﾌﾟﾛﾄｺﾙを使用して %s %sへの接続中にエラーが発生しました。%s %s 適切なNetwareｸﾗｲｱﾝﾄがｲﾝｽﾄｰﾙされていないません。%s %s SPX接続ﾃｽﾄ失敗!
+;prompt83=The user you wish to delete is the same user you are logged into the server as.%s Are you sure that you want to delete user: %s?
+prompt83= 削除しようとしているﾕｰｻﾞｰは現在ｻｰﾊﾞｰにﾛｸﾞｲﾝしているﾕｰｻﾞｰ %s です。ﾕｰｻﾞｰ %s を本当に削除してもよろしいですか?
+;prompt84=Attempting to connect to:
+prompt84= 接続中です・・・:
+;prompt85=Attaching    ... Passed!
+prompt85= 接続・・・成功!
+;prompt86=Detaching    ... Passed!
+prompt86= 切断・・・成功!
+;prompt87=An Server error has occurred while detaching.
+prompt87=切断中にｻｰﾊﾞｰｴﾗｰが発生しました
+;prompt88=An Server error has occurred while attaching.
+prompt88=接続中にｻｰﾊﾞｰｴﾗｰが発生しました
+;prompt89=Server Communication Test Passed!
+prompt89=ｻｰﾊﾞｰへの接続が確認されました!
+;prompt90=Server Communication Test Failed!
+prompt90=ｻｰﾊﾞｰへの接続に失敗しました
+;prompt91=Attempting connection to %s.
+prompt91=%s ｻｰﾊﾞｰへ接続中
+；prompt92=Socket for connection obtained.
+prompt92=接続用ｿｹｯﾄを取得しました。
+;prompt93=Socket Request Failed
+prompt93=ｿｹｯﾄへのﾘｸｴｽﾄが失敗しました
+;prompt94=Remote Socket Request Failed
+prompt94= ｿｹｯﾄﾘｸｴｽﾄが失敗しました
+;prompt95=Remote Socket did not respond
+prompt95= ｿｹｯﾄが応答しません
+;prompt96=Failed to connect to host '%s',
+prompt96=ﾎｽﾄ(%s)への接続に失敗しました
+;prompt97=on port %s. Error Num:
+prompt97=ﾎﾟｰﾄ %s 上でのｴﾗｰ:
+;prompt98=Connection established to host '%s',
+prompt98=ﾎｽﾄ(%s)への接続が確立しました
+;prompt99=on port %s
+prompt99=ﾎﾟｰﾄ %s 上
+;prompt100=TCP/IP Communication Test Passed!
+prompt100=TCP/IP 接続ﾃｽﾄ 成功
+;prompt101=TCP/IP Communication Test Failed!
+prompt101=TCP/IP 接続ﾃｽﾄ 失敗
+;prompt102=Pinging %s [%s] with %d bytes of data:
+prompt102=%s [%s] へ %d ﾊﾞｲﾄのﾃﾞｰﾀをﾊﾟｲﾌﾟしました:
+;prompt103=%d bytes from %s: icmp_seq=%d ttl=%d time%s%d ms
+prompt103=%d ﾊﾞｲﾄを %s から受信しました: icmp_seq=%d ttl=%d time%s%d ms
+;prompt104=Critical connection error
+prompt104=重大な接続ｴﾗｰ
+;prompt105=Can't get file version information for %s
+prompt105=%sのﾌｧｲﾙ･ﾊﾞｰｼﾞｮﾝ情報を得ることができません
+;prompt106=Host Site: %s
+prompt106=  ﾎｽﾄ ｻｲﾄ: %s
+;prompt107=is in limbo
+prompt107=ﾘﾝﾎﾞｰ状態です
+;prompt108=has been committed
+prompt108=ｺﾐｯﾄされました
+;prompt109=has been rolled back
+prompt109=ﾛｰﾙﾊﾞｯｸされました
+;prompt110=is in an unknown state
+prompt110=は不明状態です
+;prompt111=Transaction %d %s.
+prompt111=  ﾄﾗﾝｻﾞｸｼｮﾝ %d %s.
+;prompt112=Remote Site: %s
+prompt112=  ｻｲﾄ: %s
+;prompt113=Database Path: %s
+prompt113=  ﾃﾞｰﾀﾍﾞｰｽ ﾊﾟｽ: %s
+;prompt114=Recommended Action: %s
+prompt114=%s を実行して下さい
+;prompt115=Please select an item from the Transactions tab.
+prompt115=ﾄﾗﾝｻﾞｸｼｮﾝ ﾀﾌﾞより項目を選択してください
+;prompt116=Repairing transaction %s
+prompt116=ﾄﾗﾝｻﾞｸｼｮﾝ修復中(%s)
+;prompt117=Select a transaction for information about that transaction.
+prompt117=ﾄﾗﾝｻﾞｸｼｮﾝについての説明のためにﾄﾗﾝｻﾞｸｼｮﾝを選択して下さい
+;prompt118=Secondary files unavailable.
+prompt118=ｾｶﾝﾀﾞﾘｰﾌｧｲﾙが利用出来ません
+;prompt119=Database owner unavailable.
+prompt119=ﾃﾞｰﾀﾍﾞｰｽｵｰﾅｰが利用出来ません
+;prompt120=The Sweep Interval must be a value from %d to %d.  Please enter a valid sweep interval value.
+prompt120=ﾃﾞｰﾀﾍﾞｰｽのｽｳｨｰﾌﾟ間隔は %d ~ %d 迄です 妥当な間隔値を入力してください
+;prompt121=Database Properties cannot be changed while the database is read-only.
+prompt121=読込専用ﾃﾞｰﾀﾍﾞｰｽのﾌﾟﾛﾊﾟﾃｨは変更出来ません
+prompt122=Null must be "NULL" or empty
+;prompt123=can't Edit NULL
+prompt123=NULLは編集できません
+;prompt124=Once %s is dropped it can no longer be accessed.^MDo you wish to continue?
+prompt124=%sをﾄﾞﾛｯﾌﾟすると二度と元には戻せません。^M本当に実行しますか?
+;prompt125=You must specify a validation option
+prompt125=ﾊﾞﾘﾃﾞｰｼｮﾝ･ｵﾌﾟｼｮﾝを指定して下さい
+;prompt126=can not be used to administer pre-InterBase 6.0 servers
+prompt126=InterBase 6.0 ｻｰﾊﾞｰ以前のﾊﾞｰｼﾞｮﾝを管理することは出来ません
+;
+;
+[error_messages]
+; Heading un message box used to show errors, unit frmuMessage.pas
+;
+;Warning:
+;localize only the right side
+;do not localize and leave case as is on the left side
+;
+;
+;ERR_SYSTEM_INIT=Initialization failure.
+ERR_SYSTEM_INIT=初期化に失敗しました
+;ERR_USERNAME=Invalid username. Please enter a valid username.
+ERR_USERNAME=無効なﾕｰｻﾞｰ名です 有効なﾕｰｻﾞｰ名を入力してください
+;ERR_PASSWORD=Invalid password. Please enter a valid password.
+ERR_PASSWORD=無効なﾊﾟｽﾜｰﾄﾞです 有効なﾊﾟｽﾜｰﾄﾞを入力してください
+;ERR_PASSWORD_MISSMATCH=The password does not match the confirmation password.
+ERR_PASSWORD_MISSMATCH=ﾊﾟｽﾜｰﾄﾞと確認ﾊﾟｽﾜｰﾄﾞが一致しません
+;ERR_ADD_USER=Unable to add user.
+ERR_ADD_USER=ﾕｰｻﾞｰの追加は出来ませんでした
+;ERR_MODIFY_USER=Unable to modify user account.
+ERR_MODIFY_USER=ﾕｰｻﾞｰの変更は出来ませんでした
+;ERR_DELETE_USER=Unable to delete user.
+ERR_DELETE_USER=ﾕｰｻﾞｰの削除は出来ませんでした
+;ERR_GET_USERS=Unable to retrieve user list.
+ERR_GET_USERS=ﾕｰｻﾞｰﾘｽﾄが取得出来ませんでした
+;ERR_GET_USER_INFO=Unable to retrieve user information.
+ERR_GET_USER_INFO=ﾕｰｻﾞｰ情報が取得出来ませんでした
+;ERR_SOURCE_DB=Invalid source database name. Please enter a valid database name.
+ERR_SOURCE_DB=無効なﾃﾞｰﾀﾍﾞｰｽ名です 有効なﾃﾞｰﾀﾍﾞｰｽ名を入力してください
+;ERR_DESTINATION_DB=Invalid destination database name. Please enter a valid database name.
+ERR_DESTINATION_DB=無効なﾃﾞｰﾀﾍﾞｰｽへの宛先です 有効な宛先を入力してください
+ERR_SAME_SOURCE_DESTINATION=The source and destination must be different.
+;ERR_DB_FILE=Invalid database file or the file does not exist.
+ERR_DB_FILE=無効なﾃﾞｰﾀﾍﾞｰｽﾌｧｲﾙ 又は ﾌｧｲﾙが無い
+;ERR_SERVER_NAME=Invalid server name. Please enter a valid server name.
+ERR_SERVER_NAME=無効なｻｰﾊﾞｰ名 正しいｻｰﾊﾞｰ名を入力入力してください｡
+;ERR_PROTOCOL=Invalid network protocol. Please select a network protocol from the list.
+ERR_PROTOCOL=ﾈｯﾄﾜｰｸﾌﾟﾛﾄｺﾙが不正です。ﾘｽﾄからﾈｯﾄﾜｰｸﾌﾟﾛﾄｺﾙを選択して下さい。
+;ERR_BACKUP_DB=Database backup failed.
+ERR_BACKUP_DB=ﾃﾞｰﾀﾍﾞｰｽのﾊﾞｯｸｱｯﾌﾟは失敗しました
+;ERR_RESTORE_DB=Database restore failed.
+ERR_RESTORE_DB=ﾃﾞｰﾀﾍﾞｰｽのﾘｽﾄｱは失敗しました
+;ERR_GET_TABLES=Unable to retrieve a list of tables.
+ERR_GET_TABLES=ﾃｰﾌﾞﾙのﾘｽﾄを取得できません
+；ERR_GET_VIEWS=Unable to retrieve a list of views.
+ERR_GET_VIEWS=ﾋﾞｭｰのﾘｽﾄを取得できません
+;ERR_SERVICE=Invalid service. Please select a service from the list.
+ERR_SERVICE=不正なｻｰﾋﾞｽです。ﾘｽﾄからｻｰﾋﾞｽを選択して下さい
+;ERR_NUMERIC_VALUE=Invalid numeric value. Please enter a valid numeric value.
+ERR_NUMERIC_VALUE=不正な数値です。正しい数値を入力して下さい
+;ERR_GET_TABLE_DATA=Unable to retrieve data.
+ERR_GET_TABLE_DATA=ﾃﾞｰﾀを取得できません
+;ERR_DB_ALIAS=Invalid database alias. Please enter a valid database name.
+ERR_DB_ALIAS=不正なﾃﾞｰﾀﾍﾞｰｽ･ｴｲﾘｱｽです。正しいﾃﾞｰﾀﾍﾞｰｽ名を入力して下さい
+;ERR_GET_ROLES=Unable to retrieve a list of roles.
+ERR_GET_ROLES=ﾛｰﾙのﾘｽﾄを取得できません
+;ERR_SERVER_LOGIN=Error logging into the requested server.
+ERR_SERVER_LOGIN=指定されたｻｰﾊﾞｰにﾛｸﾞｲﾝできません
+;ERR_DB_CONNECT=Error connecting to the requested database.
+ERR_DB_CONNECT=指定されたﾃﾞｰﾀﾍﾞｰｽへの接続時にｴﾗｰが発生しました
+;ERR_DB_DISCONNECT=Error disconnecting from database.
+ERR_DB_DISCONNECT=ﾃﾞｰﾀﾍﾞｰｽからの切断時にｴﾗｰが発生しました
+;ERR_GET_PROCEDURES=Unable to retrieve a list of procedures.
+ERR_GET_PROCEDURES=ﾌﾟﾛｼｰｼﾞｬのﾘｽﾄが取得出来ません
+;ERR_GET_FUNCTIONS=Unable to retrieve a list of functions.
+ERR_GET_FUNCTIONS=ﾕｰｻﾞ定義関数のﾘｽﾄが取得できません
+;ERR_GET_GENERATORS=Unable to retrieve a list of generators.
+ERR_GET_GENERATORS=ｼﾞｪﾈﾚｰﾀのﾘｽﾄが取得できません
+;ERR_GET_EXCEPTIONS=Unable to retrieve a list of exceptions.
+ERR_GET_EXCEPTIONS=例外のﾘｽﾄが取得できません
+;ERR_GET_BLOB_FILTERS=Unable to retrieve a list of blob filters.
+ERR_GET_BLOB_FILTERS=Blobﾌｨﾙﾀのﾘｽﾄが取得できません
+;ERR_GET_COLUMNS=Unable to retrieve a list of columns.
+ERR_GET_COLUMNS=列のﾘｽﾄが取得出来ません
+;ERR_GET_INDICES=Unable to retrieve a list of indices.
+ERR_GET_INDICES=ｲﾝﾃﾞｯｸｽのﾘｽﾄが取得出来ません
+;ERR_GET_REFERENTIAL_CONST=Unable to retrieve a list of referential constraints.
+ERR_GET_REFERENTIAL_CONST=参照整合性制約のﾘｽﾄが取得できません
+;ERR_GET_UNIQUE_CONST=Unable to retrieve a list of unique constraints.
+ERR_GET_UNIQUE_CONST=ﾕﾆｰｸ制約のﾘｽﾄが取得できません
+;ERR_GET_CHECK_CONST=Unable to retrieve a list of check constraints.
+ERR_GET_CHECK_CONST=ﾁｪｯｸ制約のﾘｽﾄが取得出来ません
+;ERR_GET_TRIGGERS=Unable to retrieve a list of triggers.
+ERR_GET_TRIGGERS=ﾄﾘｶﾞのﾘｽﾄが取得できません
+;ERR_GET_DDL=An error occured while attempting to extract metadata information.
+ERR_GET_DDL=ﾒﾀﾃﾞｰﾀ情報を取得中にｴﾗｰが発生しました
+;ERR_INVALID_PROPERTY_VALUE=Invalid Property Value.
+ERR_INVALID_PROPERTY_VALUE=ﾌﾟﾛﾊﾟﾃｨの値が不正です
+;ERR_GET_DEPENDENCIES=An error occured while attempting to extract dependency information.
+ERR_GET_DEPENDENCIES=依存関係情報を取得中にｴﾗｰが発生しました
+;ERR_GET_DB_PROPERTIES=An error occured while attempting to retrieve database properties.
+ERR_GET_DB_PROPERTIES=ﾃﾞｰﾀﾍﾞｰｽのﾌﾟﾛﾊﾟﾃｨを取得中にｴﾗｰが発生しました
+;ERR_DB_SIZE=Invalid database file size.
+ERR_DB_SIZE=ﾃﾞｰﾀﾍﾞｰｽのﾌｧｲﾙｻｲｽﾞが不正です
+;ERR_ISQL_ERROR=SQL Error
+ERR_ISQL_ERROR=SQL ｴﾗｰ
+;ERR_SERVER_SERVICE=Service Error
+ERR_SERVER_SERVICE=ｻｰﾊﾞｰｴﾗｰ
+;ERR_EXTERNAL_EDITOR=External Editor Error
+ERR_EXTERNAL_EDITOR=外部ｴﾃﾞｨﾀのｴﾗｰ
+;ERR_SERVER_ALIAS=Invalid server alias. Please enter a valid server alias.
+ERR_SERVER_ALIAS=ｻｰﾊﾞｰｴｲﾘｱｽが不正です。正しいｻｰﾊﾞｰｴｲﾘｱｽを入力して下さい
+;ERR_BACKUP_ALIAS=Invalid backup alias. Please enter a valid backup alias.
+ERR_BACKUP_ALIAS=ﾊﾞｯｸｱｯﾌﾟｴｲﾘｱｽが不正です。正しいﾊﾞｯｸｱｯﾌﾟｴｲﾘｱｽを入力して下さい
+;ERR_DB_SHUTDOWN=Database shutdown unsuccessful.
+ERR_DB_SHUTDOWN=ﾃﾞｰﾀﾍﾞｰｽのｼｬｯﾄﾀﾞｳﾝに失敗しました
+;ERR_MODIFY_DB_PROPERTIES=Unable to modify database properties.
+ERR_MODIFY_DB_PROPERTIES=ﾃﾞｰﾀﾍﾞｰｽのﾌﾟﾛﾊﾟﾃｨを変更できません
+;ERR_DROP_DATABASE=An error occured while attempting to drop the database.
+ERR_DROP_DATABASE=ﾃﾞｰﾀﾍﾞｰｽをﾄﾞﾛｯﾌﾟ中にｴﾗｰが発生しました
+;ERR_FILE_OPEN=An error occured while attempting to open file.
+ERR_FILE_OPEN=ﾌｧｲﾙｵｰﾌﾟﾝ中にｴﾗｰが発生しました
+;ERR_INV_EDITOR=The editor specified is invalid.
+ERR_INV_EDITOR=指定されたｴﾃﾞｨﾀが不正です
+;ERR_EDITOR_MISSING=The external editor is not specified.
+ERR_EDITOR_MISSING=外部ｴﾃﾞｨﾀが指定されていません
+;ERR_BAD_FORMAT=Unable to display blob.  The format is not graphical.
+ERR_BAD_FORMAT=Blobを表示できません。このフォーマットはｸﾞﾗﾌｨｯｸではありません
+;ERR_INV_DIALECT=Unable to change the client dialect.
+ERR_INV_DIALECT=ｸﾗｲｱﾝﾄのdialectを変更することが出来ませんでした
+;ERR_FOPEN=Error occured opening file.
+ERR_FOPEN=ﾌｧｲﾙｵｰﾌﾟﾝ時にｴﾗｰが発生
+;ERR_TEXT_NOT_FOUND=Search string not found.
+ERR_TEXT_NOT_FOUND=文字列の検索に失敗しました
+;ERR_PRINT=Unable to print.  Make sure your printer is installed and working.
+ERR_PRINT=印刷出来ません。ﾌﾟﾘﾝﾀの状態を確認して下さい
+;ERR_NO_PATH=No path was specified for the backup file or database.
+ERR_NO_PATH=ﾊﾞｯｸｱｯﾌﾟﾌｧｲﾙ又はﾃﾞｰﾀﾍﾞｰｽのﾊﾟｽが指定されていません
+;ERR_NO_FILES=No files were specified for backup or restore.
+ERR_NO_FILES=ﾊﾞｯｸｱｯﾌﾟ又はﾘｽﾄｱでﾌｧｲﾙが指定されていません
+;ERR_GET_DOMAINS=Unable to retrieve a list of domains.
+ERR_GET_DOMAINS=ﾄﾞﾒｲﾝのﾘｽﾄを取得中にｴﾗｰが発生しました
+;ERR_EXT_TOOL_ERROR=Unable to launch external tool
+ERR_EXT_TOOL_ERROR=外部ﾂｰﾙを起動出来ませんでした
+;ERR_PROPERTIES=Unable to retrieve properties for the object
+ERR_PROPERTIES=ｵﾌﾞｼﾞｪｸﾄのﾌﾟﾛﾊﾟﾃｨを参照出来ませんでした
+;ERR_ALIAS_EXISTS=Invalid alias.  This alias already exists.
+ERR_ALIAS_EXISTS=不正なｴｲﾘｱｽです。このｴｲﾘｱｽは既に存在しています。
+;ERR_CANNOT_START_LOCALIB=Cannot start local interbase.
+ERR_CANNOT_START_LOCALIB=ﾛｰｶﾙ･ｲﾝﾀｰﾍﾞｰｽを開始できませんでした
+;ERR_SERVER_REGISTER=An error enounter while trying to register a server.
+ERR_SERVER_REGISTER=ｻｰﾊﾞｰの登録中にｴﾗｰが発生しました
+;ERR_SERVER_UNREGISTER=An error enounter while trying to unregister a server.
+ERR_SERVER_UNREGISTER=ｻｰﾊﾞｰの登録解除中にｴﾗｰが発生しました
+;ERR_DATABASE_REGISTER=An error enounter while trying to register a database.
+ERR_DATABASE_REGISTER=ﾃﾞｰﾀﾍﾞｰｽの登録中にｴﾗｰが発生しました
+;ERR_DATABASE_UNREGISTER=An error enounter while trying to unregister a database.
+ERR_DATABASE_UNREGISTER=ﾃﾞｰﾀﾍﾞｽの登録解除中にｴﾗｰが発生しました
+;ERR_DDL_EXECUTION=An error occured while trying to excute a DDL statement.
+ERR_DDL_EXECUTION=DDLｽﾃｰﾄﾒﾝﾄを実行中にｴﾗｰが発生しました
+;****** Warnings ******
+;WAR_NO_PERMISSION=Insufficient rights for this operation.
+WAR_NO_PERMISSION=この操作を実行する権限がありません
+;WAR_SERVER_REGISTERED=The server is already registered.
+WAR_SERVER_REGISTERED=このｻｰﾊﾞｰは既に登録されています
+;WAR_DUPLICATE_DB_ALIAS=This database alias already exists.
+WAR_DUPLICATE_DB_ALIAS=このﾃﾞｰﾀﾍﾞｰｽｴｲﾘｱｽは既に存在しています
+;WAR_BACKUP_FILE_REGISTERED=The backup file is already registered.
+WAR_BACKUP_FILE_REGISTERED=このﾊﾞｯｸｱｯﾌﾟﾌｧｲﾙは既に存在しています
+;WAR_DIALECT_MISMATCH=The client dialect does not match the database dialect.
+WAR_DIALECT_MISMATCH=ｸﾗｲｱﾝﾄのﾀﾞｲｱﾚｸﾄがﾃﾞｰﾀﾍﾞｰｽのﾀﾞｲｱﾚｸﾄと一致しません
+;WAR_REMOTE_FILENAME=The file name specified may contain a server name.'+#13#10+'Some operations may not work correctly.
+WAR_REMOTE_FILENAME=指定されたﾌｧｲﾙ名はｻｰﾊﾞｰ名を含んでいるかもしれません。'+#13#10+'幾つかの操作が正しく機能しないかもしれません
+;WAR_PERSISTENT_UPDATE=Cannot update persistent information.
+WAR_PERSISTENT_UPDATE=永続的な情報を更新出来ませんでした
+;****** Information ******}
+;INF_ADD_USER_SUCCESS=The user was added successfully.
+INF_ADD_USER_SUCCESS=ﾕｰｻﾞｰが追加されました｡
+;INF_BACKUP_DB_SUCCESS=Database backup completed.
+INF_BACKUP_DB_SUCCESS=ﾃﾞｰﾀﾍﾞｰｽのﾊﾞｯｸｱｯﾌﾟが成功しました｡
+;INF_RESTORE_DB_SUCCESS=Database restore completed.
+INF_RESTORE_DB_SUCCESS=ﾃﾞｰﾀﾍﾞｰｽのﾘｽﾄｱが成功しました｡
+;INF_NO_PENDING_TRANSACTIONS=No pending transactions were found.
+INF_NO_PENDING_TRANSACTIONS=保留中のﾄﾗﾝｻﾞｸｼｮﾝがありません｡
+INF_RESTART_SERVER=You must restart the server in order for the changes to go into effect.
+;INF_DATABASE_SHUTDOWN=Database shutdown completed successfully.
+INF_DATABASE_SHUTDOWN=ﾃﾞｰﾀﾍﾞｰｽのｼｬｯﾄﾀﾞｳﾝが成功すました｡
+;INF_DATABASE_RESTARTED=Database restart completed successfully.
+INF_DATABASE_RESTARTED=ﾃﾞｰﾀﾍﾞｰｽのﾘｽﾀｰﾄが成功しました｡
+;INF_SQL_SCRIPT=SQL script done.
+INF_SQL_SCRIPT=SQLｽｸﾘﾌﾟﾄがﾀﾞｳﾝしました｡
+;INF_DATABASE_SWEEP=Database sweep completed.
+INF_DATABASE_SWEEP=ﾃﾞｰﾀﾍﾞｰｽのｽｳｨｰﾌﾟが完了しました｡
+;****** InterBase Errors ******}
+;isc_gbak_db_exists=To overwrite an existing database, set the Overwrite option to TRUE
+isc_gbak_db_exists=既存のﾃﾞｰﾀﾍﾞｰｽを上書きするためには、OverwriteｵﾌﾟｼｮﾝをTrueに設定して下さい
+;isc_gfix_invalid_sw=An invalid option was specified for the operation.
+isc_gfix_invalid_sw=この操作に対して不正なｵﾌﾟｼｮﾝが指定されました
+;isc_gfix_incmp_sw=The parameters for this operation are conflicting.
+isc_gfix_incmp_sw=この操作に対するﾊﾟﾗﾒｰﾀに不整合が起きています
+;isc_gfix_retry=An operation was not specified.
+isc_gfix_retry=操作が指定されていません
+;isc_gfix_retry_db=A database was not specified for the operation
+isc_gfix_retry_db=この操作に対してﾃﾞｰﾀﾍﾞｰｽが指定されていません
+;isc_gbak_page_size_missing=The page size must be specified.
+isc_gbak_page_size_missing=ﾍﾟｰｼﾞｻｲｽﾞを指定して下さい
+;isc_gsec_cant_open_db=The security database could not be opened.
+isc_gsec_cant_open_db=ｾｷｭﾘﾃｨﾃﾞｰﾀﾍﾞｰｽをｵｰﾌﾟﾝ出来ません
+;isc_gsec_no_usr_name=User name missing.  A user name must be specified for all operations.
+isc_gsec_no_usr_name=ﾕｰｻﾞｰ名がありません。ﾕｰｻﾞｰ名は全ての操作に対して必要です
+;isc_gsec_err_add=An unknown error was encountered while attempting to add the user record.
+isc_gsec_err_add=ﾕｰｻﾞｰﾚｺｰﾄﾞの追加中に不明なｴﾗｰが発生しました
+;isc_gsec_err_modify=An unknown error was encountered while attempting to modify the user record.
+isc_gsec_err_modify=ﾕｰｻﾞｰﾚｺｰﾄﾞの修正中に不明なｴﾗｰが発生しました
+isc_gsec_err_find_mod=An unknown error was encountered while attempting to find/modify the user record.
+isc_gsec_err_find_mod=ﾕｰｻﾞｰﾚｺｰﾄﾞの検索/修正中に不明なｴﾗｰが発生しました
+isc_gsec_err_rec_not_found=The information for the user was not found.
+;isc_gsec_err_rec_not_found=The information for the user was not found.
+isc_gsec_err_delete=ﾕｰｻﾞｰの情報が見つかりませんでした
+;isc_gsec_err_find_del=An unknown error was encountered while attempting to find/delete the user record.
+isc_gsec_err_find_del=ﾕｰｻﾞｰﾚｺｰﾄﾞの検索/削除中に不明なｴﾗｰが発生しました
+;isc_gsec_err_find_disp=An unknown error was encountered while attempting to find/display the user record.
+isc_gsec_err_find_disp=ﾕｰｻﾞｰﾚｺｰﾄﾞを検索/表示する際に不明なｴﾗｰが発生しました。
+;isc_sys_request=An unknown error attempting to open a file on the server.
+isc_sys_request=ｻｰﾊﾞ上のﾌｧｲﾙを開くときに不明なｴﾗｰが発生しました。
+;
+;Warning:
+;localize only the right side
+;do not localize and leave case as is on the left side
+;
+;
+[global]
+;
+; this are short expressions that are used in gui controls, if not supplied,
+; they will display in English
+;
+;Action=
+Action=ｱｸｼｮﾝ
+;Name=
+Name=名称
+;Active=
+Active=ｱｸﾃｨﾌﾞ
+;Allow Nulls=
+Allow Nulls=Null可
+;Can Defer=
+Can Defer=ﾃﾞﾌｫﾙﾄ
+;Character Set=
+Character Set=ｷｬﾗｸﾀ ｾｯﾄ
+;Collation=
+Collation=照合
+;Connections=
+Connections=接続
+;Current Value=
+Current Value=現在値
+;Case Insensitive=
+Case Insensitive=ｹｰｽｲﾝｾﾝｼﾃｨﾌﾞ
+;Database=
+Database=ﾃﾞｰﾀﾍﾞｰｽ
+;Default Value=
+Default Value=ﾃﾞﾌｫﾙﾄ値
+;Delete Rule=
+Delete Rule=ﾃﾞﾌｫﾙﾄﾛｰﾙ
+;Descending=
+Descending=降順
+;Description=
+Description=詳細
+;Entry=
+Entry=ｴﾝﾄﾘｰ
+;Error=
+Error=ｴﾗｰ
+;Fields=
+Fields=ﾌｨｰﾙﾄﾞ
+;Index=Indice
+Index=ｲﾝﾃﾞｯｸｽ
+;Initially Deferred=
+Initially Deferred=初期遅延
+;Input=
+Input=ｲﾝﾌﾟｯﾄ
+;Input/Output=
+Input/Output=ｲﾝﾌﾟｯﾄ/ｱｳﾄﾌﾟｯﾄ
+;Last Accessed=
+Last Accessed=ﾗｽﾄ ｱｸｾｽ
+;Match Option=
+Match Option=照合ｵﾌﾟｼｮﾝ
+;Member=
+Member=ﾒﾝﾊﾞｰ
+;Message=
+Message=ﾒｯｾｰｼﾞ
+;Modified=
+Modified=修正済み
+;Module=
+Module=ﾓｼﾞｭｰﾙ
+;Metadata for=
+Metadata for=ﾒﾀﾃﾞｰﾀ
+;New=
+New=新規
+;Output=
+Output=ｱｳﾄﾌﾟｯﾄ
+;Owner=
+Owner=ｵｰﾅｰ
+;objects listed=
+objects listed=ｵﾌﾞｼﾞｪｸﾄﾘｽﾄ
+;Parameter=
+Parameter=ﾊﾟﾗﾒﾀ
+;Position=
+Position=ﾎﾟｼﾞｼｮﾝ
+;Path=
+Path=ﾊﾟｽ
+;Reference Table=
+Reference Table=ﾘﾌｧﾚﾝｽ ﾃｰﾌﾞﾙ
+;Read-Only=
+Read-Only=読込専用
+;Type=
+Type=ﾀｲﾌﾟ
+;Unique=
+Unique=ﾕﾆｰｸ
+;Update Rule=
+Update Rule=ｱｯﾌﾟﾃﾞｰﾄﾙｰﾙ
+;Y=
+Y=Y
+;N=
+N=N
+;Yes=
+Yes=Yes
+;No=
+No=No
+;Open=
+Open=ｵｰﾌﾟﾝ
+;Form View=
+Form View=ﾌｫｰﾑ表示
+;Grid View=
+Grid View=ｸﾞﾘｯﾄﾞ表示
+;Server=
+Server=ｻｰﾊﾞｰ
+;User=
+User=ﾕｰｻﾞｰ
+;Warning=
+Warning=警告
+;Information=
+Information=情報
+;Confirmation=
+Confirmation=確認
+;Abort=
+Abort=中止
+;All=
+All=全て
+;Cancel=
+Cancel=ｷｬﾝｾﾙ
+;Close=
+Close=閉じる
+;Help=
+Help=ﾍﾙﾌﾟ
+;OK=
+OK=OK
+;Retry=
+Retry=ﾘﾄﾗｲ
+;Yes To All=
+Yes To All=全てYes
+;No To All=
+No To All=全てNo
+;Active Windows on=
+Active Windows on=ｱｸﾃｨﾌﾞｳｨﾝﾄﾞｳ
+;File=
+File=ﾌｧｲﾙ
+;Interactive SQL=
+Interactive SQL=I_SQL
+;Rows Affected=
+Rows Affected=影響した列
+;Not Available=
+Not Available=利用不可
+;Execution Time=
+Execution Time=実行時間
+;Prepare Time=
+Prepare Time=準備時間
+;Starting Memory=
+Starting Memory=開始時ﾒﾓﾘ
+;Current Memory=
+Current Memory=現在のﾒﾓﾘ
+;Delta Memory=
+Delta Memory=ﾃﾞﾙﾀﾒﾓﾘ
+;Number of Buffers=
+Number of Buffers=ﾊﾞｯﾌｧｰ№
+;Reads=
+Reads=読込
+;Writes=
+Writes=書込
+;Plan=
+Plan=ﾌﾟﾗﾝ
+;Statement=
+Statement=ｽﾃｰﾄﾒﾝﾄ
+;is unknown=
+is unknown=は不明
+;Not Connected=
+Not Connected=未接続
+;Client dialect=
+Client dialect=ｸﾗｲｱﾝﾄﾀﾞｲｱﾚｸﾄ
+;Version=
+Version=ﾊﾞｰｼﾞｮﾝ
+;All Options=
+All Options=全てのｵﾌﾟｼｮﾝ
+;Data Pages=
+Data Pages=ﾃﾞｰﾀ ﾍﾟｰｼﾞ
+;Database Log=
+Database Log=ﾃﾞｰﾀﾍﾞｰｽ ﾛｸﾞ
+;Header Page=
+Header Page=ﾍｯﾀﾞｰ ﾍﾟｰｼﾞ
+;Index Pages=
+Index Pages=ｲﾝﾃﾞｯｸｽ ﾍﾟｰｼﾞ
+;System Relations=
+System Relations=ｼｽﾃﾑ ﾘﾚｰｼｮﾝ
+;Show data for:=
+Show data for:=ﾃﾞｰﾀ表示:
+;By Value=
+By Value=値渡し
+;By Reference=
+By Reference=参照渡し
+;No Connection=
+No Connection=接続不可
+;Transaction=
+Transaction=ﾄﾗﾝｻﾞｸｼｮﾝ
+;Commit=
+Commit=ｺﾐｯﾄ
+;Rollback=
+Rollback=ﾛｰﾙﾊﾞｯｸ
+;Unknown=
+Unknown=不明
+;In Limbo=
+In Limbo=In Limbo
+;Multi-Database Transaction=
+Multi-Database Transaction=ﾏﾙﾁﾃﾞｰﾀﾍﾞｰｽ ﾄﾗﾝｻﾞｸｼｮﾝ
+;Fixed=
+Fixed=固定
+;Transportable=
+Transportable=移行可能形式
+;Non-Transportable=
+Non-Transportable=非移行可能形式
+;True=
+True=可
+;False=
+False=不可
+;Process=
+Process=ﾌﾟﾛｾｽ
+;Ignore=
+Ignore=無視
+;None=
+None=ない
+;To Screen=
+To Screen=画面へ
+;To File=
+To File=ﾌｧｲﾙへ
+;Select Verbose File=
+Select Verbose File=ﾌｧｲﾙの選択
+;Select Database=
+Select Database=ﾃﾞｰﾀﾍﾞｰｽの選択
+;Enabled=
+Enabled=許可
+;Disabled=
+Disabled=無効
+;Forced Writes=
+Forced Writes=強制書込
+;Sweep Interval=
+Sweep Interval=ｽｳｨｰﾌﾟ間隔
+;Database Dialect=
+Database Dialect=ﾃﾞｰﾀﾍﾞｰｽ ﾀﾞｲｱﾚｸﾄ
+;Read Only=
+Read Only=読込専用
+;No input=
+No input=入力不可
+;Metadata Only=
+Metadata Only=ﾒﾀﾃﾞｰﾀのみ
+;Garbage Collection=
+Garbage Collection=ﾊﾞｰﾍﾞﾚｰｼﾞｺﾚｸｼｮﾝ
+;Checksums=
+Checksums=ﾁｪｯｸｻﾑ
+;Convert to Tables=
+Convert to Tables=ﾃｰﾌﾞﾙに変換
+;Transactions in Limbo=
+Transactions in Limbo=Limboﾄﾗﾝｻﾞｸｼｮﾝ
+;Verbose Output=
+Verbose Output=出力先
+;Filename(s)=
+Filename(s)=ﾌｧｲﾙ名
+;Size(Bytes)=
+Size(Bytes)=ｻｲｽﾞ(Bytes)
+;Text File=
+Text File=ﾃｷｽﾄﾌｧｲﾙ
+;All files=
+All files=全てのﾌｧｲﾙ
+;Format=
+Format=ﾌｫｰﾏｯﾄ
+;Value for=
+Value for=Value for
+;Replace NULL with=
+Replace NULL with=Nullを変換
+;Validate Record Fragments=
+Validate Record Fragments=Validate Record Fragments
+;Read Only Validation=
+Read Only Validation= 読込専用承認
+;Ignore Checksum Errors=
+Ignore Checksum Errors=ﾁｪｯｸｻﾑｴﾗｰ無視
+;Service started at=
+Service started at=ｻｰﾋﾞｽ開始
+;Service ended at=
+Service ended at=ｻｰﾋﾞｽ終了
+;Running=
+Running=実行中
+;Restore=
+Restore=ﾘｽﾄｱ
+;Ignore=
+Ignore=無視
+;Database Restore=
+Database Restore=ﾃﾞｰﾀﾍﾞｰｽ ﾘｽﾄｱ
+;Commit After Each Table=
+Commit After Each Table=ﾃｰﾌﾞﾙ毎のｺﾐｯﾄ
+;Create Shadow Files=
+Create Shadow Files=ｼｬﾄﾞｳﾌｧｲﾙ作成
+;Deactivate Indices=
+Deactivate Indices=ｲﾝﾃﾞｯｸｽ停止
+;Validity Conditions=
+Validity Conditions=制約適合しないﾃﾞｰﾀ書込
+;Use All Space=
+Use All Space=ﾍﾟｰｼﾞに100%書き込む
+;Pages=
+Pages=ﾍﾟｰｼﾞ
+Overwrite=上書き
+Page Size (Bytes)=ﾍﾟｰｼﾞｻｲｽﾞ(ﾊﾞｲﾄ)
+;
+;
+;
+[node_articles]
+; As Italians knows (like I am), there are some language that don't have
+; undefined gender, in Italian everything is male or female, whe don't have "it".
+; In English can be said "the server" and "the servers", in Italian whe say
+; "Il Server" and "I Servers" italian articles also have gender,
+; so in Italian whe can have four forms of the same article
+; single male, plural male, single female and plural female
+; but the articles are more than one "il" "lo"
+;
+;Servers=The
+Servers=ｻｰﾊﾞｰ
+;Server=The
+Server=ｻｰﾊﾞｰ
+;Databases=The
+Databases=ﾃﾞｰﾀﾍﾞｰｽ
+;Database=The
+Database=ﾃﾞｰﾀﾍﾞｰｽ
+;Backup=The
+Backup=ﾊﾞｯｸｱｯﾌﾟ
+;Users=The
+Users=ﾕｰｻﾞｰ
+;User=The
+User=ﾕｰｻﾞｰ
+;Certificates=The
+Certificates=認証
+;Certificate=The
+Certificate=認証
+;Domains=The
+Domains=ﾄﾞﾒｲﾝ
+;Domain=The
+Domain=ﾄﾞﾒｲﾝ
+;Tables=The
+Tables=ﾃｰﾌﾞﾙ
+;Table=The
+Table=ﾃｰﾌﾞﾙ
+;Views=The
+Views=ﾋﾞｭｰ
+;View=The
+View=ﾋﾞｭｰ
+;Stored Procedures=The
+Stored Procedures=ｽﾄｱﾄﾞ･ﾌﾟﾛｼｰｼﾞｬ
+;Stored Procedure=The
+Stored Procedure=ｽﾄｱﾄﾞ･ﾌﾟﾛｼｰｼﾞｬ
+;External Functions=The
+External Functions=ﾕｰｻﾞｰ定義関数
+;External Function=The
+External Function=ﾕｰｻﾞｰ定義関数
+;Generators=The
+Generators=ｼﾞｪﾈﾚｰﾀ
+;Generator=The
+Generator=ｼﾞｪﾈﾚｰﾀ
+;Exceptions=The
+Exceptions=例外
+;Exception=The
+Exception=例外
+;Blob Filters=The
+Blob Filters=Blobﾌｨﾙﾀ
+;Blob Filter=The
+Blob Filter=Blobﾌｨﾙﾀ
+;Roles=The
+Roles=ﾛｰﾙ
+;Role=The
+Role=ﾛｰﾙ
+;Columns=The
+Columns=列
+;Column=The
+Column=列
+;Indexes=The
+Indexes=ｲﾝﾃﾞｯｸｽ
+;Index=The
+Index=ｲﾝﾃﾞｯｸｽ
+;Referential Constraints=The
+Referential Constraints=参照整合性制約
+;Referential Constraint=The
+Referential Constraint=参照整合性制約
+;Unique Constraints=The
+Unique Constraints=ﾕﾆｰｸ制約
+;Unique Constraint=The
+Unique Constraint=ﾕﾆｰｸ制約
+;Check Constraints=The
+Check Constraints=ﾁｪｯｸ制約
+;Check Constraint=The
+Check Constraint=ﾁｪｯｸ制約
+;Triggers=The
+Triggers=ﾄﾘｶﾞｰ
+;Trigger=The
+Trigger=ﾄﾘｶﾞｰ
+;Server Log=The
+Server Log=ｻｰﾊﾞｰ･ﾛｸﾞ
+;Unknown=The
+Unknown=不明
+;
+;
+;
+[node_types]
+;
+; Localize here the name of the object in main form left treeview and editor forms
+; example:
+;---English-- --Italian--
+;Certificates=Certificati
+;Certificate=Certificato
+;
+;
+;Servers=
+Servers=ｻｰﾊﾞｰ
+;Server=
+Server=ｻｰﾊﾞｰ
+;Databases=
+Databases=ﾃﾞｰﾀﾍﾞｰｽ
+;Database=
+Database=ﾃﾞｰﾀﾍﾞｰｽ
+;Backup=
+Backup=ﾊﾞｯｸｱｯﾌﾟ
+;Users=
+Users=ﾕｰｻﾞｰ
+;User=
+User=ﾕｰｻﾞｰ
+Certificates=
+Certificate=
+;Domains=
+Domains=ﾄﾞﾒｲﾝ
+;Domain=
+Domain=ﾄﾞﾒｲﾝ
+;Tables=
+Tables=ﾃｰﾌﾞﾙ
+;Table=
+Table=ﾃｰﾌﾞﾙ
+;Views=
+Views=ﾋﾞｭｰ
+;View=
+View=ﾋﾞｭｰ
+;Stored Procedures=
+Stored Procedures=ｽﾄｱﾄﾞ･ﾌﾟﾛｼｰｼﾞｬ
+;Stored Procedure=
+Stored Procedure=ｽﾄｱﾄﾞ･ﾌﾟﾛｼｰｼﾞｬ
+;External Functions=
+External Functions=ﾌｧﾝｸｼｮﾝ
+;External Function=
+External Function=ﾌｧﾝｸｼｮﾝ
+;Generators=
+Generators=ｼﾞｪﾈﾚｰﾀ
+;Generator=
+Generator=ｼﾞｪﾈﾚｰﾀ
+;Exceptions=
+Exceptions=例外
+;Exception=
+Exception=例外
+;Blob Filters=
+Blob Filters=Blobﾌｨﾙﾀｰ
+;Blob Filter=
+Blob Filter=Blobﾌｨﾙﾀｰ
+;Roles=
+Roles=ﾛｰﾙ
+;Role=
+Role=ﾛｰﾙ
+;Columns=
+Columns=ｶﾗﾑ
+;Column=
+Column=ｶﾗﾑ
+;Indexes=
+Indexes=ｲﾝﾃﾞｯｸｽ
+;Index=
+Index=ｲﾝﾃﾞｯｸｽ
+;Referential Constraints=
+Referential Constraints=参照整合制約
+;Referential Constraint=
+Referential Constraint=参照整合制約
+;Unique Constraints=
+Unique Constraints=ﾕﾆｰｸ制約
+;Unique Constraint=
+Unique Constraint=ﾕﾆｰｸ制約
+;Check Constraints=
+Check Constraints=ﾁｪｯｸ制約
+;Check Constraint=
+Check Constraint=ﾁｪｯｸ制約
+;Triggers=
+Triggers=ﾄﾘｶﾞｰ
+;Trigger=
+Trigger=ﾄﾘｶﾞｰ
+;Server Log=
+Server Log=ｻｰﾊﾞｰﾛｸﾞ
+;Unknown=
+Unknown=不明
+
+

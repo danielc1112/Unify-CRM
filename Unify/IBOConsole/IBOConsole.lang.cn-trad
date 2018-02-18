@@ -1,0 +1,3475 @@
+;{************************************************************************
+; This File was written by Lorenzo Mengoni - (Ancona, Italy)
+; and it'part of IBOConsole
+; for suggestion and contributions email to lorenzo@mengoni.com
+; This software is distributed under the License GPL and is distributed on
+; an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either
+; express or implied. if you live in a country where this is not applicable
+; do not use it at all.
+;
+; This file is a starting point for localization of IBOConsole
+; This are predefined language constant for now:
+;
+; Brazilian Portuguese=pt-br
+; Catalan=ca
+; Croatian=hr
+; Czech=cz
+; Danish=da
+; Dutch=nl
+; English=en
+; Estonian=et
+; French=fr
+; German=de
+; Greek-Modern=el
+; Italiano=it
+; Japanese=ja
+; Korean=ko
+; Luxembourgeois=ltz
+; Norwegian=no
+; Norwegian Nynorsk=nn
+; Polish=pl
+; Portugese=pt
+; Russian=ru
+; Spanish=es
+; Swedish=sv
+; Simplified Chinese=cn-gb2312
+Traditional Chinese=cn-big5
+;
+;  Translation to Traditional Chinese by
+;  Tang Hui <http://www.3asoft.com>
+;
+; IBOConsole look in the same folder of exe for the file
+; IBOConsole.lang.pt-br for Brazilian Portuguese,
+; IBOConsole.lang.ca for Catalan and so on...
+; I made the Italian file so, if You make a language file I'll give You
+; the credit on my site and in the About Form of program.
+; If the language is not in the list above, I'll add it on the program
+; Thanks in advance to anyone will help me.
+; Send the file at lorenzo@mengoni.com
+;
+;Warning:
+;localize only the right side
+;do not localize and leave case as is on the left side
+; example:
+;--obj-path----- --Italian--
+;Column0.Caption=Nome
+;Column1.Caption=Valore
+;
+;the section is the path of component in the form, so don't change od localize it
+;use ^M to insert a line break, useful in label caption
+;
+[frmMain.FrameGenerators1.DBGrid1]
+Class=TDBGrid
+Hint=
+Columns.Count=2
+;Column0.Caption=Name
+Column0.Caption=名稱
+;Column1.Caption=Value
+Column1.Caption=值
+[frmMain.FrameGenerators1.NewGenerator1]
+Class=TMenuItem
+;Caption=New Generator
+Caption=創建新生成器
+Hint=
+[frmMain.FrameGenerators1.EditGenerator1]
+Class=TMenuItem
+;Caption=Edit Generator
+Caption=編輯生成器
+Hint=
+[frmMain.FrameGenerators1.DropGenerator1]
+Class=TMenuItem
+;Caption=Drop Generator
+Caption=刪除生成器
+Hint=
+[frmMain.Console1]
+Class=TMenuItem
+;Caption=&Console
+Caption=控制臺(&C)
+Hint=
+[frmMain.View1]
+Class=TMenuItem
+;Caption=&View
+Caption=視圖(&V)
+Hint=
+[frmMain.Server1]
+Class=TMenuItem
+;Caption=&Server
+Caption=伺服器(&S)
+Hint=
+[frmMain.Database1]
+Class=TMenuItem
+;Caption=&Database
+Caption=資料庫(&D)
+Hint=
+[frmMain.Maintenance2]
+Class=TMenuItem
+;Caption=&Maintenance
+Caption=維護(&M)
+Hint=
+[frmMain.BackupRestore1]
+Class=TMenuItem
+;Caption=Backup / Restore
+Caption=備份 / 恢復
+Hint=
+[frmMain.ConnectAs3]
+Class=TMenuItem
+;Caption=New connection...
+Caption=建立新連接...
+;Hint=Interactive SQL
+Hint=互動式SQL
+[frmMain.Help1]
+Class=TMenuItem
+;Caption=&Help
+Caption=幫助(&H)
+Hint=
+[frmMain.Maintenance1]
+Class=TMenuItem
+;Caption=&Maintenance
+Caption=維護(&M)
+Hint=
+[frmMain.BackupRestore2]
+Class=TMenuItem
+;Caption=Backup / Restore
+Caption=備份 / 恢復
+Hint=
+[frmMain.ConsoleExit]
+Class=TAction
+;Caption=E&xit
+Caption=退出(&x)
+;Hint=Exit IBOConsole
+Hint=退出控制臺
+[frmMain.ViewList]
+Class=TAction
+;Caption=&List
+Caption=列表(&L)
+Hint=
+[frmMain.ViewReport]
+Class=TAction
+;Caption=&Details
+Caption=詳細資料(&D)
+Hint=
+[frmMain.ViewIcon]
+Class=TAction
+;Caption=Lar&ge
+Caption=大圖示(&g)
+Hint=
+[frmMain.ViewSmallIcon]
+Class=TAction
+;Caption=S&mall
+Caption=小圖示(&m)
+Hint=
+[frmMain.ViewProperties]
+Class=TAction
+;Caption=&Properties ...
+Caption=屬性(&P) ...
+;Hint=View Object Properties
+Hint=查看事件屬性
+[frmMain.ViewSystem]
+Class=TAction
+;Caption=S&ystem Data
+Caption=系統資料(&y)
+Hint=
+[frmMain.HelpContents]
+Class=THelpContents
+;Caption=&Contents
+Caption=幫助主題(&C)
+Hint=
+[frmMain.HelpOnHelp]
+Class=THelpOnHelp
+;Caption=&Help on Help
+Caption=如何使用幫助(&H)
+Hint=
+[frmMain.HelpTopicSearch]
+Class=THelpTopicSearch
+;Caption=&Topic Search
+Caption=主題搜索(&T)
+Hint=
+[frmMain.HelpAbout]
+Class=TAction
+;Caption=&About ...
+Caption=關於(&A) ...
+Hint=
+[frmMain.EditCopy]
+Class=TEditCopy
+;Caption=&Copy
+Caption=複製(&C)
+;Hint=Copy
+Hint=複製
+[frmMain.EditCut]
+Class=TEditCut
+;Caption=Cu&t
+Caption=剪切(&t)
+;Hint=Cut
+Hint=剪切
+[frmMain.EditPaste]
+Class=TEditPaste
+;Caption=&Paste
+Caption=粘貼(&P)
+;Hint=Paste
+Hint=粘貼
+[frmMain.EditSelectAll]
+Class=TEditSelectAll
+;Caption=Select &All
+Caption=全部選擇(&A)
+Hint=
+[frmMain.EditUndo]
+Class=TEditUndo
+;Caption=&Undo
+Caption=撤銷(&U)
+Hint=
+[frmMain.EditFont]
+Class=TAction
+;Caption=&Font ...
+Caption=字體(&F) ...
+;Hint=Change the font
+Hint=改變字體
+[frmMain.WindowList]
+Class=TAction
+;Caption=&Windows
+Caption=窗口(&W)
+Hint=
+[frmMain.UserAdd]
+Class=TAction
+;Caption=&Add User ...
+Caption=添加用戶(&A) ...
+;Hint=Add a new user entry
+Hint=添添一個新用戶
+[frmMain.UserModify]
+Class=TAction
+;Caption=&Modify User ...
+Caption=修改用戶(&M) ...
+;Hint=Modify a user entry
+Hint=修改一個已存在的用戶
+[frmMain.UserDelete]
+Class=TAction
+;Caption=&Delete User
+Caption=刪除用戶(&D)
+;Hint=Delete a user entry
+Hint=刪除一個用戶
+[frmMain.ServerLogout]
+Class=TAction
+;Caption=Log&out
+Caption=註銷(&O)
+;Hint=Logout from the current server
+Hint=登出當前資料庫伺服器
+[frmMain.ServerSecurity]
+Class=TAction
+;Caption=User &Security ...
+Caption=用戶安全(&S) ...
+;Hint=Manage Users
+Hint=用戶管理
+[frmMain.ServerProperties]
+Class=TAction
+;Caption=&Properties ...
+Caption=屬性(&P) ...
+;Hint=View Server properties
+Hint=查看服務屬性
+[frmMain.DatabaseDisconnect]
+Class=TAction
+;Caption=&Disconnect
+Caption=取消連接(&D)
+;Hint=Disconnect from the current database
+Hint=中止當前資料庫的連接
+[frmMain.DatabaseProperties]
+Class=TAction
+;Caption=&Properties ...
+Caption=屬性(&P) ...
+;Hint=Show database properties
+Hint=顯示數據庫屬性
+[frmMain.DatabaseStatistics]
+Class=TAction
+;Caption=&Database Statistics ...
+Caption=資料庫統計(&D) ...
+;Hint=Display database statistics
+Hint=顯示一個資料庫的統計資訊
+[frmMain.DatabaseShutdown]
+Class=TAction
+;Caption=&Shutdown ...
+Caption=關閉(&S) ...
+;Hint=Shutdown the database
+Hint=關閉資料庫
+[frmMain.DatabaseSweep]
+Class=TAction
+;Caption=&Sweep
+Caption=清掃(&S)
+;Hint=Perform a database sweep
+Hint=清掃一個資料庫
+[frmMain.DatabaseRecoverTrans]
+Class=TAction
+;Caption=&Transaction Recovery ...
+Caption=事務恢復(&T) ...
+;Hint=Recover limbo transactions
+Hint=恢復擱置的事務
+[frmMain.DatabaseMetadata]
+Class=TAction
+;Caption=View &Metadata ...
+Caption=查看數據元(&M) ...
+;Hint=View Database Metadata
+Hint=查看資料庫的資料元
+[frmMain.DatabaseRestart]
+Class=TAction
+;Caption=Database &Restart
+Caption=資料庫重啟(&R)
+;Hint=Restart a database
+Hint=重新啟動資料庫
+[frmMain.DatabaseDrop]
+Class=TAction
+;Caption=Drop Database
+Caption=刪除資料庫
+;Hint=Drop the current database
+Hint=刪除當前資料庫
+[frmMain.DBCBackup]
+Class=TAction
+;Caption=Database Backup
+Caption=資料庫備份
+;Hint=Backup a database
+Hint=備份一個資料庫
+[frmMain.DatabaseUsers]
+Class=TAction
+;Caption=Connected &Users ...
+Caption=已連接的用戶(&U) ...
+;Hint=View a list of users currently connected to the server
+Hint=查看當前連接伺服器的用戶
+[frmMain.DBCRestore]
+Class=TAction
+;Caption=Restore Database
+Caption=恢復資料庫
+;Hint=Restore a database
+Hint=恢復一個資料庫
+[frmMain.ServerLogin]
+Class=TAction
+;Caption=&Login ...
+Caption=登錄(&L) ...
+;Hint=Login to the selected server
+Hint=登錄選擇的伺服器
+[frmMain.ServerRegister]
+Class=TAction
+;Caption=&Register ...
+Caption=註冊(&R) ...
+;Hint=Register a new Server
+Hint=註冊一個新的資料庫伺服器
+[frmMain.ServerUnregister]
+Class=TAction
+;Caption=&Un-Register
+Caption=註銷(&U)
+;Hint=Unregister an Server
+Hint=登出當前選中的伺服器
+[frmMain.ServerConnection]
+Class=TAction
+;Caption=&Diagnose Connection ...
+Caption=診斷連接(&D) ...
+;Hint=Diagnose a connection to a server
+Hint=診斷與一個伺服器的連接
+[frmMain.ServerActionProps]
+Class=TAction
+;Caption=&Properties ...
+Caption=屬性(&P) ...
+;Hint=View Server properties
+Hint=查看資料庫伺服器屬性
+[frmMain.DatabaseRegister]
+Class=TAction
+;Caption=&Register ...
+Caption=註冊(&R) ...
+;Hint=Register a new database
+Hint=註冊一個新資料庫
+[frmMain.DatabaseUnregister]
+Class=TAction
+;Caption=&Unregister
+Caption=取消註冊(&U)
+;Hint=Unregister the current database
+Hint=取消當前已註冊的資料庫
+[frmMain.DatabaseConnect]
+Class=TAction
+;Caption=&Connect
+Caption=連接(&C)
+;Hint=Connect to the selected database
+Hint=連接選擇的資料庫
+[frmMain.DatabaseConnectAs]
+Class=TAction
+;Caption=Connect &As ...
+Caption=連接到(&A) ...
+;Hint=Connect to the selected database specifying a user
+Hint=連接到選擇的資料庫用戶
+[frmMain.DatabaseCreate]
+Class=TAction
+;Caption=C&reate Database ...
+Caption=新建資料庫(&r) ...
+;Hint=Create a new database
+Hint=建立一個新的資料庫
+[frmMain.DatabaseValidate]
+Class=TAction
+;Caption=&Validation ...
+Caption=校驗(&V) ...
+;Hint=Validate the database structure
+Hint=校驗資料庫結構
+[frmMain.DatabaseActionsProperties]
+Class=TAction
+;Caption=Properties ...
+Caption=屬性 ...
+;Hint=Show database properties
+Hint=顯示數據庫屬性
+[frmMain.ExtToolsLaunchISQL]
+Class=TAction
+;Caption=Interactive S&QL ...
+Caption=互動式S&QL ...
+;Hint=Interactive SQL
+Hint=互動式SQL
+[frmMain.ExtToolsConfigure]
+Class=TAction
+;Caption=&Configure Tools ...
+Caption=配置工具(&C) ...
+Hint=
+[frmMain.ExtToolDropDown]
+Class=TAction
+;Caption=&Tools
+Caption=工具(&T)
+Hint=
+[frmMain.DatabaseBackup]
+Class=TAction
+;Caption=&Backup ...
+Caption=備份(&B) ...
+;Hint=Back up an database
+Hint=備份一個資料
+[frmMain.DatabaseRestore]
+Class=TAction
+;Caption=&Restore ...
+Caption=恢復(&R) ...
+;Hint=Restore an database
+Hint=恢復一個資料庫
+[frmMain.BackupRestoreModifyAlias]
+Class=TAction
+;Caption=&Modify Backup Alias ...
+Caption=修改備份別名(&M) ...
+;Hint=Modify an existing backup alias
+Hint=修改一個已存在的備份別名
+[frmMain.BackupRestoreRemoveAlias]
+Class=TAction
+;Caption=&Delete Alias
+Caption=刪除別名(&D)
+;Hint=Delete the current backup alias
+Hint=刪除當前備份別名
+[frmMain.ViewServerLog]
+Class=TAction
+;Caption=&View Logfile ...
+Caption=查看登錄文件(&V) ...
+;Hint=View the LOG file for the current server
+Hint=在前當資料庫伺服器中查看登錄檔
+[frmMain.ObjectDescription]
+Class=TAction
+;Caption=Edit &Description ...
+Caption=編輯描述(&D) ...
+;Hint=Change the decription for an object
+Hint=修改當前物件的描述
+[frmMain.ObjectCreate]
+Class=TAction
+;Caption=&Create ...
+Caption=新建(&C) ...
+;Hint=Create a new object of the selected type
+Hint=在當前選擇的類型上創建一個新物件
+[frmMain.ObjectModify]
+Class=TAction
+;Caption=&Modify ...
+Caption=修改(&M) ...
+;Hint=Modify the current object
+Hint=修改當前對象
+[frmMain.ObjectDelete]
+Class=TAction
+;Caption=&Drop ...
+Caption=刪除(&D) ...
+;Hint=Delete the current object
+Hint=刪除當前選中的對象
+[frmMain.ObjectExtract]
+Class=TAction
+;Caption=E&xtract ...
+Caption=提取(&x) ...
+;Hint=Extract metada for the current object
+Hint=在當前物件上提出資料元
+[frmMain.ObjectProperties]
+Class=TAction
+;Caption=&Properties ...
+Caption=屬性(&P) ...
+Hint=
+[frmMain.ObjectRefresh]
+Class=TAction
+;Caption=&Refresh
+Caption=刷新(&R)
+Hint=
+[frmMain.HighlightOptions]
+Class=TAction
+;Caption=Highlight Options
+Caption=高亮選項
+Hint=
+[frmMain.DatabaseWindows]
+Class=TAction
+;Caption=Database &Windows
+Caption=資料庫視窗(&W)
+Hint=
+[frmMain.ActionOptions]
+Class=TAction
+;Caption=Options...
+Caption=選項...
+Hint=
+[frmMain.actHighlightOptions]
+Class=TAction
+;Caption=Highlight Options...
+Caption=高亮選項...
+Hint=
+[frmMain.Test1]
+Class=TMenuItem
+;Caption=Test
+Caption=測試
+Hint=
+[frmOptions]
+Class=TfrmOptions
+;Caption=Options
+Caption=選項
+Hint=
+[frmOptions.btnApply]
+Class=TButton
+;Caption=&Apply
+Caption=應用(&A)
+Hint=
+[frmOptions.btnOK]
+Class=TButton
+;Caption=&OK
+Caption=確定(&O)
+Hint=
+[frmOptions.pgControl]
+Class=TPageControl
+Hint=
+PageCount=1
+[frmOptions.pgControl.TabSheet2]
+Class=TTabSheet
+;Caption=IBOConsole
+Caption=IBO控制臺
+Hint=
+[frmOptions.TabSheet2]
+Class=TTabSheet
+;Caption=IBOConsole
+Caption=IBO製作台
+Hint=
+[frmOptions.Label2]
+Class=TLabel
+Caption=.........
+Hint=
+[frmOptions.LabelLanguage]
+Class=TLabel
+;Caption=Language
+Caption=語言
+Hint=
+[frmOptions.DDLRadioGroup]
+Class=TGroupButton
+;Caption=&Manual Commit
+Caption=手工確認(&M)
+Hint=
+Items.Count=2
+;Item0=&Auto Commit
+Item0=自動確認(&A)
+;Item1=&Manual Commit
+Item1=手工確認(&M)
+[frmOptions.CheckBox1]
+Class=TCheckBox
+;Caption=Force Uppercase Identifier
+Caption=強制大小轉換
+Hint=
+[frmOptions.ButtonChangeFont]
+Class=TButton
+;Caption=Change Font
+Caption=改變字體
+Hint=
+[frmOptions.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+Hint=
+[frmEditorOptions]
+Class=TfrmEditorOptions
+;Caption=Syntax Editor Options
+Caption=語法編輯選項
+Hint=
+[frmEditorOptions.Label1]
+Class=TLabel
+;Caption=Color
+Caption=顏色
+Hint=
+[frmEditorOptions.Label2]
+Class=TLabel
+;Caption=Element
+Caption=元素
+Hint=
+[frmEditorOptions.GroupBox1]
+Class=TGroupBox
+;Caption=Text Style
+Caption=文字風格
+Hint=
+[frmEditorOptions.chkBold]
+Class=TCheckBox
+;Caption=&Bold
+Caption=粗體(&B)
+Hint=
+[frmEditorOptions.chkItalic]
+Class=TCheckBox
+;Caption=&Italic
+Caption=斜體(&I)
+Hint=
+[frmEditorOptions.chkUnderline]
+Class=TCheckBox
+;Caption=&Underline
+Caption=下劃線(&U)
+Hint=
+[frmEditorOptions.Button1]
+Class=TButton
+;Caption=&Ok
+Caption=確定(&O)
+Hint=
+[frmEditorOptions.Button2]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+Hint=
+[frmEditorOptions.GroupBox2]
+Class=TGroupBox
+;Caption=Use Defaults For
+Caption=用戶默認
+Hint=
+[frmEditorOptions.chkDefaultFG]
+Class=TCheckBox
+;Caption=Default Foreground
+Caption=默認前景
+Hint=
+[frmEditorOptions.chkDefaultBG]
+Class=TCheckBox
+;Caption=Default Background
+Caption=默認背景
+Hint=
+[frmEditorOptions.Label3]
+Class=TLabel
+Caption=Courier New
+Hint=
+[frmEditorOptions.ButtonChangeFont]
+Class=TButton
+;Caption=Change Font
+Caption=改變字體
+Hint=
+[frmServerLogin]
+Class=TfrmServerLogin
+;Caption=Server Login
+Caption=伺服器登錄
+Hint=
+[frmServerLogin.lblServerName]
+Class=TLabel
+;Caption=Server:
+Caption=伺服器:
+Hint=
+[frmServerLogin.lblUsername]
+Class=TLabel
+;Caption=&User Name:
+Caption=用戶名稱(&U):
+Hint=
+[frmServerLogin.lblPassword]
+Class=TLabel
+;Caption=&Password:
+Caption=密碼(&P):
+Hint=
+[frmServerLogin.lblServer]
+Class=TLabel
+;Caption=Local Server
+Caption=本端伺服器
+Hint=
+[frmServerLogin.btnLogin]
+Class=TButton
+;Caption=&Login
+Caption=登錄(&L)
+Hint=
+[frmServerLogin.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+Hint=
+[frmUserInfo]
+Class=TfrmUserInfo
+;Caption=User Information
+Caption=用戶資訊
+Hint=
+[frmUserInfo.btnNew]
+Class=TButton
+;Caption=&New
+Caption=新建(&N)
+Hint=
+[frmUserInfo.btnApply]
+Class=TButton
+;Caption=&Apply
+Caption=應用(&A)
+Hint=
+[frmUserInfo.btnDelete]
+Class=TButton
+;Caption=&Delete
+Caption=刪除(&D)
+Hint=
+[frmUserInfo.btnClose]
+Class=TButton
+;Caption=&Close
+Caption=關閉(&C)
+Hint=
+[frmUserInfo.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+Hint=
+[frmUserInfo.gbOptionalInfo]
+Class=TGroupBox
+;Caption= Optional Information 
+Caption= 選項資訊
+Hint=
+[frmUserInfo.lblFName]
+Class=TLabel
+;Caption=&First Name:
+Caption=名(&F):
+Hint=
+[frmUserInfo.lblMName]
+Class=TLabel
+;Caption=&Middle Name:
+Caption=中間名(&M):
+Hint=
+[frmUserInfo.lblLName]
+Class=TLabel
+;Caption=&Last Name:
+Caption=姓(&L):
+Hint=
+[frmUserInfo.gbRequiredInfo]
+Class=TGroupBox
+;Caption= Required Information 
+Caption= 必要資訊
+Hint=
+[frmUserInfo.lblPassword]
+Class=TLabel
+;Caption=&Password:
+Caption=密碼(&P):
+Hint=
+[frmUserInfo.lblConfirmPassword]
+Class=TLabel
+;Caption=C&onfirm Password:
+Caption=確認密碼(&o):
+Hint=
+[frmUserInfo.lblUserName]
+Class=TLabel
+;Caption=&User Name:
+Caption=用戶名(&U):
+Hint=
+[frmUserInfo.NewUser]
+Class=TAction
+;Caption=NewUser
+Caption=新用戶
+Hint=
+[frmUserInfo.ModifyUser]
+Class=TAction
+;Caption=ModifyUser
+Caption=修改用戶
+Hint=
+[frmUserInfo.DeleteUser]
+Class=TAction
+;Caption=DeleteUser
+Caption=刪除用戶
+Hint=
+[frmServerProperties]
+Class=TfrmServerProperties
+;Caption=Server Properties
+Caption=伺服器屬性
+Hint=
+[frmServerProperties.pgcMain]
+Class=TPageControl
+Hint=
+PageCount=2
+[frmServerProperties.pgcMain.TabAlias]
+Class=TTabSheet
+;Caption=Alias
+Caption=別名
+Hint=
+[frmServerProperties.pgcMain.TabGeneral]
+Class=TTabSheet
+;Caption=General
+Caption=常規
+Hint=
+[frmServerProperties.TabAlias]
+Class=TTabSheet
+;Caption=Alias
+Caption=別名
+Hint=
+[frmServerProperties.lblAliasName]
+Class=TLabel
+;Caption=A&lias Name:
+Caption=別名(&l):
+Hint=
+[frmServerProperties.lblHostName]
+Class=TLabel
+;Caption=&Host Name:
+Caption=主機名(&H):
+Hint=
+[frmServerProperties.lblProtocol]
+Class=TLabel
+;Caption=&Network Protocol:
+Caption=網路協定(&N):
+Hint=
+[frmServerProperties.Label1]
+Class=TLabel
+;Caption=&Description:
+Caption=描述(&D):
+Hint=
+[frmServerProperties.TabGeneral]
+Class=TTabSheet
+;Caption=General
+Caption=常規
+Hint=
+[frmServerProperties.lblVersionCaption]
+Class=TLabel
+;Caption=Version:
+Caption=版本:
+Hint=
+[frmServerProperties.lblCapabilities]
+Class=TLabel
+;Caption=Capabilities:
+Caption=性能:
+Hint=
+[frmServerProperties.lblAttachmentNoCaption]
+Class=TLabel
+;Caption=Number of attachments:
+Caption=附件數量:
+Hint=
+[frmServerProperties.lblDatabaseNocaption]
+Class=TLabel
+;Caption=Number of databases:
+Caption=資料庫數量:
+Hint=
+[frmServerProperties.lblDatabaseNo]
+Class=TLabel
+Caption=?
+Hint=
+[frmServerProperties.lblAttachmentNo]
+Class=TLabel
+Caption=?
+Hint=
+[frmServerProperties.lblVersion]
+Class=TLabel
+;Caption=Unknown
+Caption=未知
+Hint=
+[frmServerProperties.lvDatabases]
+Class=TListView
+Hint=
+Columns.Count=1
+;Column0.Caption=Attached Databases
+Column0.Caption=附加資料庫
+[frmServerProperties.btnRefresh]
+Class=TButton
+;Caption=&Refresh
+Caption=刷新(&R)
+Hint=
+[frmServerProperties.btnApply]
+Class=TButton
+;Caption=&Apply
+Caption=應用(&A)
+Hint=
+[frmServerProperties.btnCancel]
+Class=TButton
+Caption=&Ok
+Caption=確定(&O)
+Hint=
+[frmServerProperties.Button1]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+Hint=
+[frmDBProperties]
+Class=TfrmDBProperties
+;Caption=Database Properties
+Caption=數據庫屬性
+Hint=
+[frmDBProperties.lblServerName]
+Class=TLabel
+;Caption=Server:
+Caption=伺服器:
+Hint=
+[frmDBProperties.lblServer]
+Class=TLabel
+;Caption=Local Server
+Caption=本地
+Hint=
+[frmDBProperties.pgcMain]
+Class=TPageControl
+Hint=
+PageCount=2
+[frmDBProperties.pgcMain.TabAlias]
+Class=TTabSheet
+;Caption=Alias
+Caption=別名
+Hint=
+[frmDBProperties.pgcMain.TabGeneral]
+Class=TTabSheet
+;Caption=General
+Caption=常規
+Hint=
+[frmDBProperties.TabAlias]
+Class=TTabSheet
+;Caption=Alias
+Caption=別名
+Hint=
+[frmDBProperties.lblAliasName]
+Class=TLabel
+;Caption=A&lias Name:
+Caption=別名(&l):
+Hint=
+[frmDBProperties.lblFilename]
+Class=TLabel
+;Caption=&File:
+Caption=文件(&F):
+Hint=
+[frmDBProperties.btnSelFilename]
+Class=TButton
+Caption=...
+;Hint=Select database
+Hint=選擇資料庫
+[frmDBProperties.TabGeneral]
+Class=TTabSheet
+;Caption=General
+Caption=常規
+Hint=
+[frmDBProperties.lblOptions]
+Class=TLabel
+;Caption=O&ptions:
+Caption=選項(&p):
+Hint=
+[frmDBProperties.gbSummaryInfo]
+Class=TGroupBox
+;Caption= Summary Information 
+Caption= 資訊摘要
+Hint=
+[frmDBProperties.lblDBOwner]
+Class=TLabel
+;Caption=Owner:
+Caption=擁有者:
+Hint=
+[frmDBProperties.lblDBPages]
+Class=TLabel
+;Caption=Allocated DB Pages:
+Caption=分配資料頁面:
+Hint=
+[frmDBProperties.lblPageSize]
+Class=TLabel
+;Caption=Page Size:
+Caption=頁面大小:
+Hint=
+[frmDBProperties.lblOwner]
+Class=TLabel
+Caption=SYSDBA
+Hint=
+[frmDBProperties.lblPages]
+Class=TLabel
+Caption=20750
+Hint=
+[frmDBProperties.lblPgSize]
+Class=TLabel
+Caption=4096
+Hint=
+[frmDBProperties.lvSecondaryFiles]
+Class=TListView
+Hint=
+Columns.Count=2
+;Column0.Caption=Secondary Files
+Column0.Caption=第二檔
+;Column1.Caption=Start Page
+Column1.Caption=起始頁
+[frmDBProperties.btnApply]
+Class=TButton
+;Caption=&Apply
+Caption=應用(&A)
+Hint=
+[frmDBProperties.btnCancel]
+Class=TButton
+;Caption=&Ok
+Caption=確定(&O)
+Hint=
+[frmDBProperties.Button1]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+Hint=
+[frmDBStatistics]
+Class=TfrmDBStatistics
+;Caption=Database Statistics
+Caption=資料庫統計
+Hint=
+[frmDBStatistics.lblOptions]
+Class=TLabel
+;Caption=O&ption:
+Caption=選項(&p):
+Hint=
+[frmDBStatistics.lblDatabaseName]
+Class=TLabel
+;Caption=Database:
+Caption=資料庫:
+Hint=
+[frmDBStatistics.lblDatabase]
+Class=TLabel
+Caption=AEKOOLMS002.FDB
+Hint=AEKOOLMS002.FDB
+[frmDBStatistics.btnOK]
+Class=TButton
+;Caption=&Ok
+Caption=確定(&O)
+Hint=
+[frmDBStatistics.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+Hint=
+[frmTextViewer]
+Class=TfrmTextViewer
+;Caption=Database Metadata
+Caption=資料庫資料元
+Hint=
+[frmTextViewer.mnuFile]
+Class=TMenuItem
+;Caption=&File
+Caption=文件(&F)
+Hint=
+[frmTextViewer.mnuFiSaveAs]
+Class=TMenuItem
+;Caption=&Save ...
+Caption=保存(&S) ...
+;Hint=Save current file under a new name
+Hint=另保存為當前文件
+[frmTextViewer.mnuFiPrint]
+Class=TMenuItem
+;Caption=&Print
+Caption=列印(&P)
+Hint=
+[frmTextViewer.mnuFiExit]
+Class=TMenuItem
+;Caption=E&xit
+Caption=退出(&x)
+;Hint=Exit this application
+Hint=退出本應用程式
+[frmTextViewer.mnuEdit]
+Class=TMenuItem
+;Caption=&Edit
+Caption=退出(&E)
+Hint=
+[frmTextViewer.mnuEdFind]
+Class=TMenuItem
+;Caption=&Find
+Caption=查找(&F)
+;Hint=Search for a string
+Hint=查找字串
+[frmTextViewer.EditCopy1]
+Class=TEditCopy
+;Caption=&Copy
+Caption=複製(&C)
+Hint=Copy
+[frmTextViewer.EditCut1]
+Class=TEditCut
+;Caption=Cu&t
+Caption=剪切(&t)
+;Hint=Cut
+Hint=剪切
+[frmTextViewer.EditPaste1]
+Class=TEditPaste
+;Caption=&Paste
+Caption=粘貼(&P)
+;Hint=Paste
+Hint=粘貼
+[frmTextViewer.EditSelectAll1]
+Class=TEditSelectAll
+;Caption=Select &All
+Caption=全部選擇(&A)
+Hint=
+[frmTextViewer.EditUndo1]
+Class=TEditUndo
+;Caption=&Undo
+Caption=撤銷(&U)
+Hint=
+[frmTextViewer.EditFont]
+Class=TAction
+;Caption=&Font ...
+Caption=字體(&F) ...
+Hint=Change the font
+[frmDBShutdown]
+Class=TfrmDBShutdown
+;Caption=Database Shutdown
+Caption=關閉資料庫
+Hint=
+[frmDBShutdown.lblDatabaseName]
+Class=TLabel
+;Caption=Database:
+Caption=資料庫:
+Hint=
+[frmDBShutdown.lblOptions]
+Class=TLabel
+;Caption=O&ptions:
+Caption=選項(&p):
+Hint=
+[frmDBShutdown.stxDatabaseName]
+Class=TLabel
+Caption=AEKOOLMS002.FDB
+Hint=AEKOOLMS002.FDB
+[frmDBShutdown.btnOK]
+Class=TButton
+;Caption=&Ok
+Caption=確定(&O)
+Hint=
+[frmDBShutdown.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+Hint=
+[frmMessage]
+Class=TfrmMessage
+;Caption=Information
+Caption=信息
+Hint=
+[frmMessage.lblDetailMsg]
+Class=TLabel
+;Caption=Detail Message:
+Caption=詳細消息
+Hint=
+[frmMessage.lblSummaryMsg]
+Class=TLabel
+;Caption=No pending transactions were found.
+Caption=未找到未決事務.
+Hint=
+[frmMessage.btnOK]
+Class=TButton
+;Caption=&Ok
+Caption=確定(&O)
+Hint=
+[frmDBBackup]
+Class=TfrmDBBackup
+;Caption=Database Backup
+Caption=資料庫備份
+Hint=
+[frmDBBackup.lblOptions]
+Class=TLabel
+;Caption=O&ptions:
+Caption=選項(&p):
+Hint=
+[frmDBBackup.gbDatabaseFile]
+Class=TGroupBox
+;Caption= Database 
+Caption= 資料庫 
+Hint=
+[frmDBBackup.lblDatabaseServer]
+Class=TLabel
+;Caption=Server:
+Caption=伺服器:
+Hint=
+[frmDBBackup.lblDatabaseAlias]
+Class=TLabel
+;Caption=&Alias:
+Caption=別名(&A):
+Hint=
+[frmDBBackup.lblDatabaseserverName]
+Class=TLabel
+;Caption=Local Server
+Caption=本地
+Hint=
+[frmDBBackup.gbBackupFiles]
+Class=TGroupBox
+;Caption= Backup File(s) 
+Caption= 備份檔案 
+Hint=
+[frmDBBackup.lblBackupServer]
+Class=TLabel
+;Caption=&Server:
+Caption=伺服器(&S):
+Hint=
+[frmDBBackup.lblBackupAlias]
+Class=TLabel
+;Caption=A&lias:
+Caption=別名(&l):
+Hint=
+[frmDBBackup.btnOK]
+Class=TButton
+;Caption=&Ok
+Caption=確定(&O)
+Hint=
+[frmDBBackup.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+Hint=
+[frmMain.actDatabaseBackup]
+Class=TAction
+;Caption=Database Backup
+Caption=資料庫備份
+;Hint=Backup a database
+Hint=備份一個資料庫
+[frmDBRestore]
+Class=TfrmDBRestore
+;Caption=Database Restore
+Caption=資料庫恢復
+Hint=
+[frmDBRestore.lblOptions]
+Class=TLabel
+;Caption=O&ptions:
+Caption=選項(&p):
+Hint=
+[frmDBRestore.gbDatabaseFiles]
+Class=TGroupBox
+;Caption= Database
+Caption= 資料庫
+Hint=
+[frmDBRestore.lblDestinationServer]
+Class=TLabel
+;Caption=&Server:
+Caption=伺服器(&S):
+Hint=
+[frmDBRestore.lblDBAlias]
+Class=TLabel
+;Caption=A&lias:
+Caption=別名(&l):
+Hint=
+[frmDBRestore.gbBackupFiles]
+Class=TGroupBox
+;Caption= Backup File(s)
+Caption= 備份檔案
+Hint=
+[frmDBRestore.lblBackupServer]
+Class=TLabel
+;Caption=Server:
+Caption=伺服器:
+Hint=
+[frmDBRestore.lblBackupAlias]
+Class=TLabel
+;Caption=&Alias:
+Caption=別名(&A):
+Hint=
+[frmDBRestore.lblBackupServerName]
+Class=TLabel
+;Caption=Local Server
+Caption=本地
+Hint=
+[frmDBRestore.btnOK]
+Class=TButton
+Caption=確定(&O)
+Hint=
+[frmDBRestore.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+Hint=
+[frmDomains]
+Class=TfrmDomains
+;Caption=Domain - BLOB_TEXT
+Caption=域 - BLOB_(文本)
+[frmDomains.pgObjectEditor]
+Class=TPageControl
+Hint=
+PageCount=5
+[frmDomains.pgObjectEditor.tsMain]
+Class=TTabSheet
+;Caption=Domain
+Caption=域
+[frmDomains.pgObjectEditor.tsDefault]
+Class=TTabSheet
+;Caption=Default
+Caption=默認
+[frmDomains.pgObjectEditor.tsConstraint]
+Class=TTabSheet
+;Caption=Constraint
+Caption=約束
+[frmDomains.pgObjectEditor.tsDescription]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[frmDomains.pgObjectEditor.tsDDL]
+Class=TTabSheet
+;Caption=Metadata
+Caption=數據元
+[frmDomains.tsMain]
+Class=TTabSheet
+;Caption=Domain
+Caption=域
+[frmDomains.Label1]
+Class=TLabel
+;Caption=&Domain:
+Caption=域(&D):
+[frmDomains.Label3]
+Class=TLabel
+;Caption=&Type:
+Caption=類型(&T):
+[frmDomains.Label4]
+Class=TLabel
+;Caption=&Length:
+Caption=長度(&L):
+[frmDomains.Label9]
+Class=TLabel
+;Caption=C&har Set:
+Caption=字元(&h):
+[frmDomains.Label2]
+Class=TLabel
+;Caption=Co&llate:
+Caption=校對(&l):
+[frmDomains.Label14]
+Class=TLabel
+;Caption=&Precision:
+Caption=精度(&P):
+[frmDomains.Label15]
+Class=TLabel
+;Caption=&Scale:
+Caption=數值範圍(&S):
+[frmDomains.Label18]
+Class=TLabel
+;Caption=&Sub Type:
+Caption=子類(&S):
+[frmDomains.Label6]
+Class=TLabel
+;Caption=C&har Set:
+Caption=字元(&h):
+[frmDomains.Label11]
+Class=TLabel
+;Caption=Segment Si&ze:
+Caption=段長度(&z):
+[frmDomains.Label5]
+Class=TLabel
+;Caption=Co&llate:
+Caption=校對(&l):
+[frmDomains.chkColNotNull]
+Class=TCheckBox
+;Caption=Not &Null
+Caption=不為空(&N)
+[frmDomains.Label10]
+Class=TLabel
+;Caption=&Array:
+Caption=陣列(&A):
+[frmDomains.lvArray]
+Class=TListView
+Hint=
+Columns.Count=2
+Column0.Caption=範圍(L)
+Column1.Caption=範圍(U)
+[frmDomains.btnAddDimension]
+Class=TButton
+;Caption=&Add Dimension
+Caption=添加尺寸(&A)
+[frmDomains.btnDeleteDimension]
+Class=TButton
+;Caption=&Delete Dimension
+Caption=刪除尺寸(&D)
+[frmDomains.btnEditDimension]
+Class=TButton
+;Caption=&Edit Dimension
+Caption=編輯尺寸(&E)
+[frmDomains.tsDefault]
+Class=TTabSheet
+;Caption=Default
+Caption=默認
+[frmDomains.tsConstraint]
+Class=TTabSheet
+;Caption=Constraint
+Caption=約束
+[frmDomains.tsDescription]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[frmDomains.tsDDL]
+Class=TTabSheet
+;Caption=Metadata
+Caption=數據元
+[frmServerRegister]
+Class=TfrmServerRegister
+;Caption=Register Server and Connect
+Caption=註冊伺服器並連接
+[frmServerRegister.gbServerInfo]
+Class=TGroupBox
+;Caption= Server Information 
+Caption= 伺服器屬性
+[frmServerRegister.lblServerName]
+Class=TLabel
+;Caption=S&erver Name:
+Caption=伺服器名稱(&e):
+[frmServerRegister.lblProtocol]
+Class=TLabel
+;Caption=&Network Protocol:
+Caption=網路協定(&N):
+[frmServerRegister.lblServerAlias]
+Class=TLabel
+;Caption=&Alias Name:
+Caption=別名(&A):
+[frmServerRegister.Label1]
+Class=TLabel
+;Caption=&Description:
+Caption=描述(&D):
+[frmServerRegister.rbLocalServer]
+Class=TRadioButton
+;Caption=&Local Server
+Caption=本地(&L)
+[frmServerRegister.rbRemoteServer]
+Class=TRadioButton
+;Caption=&Remote Server
+Caption=遠端伺服器(&R)
+[frmServerRegister.chkSaveAlias]
+Class=TCheckBox
+;Caption=&Save Alias Information
+Caption=保存別名資訊(&S)
+[frmServerRegister.gbLoginInfo]
+Class=TGroupBox
+;Caption= Login Information 
+Caption= 登錄信息
+[frmServerRegister.lblUsername]
+Class=TLabel
+;Caption=&User Name:
+Caption=用戶名稱(&U):
+[frmServerRegister.lblPassword]
+Class=TLabel
+;Caption=&Password:
+Caption=密碼(&P):
+[frmServerRegister.btnOK]
+Class=TButton
+Caption=確定(&O)
+[frmServerRegister.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+[frmCommDiag]
+Class=TfrmCommDiag
+;Caption=Communication Diagnostics
+Caption=通信診斷
+[frmCommDiag.pgcDiagnostics]
+Class=TPageControl
+Hint=
+PageCount=4
+[frmCommDiag.pgcDiagnostics.tabDBConnection]
+Class=TTabSheet
+;Caption=DB Connection
+Caption=資料庫連接
+[frmCommDiag.pgcDiagnostics.tabTCPIP]
+Class=TTabSheet
+Caption=TCP/IP
+[frmCommDiag.pgcDiagnostics.tabNetBEUI]
+Class=TTabSheet
+Caption=NetBEUI
+[frmCommDiag.pgcDiagnostics.tabSPX]
+Class=TTabSheet
+Caption=SPX
+[frmCommDiag.tabDBConnection]
+Class=TTabSheet
+;Caption=DB Connection
+Caption=資料庫連接
+[frmCommDiag.lblDBResults]
+Class=TLabel
+;Caption=&Results:
+Caption=結果(&R):
+[frmCommDiag.gbDatabaseInfo]
+Class=TGroupBox
+;Caption= Database Information
+Caption= 資料庫資訊
+[frmCommDiag.lblDatabase]
+Class=TLabel
+;Caption=&Database:
+Caption=資料庫(&D):
+[frmCommDiag.lblUsername]
+Class=TLabel
+;Caption=&User Name:
+Caption=用戶名稱(&U):
+[frmCommDiag.lblPassword]
+Class=TLabel
+;Caption=&Password:
+Caption=密碼(&P):
+[frmCommDiag.btnSelDB]
+Class=TButton
+Caption=...
+;Hint=Select database
+Hint=選擇資料庫
+[frmCommDiag.gbDBServerInfo]
+Class=TGroupBox
+;Caption= Server Information
+Caption= 伺服器資訊
+[frmCommDiag.lblServerName]
+Class=TLabel
+;Caption=&Server Name:
+Caption=伺服器名稱(&S):
+[frmCommDiag.lblProtocol]
+Class=TLabel
+;Caption=&Network Protocol:
+Caption=網路協定(&N):
+[frmCommDiag.rbLocalServer]
+Class=TRadioButton
+;Caption=&Local Server
+Caption=本地(&L)
+[frmCommDiag.rbRemoteServer]
+Class=TRadioButton
+;Caption=R&emote Server
+Caption=遠端伺服器(&e)
+[frmCommDiag.tabTCPIP]
+Class=TTabSheet
+Caption=TCP/IP
+[frmCommDiag.lblWinSockResults]
+Class=TLabel
+;Caption=&Results:
+Caption=結果(&R):
+[frmCommDiag.gbTCPIPServerInfo]
+Class=TGroupBox
+;Caption= Server Information
+Caption= 伺服器資訊
+[frmCommDiag.lblWinsockServer]
+Class=TLabel
+;Caption=&Host:
+Caption=主機(&H):
+[frmCommDiag.lblService]
+Class=TLabel
+;Caption=&Service:
+Caption=服務(&S):
+[frmCommDiag.tabNetBEUI]
+Class=TTabSheet
+Caption=NetBEUI
+[frmCommDiag.lblNetBeuiResults]
+Class=TLabel
+;Caption=&Results:
+Caption=結果(&R):
+[frmCommDiag.gbNetBEUIServerInfo]
+Class=TGroupBox
+;Caption= Server Information
+Caption= 伺服器資訊
+[frmCommDiag.lblNetBEUIServer]
+Class=TLabel
+;Caption=&Server Name:
+Caption=伺服器名稱(&S):
+[frmCommDiag.tabSPX]
+Class=TTabSheet
+Caption=SPX
+[frmCommDiag.lblSPXResults]
+Class=TLabel
+;Caption=&Results:
+Caption=結果(&R):
+[frmCommDiag.gbNovellServerInfo]
+Class=TGroupBox
+;Caption= Server Information
+Caption= 伺服器資訊
+[frmCommDiag.lblSPXServer]
+Class=TLabel
+;Caption=&Server Name:
+Caption=伺服器名稱(&S):
+[frmCommDiag.btnTest]
+Class=TButton
+;Caption=&Test
+Caption=測試(&T)
+[frmCommDiag.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+[frmBackupAliasProperties]
+Class=TfrmBackupAliasProperties
+;Caption=Backup Alias Properties
+Caption=備份別名屬性
+[frmBackupAliasProperties.lblServerName]
+Class=TLabel
+;Caption=Server:
+Caption=伺服器:
+[frmBackupAliasProperties.lblAliasName]
+Class=TLabel
+;Caption=&Alias Name:
+Caption=別名(&A):
+[frmBackupAliasProperties.lblDBServer]
+Class=TLabel
+;Caption=Target Database &Server:
+Caption=目標資料庫伺服器(&S):
+[frmBackupAliasProperties.lblDBAlias]
+Class=TLabel
+;Caption=Target &Database Alias:
+Caption=目標資料庫別名(&D):
+[frmBackupAliasProperties.lblServer]
+Class=TLabel
+;Caption=Local Server
+Caption=本地
+[frmBackupAliasProperties.btnApply]
+Class=TButton
+;Caption=&Apply
+Caption=應用(&A)
+[frmBackupAliasProperties.btnOK]
+Class=TButton
+Caption=確定(&O)
+[frmBackupAliasProperties.Button1]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+[frmDBConnections]
+Class=TfrmDBConnections
+;Caption=Database Connections
+Caption=資料庫連接
+[frmDBConnections.lvConnections]
+Class=TListView
+Hint=
+Columns.Count=1
+;Column0.Caption=User Name
+Column0.Caption=新用戶
+[frmDBConnections.btnOK]
+Class=TButton
+Caption=確定(&O)
+[dlgWindowList]
+Class=TdlgWindowList
+;Caption=Active Windows
+Caption=活動窗口
+[dlgWindowList.ListView1]
+Class=TListView
+Hint=
+Columns.Count=1
+;Column0.Caption=Windows
+Column0.Caption=窗口
+[dlgWindowList.SwitchTo]
+Class=TAction
+;Caption=&Switch To...
+Caption=轉向(&S)...
+[dlgWindowList.Closewindow]
+Class=TAction
+;Caption=&Close Window
+Caption=關閉窗口(&C)
+[dlgWindowList.ActionCloseAll]
+Class=TAction
+;Caption=Close &All
+Caption=關閉所有視窗(&A)
+[frmDomains.ActionCompile]
+Class=TAction
+;Caption=&Compile
+Caption=編譯(&C)
+[frmEditorTable]
+Class=TfrmEditorTable
+;Caption=Table - CATEGORIE
+Caption=數據表 - CATEGORIE
+[frmEditorTable.pgcProperties]
+Class=TPageControl
+Hint=
+PageCount=6
+[frmEditorTable.pgcProperties.tabProperties]
+Class=TTabSheet
+;Caption=Properties
+Caption=屬性
+[frmEditorTable.pgcProperties.tabData]
+Class=TTabSheet
+;Caption=Data
+Caption=數據
+[frmEditorTable.pgcProperties.tabMetadata]
+Class=TTabSheet
+;Caption=Metadata
+Caption=數據元
+[frmEditorTable.pgcProperties.tabPermissions]
+Class=TTabSheet
+;Caption=Permissions
+Caption=許可
+[frmEditorTable.pgcProperties.tabDependencies]
+Class=TTabSheet
+;Caption=Dependencies
+Caption=依賴
+[frmEditorTable.pgcProperties.tabDescription]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[frmEditorTable.tabProperties]
+Class=TTabSheet
+;Caption=Properties
+Caption=屬性
+[frmEditorTable.lvTableObjects]
+Class=TListView
+Hint=
+Columns.Count=6
+;Column0.Caption=Name
+Column0.Caption=名稱
+;Column1.Caption=Type
+Column1.Caption=類型
+;Column2.Caption=Character Set
+Column2.Caption=字元
+;Column3.Caption=Collation
+Column3.Caption=較對
+;Column4.Caption=Default Value
+Column4.Caption=預設值
+;Column5.Caption=Allow Nulls
+Column5.Caption=允許值
+[frmEditorTable.tabData]
+Class=TTabSheet
+;Caption=Data
+Caption=數據
+[frmEditorTable.dbgData]
+Class=TDBGrid
+Hint=
+Columns.Count=1
+Column0.Caption=
+[frmEditorTable.DBNavigator1]
+Class=TNavButton
+;Hint=Refresh data
+Hint=刷新資料
+[frmEditorTable.IB_TransactionBar1]
+Class=TIB_TransactionBar_Button
+;Hint=Close Current Transaction
+Hint=關閉當前事務
+[frmEditorTable.tabMetadata]
+Class=TTabSheet
+;Caption=Metadata
+Caption=數據元
+[frmEditorTable.cbExtractData]
+Class=TCheckBox
+;Caption=Extract table data
+Caption=執行表資料
+[frmEditorTable.tabPermissions]
+Class=TTabSheet
+;Caption=Permissions
+Caption=許可
+[frmEditorTable.lvPermissions]
+Class=TListView
+Hint=
+Columns.Count=8
+;Column0.Caption=Object
+Column0.Caption=對象
+;Column1.Caption=Select
+Column1.Caption=選擇
+;Column2.Caption=Delete
+Column2.Caption=刪除
+;Column3.Caption=Insert
+Column3.Caption=插入
+;Column4.Caption=Update
+Column4.Caption=修改
+;Column5.Caption=Reference
+Column5.Caption=引用
+;Column6.Caption=Execute
+Column6.Caption=執行
+;Column7.Caption=Member Of
+Column7.Caption=成員
+[frmEditorTable.Label1]
+Class=TLabel
+;Caption=This permission includes GRANT OPTION
+Caption=本許可包含 GRANT 選項
+[frmEditorTable.tabDependencies]
+Class=TTabSheet
+;Caption=Dependencies
+Caption=依賴
+[frmEditorTable.rbDependent]
+Class=TRadioButton
+;Caption=Show &Dependent Objects
+Caption=顯示附屬物件(&D)
+;Hint=Displays objects which depend on the currently selected object
+Hint=顯示依賴在當前您選擇物件上物件
+[frmEditorTable.rbDependedOn]
+Class=TRadioButton
+Caption=Show Depended &On Objects
+Caption=顯示依賴物件(&O)
+;Hint=Shows the objects the current object depends on
+Hint=顯示當前物件所依附的物件
+[frmEditorTable.tabDescription]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[frmEditorTable.ShowColumns]
+Class=TAction
+;Caption=Columns
+Caption=列
+;Hint=Show Columns for the table
+Hint=顯示資料表中的資料列
+[frmEditorTable.ShowTriggers]
+Class=TAction
+;Caption=Triggers
+Caption=觸發器
+;Hint=Show triggers for the table
+Hint=顯示資料表中的觸發器
+[frmEditorTable.ShowCheckConstraints]
+Class=TAction
+;Caption=Check Constraints
+Caption=約束檢查
+;Hint=Show Check Constraints
+Hint=顯示約束檢查
+[frmEditorTable.ShowIndexes]
+Class=TAction
+;Caption=Indexes
+Caption=索引
+;Hint=Show indexes
+Hint=顯示索引
+[frmEditorTable.ShowUniqueConstraints]
+Class=TAction
+;Caption=Unique Constraints
+Caption=唯一性約束
+Hint=顯示資料表中的唯一性約束
+[frmEditorTable.ShowReferentialConstraints]
+Class=TAction
+Caption=參考性約束
+Hint=顯示資料表中的參考性約束
+[frmEditorTable.EditCopy1]
+Class=TEditCopy
+;Caption=&Copy
+Caption=複製(&C)
+;Hint=Copy
+Hint=複製
+[frmEditorTable.EditCut1]
+Class=TEditCut
+;Caption=Cu&t
+Caption=剪切(&t)
+Hint=剪切
+[frmEditorTable.EditPaste1]
+Class=TEditPaste
+;Caption=&Paste
+Caption=粘貼(&P)
+;Hint=Paste
+Hint=粘貼
+[frmEditorTable.EditSelectAll1]
+Class=TEditSelectAll
+;Caption=Select &All
+Caption=全部選擇(&A)
+[frmEditorTable.EditUndo1]
+Class=TEditUndo
+;Caption=&Undo
+Caption=撤銷(&U)
+[frmEditorTable.ActionNewObject]
+Class=TAction
+;Caption=New...
+Caption=新建...
+[frmEditorTable.ActionEditObject]
+Class=TAction
+;Caption=Edit...
+Caption=編輯...
+[frmEditorTable.ActionDropObject]
+Class=TAction
+;Caption=Drop
+Caption=刪除
+[frmEditorTable.ActionGrantSelect]
+Class=TAction
+;Caption=Select
+Caption=選擇
+[frmEditorTable.ActionGrantDelete]
+Class=TAction
+;Caption=Delete
+Caption=刪除
+[frmEditorTable.ActionGrantInsert]
+Class=TAction
+;Caption=Insert
+Caption=插入
+[frmEditorTable.ActionGrantUpdate]
+Class=TAction
+;Caption=Update
+Caption=更新
+[frmEditorTable.ActionGrantReference]
+Class=TAction
+;Caption=Reference
+Caption=引用
+[frmEditorTable.ActionGrantExecute]
+Class=TAction
+;Caption=Execute
+Caption=執行
+[frmEditorTable.ActionGrantAll]
+Class=TAction
+;Caption=Grant All
+Caption=全部授權
+[frmEditorTable.ActionRevokeAll]
+Class=TAction
+;Caption=Revoke All
+Caption=全部撤銷
+[frmEditorTable.ActionOpenTable]
+Class=TAction
+;Caption=Open
+Caption=打開
+[frmEditorTable.ActionTableFilter]
+Class=TAction
+;Caption=Filter
+Caption=過濾
+[frmEditorTable.ActionTableFormView]
+Class=TAction
+;Caption=Form View
+Caption=視圖表單
+[frmEditorTable.ActionEmptyTable]
+Class=TAction
+;Caption=Empty Table
+Caption=清空數據表
+[frmEditorTable.ActionTableClearFilter]
+Class=TAction
+;Caption=Clear Filter
+Caption=清除篩檢程式
+[frmEditorTable.ActionCopyRecord]
+Class=TAction
+;Caption=Copy Record
+Caption=複製記錄
+[frmEditorTable.NewPrimaryKey1]
+Class=TMenuItem
+;Caption=New Primary Key
+Caption=新建主鍵
+[frmEditorTable.Savetofile1]
+Class=TMenuItem
+;Caption=Save to file...
+Caption=保存到檔...
+[frmEditorTable.Loadfromfile1]
+Class=TMenuItem
+;Caption=Load from file...
+Caption=從文件引入...
+[frmEditorTable.Copy2]
+Class=TMenuItem
+;Caption=Copy
+Caption=複製
+[frmEditorTable.Paste2]
+Class=TMenuItem
+;Caption=Paste
+Caption=粘貼
+[frmEditorTable.Cut2]
+Class=TMenuItem
+;Caption=Cut
+Caption=剪切
+[frmEditorTable.SavePictureDialog1.PreviewButton]
+Class=TSpeedButton
+;Hint=Preview
+Hint=預覽
+[frmEditorTable.OpenPictureDialog1.PreviewButton]
+Class=TSpeedButton
+;Hint=Preview
+Hint=預覽
+[frmViewEditor]
+Class=TfrmViewEditor
+;Caption=View - NEW_VIEW
+Caption=視圖 - 新視圖
+[frmViewEditor.pgObjectEditor]
+Class=TPageControl
+Hint=
+PageCount=7
+[frmViewEditor.pgObjectEditor.tsSQL]
+Class=TTabSheet
+;Caption=View
+Caption=視圖
+[frmViewEditor.pgObjectEditor.tsTableView]
+Class=TTabSheet
+;Caption=Structure
+Caption=結構
+[frmViewEditor.pgObjectEditor.tsDependenciesView]
+Class=TTabSheet
+;Caption=Dependencies
+Caption=依賴
+[frmViewEditor.pgObjectEditor.tsTriggerView]
+Class=TTabSheet
+;Caption=Triggers
+Caption=觸發器
+[frmViewEditor.pgObjectEditor.tsData]
+Class=TTabSheet
+;Caption=Data
+Caption=數據
+[frmViewEditor.pgObjectEditor.tsDoco]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[frmViewEditor.pgObjectEditor.tsGrants]
+Class=TTabSheet
+;Caption=Grants
+Caption=授權
+[frmViewEditor.tsSQL]
+Class=TTabSheet
+;Caption=View
+Caption=視圖
+[frmViewEditor.tsTableView]
+Class=TTabSheet
+;Caption=Structure
+Caption=結構
+[frmViewEditor.lvFieldList]
+Class=TListView
+Hint=
+Columns.Count=8
+;Column0.Caption=Field Name
+Column0.Caption=欄位名
+;Column1.Caption=Field Type
+Column1.Caption=欄位類型
+;Column2.Caption=Sub Type
+Column2.Caption=子類
+;Column3.Caption=Domain
+Column3.Caption=域
+;Column4.Caption=Not Null
+Column4.Caption=非空
+;Column5.Caption=Description
+Column5.Caption=描述
+;Column6.Caption=Default Source
+Column6.Caption=默認數據源
+;Column7.Caption=Computed Source
+Column7.Caption=計算源
+[frmViewEditor.tsDependenciesView]
+Class=TTabSheet
+;Caption=Dependencies
+Caption=依賴
+[frmViewEditor.rbDependent]
+Class=TRadioButton
+;Caption=Show &Dependent Objects
+Caption=顯示依賴物件(&D)
+;Hint=Displays objects which depend on the currently selected object
+Hint=顯示當前選擇物件的依賴物件
+[frmViewEditor.rbDependedOn]
+Class=TRadioButton
+;Caption=Show Depended &On Objects
+Caption=顯示依賴物件(&O)
+;Hint=Shows the objects the current object depends on
+Hint=顯示當前物件上的依賴物件
+[frmViewEditor.tsTriggerView]
+Class=TTabSheet
+;Caption=Triggers
+Caption=觸發器
+[frmViewEditor.Label1]
+Class=TLabel
+;Caption=Display:
+Caption=顯示:
+[frmViewEditor.tsData]
+Class=TTabSheet
+;Caption=Data
+Caption=數據
+[frmViewEditor.navDataView]
+Class=TNavButton
+;Hint=Refresh data
+Hint=刷新資料
+[frmViewEditor.IB_TransactionBar1]
+Class=TIB_TransactionBar_Button
+;Hint=Close Current Transaction
+Hint=關閉當前事務
+[frmViewEditor.btnRefresh]
+Class=TSpeedButton
+;Caption=&Refresh
+Caption=刷新(&R)
+[frmViewEditor.grdDataView]
+Class=TDBGrid
+Hint=
+Columns.Count=1
+Column0.Caption=
+[frmViewEditor.tsDoco]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[frmViewEditor.tsGrants]
+Class=TTabSheet
+;Caption=Grants
+Caption=授權
+[frmViewEditor.lvPermissions]
+Class=TListView
+Hint=
+Columns.Count=8
+;Column0.Caption=Object
+Column0.Caption=對象
+;Column1.Caption=Select
+Column1.Caption=選擇
+;Column2.Caption=Delete
+Column2.Caption=刪除
+;Column3.Caption=Insert
+Column3.Caption=插入
+;Column4.Caption=Update
+Column4.Caption=更新
+;Column5.Caption=Reference
+Column5.Caption=引用
+;Column6.Caption=Execute
+Column6.Caption=執行
+;Column7.Caption=Member Of
+Column7.Caption=成員
+[frmViewEditor.Label2]
+Class=TLabel
+;Caption=This permission includes GRANT OPTION
+Caption=當前許可包含 GRANT 選項
+[frmViewEditor.ActionCompile]
+Class=TAction
+;Caption=Compile
+Caption=編譯
+[frmStoredProcedure]
+Class=TfrmStoredProcedure
+;Caption=Stored Procedure
+Caption=存儲過程
+[frmStoredProcedure.pgObjectEditor]
+Class=TPageControl
+Hint=
+PageCount=7
+[frmStoredProcedure.pgObjectEditor.tsStoredProc]
+Class=TTabSheet
+;Caption=Edit
+Caption=編輯
+[frmStoredProcedure.pgObjectEditor.tsExecution]
+Class=TTabSheet
+;Caption=Execution
+Caption=執行
+[frmStoredProcedure.pgObjectEditor.tsDocoView]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[frmStoredProcedure.pgObjectEditor.tsDependencies]
+Class=TTabSheet
+;Caption=Dependencies
+Caption=依賴
+[frmStoredProcedure.pgObjectEditor.tsGrants]
+Class=TTabSheet
+;Caption=Grants
+Caption=授權
+[frmStoredProcedure.pgObjectEditor.tsDebuggerOutput]
+Class=TTabSheet
+;Caption=Debugger Output
+Caption=程式調試輸出
+[frmStoredProcedure.pgObjectEditor.tsMetadata]
+Class=TTabSheet
+;Caption=Metadata
+Caption=數據元
+[frmStoredProcedure.tsStoredProc]
+Class=TTabSheet
+;Caption=Edit
+Caption=編輯
+[frmStoredProcedure.Label2]
+Class=TLabel
+;Caption=Name:
+Caption=名稱:
+[frmStoredProcedure.dbgParameters]
+Class=TDBGrid
+Hint=
+Columns.Count=3
+;Column0.Caption=Type
+Column0.Caption=類型
+;Column1.Caption=Parameter
+Column1.Caption=參數
+;Column2.Caption=Data Type
+Column2.Caption=資料類型
+[frmStoredProcedure.tsExecution]
+Class=TTabSheet
+;Caption=Execution
+Caption=執行
+[frmStoredProcedure.grdResults]
+Class=TDBGrid
+Hint=
+Columns.Count=1
+Column0.Caption=
+[frmStoredProcedure.dbgValues]
+Class=TDBGrid
+Hint=
+Columns.Count=3
+;Column0.Caption=Parameter
+Column0.Caption=參數
+;Column1.Caption=Type
+Column1.Caption=類型
+;Column2.Caption=Value
+Column2.Caption=值
+[frmStoredProcedure.tsDocoView]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[frmStoredProcedure.tsDependencies]
+Class=TTabSheet
+;Caption=Dependencies
+Caption=依賴
+[frmStoredProcedure.rbDependent]
+Class=TRadioButton
+;Caption=Show &Dependent Objects
+Caption=顯示依賴物件(&D)
+;Hint=Displays objects which depend on the currently selected object
+Hint=顯示當前選擇物件上的依賴物件
+[frmStoredProcedure.rbDependedOn]
+Class=TRadioButton
+;Caption=Show Depended &On Objects
+Caption=顯示依賴物件(&O)
+;Hint=Shows the objects the current object depends on
+Hint=顯示當前物件上的依賴物件
+[frmStoredProcedure.tsGrants]
+Class=TTabSheet
+;Caption=Grants
+Caption=授權
+[frmStoredProcedure.lvPermissions]
+Class=TListView
+Hint=
+Columns.Count=8
+;Column0.Caption=Object
+Column0.Caption=對象
+;Column1.Caption=Select
+Column1.Caption=選擇
+;Column2.Caption=Delete
+Column2.Caption=刪除
+;Column3.Caption=Insert
+Column3.Caption=插入
+;Column4.Caption=Update
+Column4.Caption=更新
+;Column5.Caption=Reference
+Column5.Caption=引用
+;Column6.Caption=Execute
+Column6.Caption=執行
+;Column7.Caption=Member Of
+Column7.Caption=成員
+[frmStoredProcedure.Label1]
+Class=TLabel
+;Caption=This permission includes GRANT OPTION
+Caption=當前許可包含 GRANT 選項
+[frmStoredProcedure.tsDebuggerOutput]
+Class=TTabSheet
+;Caption=Debugger Output
+Caption=程式調試輸出
+[frmStoredProcedure.tsMetadata]
+Class=TTabSheet
+;Caption=Metadata
+Caption=數據元
+[frmStoredProcedure.ActionExecute]
+Class=TAction
+;Caption=Execute
+Caption=執行
+[frmStoredProcedure.ActionCompile]
+Class=TAction
+;Caption=Compile
+Caption=編譯
+[frmStoredProcedure.ActionCheckParams]
+Class=TAction
+;Caption=Check Params
+Caption=檢查參數
+[frmStoredProcedure.ActionAddInputParam]
+Class=TAction
+;Caption=Add Input Param
+Caption=添加輸入參數
+[frmStoredProcedure.ActionEditParam]
+Class=TAction
+;Caption=Edit Param
+Caption=編輯參數
+[frmStoredProcedure.ActionDeleteParam]
+Class=TAction
+;Caption=Delete Param
+Caption=刪除參數
+[frmStoredProcedure.ActionMoveUp]
+Class=TAction
+;Caption=Move Up
+Caption=上移
+[frmStoredProcedure.ActionMoveDown]
+Class=TAction
+;Caption=Move Down
+Caption=下移
+[frmStoredProcedure.ActionAddOutputParam]
+Class=TAction
+;Caption=Add Output Param
+Caption=添加輸出參數
+[frmUDFEditor]
+Class=TfrmUDFEditor
+;Caption=External Function - new_udf
+Caption=外部函數 - 新UDF
+[frmUDFEditor.pgObjectEditor]
+Class=TPageControl
+Hint=
+PageCount=3
+[frmUDFEditor.pgObjectEditor.tsObject]
+Class=TTabSheet
+;Caption=Properties
+Caption=屬性
+[frmUDFEditor.pgObjectEditor.tsDocoView]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[frmUDFEditor.pgObjectEditor.tsDDL]
+Class=TTabSheet
+;Caption=Metadata
+Caption=數據元
+[frmUDFEditor.tsObject]
+Class=TTabSheet
+;Caption=Properties
+Caption=屬性
+[frmUDFEditor.lvUDFParams]
+Class=TListView
+Hint=
+Columns.Count=2
+;Column0.Caption=Parameter
+Column0.Caption=參數
+;Column1.Caption=Calling Mechanism
+Column1.Caption=呼叫方式
+[frmUDFEditor.Label5]
+Class=TLabel
+Caption=&By:
+[frmUDFEditor.Label4]
+Class=TLabel
+Caption=&Returns:
+Caption=返回(&R):
+[frmUDFEditor.Label3]
+Class=TLabel
+;Caption=&Library Name:
+Caption=連接庫名(&L):
+[frmUDFEditor.Label2]
+Class=TLabel
+;Caption=&Entry Point:
+Caption=入口點(&E):
+[frmUDFEditor.Label1]
+Class=TLabel
+;Caption=&Name:
+Caption=名稱(&N):
+[frmUDFEditor.Label6]
+Class=TLabel
+;Caption=Input &Parameters:
+Caption=輸出參數(&P):
+[frmUDFEditor.tsDocoView]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[frmUDFEditor.tsDDL]
+Class=TTabSheet
+;Caption=Metadata
+Caption=數據元
+[frmUDFEditor.ActionCompile]
+Class=TAction
+;Caption=Compile
+Caption=編譯
+[frmExceptions]
+Class=TfrmExceptions
+;Caption=Exception - USERNAME_DUPLICATE
+Caption=異常 - USERNAME_DUPLICATE
+[frmExceptions.pgObjectEditor]
+Class=TPageControl
+Hint=
+PageCount=3
+[frmExceptions.pgObjectEditor.tsObject]
+Class=TTabSheet
+;Caption=Exception
+Caption=異常
+[frmExceptions.pgObjectEditor.tsDocoView]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[frmExceptions.pgObjectEditor.tsDDL]
+Class=TTabSheet
+;Caption=Metadata
+Caption=數據元
+[frmExceptions.tsObject]
+Class=TTabSheet
+;Caption=Exception
+Caption=異常
+[frmExceptions.Label1]
+Class=TLabel
+;Caption=&Exception Name:
+Caption=異常名稱(&E):
+[frmExceptions.Label2]
+Class=TLabel
+;Caption=Exception &Text:
+Caption=異常內容(&T):
+[frmExceptions.tsDocoView]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[frmExceptions.tsDDL]
+Class=TTabSheet
+;Caption=Metadata
+Caption=數據元
+[frmExceptions.ActionCompile]
+Class=TAction
+;Caption=Compile
+Caption=編譯
+[FrmEditorFilter]
+Class=TFrmEditorFilter
+;Caption=Blob Filter - new_filter
+Caption=Blob 過濾 - 新篩檢程式
+[FrmEditorFilter.objControl]
+Class=TPageControl
+Hint=
+PageCount=3
+[FrmEditorFilter.objControl.tabFilters]
+Class=TTabSheet
+;Caption=Properties
+Caption=屬性
+[FrmEditorFilter.objControl.tsMetadata]
+Class=TTabSheet
+;Caption=Metadata
+Caption=數據元
+[FrmEditorFilter.objControl.tsDescription]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[FrmEditorFilter.tabFilters]
+Class=TTabSheet
+;Caption=Properties
+Caption=屬性
+[FrmEditorFilter.Label11]
+Class=TLabel
+;Caption=&Module Name:
+Caption=模版名稱(&M):
+[FrmEditorFilter.Label12]
+Class=TLabel
+;Caption=&Entrypoint:
+Caption=進入點(&E):
+[FrmEditorFilter.Label13]
+Class=TLabel
+;Caption=&Input SubType:
+Caption=輸入子類(&I):
+[FrmEditorFilter.Label14]
+Class=TLabel
+;Caption=&Output SubType:
+Caption=輸出子類(&O):
+[FrmEditorFilter.tsMetadata]
+Class=TTabSheet
+;Caption=Metadata
+Caption=數據元
+[FrmEditorFilter.tsDescription]
+Class=TTabSheet
+;Caption=Description
+Caption=描述
+[FrmEditorFilter.actReset]
+Class=TAction
+;Caption=&Reset Value
+Caption=重置(&R)
+[FrmEditorFilter.ActionCompile]
+Class=TAction
+;Caption=&Compile
+Caption=編譯(&C)
+[frmRole]
+Class=TfrmRole
+;Caption=Role - NEW_ROLE
+Caption=角色 - 新角色
+[frmRole.pgObjectEditor]
+Class=TPageControl
+Hint=
+PageCount=2
+[frmRole.pgObjectEditor.tsRole]
+Class=TTabSheet
+;Caption=Role
+Caption=角色
+[frmRole.pgObjectEditor.tsDDLView]
+Class=TTabSheet
+;Caption=Metadata
+Caption=數據元
+[frmRole.tsRole]
+Class=TTabSheet
+;Caption=Role
+Caption=角色
+[frmRole.Label1]
+Class=TLabel
+;Caption=&Role Name:
+Caption=角色名稱(&R):
+[frmRole.tsDDLView]
+Class=TTabSheet
+;Caption=Metadata
+Caption=數據元
+[frmRole.ActionCompile]
+Class=TAction
+;Caption=&Compile
+Caption=編譯(&C)
+[dlgWisql]
+Class=TdlgWisql
+;Caption=Interactive SQL
+Caption=互動式SQL
+[dlgWisql.lblFileName]
+Class=TLabel
+[dlgWisql.pgcOutput]
+Class=TPageControl
+Hint=
+PageCount=4
+[dlgWisql.pgcOutput.tsParameters]
+Class=TTabSheet
+;Caption=Parameters
+Caption=參數
+[dlgWisql.pgcOutput.TabData]
+Class=TTabSheet
+;Caption=Data
+Caption=數據
+[dlgWisql.pgcOutput.TabResults]
+Class=TTabSheet
+;Caption=Plan
+Caption=計畫
+[dlgWisql.pgcOutput.TabStats]
+Class=TTabSheet
+;Caption=Statistics
+Caption=統計
+[dlgWisql.tsParameters]
+Class=TTabSheet
+;Caption=Parameters
+Caption=參數
+[dlgWisql.TabData]
+Class=TTabSheet
+;Caption=Data
+Caption=數據
+[dlgWisql.dbgSQLResults]
+Class=TDBGrid
+Hint=
+Columns.Count=1
+Column0.Caption=
+[dlgWisql.TabResults]
+Class=TTabSheet
+;Caption=Plan
+Caption=計畫
+[dlgWisql.TabStats]
+Class=TTabSheet
+;Caption=Statistics
+Caption=統計
+[dlgWisql.lvStats]
+Class=TListView
+Hint=
+Columns.Count=2
+;Column0.Caption=Statistic
+Column0.Caption=統計
+;Column1.Caption=Value
+Column1.Caption=值
+[dlgWisql.IB_TransactionBarDefault]
+Class=TIB_TransactionBar_Button
+;Hint=Close Current Transaction
+Hint=關閉當前事務
+[dlgWisql.IB_TransactionBarDDL]
+Class=TIB_TransactionBar_Button
+;Hint=Close Current Transaction
+Hint=關閉當前事務
+[dlgWisql.File1]
+Class=TMenuItem
+;Caption=&File
+Caption=文件(&F)
+[dlgWisql.mnuEdit1]
+Class=TMenuItem
+;Caption=&Edit
+Caption=編輯(&E)
+[dlgWisql.Edit1]
+Class=TMenuItem
+;Caption=&Query
+Caption=查詢(&Q)
+[dlgWisql.Database1]
+Class=TMenuItem
+;Caption=&Database
+Caption=資料庫(&D)
+[dlgWisql.Help1]
+Class=TMenuItem
+;Caption=&Help
+Caption=幫助(&H)
+[dlgWisql.SQLReference1]
+Class=TMenuItem
+;Caption=&SQL Reference
+Caption=&SQL語法幫助
+[dlgWisql.DialectAction1]
+Class=TAction
+;Caption=Dialect &1
+Caption=方言 &1
+[dlgWisql.DialectAction2]
+Class=TAction
+;Caption=Dialect &2
+Caption=方言 &2
+[dlgWisql.DialectAction3]
+Class=TAction
+;Caption=Dialect &3
+Caption=方言 &3
+[dlgWisql.QueryPrevious]
+Class=TAction
+;Caption=&Previous
+Caption=預覽(&P)
+;Hint=Previous Query
+Hint=預覽查詢
+[dlgWisql.QueryNext]
+Class=TAction
+;Caption=&Next
+Caption=下一個(&N)
+;Hint=Next Query
+Hint=下一個查詢
+[dlgWisql.QueryExecute]
+Class=TAction
+;Caption=&Execute
+Caption=執行(&E)
+;Hint=Execute Query
+Hint=執行查詢
+[dlgWisql.QueryLoadScript]
+Class=TAction
+;Caption=&Load Script
+Caption=導入腳本(&L)
+;Hint=Load SQL Script
+Hint=裝載SQL腳本
+[dlgWisql.QuerySaveScript]
+Class=TAction
+;Caption=&Save Script
+Caption=保存腳本(&S)
+;Hint=Save Script
+Hint=保存SQL腳本
+[dlgWisql.QueryOptions]
+Class=TAction
+;Caption=O&ptions ...
+Caption=選項(&p) ...
+;Hint=Query Options
+Hint=查詢選項
+[dlgWisql.QuerySaveOutput]
+Class=TAction
+;Caption=Save &Output
+Caption=保存輸出(&O)
+;Hint=Save the query ouput
+Hint=保存查詢輸出
+[dlgWisql.QueryPrepare]
+Class=TAction
+;Caption=&Prepare
+Caption=準備(&P)
+;Hint=Prepare the current query before execution
+Hint=執行當前查詢前準備
+[dlgWisql.EditOptions]
+Class=TAction
+;Caption=&Options ...
+Caption=選項(&O) ...
+;Hint=Show ISQL Options
+Hint=顯示 ISQL 選項
+[dlgWisql.FileClose]
+Class=TAction
+;Caption=&Close
+Caption=關閉(&C)
+;Hint=Close the ISQL window
+Hint=關閉 ISQL 窗口
+[dlgWisql.EditFind]
+Class=TAction
+;Caption=&Find ...
+Caption=查找(&F) ...
+[dlgWisql.EditFont]
+Class=TAction
+;Caption=&Font ...
+Caption=字體(&F) ...
+[dlgWisql.EditCopy1]
+Class=TEditCopy
+;Caption=&Copy
+Caption=複製(&C)
+;Hint=Copy
+Hint=複製
+[dlgWisql.EditCut1]
+Class=TEditCut
+;Caption=Cu&t
+Caption=剪切(&t)
+;Hint=Cut
+Hint=剪切
+[dlgWisql.EditPaste1]
+Class=TEditPaste
+;Caption=&Paste
+Caption=粘貼(&P)
+;Hint=Paste
+Hint=粘貼
+[dlgWisql.EditSelectAll1]
+Class=TEditSelectAll
+;Caption=Select &All
+Caption=全部選擇(&A)
+[dlgWisql.EditUndo1]
+Class=TEditUndo
+;Caption=&Undo
+Caption=撤銷(&U)
+[dlgWisql.DatabaseConnectAs]
+Class=TAction
+;Caption=Connect &As ...
+Caption=連接到(&A) ...
+[dlgWisql.DatabaseDisconnect]
+Class=TAction
+;Caption=&Disconnect
+Caption=取消連接(&D)
+[dlgWisql.DatabaseCreate]
+Class=TAction
+;Caption=&Create Database ...
+Caption=建立資料庫(&C) ...
+[dlgWisql.DatabaseDrop]
+Class=TAction
+;Caption=D&rop Database
+Caption=刪除資料庫(&r)
+[dlgWisql.Print]
+Class=TAction
+;Caption=&Print
+Caption=列印(&P)
+[dlgWisql.SaveSQLHistory]
+Class=TAction
+;Caption=Save SQL History
+Caption=保存 SQL 歷史
+;Hint=Save SQL History
+Hint=保存 SQL 歷史
+[dlgWisql.LoadSQLHistory]
+Class=TAction
+;Caption=Load SQL History
+Caption=裝載 SQL 歷史
+;Hint=Load SQL History
+Hint=裝載 SQL 歷史
+[dlgWisql.QueryFetchAll]
+Class=TAction
+;Caption=QueryFetchAll
+Caption=獲取所有查詢
+;Hint=Fetch All
+Hint=獲取所有
+[dlgWisql.NewConnection]
+Class=TAction
+;Caption=New Connection...
+Caption=新建連接...
+[dlgWisql.EditRedo]
+Class=TAction
+;Caption=Redo
+Caption=撤銷
+[frmDBConnect]
+Class=TfrmDBConnect
+;Caption=Database Connect
+Caption=資料庫連接
+[frmDBConnect.lblDatabaseName]
+Class=TLabel
+;Caption=Database:
+Caption=資料庫:
+[frmDBConnect.lblUsername]
+Class=TLabel
+;Caption=&User Name:
+Caption=新用戶(&U):
+[frmDBConnect.lblPassword]
+Class=TLabel
+;Caption=&Password:
+Caption=密碼(&P):
+[frmDBConnect.lblRole]
+Class=TLabel
+;Caption=&Role:
+Caption=角色(&R):
+[frmDBConnect.Label1]
+Class=TLabel
+;Caption=Client &Dialect:
+Caption=客戶方言(&D):
+[frmDBConnect.Label2]
+Class=TLabel
+;Caption=Character &Set
+Caption=字元(&S)
+[frmDBConnect.lblDatabase]
+Class=TLabel
+Caption=AEKOOLMS002.FDB
+[frmDBConnect.btnConnect]
+Class=TButton
+;Caption=C&onnect
+Caption=連接(&o)
+[frmDBConnect.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+[frmDBConnect.cbCaseSensitive]
+Class=TCheckBox
+;Caption=C&ase sensitive role name
+Caption=設置敏感角色名(&a)
+[frmMain]
+Class=TfrmMain
+;Caption=IBOConsole
+Caption=IBO控制臺
+[frmOptions.Label1]
+Class=TLabel
+;Caption=Current Font Example.^MThe quick brown fox jumped over the lazy dog back.
+Caption=當前字體試例.^MThe quick brown fox jumped over the lazy dog back.
+[frmSQLOptions]
+Class=TfrmSQLOptions
+;Caption=SQL Options
+Caption=SQL 選項
+[frmSQLOptions.btnApply]
+Class=TButton
+;Caption=&Apply
+Caption=應用(&A)
+[frmSQLOptions.btnOK]
+Class=TButton
+Caption=確定(&O)
+[frmSQLOptions.pgControl]
+Class=TPageControl
+Hint=
+PageCount=2
+[frmSQLOptions.pgControl.TabSheet1]
+Class=TTabSheet
+;Caption=Options
+Caption=選項
+[frmSQLOptions.pgControl.TabSheet2]
+Class=TTabSheet
+;Caption=Advanced
+Caption=高級
+[frmSQLOptions.TabSheet1]
+Class=TTabSheet
+;Caption=Options
+Caption=選項
+[frmSQLOptions.cbClearInput]
+Class=TCheckBox
+;Caption=&Clear input window on success
+Caption=成功清除輸入視窗(&C)
+[frmSQLOptions.TabSheet2]
+Class=TTabSheet
+;Caption=Advanced
+Caption=高級
+[frmSQLOptions.GroupBox1]
+Class=TGroupBox
+;Caption=SQL Events
+Caption=SQL 事件
+[frmSQLOptions.Label1]
+Class=TLabel
+;Caption=NOTE:
+Caption=注意:
+[frmSQLOptions.cbUpdateConnect]
+Class=TCheckBox
+;Caption=Update IBOConsole on C&onnect
+Caption=連接時更新IBO控制臺(&o)
+[frmSQLOptions.cbUpdateCreate]
+Class=TCheckBox
+;Caption=Update IBOConsole on C&reate
+Caption=建立時更新IBO控制臺(&r)
+[frmSQLOptions.rgTransactions]
+Class=TGroupButton
+;Caption=Ro&llback on exit
+Caption=退出時回滾與提交(&l)
+Items.Count=2
+;Item0=&Commit on exit
+Item0=退出時提交(&C)
+;Item1=Ro&llback on exit
+Item1=退出時回滾(&l)
+[frmSQLOptions.btnCancel]
+Class=TButton
+;Caption=&Cancel
+Caption=取消(&C)
+;
+;
+;
+;
+[prompts]
+;
+;to insert a line break use ^M
+;be careful to leave the same number of %s and %d in text!!
+;
+; Prompt used in confirm and warning dialog box defined in unit LMMessageDialog.pas
+; and called in substitution of MessageDlg
+;
+prompt0=確定複寫 %s
+prompt1=不能打開檔 "%s".
+prompt2=未在Kylix內
+prompt3=您確定要刪除您選擇的資料庫嗎?
+prompt4=事務處理活動狀態.^M您要提交事嗎?^M^M選擇 取消 將回滾活動的事務.
+prompt5=資料將保存到檔: %s
+prompt6=未指定格式
+prompt7=存儲查詢輸出
+prompt8=%s 新的 %s 必需有一個名稱.
+prompt9=%s %s 名稱仍是一個默認名稱. 您確定要使用這個默認名稱嗎?
+prompt10=%s %s %s 已被更改. 您需要保存改變嗎?
+prompt11=您確定要取消註冊當前選擇的資料庫嗎?
+prompt12=您確定要關閉當前所連接的資料庫嗎?
+prompt13=清掃一個大的資料庫檔將對伺服器產生影響，並並可能需要較時間，您確定要清掃嗎?
+prompt14=您確定要刪除選擇的資料庫嗎?
+prompt15=您確定要關閉連接伺服器的資料庫嗎?
+prompt16=錯誤的選項值
+prompt17=拯救擱置事務完成.
+prompt18=Array Upper Bound must be greater than Array Lower Bound.
+prompt19=主鍵必需要有一個名稱
+prompt20=唯一鍵必需要有一外名稱
+prompt21=請選擇欄位給主鍵使用
+prompt22=請選擇欄位給唯一欄位用
+prompt23=外鍵必需要有一個名字
+prompt24=請選擇欄位給外鍵使用
+prompt25=請選擇欄位給外鍵引用
+prompt26=約束檢查必需有一個名稱
+prompt27=約束檢查必需包含一個運算式
+prompt28=您確定要刪除這個尺寸?
+prompt29=物件編譯未完成，您不能更改描述.
+prompt30=保存改變的描述?
+prompt31=異常必需要有一個消息內容.
+prompt32=新表必需要有一個名稱.
+prompt33=設置非空必需要填入一個有效的值，併發備份將是無效的^M^M是否繼續填入一個有效值?
+prompt34=如果該欄位已建立了唯性索引，那麼重新設置非空將不是安全的，併發備份將是無效的^M^M是否繼續?
+prompt35=%s %s描述已改變. 是否要保存您所做的改變?
+prompt36=請選擇資料列
+prompt37=物件未編譯完成，您不能查看資料元.
+prompt38=物件未編譯完成，您不能改變視圖.
+prompt39=結果中有一個活動的事務 - 在改變視圖前提交或回滾.
+prompt40=存儲過程的代碼已改變. 是否重新編譯?
+prompt41=正在執行存儲過程...
+prompt42=存儲過程執行進度 - %s
+prompt43=您確定要刪除 %s %s ?
+prompt44=您要刪除表 %s 中所有的記錄嗎?
+prompt45=必需分配一個狀態給觸發器.
+prompt46=觸發器必需要有一個名稱.
+prompt47=用戶自定義函數必需要有一個入口點.
+prompt48=用戶自定義函數必需要有一個動態庫名稱.
+prompt49=用戶自定義函數必需要有返回參數.
+prompt50=您確定要刪除此參數嗎?
+prompt51=您確定要刪除這個尺寸嗎?
+prompt52=欄位不能為空.
+prompt53=功能變數名稱為空.
+prompt54=無計算運算式.
+prompt55=必需輸入一個參數.
+prompt56=計畫不能被修復
+prompt57=無法解析腳本
+prompt58=無活動連接
+prompt59=解析 CONNECT 語句時出錯.
+prompt60=提交或回滾當前事務
+prompt61=解析 CREATE 語句出錯.
+prompt62=客戶方言無效
+prompt63=無法打開文件
+prompt64=資料庫方言 (%d) 和用戶端方言 (%d) 不符.
+prompt65=無法設置用戶端方言為 %d
+prompt66=無法顯示陣列資訊
+prompt67=未找到 '%s' 字串
+prompt68=無法解析腳本
+prompt69=您確定要註銷 %s 嗎?
+prompt70=您確定要從別名清單中刪除 "%s" 嗎?
+prompt71=用確定要刪除用戶 %s 嗎?
+prompt72=創建路徑 %s 出錯. 操作被終止.
+prompt73=路徑 %s 不存在. 是否要創建?
+prompt74=試圖連接 '%s' 出錯. 伺服器版可能是一個較早的版本. 可能會導致很多功能無無法使用.
+prompt75=試圖用 NetBEUI.%s%s 附加 %s
+prompt76= 連接%s %s成功 %s: %s %s.%S%S NetBEUI 連接測試通過!
+prompt77=嘗試連接 %s%s 失敗:%s%s%s%sNetBEUI 測試失敗!
+prompt78=不能初始網路庫.%s%sSPX 連接失敗!
+prompt79=嘗試使用SPX.%s%s 附加給 %s
+prompt80=嘗試使用SPX協定連接 %s%s.%s%sSPX 連接失敗!
+prompt81=嘗試使用SPX協定成功連接 %s%s .SPX 連接成功!
+prompt82=嘗試使用SPX連接 %s%s 出錯.%s%s可能 NetWare 用戶端未安裝完全.%s%sSPX 連接失敗!
+prompt83=您要刪除的用戶正是您登錄的用戶%s 您確定要刪除用戶: %s?
+prompt84=嘗試連接到:
+prompt85=附加 ... 通過!
+prompt86=分離 ... 通過!
+prompt87=分離時引起一個服務錯誤.
+prompt88=附加時引起一個服務錯誤.
+prompt89=伺服器連接測試通過!
+prompt90=伺服器連接測試失敗!
+prompt91=附加連接到 %s.
+prompt92=獲取 Socket 連接.
+prompt93=Socket 請求失敗
+prompt94=遠程 Socket 請求失敗
+prompt95=遠端 Socket 沒有回應
+prompt96=連接主機 '%s' 失敗
+prompt97=在埠 %s. 的錯誤號碼: 
+prompt98=連接到主機 '%s'
+prompt99=在埠 %s
+prompt100=TCP/IP 連接測試通過!
+prompt101=TCP/IP 連接測試失敗!
+prompt102=Pinging %s [%s] with %d bytes of data:
+prompt103=%d bytes from %s: icmp_seq=%d ttl=%d time%s%d ms
+prompt104=評結失敗
+prompt105=不能獲取 %s 的版本資訊
+prompt106= 主機位置: %s
+prompt107=正在擱置中
+prompt108=已被提交
+prompt109=已被回滾
+prompt110=未知狀態
+prompt111= 事務 %d %s.
+prompt112= 遠程位置: %s
+prompt113= 資料庫路徑: %s
+prompt114=推薦動作: %s
+prompt115=請從事務標籤中選擇一個選項.
+prompt116=修復事務 %s
+prompt117=從事資訊事務中選擇一個事務.
+prompt118=第二檔無效.
+prompt119=資料擁有者無效.
+prompt120=清掃的時間間隔必需在 %d 與 %d 之間. 請輸入一個有效值.
+prompt121=不能改變唯讀的數據庫屬性.
+prompt122=空值必需為 "NULL" 或空
+prompt123=不能編輯空值
+prompt124=一但刪除 %s ，就不能再恢復.^M是否繼續?
+prompt125=必需指定一個確認選項
+prompt126=不能用來管理每個 InterBase 6.0 伺服器
+;
+;
+[error_messages]
+; Heading un message box used to show errors, unit frmuMessage.pas
+;
+;Warning:
+;localize only the right side
+;do not localize and leave case as is on the left side
+;
+;
+ERR_SYSTEM_INIT=初始化失敗.
+ERR_USERNAME=用戶名無效. 請輸入一個有效的用戶名.
+ERR_PASSWORD=密碼無效. 請輸入一個有效的密碼.
+ERR_PASSWORD_MISSMATCH=密碼與確認密碼不符.
+ERR_ADD_USER=不能添加用戶.
+ERR_MODIFY_USER=不能修改用戶帳號.
+ERR_DELETE_USER=不能刪除用戶.
+ERR_GET_USERS=不能檢索用戶列表.
+ERR_GET_USER_INFO=不能檢索用戶資訊.
+ERR_SOURCE_DB=無效的源資料庫名. 請輸入一個有效的資料名稱.
+ERR_DESTINATION_DB=無效的目標資料庫名. 請輸入一個有效的資料庫名稱.
+ERR_SAME_SOURCE_DESTINATION=源資料庫名稱與目標資料庫名稱不能相同.
+ERR_DB_FILE=無效的資料庫檔案名或資料庫名稱不存在.
+ERR_SERVER_NAME=無效的伺服器名稱. 請輸入一個有效的資料名稱.
+ERR_PROTOCOL=無效的網路協定. 請從下拉清單中選擇一個有效的的網路協定.
+ERR_BACKUP_DB=資料庫備份失敗.
+ERR_RESTORE_DB=資料庫恢復失敗.
+ERR_GET_TABLES=不能檢索資料表列表.
+ERR_GET_VIEWS=不能檢索視圖列表.
+ERR_SERVICE=無效服務. 請從下拉清單選擇一種服務.
+ERR_NUMERIC_VALUE=數值無效. 請輸入一個有效值.
+ERR_GET_TABLE_DATA=不能檢索資料.
+ERR_DB_ALIAS=資料庫別名無效. 請輸入一個有效的資料庫別名.
+ERR_GET_ROLES=不能檢索角色列表.
+ERR_SERVER_LOGIN=登錄伺服器出錯.
+ERR_DB_CONNECT=連接資料庫出錯.
+ERR_DB_DISCONNECT=斷開資料庫連接出錯.
+ERR_GET_PROCEDURES=不能檢索存儲過程列表.
+ERR_GET_FUNCTIONS=不能檢索函數列表.
+ERR_GET_GENERATORS=不能檢索生成器列表.
+ERR_GET_EXCEPTIONS=不能檢索異常列表.
+ERR_GET_BLOB_FILTERS=不能檢索 blob 過濾列表.
+ERR_GET_COLUMNS=不能檢索欄位列表.
+ERR_GET_INDICES=不能檢索索引列表.
+ERR_GET_REFERENTIAL_CONST=不能檢索引用約束列表.
+ERR_GET_UNIQUE_CONST=不能檢索唯一性約束列表.
+ERR_GET_CHECK_CONST=不能檢索核查約束列表.
+ERR_GET_TRIGGERS=不能檢索觸發器列表.
+ERR_GET_DDL=提取資料無資訊時出錯.
+ERR_INVALID_PROPERTY_VALUE=無效屬性值.
+ERR_GET_DEPENDENCIES=提取依賴資訊時出錯.
+ERR_GET_DB_PROPERTIES=檢索數據庫屬性出錯.
+ERR_DB_SIZE=資料庫檔大小無效.
+ERR_ISQL_ERROR=SQL 語法出錯
+ERR_SERVER_SERVICE=服務錯誤
+ERR_EXTERNAL_EDITOR=外部編輯錯誤
+ERR_SERVER_ALIAS=無效的伺服器別名. 請輸入一個有效的伺服器別名.
+ERR_BACKUP_ALIAS=備份別名無效. 請輸入一個有效的備份別名.
+ERR_DB_SHUTDOWN=資料庫關閉成功.
+ERR_MODIFY_DB_PROPERTIES=不能修改數據庫屬性.
+ERR_DROP_DATABASE=嘗試刪除資料庫時出錯.
+ERR_FILE_OPEN=嘗試打開文件出錯.
+ERR_INV_EDITOR=編輯無效.
+ERR_EDITOR_MISSING=未指定外部編輯.
+ERR_BAD_FORMAT=不能顯示 blob. 這是一個非圖像格式欄位.
+ERR_INV_DIALECT=不能改變用戶端方言.
+ERR_FOPEN=打開文件出錯.
+ERR_TEXT_NOT_FOUND=未找到字串.
+ERR_PRINT=不能列印. 請確認您的印表機是否正確安裝並處於工作狀態.
+ERR_NO_PATH=未對備份檔案或資料庫指定路徑.
+ERR_NO_FILES=備份或恢復檔未指定.
+ERR_GET_DOMAINS=不能檢索域列表.
+ERR_EXT_TOOL_ERROR=不能啟動外部工具
+ERR_PROPERTIES=不能檢索物件屬性
+ERR_ALIAS_EXISTS=別名無效. 此別名已經存在.
+ERR_CANNOT_START_LOCALIB=不能啟動本地 InterBase.
+ERR_SERVER_REGISTER=註冊伺服器出錯.
+ERR_SERVER_UNREGISTER=登出一個伺服器時出錯.
+ERR_DATABASE_UNREGISTER=An error enounter while trying to unregister a database.
+ERR_DDL_EXECUTION=執行DLL語句時出錯.
+;****** Warnings ******
+WAR_NO_PERMISSION=沒有足夠的許可權來完成此次操作.
+WAR_SERVER_REGISTERED=伺服器已經註冊.
+WAR_DUPLICATE_DB_ALIAS=資料庫別名已經成在.
+WAR_BACKUP_FILE_REGISTERED=備份檔案已經註冊.
+WAR_DIALECT_MISMATCH=用戶端方言與伺服器端方言不符.
+WAR_REMOTE_FILENAME=檔案名與伺服器相同.'+#13#10+'一些操作不能正確完成.
+WAR_PERSISTENT_UPDATE=不能連續更新資訊.
+;****** Information ******}
+;INF_ADD_USER_SUCCESS=The user was added successfully.
+INF_ADD_USER_SUCCESS=用戶添加成功.
+;INF_BACKUP_DB_SUCCESS=Database backup completed.
+INF_BACKUP_DB_SUCCESS=資料庫備份完成.
+;INF_RESTORE_DB_SUCCESS=Database restore completed.
+INF_RESTORE_DB_SUCCESS=資料庫恢復完成.
+;INF_NO_PENDING_TRANSACTIONS=No pending transactions were found.
+INF_NO_PENDING_TRANSACTIONS=未找到未決事務.
+;INF_RESTART_SERVER=You must restart the server in order for the changes to go into effect.
+INF_RESTART_SERVER=為了使用改變生效, 請重新啟動伺服器.
+;INF_DATABASE_SHUTDOWN=Database shutdown completed successfully.
+INF_DATABASE_SHUTDOWN=資料庫關閉成功.
+;INF_DATABASE_RESTARTED=Database restart completed successfully.
+INF_DATABASE_RESTARTED=資料庫重啟成功.
+;INF_SQL_SCRIPT=SQL script done.
+INF_SQL_SCRIPT=SQL 腳本完成.
+;INF_DATABASE_SWEEP=Database sweep completed.
+INF_DATABASE_SWEEP=資料庫清掃完成.
+;****** InterBase Errors ******}
+isc_gbak_db_exists=要覆蓋一個已存在的資料庫檔, 必需將覆蓋選項設置為“真”
+;isc_gfix_invalid_sw=An invalid option was specified for the operation.
+isc_gfix_invalid_sw=指定了一個無效的操作.
+;isc_gfix_incmp_sw=The parameters for this operation are conflicting.
+isc_gfix_incmp_sw=操作參數無效.
+;isc_gfix_retry=An operation was not specified.
+isc_gfix_retry=參數未指定.
+;isc_gfix_retry_db=A database was not specified for the operation
+isc_gfix_retry_db=未給此操作指定一個資料庫
+;isc_gbak_page_size_missing=The page size must be specified.
+isc_gbak_page_size_missing=必需指定頁面大小.
+;isc_gsec_cant_open_db=The security database could not be opened.
+isc_gsec_cant_open_db=不能打開受保護的資料.
+;isc_gsec_no_usr_name=User name missing. A user name must be specified for all operations.
+isc_gsec_no_usr_name=無用戶名. 必需為所有的操作指定一個用戶.
+;isc_gsec_err_add=An unknown error was encountered while attempting to add the user record.
+isc_gsec_err_add=添加用戶記錄時出錯.
+;isc_gsec_err_modify=An unknown error was encountered while attempting to modify the user record.
+isc_gsec_err_modify=修改用戶記錄時出錯.
+;isc_gsec_err_find_mod=An unknown error was encountered while attempting to find/modify the user record.
+isc_gsec_err_find_mod=在查找/修改用戶記錄時出錯.
+;isc_gsec_err_rec_not_found=The information for the user was not found.
+isc_gsec_err_rec_not_found=未找到用戶資訊.
+;isc_gsec_err_delete=An unknown error was encountered while attempting to delete the user record.
+isc_gsec_err_delete=刪除用戶記錄時出錯.
+;isc_gsec_err_find_del=An unknown error was encountered while attempting to find/delete the user record.
+isc_gsec_err_find_del=查找/刪除用戶錄錄時出錯.
+;isc_gsec_err_find_disp=An unknown error was encountered while attempting to find/display the user record.
+isc_gsec_err_find_disp=查找/顯示用戶錄錄時出錯.
+;isc_sys_request=An unknown error attempting to open a file on the server.
+isc_sys_request=找開伺服器上的檔出錯.
+;
+;Warning:
+;localize only the right side
+;do not localize and leave case as is on the left side
+;
+;
+[global]
+;
+; this are short expressions that are used in gui controls, if not supplied,
+; they will display in English
+;
+;Action=
+Action=動作
+;Name=
+Name=名稱
+;Active=
+Active=活動
+;Allow Nulls=
+Allow Nulls=允許為空
+;Can Defer=
+Can Defer=使延期
+;Character Set=
+Character Set=字元
+;Collation=
+Collation=連接
+;Connections=
+Connections=連接
+;Current Value=
+Current Value=當前值
+;Case Insensitive=
+Case Insensitive=
+;Database=
+Database=資料庫
+;Default Value=
+Default Value=預設值
+;Delete Rule=
+Delete Rule=刪除規則
+;Descending=
+Descending=遞減
+;Description=
+Description=描述
+;Entry=
+Entry=入口
+;Error=
+Error=錯誤
+;Fields=
+Fields=欄位
+Index=Indice
+;Initially Deferred=
+Initially Deferred=最初延遲
+;Input=
+Input=輸入
+;Input/Output=
+Input/Output=輸入/輸出
+;Last Accessed=
+Last Accessed=最後訪問
+;Match Option=
+Match Option=大小寫選項
+;Member=
+Member=成員
+;Message=
+Message=消息
+;Modified=
+Modified=修改
+;Module=
+Module=範本
+;Metadata for=
+Metadata for=數據元
+;New=
+New=新建
+;Output=
+Output=輸出
+;Owner=
+Owner=擁有者
+;objects listed=
+objects listed=物件清單
+;Parameter=
+Parameter=參數
+;Position=
+Position=狀態
+;Path=
+Path=路徑
+;Reference Table=
+Reference Table=引用表
+;Read-Only=
+Read-Only=唯讀
+;Type=
+Type=類型
+;Unique=
+Unique=唯一
+;Update Rule=
+Update Rule=更新規則
+;Y=
+Y=Y
+;N=
+N=N
+;Yes=
+Yes=允許
+;No=
+No=不允許
+;Open=
+Open=打開
+;Form View=
+Form View=表單視圖
+;Grid View=
+Grid View=表格視圖
+;Server=
+Server=伺服器
+;User=
+User=用戶
+;Warning=
+Warning=警告
+;Information=
+Information=信息
+;Confirmation=
+Confirmation=確認
+;Abort=
+Abort=關於
+;All=
+All=所有
+;Cancel=
+Cancel=取消
+;Close=
+Close=關閉
+;Help=
+Help=幫助
+;OK=
+OK=確定
+;Retry=重試
+;Yes To All=
+Yes To All=確定所有
+;No To All=
+No To All=全部取消
+;Active Windows on=
+Active Windows on=活動窗口在
+;File=
+File=文件
+;Interactive SQL=
+Interactive SQL=互動式SQL
+;Rows Affected=
+Rows Affected=
+;Not Available=
+Not Available=無效的
+;Execution Time=
+Execution Time=執行時間
+;Prepare Time=
+Prepare Time=準備時間
+;Starting Memory=
+Starting Memory=開始記憶體
+;Current Memory=
+Current Memory=當前記憶體
+Delta Memory=
+;Number of Buffers=
+Number of Buffers=緩衝數
+;Reads=
+Reads=讀取
+;Writes=
+Writes=寫
+;Plan=
+Plan=計畫
+;Statement=
+Statement=語句
+;is unknown=
+is unknown=未知
+;Not Connected=
+Not Connected=未連接
+;Client dialect=
+Client dialect=用戶端方言
+;Version=
+Version=版本
+;All Options=
+All Options=所有選項
+;Data Pages=
+Data Pages=數據頁
+;Database Log=
+Database Log=資料庫日誌
+;Header Page=
+Header Page=頭頁
+;Index Pages=
+Index Pages=索引頁
+;System Relations=
+System Relations=系統關係
+;Show data for:=
+Show data for:=顯示資料
+;By Value=
+By Value=取值
+;By Reference=
+By Reference=被引用
+;No Connection=
+No Connection=沒有連接
+;Transaction=
+Transaction=事務
+;Commit=
+Commit=提交
+;Rollback=
+Rollback=回滾
+;Unknown=
+Unknown=未知
+;In Limbo=
+In Limbo=處於暫時擱置
+;Multi-Database Transaction=
+Multi-Database Transaction=多資料庫檔事務
+;Fixed=
+Fixed=準備
+;Transportable=
+Transportable=傳送
+;Non-Transportable=
+Non-Transportable=不傳送
+;True=
+True=真
+;False=
+False=假
+;Process=
+Process=執行
+;Ignore=
+Ignore=忽略
+;None=
+None=無
+;To Screen=
+To Screen=到螢幕
+;To File=
+To File=文件
+;Select Verbose File=
+Select Verbose File=選擇冗長檔
+;Select Database=
+Select Database=選擇資料庫
+;Enabled=
+Enabled=啟動的
+;Disabled=
+Disabled=未啟動的
+;Forced Writes=
+Forced Writes=強制寫
+;Sweep Interval=
+Sweep Interval=清掃間隔
+;Database Dialect=
+Database Dialect=資料庫方言
+;Read Only=
+Read Only=唯讀
+;No input=
+No input=沒有輸入
+;Metadata Only=
+Metadata Only=只含數據元
+;Garbage Collection=
+Garbage Collection=垃圾回收
+;Checksums=
+Checksums=校驗
+Convert to Tables=外部檔轉換為內部表
+;Transactions in Limbo=
+Transactions in Limbo=暫時擱置未確認的事務
+Verbose Output=回顯備份進程資訊
+Filename(s)=檔案名
+Size(Bytes)=大小
+Text File=文體文件
+All files=所有檔
+Format=格式
+Value for=取值
+Replace NULL with=空值替代
+Validate Record Fragments=檢查記錄碎片
+Read Only Validation=唯讀確認
+Ignore Checksum Errors=忽略校驗錯誤
+Service started at=開始於
+Service ended at=終止於
+Running=正在運行
+Restore=恢復
+Ignore=忽略
+Database Restore=資料庫恢復
+Commit After Each Table=恢復資料元後立即導入資料
+Create Shadow Files=建立影子文件
+Deactivate Indices=使索引無效
+Validity Conditions=校驗約束
+Use All Space=使用所有頁面空間
+Pages=頁面
+;
+;
+;
+[node_articles]
+; As Italians knows (like I am), there are some language that don't have
+; undefined gender, in Italian everything is male or female, whe don't have "it".
+; In English can be said "the server" and "the servers", in Italian whe say
+; "Il Server" and "I Servers" italian articles also have gender,
+; so in Italian whe can have four forms of the same article
+; single male, plural male, single female and plural female
+; but the articles are more than one "il" "lo"
+;
+Servers=The
+Server=The
+Databases=The
+Database=The
+Backup=The
+Users=The
+User=The
+Certificates=The
+Certificate=The
+Domains=The
+Domain=The
+Tables=The
+Table=The
+Views=The
+View=The
+Stored Procedures=The
+Stored Procedure=The
+External Functions=The
+External Function=The
+Generators=The
+Generator=The
+Exceptions=The
+Exception=The
+Blob Filters=The
+Blob Filter=The
+Roles=The
+Role=The
+Columns=The
+Column=The
+Indexes=The
+Index=The
+Referential Constraints=The
+Referential Constraint=The
+Unique Constraints=The
+Unique Constraint=The
+Check Constraints=The
+Check Constraint=The
+Triggers=The
+Trigger=The
+Server Log=The
+Unknown=The
+;
+;
+;
+[node_types]
+;
+; Localize here the name of the object in main form left treeview and editor forms
+; example:
+;---English-- --Italian--
+;Certificates=Certificati
+;Certificate=Certificato
+;
+;
+;Servers=
+Servers=伺服器組
+;Server=
+Server=伺服器
+;Databases=
+Databases=資料庫
+;Database=
+Database=資料庫
+;Backup=
+Backup=備份
+;Users=
+Users=用戶
+;User=
+User=用戶
+;Certificates=
+Certificates=許可證
+;Certificate=
+Certificate=許可證
+;Domains=
+Domains=域
+;Domain=
+Domain=域
+;Tables=
+Tables=表
+;Table=
+Table=表
+;Views=
+Views=視圖
+;View=
+View=視圖
+;Stored Procedures=
+Stored Procedures=存儲過程
+;Stored Procedure=
+Stored Procedure=存儲過程
+;External Functions=
+External Functions=外部函數
+;External Function=
+External Function=外部函數
+;Generators=
+Generators=生成器
+;Generator=
+Generator=生成器
+;Exceptions=
+Exceptions=異常
+;Exception=
+Exception=異常
+;Blob Filters=
+Blob Filters=BLOB 過濾
+;Blob Filter=
+Blob Filter=BLOB 過濾
+;Roles=
+Roles=角色
+;Role=
+Role=角色
+;Columns=
+Columns=列
+;Column=
+Column=列
+;Indexes=
+Indexes=索引
+;Index=
+Index=索引
+;Referential Constraints=
+Referential Constraints=指示約束
+;Referential Constraint=
+Referential Constraint=指示約束
+;Unique Constraints=
+Unique Constraints=唯一約束
+;Unique Constraint=
+Unique Constraint=唯一約束
+;Check Constraints=
+Check Constraints=核查約束
+;Check Constraint=
+Check Constraint=核查約束
+;Triggers=
+Triggers=觸發器
+;Trigger=
+Trigger=觸發器
+;Server Log=
+Server Log=日誌
+;Unknown=
+Unknown=未知

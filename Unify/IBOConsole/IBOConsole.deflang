@@ -1,0 +1,108 @@
+[OQBForm.ActionSelectDatabase]
+Class=TAction
+Caption=Select Database
+[OQBForm.ActionNewModel]
+Class=TAction
+Caption=New Model
+[OQBForm.ActionShowPages]
+Class=TAction
+Caption=Show Pages
+[OQBForm.ActionShowTables]
+Class=TAction
+Caption=Show Tables
+[OQBForm.ActionGenerateSQL]
+Class=TAction
+Caption=Generate SQL
+[OQBForm.FileOpen1]
+Class=TAction
+Caption=&Open...
+Hint=Open|Opens an existing file
+[OQBForm.FileSaveAs1]
+Class=TAction
+Caption=Save Model
+Hint=Save As|Saves the active file with a new name
+[OQBForm.ActionRunSQL]
+Class=TAction
+Caption=Run Current SQL
+[OQBForm.ActionSaveResults]
+Class=TAction
+Caption=Save Results
+[OQBForm.ActionAbout]
+Class=TAction
+Caption=About
+
+[OQBForm]
+Class=TOQBForm
+Caption=QBuilder [C:\Programmi\Aekoo\ssis\LCMS_001.FDB]
+[OQBForm.Button1]
+Class=TButton
+Caption=&Ok
+[OQBForm.Button2]
+Class=TButton
+Caption=&Cancel
+[OQBForm.Pages]
+Class=TPageControl
+Hint=
+PageCount=3
+[OQBForm.Pages.TabColumns]
+Class=TTabSheet
+Caption=Columns
+[OQBForm.Pages.TabSQL]
+Class=TTabSheet
+Caption=SQL
+[OQBForm.Pages.TabResults]
+Class=TTabSheet
+Caption=Results
+[OQBForm.TabColumns]
+Class=TTabSheet
+Caption=Columns
+[OQBForm.TabSQL]
+Class=TTabSheet
+Caption=SQL
+[OQBForm.TabResults]
+Class=TTabSheet
+Caption=Results
+[OQBForm.ResDBGrid]
+Class=TDBGrid
+Hint=
+Columns.Count=1
+Column0.Caption=
+[OQBForm.Remove1]
+Class=TMenuItem
+Caption=Remove
+[OQBForm.Nofunction1]
+Class=TMenuItem
+Caption=No function
+[OQBForm.Average1]
+Class=TMenuItem
+Caption=Average
+[OQBForm.Count1]
+Class=TMenuItem
+Caption=Count
+[OQBForm.Minimum1]
+Class=TMenuItem
+Caption=Maximum
+[OQBForm.Maximum1]
+Class=TMenuItem
+Caption=Minimum
+[OQBForm.Sum1]
+Class=TMenuItem
+Caption=Sum
+[OQBForm.Group1]
+Class=TMenuItem
+Caption=Group
+[OQBForm.Sort1]
+Class=TMenuItem
+Caption=No Sort
+[OQBForm.Ascending1]
+Class=TMenuItem
+Caption=Ascending
+[OQBForm.Descending1]
+Class=TMenuItem
+Caption=Descending
+[OQBForm.Show1]
+Class=TMenuItem
+Caption=Show
+[OQBForm.ActionList1]
+Class=TActionList
+Caption=ActionAbout
